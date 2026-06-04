@@ -1,0 +1,46 @@
+{
+  "equipment": [
+    {
+      "id": "receipt_printer",
+      "quirk": "prints judgmental timing slips",
+      "normal_effect": "none",
+      "wild_effect": "hr_interpretation_hook"
+    },
+    {
+      "id": "register_2",
+      "quirk": "always suspicious during calm shifts",
+      "normal_effect": "small_delay",
+      "wild_effect": "register_gremlin_rumor"
+    },
+    {
+      "id": "fryer",
+      "quirk": "demands respect through timing",
+      "normal_effect": "skill_check",
+      "wild_effect": "fryer_aura_incident"
+    },
+    {
+      "id": "good_headset",
+      "quirk": "everyone fights over it",
+      "normal_effect": "order_clarity_up",
+      "wild_effect": "headset_war"
+    },
+    {
+      "id": "mop",
+      "quirk": "accidental leadership symbol",
+      "normal_effect": "morale_joke",
+      "wild_effect": "mop_uprising"
+    },
+    {
+      "id": "ice_machine",
+      "quirk": "corporate blames it for everything",
+      "normal_effect": "drink_delay",
+      "wild_effect": "fake_corporate_memo_hook"
+    },
+    {
+      "id": "sauce_rack",
+      "quirk": "source of diplomacy and war",
+      "normal_effect": "restock_task",
+      "wild_effect": "sauce_economy_collapse"
+    }
+  ]
+}

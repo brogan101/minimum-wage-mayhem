@@ -1,0 +1,654 @@
+{
+  "events": [
+    {
+      "id": "weird_fireable_001",
+      "description": "Someone put fake money in tip jar with player's face on it.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_002",
+      "description": "Customer tries to bribe employee with expired coupon.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_003",
+      "description": "Coworker starts selling premium sauce access.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_004",
+      "description": "Manager asks player to delete a bad review from customer's phone.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_005",
+      "description": "Customer offers cash to skip the line.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_006",
+      "description": "Employee uses store printer for fake concert tickets.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_007",
+      "description": "New Hire thinks tip jar is charity fund.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_008",
+      "description": "Coworker hides register key in pickle bucket.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_009",
+      "description": "Customer tries to pay with suspicious gift card.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_010",
+      "description": "Employee starts parking-lot haircut business during break.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_011",
+      "description": "Manager asks player to lose inspection checklist.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_012",
+      "description": "Corporate Climber creates fake incident report.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_013",
+      "description": "Coworker sells fake employee parking passes.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_014",
+      "description": "Customer tries to return food from another restaurant.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_015",
+      "description": "Employee attempts to trade freezer access for favors.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_016",
+      "description": "Coworker uses drive-thru headset to prank rival store.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_017",
+      "description": "Customer tries to buy uniform hat.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_018",
+      "description": "Employee rents out break room chair.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_019",
+      "description": "Manager creates fake staff contest to avoid giving raise.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_020",
+      "description": "Coworker starts cash-only sauce club.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_021",
+      "description": "Customer asks employee to hide them from someone.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_022",
+      "description": "Employee accidentally accepts tip meant for another worker.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_023",
+      "description": "Customer leaves suspicious bag of coupons.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_024",
+      "description": "Coworker takes home cleaning supplies.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_025",
+      "description": "Manager signs player's name on checklist.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_026",
+      "description": "Coworker starts rumor that health inspector is fake.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_027",
+      "description": "Customer tries to trade car trash for fries.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_028",
+      "description": "Employee makes fake VIP drive-thru pass.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_029",
+      "description": "Customer demands hush fries after seeing coworker steal.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_030",
+      "description": "Someone puts free food if you honk sign outside.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_031",
+      "description": "Coworker locks themselves in office to avoid drawer count.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_032",
+      "description": "Employee tries to clock in their friend.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_033",
+      "description": "Customer claims they own the building.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_034",
+      "description": "Coworker hides evidence in freezer.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_035",
+      "description": "Manager says we will handle this internally and runs away.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_036",
+      "description": "Corporate phone asks why the mop is on payroll.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_037",
+      "description": "Employee starts fake charity jar next to tip jar.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_038",
+      "description": "Customer tries to pay with lottery tickets.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_039",
+      "description": "Coworker sells manager secrets to New Hire.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_040",
+      "description": "Someone replaces training video with apology video.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_041",
+      "description": "Employee starts drive-thru complaint betting pool as abstract misconduct event.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_042",
+      "description": "Customer asks if they can sponsor a menu item unofficially.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_043",
+      "description": "Manager pays player in coupons by mistake.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_044",
+      "description": "Coworker steals all name tags and becomes everyone.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_045",
+      "description": "Customer asks player to sabotage another customer's order.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_046",
+      "description": "Employee starts forged birthday meal scheme.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_047",
+      "description": "Customer claims sauce packets are legal tender.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_048",
+      "description": "Coworker creates fake corporate blackout day.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_049",
+      "description": "Manager covers missing inventory with motivational posters.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    },
+    {
+      "id": "weird_fireable_050",
+      "description": "Player finds mysterious envelope labeled Do Not Give To Corporate.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "suspicion",
+        "manager_trust",
+        "shift_results"
+      ],
+      "fallback": "generic_weird_fireable_event",
+      "safety_note": "Fictional absurd workplace event; no real-world instructions."
+    }
+  ]
+}

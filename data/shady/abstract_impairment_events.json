@@ -1,0 +1,312 @@
+{
+  "events": [
+    {
+      "id": "too_many_energy_drinks",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "accept_mystery_pepup",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "work_no_sleep",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "skip_meal",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "suspicious_break_room_item",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "freezer_reset",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "double_shift_push",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "manager_motivation_packet",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "ignore_warning",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "claim_fine",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "tell_truth_sent_home_risk",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "ask_coworker_cover",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "fake_fine_manager_check",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    },
+    {
+      "id": "overcompensate_fast",
+      "possible_buffs": [
+        "temporary_speed",
+        "confidence"
+      ],
+      "possible_debuffs": [
+        "ui_wobble",
+        "order_memory_errors",
+        "drop_chance_up",
+        "wrong_bag_chance",
+        "crash_later",
+        "manager_suspicion"
+      ],
+      "systems_affected": [
+        "energy",
+        "suspicion",
+        "hr_risk",
+        "promotion_progress"
+      ],
+      "safety_note": "Fictional abstract work-readiness modifier; no real drug names or usage details."
+    }
+  ]
+}

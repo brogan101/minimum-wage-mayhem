@@ -1,0 +1,478 @@
+{
+  "actors": [
+    {
+      "id": "player",
+      "tags": [
+        "player",
+        "employee"
+      ]
+    },
+    {
+      "id": "new_hire",
+      "tags": [
+        "coworker",
+        "gullible"
+      ]
+    },
+    {
+      "id": "coupon_warrior",
+      "tags": [
+        "customer",
+        "coupon",
+        "beef"
+      ]
+    },
+    {
+      "id": "corporate_climber",
+      "tags": [
+        "coworker",
+        "snitch"
+      ]
+    },
+    {
+      "id": "ghost_employee",
+      "tags": [
+        "coworker",
+        "mystery"
+      ]
+    },
+    {
+      "id": "checked_out_manager",
+      "tags": [
+        "manager",
+        "low_attention"
+      ]
+    },
+    {
+      "id": "panic_manager",
+      "tags": [
+        "manager",
+        "high_panic"
+      ]
+    },
+    {
+      "id": "sauce_hoarder",
+      "tags": [
+        "coworker",
+        "sauce"
+      ]
+    },
+    {
+      "id": "normal_family",
+      "tags": [
+        "customer",
+        "guilt_trigger"
+      ]
+    },
+    {
+      "id": "secret_shopper",
+      "tags": [
+        "customer",
+        "corporate"
+      ]
+    }
+  ],
+  "problems": [
+    {
+      "id": "believed_fake_policy",
+      "tags": [
+        "prank",
+        "policy_confusion"
+      ],
+      "severity": "minor"
+    },
+    {
+      "id": "borrowed_tip_money",
+      "tags": [
+        "shady",
+        "tip_jar"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "id": "moved_tip_jar",
+      "tags": [
+        "mischief",
+        "tip_jar"
+      ],
+      "severity": "minor"
+    },
+    {
+      "id": "misread_register",
+      "tags": [
+        "register",
+        "mistake"
+      ],
+      "severity": "minor"
+    },
+    {
+      "id": "started_sauce_economy",
+      "tags": [
+        "sauce",
+        "shady",
+        "coworker"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "id": "hid_good_headset",
+      "tags": [
+        "prank",
+        "drive_thru"
+      ],
+      "severity": "minor"
+    },
+    {
+      "id": "food_quality_shortcut",
+      "tags": [
+        "food_karma",
+        "shady"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "id": "manager_coverup",
+      "tags": [
+        "manager",
+        "coverup"
+      ],
+      "severity": "major"
+    },
+    {
+      "id": "object_became_evidence",
+      "tags": [
+        "evidence",
+        "object_memory"
+      ],
+      "severity": "minor"
+    },
+    {
+      "id": "corporate_policy_misfire",
+      "tags": [
+        "corporate",
+        "policy"
+      ],
+      "severity": "moderate"
+    }
+  ],
+  "locations": [
+    {
+      "id": "drive_thru_window",
+      "tags": [
+        "customer_visible",
+        "drive_thru"
+      ]
+    },
+    {
+      "id": "front_counter",
+      "tags": [
+        "customer_visible",
+        "register"
+      ]
+    },
+    {
+      "id": "break_room",
+      "tags": [
+        "staff_only",
+        "drama"
+      ]
+    },
+    {
+      "id": "freezer",
+      "tags": [
+        "staff_only",
+        "hiding"
+      ]
+    },
+    {
+      "id": "manager_office",
+      "tags": [
+        "manager",
+        "restricted"
+      ]
+    },
+    {
+      "id": "bagging_station",
+      "tags": [
+        "food",
+        "order_accuracy"
+      ]
+    },
+    {
+      "id": "sauce_rack",
+      "tags": [
+        "sauce",
+        "customer_beef"
+      ]
+    },
+    {
+      "id": "register_2",
+      "tags": [
+        "register",
+        "cursed_possible"
+      ]
+    },
+    {
+      "id": "apartment",
+      "tags": [
+        "home_life"
+      ]
+    },
+    {
+      "id": "parking_lot",
+      "tags": [
+        "commute",
+        "customer_visible"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "tip_jar",
+      "tags": [
+        "money",
+        "evidence",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "receipt_printer",
+      "tags": [
+        "register",
+        "hr_interpretation",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "mop",
+      "tags": [
+        "mischief",
+        "object_memory",
+        "legendary_potential"
+      ]
+    },
+    {
+      "id": "wet_floor_sign",
+      "tags": [
+        "slapstick",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "good_headset",
+      "tags": [
+        "drive_thru",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "sauce_packet",
+      "tags": [
+        "sauce",
+        "customer_beef",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "manager_clipboard",
+      "tags": [
+        "manager",
+        "evidence"
+      ]
+    },
+    {
+      "id": "hr_printer",
+      "tags": [
+        "hr",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "corporate_phone",
+      "tags": [
+        "corporate",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "fryer",
+      "tags": [
+        "food",
+        "object_memory",
+        "vibes"
+      ]
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "no_witness",
+      "detection_modifier": -20,
+      "tags": [
+        "none"
+      ]
+    },
+    {
+      "id": "new_hire_witness",
+      "detection_modifier": 5,
+      "tags": [
+        "coworker",
+        "gullible"
+      ]
+    },
+    {
+      "id": "corporate_climber_witness",
+      "detection_modifier": 30,
+      "tags": [
+        "coworker",
+        "snitch"
+      ]
+    },
+    {
+      "id": "customer_witness",
+      "detection_modifier": 15,
+      "tags": [
+        "customer"
+      ]
+    },
+    {
+      "id": "manager_witness",
+      "detection_modifier": 25,
+      "tags": [
+        "manager"
+      ]
+    },
+    {
+      "id": "camera_witness",
+      "detection_modifier": 20,
+      "tags": [
+        "evidence",
+        "camera"
+      ]
+    },
+    {
+      "id": "ghost_employee_witness_maybe",
+      "detection_modifier": 10,
+      "tags": [
+        "coworker",
+        "rumor"
+      ]
+    }
+  ],
+  "cover_stories": [
+    {
+      "id": "corporate_said_so",
+      "text": "Corporate said so.",
+      "believability": 35
+    },
+    {
+      "id": "tip_stabilization",
+      "text": "Tip stabilization.",
+      "believability": 20
+    },
+    {
+      "id": "register_gremlin",
+      "text": "Register Gremlin did it.",
+      "believability": 25
+    },
+    {
+      "id": "training_exercise",
+      "text": "It was a training exercise.",
+      "believability": 30
+    },
+    {
+      "id": "mop_policy",
+      "text": "The mop is in charge now.",
+      "believability": 10
+    },
+    {
+      "id": "customer_requested_it",
+      "text": "Customer requested it.",
+      "believability": 45
+    },
+    {
+      "id": "manager_told_me",
+      "text": "Manager told me.",
+      "believability": 50
+    }
+  ],
+  "immediate_consequences": [
+    {
+      "id": "beef_increase",
+      "effects": {
+        "customer_beef": 10
+      }
+    },
+    {
+      "id": "staff_morale_up",
+      "effects": {
+        "staff_morale": 5
+      }
+    },
+    {
+      "id": "staff_morale_down",
+      "effects": {
+        "staff_morale": -5
+      }
+    },
+    {
+      "id": "manager_suspicion_up",
+      "effects": {
+        "manager_suspicion": 8
+      }
+    },
+    {
+      "id": "order_delay",
+      "effects": {
+        "time_lost": 15
+      }
+    },
+    {
+      "id": "cash_small_up",
+      "effects": {
+        "cash_delta": 2
+      }
+    },
+    {
+      "id": "store_stability_down",
+      "effects": {
+        "store_stability": -5
+      }
+    },
+    {
+      "id": "customer_confusion",
+      "effects": {
+        "customer_patience": -8
+      }
+    }
+  ],
+  "delayed_consequences": [
+    {
+      "id": "cold_case_sidequest",
+      "future_chain": "cold_case"
+    },
+    {
+      "id": "hr_report_possible",
+      "future_chain": "hr"
+    },
+    {
+      "id": "review_mutation",
+      "future_chain": "review"
+    },
+    {
+      "id": "coworker_retaliation",
+      "future_chain": "prank_war"
+    },
+    {
+      "id": "promotion_review_note",
+      "future_chain": "promotion"
+    },
+    {
+      "id": "object_reputation_gain",
+      "future_chain": "object_memory"
+    },
+    {
+      "id": "manager_trial_callback",
+      "future_chain": "manager_trial"
+    }
+  ]
+}

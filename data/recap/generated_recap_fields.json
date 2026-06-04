@@ -1,0 +1,39 @@
+{
+  "fields": [
+    "cash",
+    "tips",
+    "xp",
+    "orders_served",
+    "accuracy",
+    "customer_beef",
+    "staff_morale",
+    "manager_trust",
+    "corporate_approval",
+    "promotion_progress",
+    "demotion_risk",
+    "fired_risk",
+    "suspicion",
+    "evidence",
+    "karma",
+    "hr_reports",
+    "reviews",
+    "viral_clips",
+    "missions",
+    "side_quests",
+    "daily_tasks",
+    "most_unhinged_moment",
+    "funniest_object",
+    "worst_decision",
+    "best_recovery",
+    "rumor_started",
+    "next_shift_warning"
+  ],
+  "source_managers": [
+    "RestaurantMemoryManager",
+    "EvidenceManager",
+    "StoreObjectMemoryManager",
+    "ConsequenceMatrixManager",
+    "MultiKarmaManager",
+    "DynamicReputationLabelManager"
+  ]
+}

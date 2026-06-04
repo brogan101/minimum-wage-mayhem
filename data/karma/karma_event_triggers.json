@@ -1,0 +1,52 @@
+{
+  "triggers": [
+    {
+      "id": "normal_family_guilt",
+      "conditions": [
+        "food_karma_low",
+        "normal_family"
+      ],
+      "effects": [
+        "guilt_conscience_up",
+        "future_redeem_task"
+      ]
+    },
+    {
+      "id": "staff_covers_player",
+      "conditions": [
+        "coworker_karma_high"
+      ],
+      "effects": [
+        "detection_chance_down"
+      ]
+    },
+    {
+      "id": "prank_retaliation",
+      "conditions": [
+        "prank_karma_high"
+      ],
+      "effects": [
+        "coworker_prank_chance_up"
+      ]
+    },
+    {
+      "id": "corporate_pet_pushback",
+      "conditions": [
+        "corporate_karma_high",
+        "coworker_karma_low"
+      ],
+      "effects": [
+        "staff_morale_down"
+      ]
+    },
+    {
+      "id": "chaos_legend",
+      "conditions": [
+        "chaos_karma_high"
+      ],
+      "effects": [
+        "legendary_incident_chance_up"
+      ]
+    }
+  ]
+}

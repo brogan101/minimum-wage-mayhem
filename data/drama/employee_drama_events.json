@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "grandpa_again_callout",
+    "name": "Grandpa Again Call-Out",
+    "category": "callout",
+    "rarity": "common",
+    "description": "Kyle claims another emotionally distinct grandpa event.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 1,
+    "safety_note": ""
+  },
+  {
+    "id": "fake_clean_spill",
+    "name": "Fake Clean Spill",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee waves mop near spill and declares the floor spiritually clean.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 1,
+    "safety_note": ""
+  },
+  {
+    "id": "group_chat_court",
+    "name": "Group Chat Court",
+    "category": "drama",
+    "rarity": "common",
+    "description": "The crew holds a group chat trial over missing sauce.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 1,
+    "safety_note": ""
+  },
+  {
+    "id": "sauce_hoarder_stash",
+    "name": "Sauce Hoarder Stash",
+    "category": "inventory",
+    "rarity": "common",
+    "description": "A break-room stash explains the sauce shortage.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 1,
+    "safety_note": ""
+  },
+  {
+    "id": "new_hire_cooks_lettuce",
+    "name": "New Hire Asks About Lettuce",
+    "category": "training",
+    "rarity": "common",
+    "description": "New hire asks whether lettuce needs grill marks.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 1,
+    "safety_note": ""
+  },
+  {
+    "id": "ghost_employee_clocked_in",
+    "name": "Ghost Employee Clocked In",
+    "category": "staffing",
+    "rarity": "uncommon",
+    "description": "Employee is clocked in but exists only as payroll folklore.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": ""
+  },
+  {
+    "id": "corporate_climber_clipboard",
+    "name": "Corporate Climber Clipboard",
+    "category": "snitch",
+    "rarity": "uncommon",
+    "description": "Corporate climber begins enforcing an unofficial checklist.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": ""
+  },
+  {
+    "id": "overqualified_burnout_warning",
+    "name": "Overqualified One Burnout",
+    "category": "morale",
+    "rarity": "uncommon",
+    "description": "Best employee threatens to leave for anywhere with chairs.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": ""
+  },
+  {
+    "id": "kitchen_menace_speedrun",
+    "name": "Kitchen Menace Speedrun",
+    "category": "station",
+    "rarity": "uncommon",
+    "description": "Fast employee saves time but creates cleanup debt.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": ""
+  },
+  {
+    "id": "secret_couple_breakup_shift",
+    "name": "Breakup Shift",
+    "category": "social",
+    "rarity": "uncommon",
+    "description": "Two coworkers refuse the same station after offscreen relationship drama.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": ""
+  },
+  {
+    "id": "relationship_fallout_shift_cover",
+    "name": "Unexpected Relationship Fallout",
+    "category": "mature_social",
+    "rarity": "uncommon",
+    "description": "Offscreen consensual coworker relationship creates rumors, scheduling coverage, and HR awkwardness.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": "Adult/mature items remain offscreen, abstract, fictional, and consequence-driven."
+  },
+  {
+    "id": "forbidden_side_hustle_rumor",
+    "name": "Forbidden Side Hustle Rumor",
+    "category": "adult_shady",
+    "rarity": "uncommon",
+    "description": "A vague off-books side hustle rumor creates report/cover/ignore choices.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "player_choices": [
+      "ignore",
+      "coach",
+      "snitch",
+      "cover",
+      "assign_backup"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "corporate_approval_change",
+      "eventlog_entry",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "staffing",
+      "eventlog",
+      "hr",
+      "morale",
+      "shift"
+    ],
+    "cooldown_shifts": 2,
+    "safety_note": "Adult/mature items remain offscreen, abstract, fictional, and consequence-driven."
+  },
+  {
+    "id": "employee_drama_01",
+    "name": "Missing Apron Incident",
+    "category": "callout",
+    "rarity": "uncommon",
+    "description": "Employee drama around missing apron forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_02",
+    "name": "Stolen Break Chair Incident",
+    "category": "station_conflict",
+    "rarity": "common",
+    "description": "Employee drama around stolen break chair forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_03",
+    "name": "Napkin Rationing Incident",
+    "category": "snitch",
+    "rarity": "common",
+    "description": "Employee drama around napkin rationing forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_04",
+    "name": "Fake Cleaning Incident",
+    "category": "morale",
+    "rarity": "common",
+    "description": "Employee drama around fake cleaning forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_05",
+    "name": "Shift Swap Betrayal Incident",
+    "category": "training",
+    "rarity": "uncommon",
+    "description": "Employee drama around shift swap betrayal forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_06",
+    "name": "Free Sauce Rumor Incident",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee drama around free sauce rumor forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_07",
+    "name": "Phone Screenshot Leak Incident",
+    "category": "inventory",
+    "rarity": "common",
+    "description": "Employee drama around phone screenshot leak forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_08",
+    "name": "Uniform Smell Accusation Incident",
+    "category": "schedule",
+    "rarity": "common",
+    "description": "Employee drama around uniform smell accusation forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_09",
+    "name": "Fryer Blame War Incident",
+    "category": "group_chat",
+    "rarity": "uncommon",
+    "description": "Employee drama around fryer blame war forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_10",
+    "name": "Schedule Favoritism Incident",
+    "category": "manager",
+    "rarity": "common",
+    "description": "Employee drama around schedule favoritism forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_11",
+    "name": "Missing Apron Incident",
+    "category": "callout",
+    "rarity": "common",
+    "description": "Employee drama around missing apron forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_12",
+    "name": "Stolen Break Chair Incident",
+    "category": "station_conflict",
+    "rarity": "common",
+    "description": "Employee drama around stolen break chair forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_13",
+    "name": "Napkin Rationing Incident",
+    "category": "snitch",
+    "rarity": "uncommon",
+    "description": "Employee drama around napkin rationing forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_14",
+    "name": "Fake Cleaning Incident",
+    "category": "morale",
+    "rarity": "common",
+    "description": "Employee drama around fake cleaning forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_15",
+    "name": "Shift Swap Betrayal Incident",
+    "category": "training",
+    "rarity": "common",
+    "description": "Employee drama around shift swap betrayal forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_16",
+    "name": "Free Sauce Rumor Incident",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee drama around free sauce rumor forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_17",
+    "name": "Phone Screenshot Leak Incident",
+    "category": "inventory",
+    "rarity": "uncommon",
+    "description": "Employee drama around phone screenshot leak forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_18",
+    "name": "Uniform Smell Accusation Incident",
+    "category": "schedule",
+    "rarity": "common",
+    "description": "Employee drama around uniform smell accusation forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_19",
+    "name": "Fryer Blame War Incident",
+    "category": "group_chat",
+    "rarity": "common",
+    "description": "Employee drama around fryer blame war forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_20",
+    "name": "Schedule Favoritism Incident",
+    "category": "manager",
+    "rarity": "common",
+    "description": "Employee drama around schedule favoritism forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_21",
+    "name": "Missing Apron Incident",
+    "category": "callout",
+    "rarity": "uncommon",
+    "description": "Employee drama around missing apron forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_22",
+    "name": "Stolen Break Chair Incident",
+    "category": "station_conflict",
+    "rarity": "common",
+    "description": "Employee drama around stolen break chair forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_23",
+    "name": "Napkin Rationing Incident",
+    "category": "snitch",
+    "rarity": "common",
+    "description": "Employee drama around napkin rationing forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_24",
+    "name": "Fake Cleaning Incident",
+    "category": "morale",
+    "rarity": "common",
+    "description": "Employee drama around fake cleaning forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_25",
+    "name": "Shift Swap Betrayal Incident",
+    "category": "training",
+    "rarity": "uncommon",
+    "description": "Employee drama around shift swap betrayal forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_26",
+    "name": "Free Sauce Rumor Incident",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee drama around free sauce rumor forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_27",
+    "name": "Phone Screenshot Leak Incident",
+    "category": "inventory",
+    "rarity": "common",
+    "description": "Employee drama around phone screenshot leak forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_28",
+    "name": "Uniform Smell Accusation Incident",
+    "category": "schedule",
+    "rarity": "common",
+    "description": "Employee drama around uniform smell accusation forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_29",
+    "name": "Fryer Blame War Incident",
+    "category": "group_chat",
+    "rarity": "uncommon",
+    "description": "Employee drama around fryer blame war forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_30",
+    "name": "Schedule Favoritism Incident",
+    "category": "manager",
+    "rarity": "common",
+    "description": "Employee drama around schedule favoritism forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_31",
+    "name": "Missing Apron Incident",
+    "category": "callout",
+    "rarity": "common",
+    "description": "Employee drama around missing apron forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_32",
+    "name": "Stolen Break Chair Incident",
+    "category": "station_conflict",
+    "rarity": "common",
+    "description": "Employee drama around stolen break chair forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_33",
+    "name": "Napkin Rationing Incident",
+    "category": "snitch",
+    "rarity": "uncommon",
+    "description": "Employee drama around napkin rationing forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_34",
+    "name": "Fake Cleaning Incident",
+    "category": "morale",
+    "rarity": "common",
+    "description": "Employee drama around fake cleaning forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_35",
+    "name": "Shift Swap Betrayal Incident",
+    "category": "training",
+    "rarity": "common",
+    "description": "Employee drama around shift swap betrayal forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_36",
+    "name": "Free Sauce Rumor Incident",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee drama around free sauce rumor forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_37",
+    "name": "Phone Screenshot Leak Incident",
+    "category": "inventory",
+    "rarity": "uncommon",
+    "description": "Employee drama around phone screenshot leak forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_38",
+    "name": "Uniform Smell Accusation Incident",
+    "category": "schedule",
+    "rarity": "common",
+    "description": "Employee drama around uniform smell accusation forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_39",
+    "name": "Fryer Blame War Incident",
+    "category": "group_chat",
+    "rarity": "common",
+    "description": "Employee drama around fryer blame war forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_40",
+    "name": "Schedule Favoritism Incident",
+    "category": "manager",
+    "rarity": "common",
+    "description": "Employee drama around schedule favoritism forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_41",
+    "name": "Missing Apron Incident",
+    "category": "callout",
+    "rarity": "uncommon",
+    "description": "Employee drama around missing apron forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_42",
+    "name": "Stolen Break Chair Incident",
+    "category": "station_conflict",
+    "rarity": "common",
+    "description": "Employee drama around stolen break chair forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_43",
+    "name": "Napkin Rationing Incident",
+    "category": "snitch",
+    "rarity": "common",
+    "description": "Employee drama around napkin rationing forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_44",
+    "name": "Fake Cleaning Incident",
+    "category": "morale",
+    "rarity": "common",
+    "description": "Employee drama around fake cleaning forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_45",
+    "name": "Shift Swap Betrayal Incident",
+    "category": "training",
+    "rarity": "uncommon",
+    "description": "Employee drama around shift swap betrayal forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_46",
+    "name": "Free Sauce Rumor Incident",
+    "category": "shady",
+    "rarity": "common",
+    "description": "Employee drama around free sauce rumor forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_47",
+    "name": "Phone Screenshot Leak Incident",
+    "category": "inventory",
+    "rarity": "common",
+    "description": "Employee drama around phone screenshot leak forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  },
+  {
+    "id": "employee_drama_48",
+    "name": "Uniform Smell Accusation Incident",
+    "category": "schedule",
+    "rarity": "common",
+    "description": "Employee drama around uniform smell accusation forces the player to choose between speed, morale, policy, and comedy.",
+    "trigger_conditions": [
+      "shift_active",
+      "employee_present"
+    ],
+    "player_choices": [
+      "calm_everyone",
+      "snitch",
+      "cover_for_employee",
+      "reassign_station",
+      "ignore_and_suffer"
+    ],
+    "consequences": [
+      "staff_morale_change",
+      "station_efficiency_change",
+      "eventlog_entry",
+      "review_or_hr_seed"
+    ],
+    "systems_touched": [
+      "employees",
+      "morale",
+      "stations",
+      "eventlog",
+      "hr"
+    ],
+    "cooldown_shifts": 1
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "id": "gas_light",
+      "modifier": "late_arrival_risk"
+    },
+    {
+      "id": "wrong_bus",
+      "modifier": "late_arrival"
+    },
+    {
+      "id": "rival_billboard",
+      "modifier": "bad_mood"
+    },
+    {
+      "id": "bird_parking_lot_incident",
+      "modifier": "stress_up"
+    }
+  ]
+}

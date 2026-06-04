@@ -1,0 +1,621 @@
+{
+  "bundles": [
+    {
+      "id": "normal_shift_texture",
+      "description": "Adds normal playable work texture so shifts are not only chaos.",
+      "tone": "normal",
+      "systems_connected": [
+        "ShiftManager",
+        "EventLog",
+        "CustomerManager",
+        "SaveManager"
+      ],
+      "data_sources": [
+        "quiet_normal_events",
+        "shift_texture_layers"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "customer_memory_arcs",
+      "description": "Recurring customers remember good/bad service and create callbacks.",
+      "tone": "balanced",
+      "systems_connected": [
+        "CustomerManager",
+        "RestaurantMemoryManager",
+        "ReviewGenerator",
+        "ReputationManager"
+      ],
+      "data_sources": [
+        "customer_memory_arcs"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "normal_customer_profiles",
+      "description": "Adds low-chaos customers with personality so normal orders are still funny.",
+      "tone": "normal",
+      "systems_connected": [
+        "CustomerManager",
+        "OrderManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "customer_normalcy_profiles"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "customer_customer_interactions",
+      "description": "Customers can annoy each other before the player gets involved.",
+      "tone": "friction",
+      "systems_connected": [
+        "CustomerManager",
+        "ChaosDirector",
+        "EventLog",
+        "ReviewGenerator"
+      ],
+      "data_sources": [
+        "customer_customer_interactions"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "line_pressure_microdrama",
+      "description": "Drive-thru line composition creates pressure without always causing meltdowns.",
+      "tone": "friction",
+      "systems_connected": [
+        "ShiftManager",
+        "CustomerManager",
+        "HUD",
+        "ConsequenceMatrixManager"
+      ],
+      "data_sources": [
+        "shift_texture_layers"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "coworker_social_web",
+      "description": "Coworkers have loyalties/rivalries/favors instead of isolated events.",
+      "tone": "balanced",
+      "systems_connected": [
+        "StaffManager",
+        "RestaurantMemoryManager",
+        "ReputationManager",
+        "CareerManager"
+      ],
+      "data_sources": [
+        "coworker_social_web"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "coworker_help_save_moments",
+      "description": "Good relationships can save the player during rushes.",
+      "tone": "normal",
+      "systems_connected": [
+        "StaffManager",
+        "ShiftManager",
+        "CareerManager"
+      ],
+      "data_sources": [
+        "coworker_social_web"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "manager_pressure_situations",
+      "description": "Managers create pressure, unfairness, or opportunity depending on archetype.",
+      "tone": "balanced",
+      "systems_connected": [
+        "ManagerTrialManager",
+        "CareerManager",
+        "StaffManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "manager_pressure_situations"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "home_morning_stack",
+      "description": "Home events stack into work modifiers but do not replace work gameplay.",
+      "tone": "normal",
+      "systems_connected": [
+        "HomeLifeManager",
+        "ShiftManager",
+        "SaveManager"
+      ],
+      "data_sources": [
+        "home_life_depth_events"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "commute_micro_events",
+      "description": "Commuting adds small modifiers and jokes before shift starts.",
+      "tone": "normal",
+      "systems_connected": [
+        "HomeLifeManager",
+        "ShiftManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "commute_micro_events"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "store_ops_depth",
+      "description": "Opening, mid-shift, closing, inventory, cleaning, and prep matter.",
+      "tone": "normal",
+      "systems_connected": [
+        "ShiftManager",
+        "StoreManager",
+        "CareerManager",
+        "ConsequenceMatrixManager"
+      ],
+      "data_sources": [
+        "store_ops_depth"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "equipment_personality",
+      "description": "Equipment gets quirks and memory without becoming magic/horror.",
+      "tone": "balanced",
+      "systems_connected": [
+        "StoreObjectMemoryManager",
+        "ShiftManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "equipment_personality"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "minigame_variety",
+      "description": "Adds short skill checks and pressure tasks to keep work tactile.",
+      "tone": "normal",
+      "systems_connected": [
+        "ShiftManager",
+        "HUD",
+        "CareerManager",
+        "SaveManager"
+      ],
+      "data_sources": [
+        "minigames"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "mission_detours",
+      "description": "Promotion path can detour through weird but logical recovery/side arcs.",
+      "tone": "balanced",
+      "systems_connected": [
+        "CareerManager",
+        "EmergentMissionGenerator",
+        "PromotionManager"
+      ],
+      "data_sources": [
+        "promotion_detours",
+        "recovery_routes"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "world_rumor_layer",
+      "description": "Rumors travel through staff/customers/corporate and shape future events.",
+      "tone": "friction",
+      "systems_connected": [
+        "RestaurantMemoryManager",
+        "StaffManager",
+        "CustomerManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "world_rumors"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "escalation_ladders",
+      "description": "Small problems climb step-by-step instead of instantly exploding.",
+      "tone": "balanced",
+      "systems_connected": [
+        "ChaosDirector",
+        "ConsequenceMatrixManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "escalation_ladders"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "recovery_route_depth",
+      "description": "Failure becomes recovery missions instead of flat punishment.",
+      "tone": "normal",
+      "systems_connected": [
+        "DemotionManager",
+        "CareerManager",
+        "EmergentMissionGenerator"
+      ],
+      "data_sources": [
+        "recovery_routes"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "store_identity_mutations",
+      "description": "The store develops a reputation/personality based on player history.",
+      "tone": "balanced",
+      "systems_connected": [
+        "RestaurantMemoryManager",
+        "ReputationManager",
+        "SaveManager"
+      ],
+      "data_sources": [
+        "store_identity_mutations"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "asset_audio_traceability",
+      "description": "Every new depth system gets model/texture/audio fallback requirements.",
+      "tone": "production",
+      "systems_connected": [
+        "AssetFactory",
+        "AudioManager",
+        "Validation"
+      ],
+      "data_sources": [
+        "audio_visual_asset_requirements"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "performance_density_budget",
+      "description": "Depth content respects object/event budgets.",
+      "tone": "production",
+      "systems_connected": [
+        "ShiftManager",
+        "ChaosDirector",
+        "Validation"
+      ],
+      "data_sources": [
+        "performance_budgets"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "bug_fallback_depth",
+      "description": "Every new content type gets no-softlock fallback rules.",
+      "tone": "production",
+      "systems_connected": [
+        "Validation",
+        "SaveManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "bug_fallback_requirements"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "customer_recovery_personality",
+      "description": "Different customers accept different fixes.",
+      "tone": "balanced",
+      "systems_connected": [
+        "CustomerManager",
+        "ConsequenceMatrixManager",
+        "ReviewGenerator"
+      ],
+      "data_sources": [
+        "customer_memory_arcs"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "staff_training_depth",
+      "description": "Training and certifications influence staff mistakes and player workload.",
+      "tone": "normal",
+      "systems_connected": [
+        "CareerManager",
+        "StaffManager",
+        "ShiftManager"
+      ],
+      "data_sources": [
+        "store_ops_depth"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "manager_trial_callbacks",
+      "description": "Past chaos comes back during Manager Trial.",
+      "tone": "wild",
+      "systems_connected": [
+        "ManagerTrialManager",
+        "RestaurantMemoryManager",
+        "CareerManager"
+      ],
+      "data_sources": [
+        "story_arc_expansion"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "quiet_shift_streaks",
+      "description": "Clean play has its own rewards and tension.",
+      "tone": "normal",
+      "systems_connected": [
+        "CareerManager",
+        "ReputationManager",
+        "PromotionManager"
+      ],
+      "data_sources": [
+        "quiet_normal_events"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "wild_event_cooldown",
+      "description": "Wild events get cooldowns and recovery windows.",
+      "tone": "production",
+      "systems_connected": [
+        "ChaosDirector",
+        "NormalcyBalanceDirector",
+        "Validation"
+      ],
+      "data_sources": [
+        "phase_13_acceptance_matrix"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "customer_misunderstanding_engine",
+      "description": "Customers misunderstand normal operations in varied ways.",
+      "tone": "friction",
+      "systems_connected": [
+        "CustomerManager",
+        "EventLog",
+        "ReviewGenerator"
+      ],
+      "data_sources": [
+        "research_inspired_patterns"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "corporate_absurdity_depth",
+      "description": "Corporate creates sane and insane mandates that affect real gameplay.",
+      "tone": "balanced",
+      "systems_connected": [
+        "CareerManager",
+        "ManagerTrialManager",
+        "EventLog"
+      ],
+      "data_sources": [
+        "story_arc_expansion"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "home_to_work_callback",
+      "description": "Home-life choices create later callbacks at work.",
+      "tone": "balanced",
+      "systems_connected": [
+        "HomeLifeManager",
+        "RestaurantMemoryManager",
+        "ShiftManager"
+      ],
+      "data_sources": [
+        "home_life_depth_events"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    },
+    {
+      "id": "player_legend_normalizer",
+      "description": "Even legendary/reputation systems must stay mechanically grounded.",
+      "tone": "production",
+      "systems_connected": [
+        "ReputationManager",
+        "ConsequenceMatrixManager",
+        "Validation"
+      ],
+      "data_sources": [
+        "phase_13_acceptance_matrix"
+      ],
+      "required_hooks": [
+        "eventlog",
+        "memory",
+        "consequence_or_modifier"
+      ],
+      "fallback": "skip_depth_bundle_with_eventlog_warning",
+      "validation_rule": "must_connect_to_at_least_three_systems"
+    }
+  ],
+  "balance_targets": {
+    "normal": "45-60%",
+    "friction": "20-30%",
+    "weird": "10-20%",
+    "wild": "5-10%"
+  }
+}

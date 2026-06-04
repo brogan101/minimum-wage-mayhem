@@ -1,0 +1,22 @@
+{
+  "tracked_values": [
+    "staff_morale",
+    "coworker_loyalty",
+    "coworker_anger",
+    "manager_suspicion",
+    "manager_trust",
+    "customer_confusion",
+    "beef_risk",
+    "station_delay",
+    "cleanliness",
+    "corporate_approval",
+    "hr_risk",
+    "promotion_progress",
+    "demotion_risk",
+    "prank_war_heat",
+    "restaurant_stability",
+    "karma_impact",
+    "rumor_impact"
+  ],
+  "rule": "Every prank must affect at least one tracked value."
+}

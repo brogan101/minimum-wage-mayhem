@@ -1,0 +1,43 @@
+{
+  "modifiers": [
+    {
+      "id": "low_energy",
+      "effects": [
+        "sprint_down",
+        "mistake_chance_up"
+      ]
+    },
+    {
+      "id": "rent_panic",
+      "effects": [
+        "stress_up",
+        "tip_motivation_up"
+      ]
+    },
+    {
+      "id": "uniform_shame",
+      "effects": [
+        "corporate_scrutiny_up"
+      ]
+    },
+    {
+      "id": "good_breakfast",
+      "effects": [
+        "composure_up"
+      ]
+    },
+    {
+      "id": "caffeine_crash",
+      "effects": [
+        "energy_down_mid_shift"
+      ]
+    },
+    {
+      "id": "late_arrival",
+      "effects": [
+        "manager_trust_down",
+        "first_customer_patience_down"
+      ]
+    }
+  ]
+}

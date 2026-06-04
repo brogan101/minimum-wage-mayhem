@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "id": "too_many_major_writeups",
+      "threshold": 3,
+      "effect": "demotion_warning"
+    },
+    {
+      "id": "corporate_approval_collapse",
+      "threshold": -50,
+      "effect": "promotion_freeze"
+    },
+    {
+      "id": "repeated_shady_incidents",
+      "threshold": 4,
+      "effect": "demotion_risk_up"
+    }
+  ]
+}

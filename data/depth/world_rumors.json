@@ -1,0 +1,52 @@
+{
+  "rumors": [
+    {
+      "id": "mop_has_authority",
+      "source": "coworker",
+      "spread": "staff",
+      "effect": "mop_object_memory_up"
+    },
+    {
+      "id": "register_2_is_cursed",
+      "source": "new_hire",
+      "spread": "staff_customers",
+      "effect": "register_2_label_possible"
+    },
+    {
+      "id": "corporate_is_watching_ice_machine",
+      "source": "prank",
+      "spread": "staff",
+      "effect": "policy_confusion"
+    },
+    {
+      "id": "coupon_binder_returning",
+      "source": "customer",
+      "spread": "drive_thru",
+      "effect": "coupon_preparation_task"
+    },
+    {
+      "id": "player_getting_promoted",
+      "source": "manager_hint",
+      "spread": "staff",
+      "effect": "jealousy_or_support"
+    },
+    {
+      "id": "sauce_ration_coming",
+      "source": "corporate_note",
+      "spread": "store",
+      "effect": "sauce_panic"
+    },
+    {
+      "id": "ghost_employee_clocked_in",
+      "source": "schedule_board",
+      "spread": "staff",
+      "effect": "missing_station_coverage"
+    },
+    {
+      "id": "secret_shopper_is_dog",
+      "source": "dad_joke_guy",
+      "spread": "drive_thru",
+      "effect": "dog_driver_callback"
+    }
+  ]
+}

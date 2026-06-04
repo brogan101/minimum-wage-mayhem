@@ -1,0 +1,130 @@
+{
+  "labels": [
+    {
+      "id": "cursed",
+      "name": "Cursed",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "suspicious",
+      "name": "Suspicious",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "staff_favorite",
+      "name": "Staff Favorite",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "hr_evidence",
+      "name": "HR Evidence",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "customer_feared",
+      "name": "Customer Feared",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "corporate_watched",
+      "name": "Corporate Watched",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "haunted_by_vibes",
+      "name": "Haunted By Vibes",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "the_sign_of_consequences",
+      "name": "The Sign Of Consequences",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "the_printer_that_knows",
+      "name": "The Printer That Knows",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "mop_with_authority",
+      "name": "Mop With Authority",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "sauce_rack_of_judgment",
+      "name": "Sauce Rack Of Judgment",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "register_gremlin_habitat",
+      "name": "Register Gremlin Habitat",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    },
+    {
+      "id": "headset_of_burden",
+      "name": "Headset Of Burden",
+      "effects": [
+        "recap_mention",
+        "dialogue_hook",
+        "future_event_modifier"
+      ]
+    }
+  ]
+}

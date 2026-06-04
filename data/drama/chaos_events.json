@@ -1,0 +1,2219 @@
+[
+  {
+    "id": "soda_spray",
+    "name": "Drink Machine Malfunction",
+    "type": "hazard",
+    "effect": "spawns_spill",
+    "duration": 30,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "spawns_spill"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "fryer_fire",
+    "name": "Fryer Overheat",
+    "type": "hazard",
+    "effect": "burns_all_fries",
+    "duration": 15,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "burns_all_fries"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "employee_nap",
+    "name": "Employee in Freezer",
+    "type": "drama",
+    "effect": "station_uncovered",
+    "duration": 60,
+    "category": "drama",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "station_uncovered"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "corporate_call",
+    "name": "Corporate Check-in",
+    "type": "pressure",
+    "effect": "lock_player_in_menu",
+    "duration": 20,
+    "category": "pressure",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "lock_player_in_menu"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "coupon_wave",
+    "name": "Coupon Wave",
+    "type": "order_mod",
+    "effect": "increase_coupon_warriors",
+    "duration": 120,
+    "category": "order_mod",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "increase_coupon_warriors"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "sauce_shortage",
+    "name": "Sauce Shortage",
+    "type": "hazard",
+    "effect": "no_sauces_available",
+    "duration": 180,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "no_sauces_available"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "influencer_visit",
+    "name": "Viral Visit",
+    "type": "pressure",
+    "effect": "high_review_stakes",
+    "duration": 60,
+    "category": "pressure",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "high_review_stakes"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "floor_spill",
+    "name": "Oil Spill",
+    "type": "hazard",
+    "effect": "low_friction",
+    "duration": 120,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "low_friction"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "mascot_attack",
+    "name": "Mascot Rampage",
+    "type": "hazard",
+    "effect": "player_knockback",
+    "duration": 45,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "player_knockback"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "fly_infestation",
+    "name": "Fly Infestation",
+    "type": "hazard",
+    "effect": "lower_hygiene",
+    "duration": 180,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "lower_hygiene"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "power_brownout",
+    "name": "Power Brownout",
+    "type": "hazard",
+    "effect": "equipment_reset",
+    "duration": 10,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "equipment_reset"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "sentient_ice",
+    "name": "Sentient Ice Machine",
+    "type": "weird",
+    "effect": "ice_machine_screams",
+    "duration": 60,
+    "category": "weird",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "ice_machine_screams"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "health_inspection",
+    "name": "Surprise Inspection",
+    "type": "pressure",
+    "effect": "strict_validation",
+    "duration": 120,
+    "category": "pressure",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "strict_validation"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "customer_standoff",
+    "name": "Drive-thru Blockage",
+    "type": "hazard",
+    "effect": "line_stops",
+    "duration": 90,
+    "category": "hazard",
+    "rarity": "common",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "counterplay": [
+      "recover",
+      "assign_npc_help"
+    ],
+    "consequences": [
+      "line_stops"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "sauce_audit_wave",
+    "name": "Sauce Audit Wave",
+    "category": "customer_friction",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Sauce Audit Wave adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "receipt_lawyer_line",
+    "name": "Receipt Lawyer Holds Line",
+    "category": "customer_friction",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Receipt Lawyer Holds Line adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "speaker_static_goblin",
+    "name": "Speaker Static Goblin",
+    "category": "equipment",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Speaker Static Goblin adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "bag_shortage_scare",
+    "name": "Bag Shortage Scare",
+    "category": "inventory",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Bag Shortage Scare adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "napkin_policy_week",
+    "name": "Napkin Policy Week",
+    "category": "corporate",
+    "rarity": "uncommon",
+    "chaos_cost": 5,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Napkin Policy Week adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "fresh_fries_surge",
+    "name": "Fresh Fries Surge",
+    "category": "order_pressure",
+    "rarity": "uncommon",
+    "chaos_cost": 5,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Fresh Fries Surge adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "trash_handoff_wave",
+    "name": "Trash Hand-Off Wave",
+    "category": "customer_friction",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Trash Hand-Off Wave adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "window_standoff",
+    "name": "Window Standoff",
+    "category": "beef",
+    "rarity": "uncommon",
+    "chaos_cost": 6,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Window Standoff adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "new_hire_blocks_grill",
+    "name": "New Hire Blocks Grill",
+    "category": "employee",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "New Hire Blocks Grill adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "mop_assistant_manager",
+    "name": "Mop Assistant Manager Rumor",
+    "category": "visual_gag",
+    "rarity": "rare",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Mop Assistant Manager Rumor adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "drive_thru_honk_war",
+    "name": "Drive-Thru Honk War",
+    "category": "queue_pressure",
+    "rarity": "rare",
+    "chaos_cost": 7,
+    "cognitive_load": 5,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Drive-Thru Honk War adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "training_video_ambush",
+    "name": "Training Video Ambush",
+    "category": "corporate",
+    "rarity": "rare",
+    "chaos_cost": 6,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Training Video Ambush adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "coupon_printer_jam",
+    "name": "Coupon Printer Jam",
+    "category": "equipment",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Coupon Printer Jam adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "freezer_door_sticks",
+    "name": "Freezer Door Sticks",
+    "category": "equipment",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Freezer Door Sticks adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "ice_machine_betrayal",
+    "name": "Ice Machine Betrayal",
+    "category": "equipment",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Ice Machine Betrayal adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "floor_fries_incident",
+    "name": "Floor Fries Incident",
+    "category": "cleanliness",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Floor Fries Incident adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "corporate_camera_crew",
+    "name": "Corporate Camera Crew",
+    "category": "corporate",
+    "rarity": "rare",
+    "chaos_cost": 8,
+    "cognitive_load": 5,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Corporate Camera Crew adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "influencer_raid_light",
+    "name": "Light Influencer Raid",
+    "category": "social_media",
+    "rarity": "rare",
+    "chaos_cost": 6,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Light Influencer Raid adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "dog_driver_vip",
+    "name": "Dog Driver VIP Arrival",
+    "category": "wholesome",
+    "rarity": "rare",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Dog Driver VIP Arrival adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "manager_phone_meltdown",
+    "name": "Manager Phone Meltdown",
+    "category": "manager",
+    "rarity": "uncommon",
+    "chaos_cost": 5,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Manager Phone Meltdown adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "group_chat_pingstorm",
+    "name": "Group Chat Pingstorm",
+    "category": "employee_drama",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Group Chat Pingstorm adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "rival_coupon_leak",
+    "name": "Rival Coupon Leak",
+    "category": "rival",
+    "rarity": "rare",
+    "chaos_cost": 7,
+    "cognitive_load": 5,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Rival Coupon Leak adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "register_drawer_suspicious",
+    "name": "Suspicious Register Drawer",
+    "category": "shady",
+    "rarity": "uncommon",
+    "chaos_cost": 5,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Suspicious Register Drawer adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "fryer_self_confidence",
+    "name": "Fryer Gains Self Confidence",
+    "category": "visual_gag",
+    "rarity": "rare",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Fryer Gains Self Confidence adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "customer_records_mistake",
+    "name": "Customer Starts Recording",
+    "category": "social_media",
+    "rarity": "uncommon",
+    "chaos_cost": 5,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Customer Starts Recording adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "pull_forward_rebellion_small",
+    "name": "Small Pull-Forward Rebellion",
+    "category": "queue_pressure",
+    "rarity": "rare",
+    "chaos_cost": 8,
+    "cognitive_load": 6,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Small Pull-Forward Rebellion adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "corporate_smile_check",
+    "name": "Corporate Smile Check",
+    "category": "corporate",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Corporate Smile Check adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "bathroom_key_foreshadow",
+    "name": "Bathroom Key Foreshadowing",
+    "category": "cross_business",
+    "rarity": "rare",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Bathroom Key Foreshadowing adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "power_flicker",
+    "name": "Power Flicker",
+    "category": "utility",
+    "rarity": "rare",
+    "chaos_cost": 5,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Power Flicker adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "manual_order_mode",
+    "name": "Manual Order Mode",
+    "category": "systems",
+    "rarity": "rare",
+    "chaos_cost": 6,
+    "cognitive_load": 5,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Manual Order Mode adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "review_bomb_spark",
+    "name": "Review Bomb Spark",
+    "category": "social_media",
+    "rarity": "rare",
+    "chaos_cost": 7,
+    "cognitive_load": 5,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Review Bomb Spark adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "water_cup_policy",
+    "name": "Water Cup Policy Incident",
+    "category": "customer_friction",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Water Cup Policy Incident adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "missing_straw_trial",
+    "name": "Missing Straw Trial",
+    "category": "customer_friction",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Missing Straw Trial adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "mystery_spill",
+    "name": "Mystery Spill",
+    "category": "cleanliness",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Mystery Spill adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "shift_start_bad_vibes",
+    "name": "Shift Starts With Bad Vibes",
+    "category": "workday_modifier",
+    "rarity": "common",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Shift Starts With Bad Vibes adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "bad_sleep_micro_errors",
+    "name": "Bad Sleep Micro Errors",
+    "category": "workday_modifier",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Bad Sleep Micro Errors adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "energy_drink_jitters",
+    "name": "Energy Drink Jitters",
+    "category": "workday_modifier",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Energy Drink Jitters adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "energy_crash_lunch",
+    "name": "Energy Crash During Lunch",
+    "category": "workday_modifier",
+    "rarity": "rare",
+    "chaos_cost": 6,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Energy Crash During Lunch adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [
+      "tutorial_first_customer"
+    ],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "late_bus_start",
+    "name": "Late Bus Start",
+    "category": "commute",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Late Bus Start adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "gas_light_panic",
+    "name": "Gas Light Panic",
+    "category": "commute",
+    "rarity": "common",
+    "chaos_cost": 3,
+    "cognitive_load": 2,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Gas Light Panic adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "customer_at_apartment_callback",
+    "name": "Customer Recognizes You Off Shift",
+    "category": "outside_world",
+    "rarity": "rare",
+    "chaos_cost": 5,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Customer Recognizes You Off Shift adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "neighbor_party_debuff",
+    "name": "Neighbor Party Sleep Debuff",
+    "category": "home",
+    "rarity": "common",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Neighbor Party Sleep Debuff adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 1,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "employee_texts_while_ordering",
+    "name": "Employee Texts During Order",
+    "category": "employee_drama",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Employee Texts During Order adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "snitch_report_pending",
+    "name": "Snitch Report Pending",
+    "category": "social",
+    "rarity": "uncommon",
+    "chaos_cost": 4,
+    "cognitive_load": 3,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Snitch Report Pending adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "store_culture_weird",
+    "name": "Store Culture Gets Weird",
+    "category": "reputation",
+    "rarity": "rare",
+    "chaos_cost": 5,
+    "cognitive_load": 4,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Store Culture Gets Weird adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "order_screen_sass",
+    "name": "Order Screen Sass",
+    "category": "ui_gag",
+    "rarity": "rare",
+    "chaos_cost": 1,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "Order Screen Sass adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  },
+  {
+    "id": "hr_printer_awakes",
+    "name": "HR Printer Awakes",
+    "category": "hr",
+    "rarity": "rare",
+    "chaos_cost": 2,
+    "cognitive_load": 1,
+    "allowed_business_types": [
+      "fast_food_drive_thru"
+    ],
+    "description": "HR Printer Awakes adds structured comedy pressure with cooldowns and counterplay.",
+    "trigger_conditions": [
+      "shift_active"
+    ],
+    "blocked_conditions": [],
+    "counterplay": [
+      "manager_voice",
+      "apology",
+      "fresh_remake",
+      "assign_npc_help",
+      "recover_window"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "beef_change",
+      "time_pressure"
+    ],
+    "cooldown_shifts": 2,
+    "systems_touched": [
+      "shift",
+      "orders",
+      "hud",
+      "eventlog",
+      "reviews",
+      "hr",
+      "beef",
+      "cash_xp"
+    ]
+  }
+]

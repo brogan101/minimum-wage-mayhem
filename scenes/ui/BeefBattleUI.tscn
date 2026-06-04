@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/BeefBattleUI.gd" id="1_battle_ui"]
+
+[node name="BeefBattleUI" type="Control"]
+script = ExtResource("1_battle_ui")
+visible = false
+layout_mode = 3
+anchors_preset = 15
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+offset_left = 300.0
+offset_top = 200.0
+offset_right = 700.0
+offset_bottom = 400.0
+
+[node name="DialogueLabel" type="Label" parent="Panel"]
+layout_mode = 2
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 280.0
+offset_bottom = 100.0
+text = "Customer: I've been waiting for ten minutes!"
+
+[node name="Options" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+offset_left = 50.0
+offset_top = 120.0
+offset_right = 250.0
+offset_bottom = 250.0
+
+[node name="BuzzwordButton" type="Button" parent="Options"]
+layout_mode = 2
+text = "Corporate Apology"
+
+[node name="SavageButton" type="Button" parent="Options"]
+layout_mode = 2
+text = "Savage Comeback"

@@ -1,0 +1,80 @@
+{
+  "labels": [
+    {
+      "id": "reliable_worker",
+      "name": "Reliable Worker"
+    },
+    {
+      "id": "sauce_criminal",
+      "name": "Sauce Criminal"
+    },
+    {
+      "id": "customer_whisperer",
+      "name": "Customer Whisperer"
+    },
+    {
+      "id": "break_room_menace",
+      "name": "Break Room Menace"
+    },
+    {
+      "id": "corporate_puppet",
+      "name": "Corporate Puppet"
+    },
+    {
+      "id": "staff_hero",
+      "name": "Staff Hero"
+    },
+    {
+      "id": "register_goblin",
+      "name": "Register Goblin"
+    },
+    {
+      "id": "fryer_gremlin",
+      "name": "Fryer Gremlin"
+    },
+    {
+      "id": "coupon_enemy",
+      "name": "Coupon Enemy"
+    },
+    {
+      "id": "manager_material",
+      "name": "Manager Material"
+    },
+    {
+      "id": "walking_hr_report",
+      "name": "Walking HR Report"
+    },
+    {
+      "id": "shift_savior",
+      "name": "Shift Savior"
+    },
+    {
+      "id": "drama_magnet",
+      "name": "Drama Magnet"
+    },
+    {
+      "id": "free_food_risk",
+      "name": "Free Food Risk"
+    },
+    {
+      "id": "pull_forward_tyrant",
+      "name": "Pull-Forward Tyrant"
+    },
+    {
+      "id": "mop_fighter",
+      "name": "Mop Fighter"
+    },
+    {
+      "id": "store_legend",
+      "name": "Store Legend"
+    },
+    {
+      "id": "future_manager",
+      "name": "Future Manager"
+    },
+    {
+      "id": "somehow_still_employed",
+      "name": "Somehow Still Employed"
+    }
+  ]
+}

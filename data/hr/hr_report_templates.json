@@ -1,0 +1,15 @@
+{
+  "templates": [
+    "Employee attempted de-escalation using [OBJECT].",
+    "Customer became upset after receiving [WRONG_ITEM] instead of [REQUESTED_ITEM].",
+    "Manager described [INCIDENT] as a learning opportunity.",
+    "Security footage unclear because [STUPID_REASON].",
+    "Coworker [NAME] stated they were not present despite being visible in footage.",
+    "Corporate recommends [TRAINING_MODULE].",
+    "Customer alleges the phrase 'pull forward' was used with intent.",
+    "Employee morale increased for concerning reasons.",
+    "Promotion review delayed pending investigation into [INCIDENT].",
+    "Register discrepancy blamed on [OBJECT].",
+    "Employee used [FOOD_ITEM] as conflict resolution tool."
+  ]
+}

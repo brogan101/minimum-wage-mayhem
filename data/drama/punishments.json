@@ -1,0 +1,230 @@
+[
+  {
+    "id": "shame_hat",
+    "name": "The Hat of Shame",
+    "desc": "A neon pink hat that says I AM A SLACKER.",
+    "effect": "Charisma -50"
+  },
+  {
+    "id": "mascot_suit",
+    "name": "The Burger Suit",
+    "desc": "A giant foam burger. You can barely see.",
+    "effect": "Speed -40%"
+  },
+  {
+    "id": "bathroom_brush",
+    "name": "The Eternal Scrub",
+    "desc": "You must clean the bathrooms for 3 shifts.",
+    "effect": "Station Blocked"
+  },
+  {
+    "id": "register_ban",
+    "name": "Till Exile",
+    "desc": "You are forbidden from touching the money.",
+    "effect": "No Cash Handling"
+  },
+  {
+    "id": "video_hell",
+    "name": "Compliance Training",
+    "desc": "A 4-hour video on how to smile correctly.",
+    "effect": "Time Loss"
+  },
+  {
+    "id": "probation",
+    "name": "Strict Probation",
+    "desc": "Every mistake is now a firing offense.",
+    "effect": "Beef x2"
+  },
+  {
+    "id": "demotion",
+    "name": "Back to the Fries",
+    "desc": "You have been demoted to Fry Rookie.",
+    "effect": "Rank -1"
+  },
+  {
+    "id": "accountability_hand",
+    "name": "The Accountability Hand",
+    "desc": "A giant foam hand follows you for one shift and points at every bad decision.",
+    "effect": "Employee Morale -10"
+  },
+  {
+    "id": "pun_shame_hat",
+    "name": "Shame Hat",
+    "severity": "silly",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_mandatory_training_video",
+    "name": "Mandatory Training Video",
+    "severity": "minor",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_sauce_privileges_revoked",
+    "name": "Sauce Privileges Revoked",
+    "severity": "moderate",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_manager_voice_probation",
+    "name": "Manager Voice Probation",
+    "severity": "silly",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_break_room_chair_ban",
+    "name": "Break Room Chair Ban",
+    "severity": "minor",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_corporate_clipboard_duty",
+    "name": "Corporate Clipboard Duty",
+    "severity": "moderate",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_mop_apology_letter",
+    "name": "Mop Apology Letter",
+    "severity": "silly",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_register_timeout",
+    "name": "Register Timeout",
+    "severity": "minor",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_forced_smile_audit",
+    "name": "Forced Smile Audit",
+    "severity": "moderate",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_transfer_threat",
+    "name": "Transfer Threat",
+    "severity": "silly",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_probation_shift",
+    "name": "Probation Shift",
+    "severity": "minor",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_community_service_shift_fictional",
+    "name": "Community Service Shift Fictional",
+    "severity": "moderate",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_hr_reflection_worksheet",
+    "name": "HR Reflection Worksheet",
+    "severity": "silly",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_pet_fish_disapproval_notice",
+    "name": "Pet Fish Disapproval Notice",
+    "severity": "minor",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pun_no_aux_cord_in_kitchen",
+    "name": "No Aux Cord In Kitchen",
+    "severity": "moderate",
+    "effect": "comedic_consequence_with_gameplay_modifier",
+    "systems_touched": [
+      "hr",
+      "morale",
+      "corporate",
+      "eventlog"
+    ]
+  }
+]

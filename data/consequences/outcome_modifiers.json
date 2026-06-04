@@ -1,0 +1,43 @@
+{
+  "modifiers": [
+    {
+      "id": "low_chaos",
+      "detection_modifier": 15,
+      "beef_modifier": 0
+    },
+    {
+      "id": "huge_rush",
+      "detection_modifier": -20,
+      "beef_modifier": 10
+    },
+    {
+      "id": "corporate_climber_nearby",
+      "detection_modifier": 30,
+      "hr_modifier": 20
+    },
+    {
+      "id": "loyal_coworker_nearby",
+      "detection_modifier": -10,
+      "staff_modifier": 5
+    },
+    {
+      "id": "checked_out_manager",
+      "detection_modifier": -15,
+      "manager_trust_modifier": 0
+    },
+    {
+      "id": "panic_manager",
+      "beef_modifier": 10,
+      "manager_suspicion_modifier": 10
+    },
+    {
+      "id": "player_high_performance",
+      "promotion_modifier": 5
+    },
+    {
+      "id": "active_writeups",
+      "promotion_modifier": -8,
+      "hr_modifier": 10
+    }
+  ]
+}

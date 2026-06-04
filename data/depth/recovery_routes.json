@@ -1,0 +1,70 @@
+{
+  "routes": [
+    {
+      "id": "apologize_and_remake",
+      "fixes": [
+        "food_error",
+        "minor_beef"
+      ],
+      "cost": "time_lost",
+      "reward": "customer_karma_up"
+    },
+    {
+      "id": "own_mistake_to_manager",
+      "fixes": [
+        "register_issue",
+        "wrong_bag"
+      ],
+      "cost": "manager_note",
+      "reward": "trust_long_term"
+    },
+    {
+      "id": "cover_shift_for_coworker",
+      "fixes": [
+        "coworker_loyalty_low"
+      ],
+      "cost": "fatigue",
+      "reward": "staff_karma_up"
+    },
+    {
+      "id": "complete_fake_training",
+      "fixes": [
+        "hr_report_minor"
+      ],
+      "cost": "time",
+      "reward": "writeup_reduction"
+    },
+    {
+      "id": "repair_object_reputation",
+      "fixes": [
+        "cursed_object"
+      ],
+      "cost": "side_task",
+      "reward": "object_label_softened"
+    },
+    {
+      "id": "manager_trial_comeback",
+      "fixes": [
+        "promotion_delay"
+      ],
+      "cost": "hard_shift",
+      "reward": "promotion_boost"
+    },
+    {
+      "id": "clean_shift_streak",
+      "fixes": [
+        "high_suspicion"
+      ],
+      "cost": "no_shady_actions",
+      "reward": "suspicion_decay"
+    },
+    {
+      "id": "staff_meal_peace_offering",
+      "fixes": [
+        "staff_morale_low"
+      ],
+      "cost": "cash",
+      "reward": "coworker_loyalty_up"
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "gossip_id": "player_fought_party_guests_with_mop",
+    "display_name": "Player Fought Party Guests With Mop",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "store_gives_free_sauce_if_you_cry",
+    "display_name": "Store Gives Free Sauce If You Cry",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "manager_promoted_a_mop",
+    "display_name": "Manager Promoted A Mop",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "dog_driver_gets_vip_treatment",
+    "display_name": "Dog Driver Gets VIP Treatment",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "player_is_corporate_pet",
+    "display_name": "Player Is Corporate Pet",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "break_room_has_sauce_economy",
+    "display_name": "Break Room Has Sauce Economy",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "fryer_is_haunted",
+    "display_name": "Fryer Is Haunted",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "kyle_died_again_rumor",
+    "display_name": "Kyle Died Again Rumor",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "someone_lives_in_freezer",
+    "display_name": "Someone Lives In Freezer",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "customer_said_burger_had_vibes",
+    "display_name": "Customer Said Burger Had Vibes",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "receipt_font_lawsuit",
+    "display_name": "Receipt Font Lawsuit",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "player_energy_drink_vibrating",
+    "display_name": "Player Energy Drink Vibrating",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "ghost_employee_real_maybe",
+    "display_name": "Ghost Employee Real Maybe",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "snitch_screenshot_leak",
+    "display_name": "Snitch Screenshot Leak",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "forbidden_side_hustle_whisper",
+    "display_name": "Forbidden Side Hustle Whisper",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "relationship_fallout_rumor",
+    "display_name": "Relationship Fallout Rumor",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "rival_store_coupon_leak",
+    "display_name": "Rival Store Coupon Leak",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "pet_fish_knows_too_much",
+    "display_name": "Pet Fish Knows Too Much",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "manager_voice_failed_court",
+    "display_name": "Manager Voice Failed Court",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  },
+  {
+    "gossip_id": "napkin_riot_coming",
+    "display_name": "Napkin Riot Coming",
+    "truth_level": "true_false_or_exaggerated",
+    "spread_speed": "medium",
+    "effects": [
+      "reputation_tag",
+      "customer_mix_shift",
+      "staff_morale_shift"
+    ],
+    "decay_shifts": 3,
+    "player_response_options": [
+      "deny",
+      "lean_in",
+      "fix_root_cause",
+      "snitch",
+      "ignore"
+    ],
+    "systems_touched": [
+      "gossip",
+      "reputation",
+      "customers",
+      "staff"
+    ]
+  }
+]

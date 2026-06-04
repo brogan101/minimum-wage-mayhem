@@ -1,0 +1,39 @@
+{
+  "actions": [
+    {
+      "id": "manager_voice",
+      "type": "deescalate",
+      "risk": 10
+    },
+    {
+      "id": "offer_fresh_fries",
+      "type": "deescalate",
+      "risk": 5
+    },
+    {
+      "id": "throw_sauce_packet",
+      "type": "slapstick",
+      "risk": 25
+    },
+    {
+      "id": "block_with_tray",
+      "type": "defensive_slapstick",
+      "risk": 15
+    },
+    {
+      "id": "deploy_wet_floor_sign",
+      "type": "absurd_deescalate",
+      "risk": 20
+    },
+    {
+      "id": "sir_this_is_drive_thru",
+      "type": "forbidden_phrase",
+      "risk": 35
+    },
+    {
+      "id": "try_bigger_person",
+      "type": "deescalate",
+      "risk": 5
+    }
+  ]
+}

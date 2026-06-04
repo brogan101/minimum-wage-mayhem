@@ -1,0 +1,50 @@
+{
+  "trainee": [
+    "complete_tutorial_shift",
+    "serve_3_customers"
+  ],
+  "crew_member": [
+    "complete_3_shifts",
+    "accuracy_70",
+    "finish_basic_training"
+  ],
+  "fry_cook": [
+    "complete_grill_certification",
+    "complete_fryer_certification",
+    "waste_under_limit"
+  ],
+  "register_goblin": [
+    "complete_register_certification",
+    "resolve_payment_issue",
+    "register_errors_low"
+  ],
+  "window_warrior": [
+    "complete_drive_thru_rush",
+    "line_wait_under_limit",
+    "resolve_beef_without_manager"
+  ],
+  "crew_trainer": [
+    "train_one_coworker",
+    "maintain_shift_performance"
+  ],
+  "shift_lead": [
+    "run_successful_shift",
+    "handle_callout",
+    "keep_morale_stable"
+  ],
+  "key_holder": [
+    "complete_opening_checklist",
+    "complete_closing_checklist",
+    "register_count_success"
+  ],
+  "assistant_manager": [
+    "complete_manager_training",
+    "handle_inspection_warning",
+    "run_profitable_shift"
+  ],
+  "store_manager": [
+    "pass_manager_trial_shift",
+    "active_writeups_below_limit",
+    "corporate_approval_threshold"
+  ]
+}

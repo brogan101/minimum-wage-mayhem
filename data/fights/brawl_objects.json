@@ -1,0 +1,31 @@
+{
+  "player_side_objects": [
+    "mop",
+    "wet_floor_sign",
+    "sauce_bottle",
+    "receipt_roll",
+    "bag_of_buns",
+    "frozen_fry_bag",
+    "clipboard",
+    "empty_cup_sleeve",
+    "drive_thru_headset",
+    "trash_bag",
+    "rubber_chicken_promo",
+    "giant_novelty_coupon"
+  ],
+  "customer_side_objects": [
+    "drink_cup",
+    "food_bag",
+    "phone",
+    "coupon_stack",
+    "umbrella",
+    "sunglasses",
+    "half_eaten_burger",
+    "loose_fries",
+    "receipt_chain",
+    "giant_tumbler",
+    "parking_lot_cone",
+    "kids_toy"
+  ],
+  "selection_rule": "pick_funny_nearby_object_not_dangerous"
+}

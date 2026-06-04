@@ -1,0 +1,145 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Minimum Wage Mayhem"
+run/main_scene="res://scenes/world/Main.tscn"
+config/features=PackedStringArray("4.3")
+
+[autoload]
+
+TutorialManager="res://scripts/managers/TutorialManager.gd"
+SaveSystem="res://scripts/managers/SaveSystem.gd"
+LifeCycleManager="res://scripts/managers/LifeCycleManager.gd"
+ShiftResultManager="res://scripts/managers/ShiftResultManager.gd"
+JuiceManager="res://scripts/managers/JuiceManager.gd"
+InputBootstrap="res://scripts/managers/InputBootstrap.gd"
+OrderManager="res://scripts/managers/OrderManager.gd"
+WalletManager="res://scripts/managers/WalletManager.gd"
+CareerManager="res://scripts/managers/CareerManager.gd"
+BeefManager="res://scripts/managers/BeefManager.gd"
+StatManager="res://scripts/managers/StatManager.gd"
+ShadyManager="res://scripts/managers/ShadyManager.gd"
+AudioManager="res://scripts/managers/AudioManager.gd"
+CorporateManager="res://scripts/managers/CorporateManager.gd"
+OrderGenerator="res://scripts/managers/OrderGenerator.gd"
+ChaosEngine="res://scripts/managers/ChaosEngine.gd"
+EventLog="res://scripts/managers/EventLog.gd"
+HRReportGenerator="res://scripts/managers/HRReportGenerator.gd"
+BeefBattleManager="res://scripts/managers/BeefBattleManager.gd"
+MentalFractureManager="res://scripts/managers/MentalFractureManager.gd"
+
+[input]
+
+move_forward={
+"deadzone": 0.2,
+"events": []
+}
+move_back={
+"deadzone": 0.2,
+"events": []
+}
+move_backward={
+"deadzone": 0.2,
+"events": []
+}
+move_left={
+"deadzone": 0.2,
+"events": []
+}
+move_right={
+"deadzone": 0.2,
+"events": []
+}
+look_left={
+"deadzone": 0.2,
+"events": []
+}
+look_right={
+"deadzone": 0.2,
+"events": []
+}
+look_up={
+"deadzone": 0.2,
+"events": []
+}
+look_down={
+"deadzone": 0.2,
+"events": []
+}
+sprint={
+"deadzone": 0.2,
+"events": []
+}
+interact={
+"deadzone": 0.2,
+"events": []
+}
+pickup_drop={
+"deadzone": 0.2,
+"events": []
+}
+use_item={
+"deadzone": 0.2,
+"events": []
+}
+throw_item={
+"deadzone": 0.2,
+"events": []
+}
+throw={
+"deadzone": 0.2,
+"events": []
+}
+jump={
+"deadzone": 0.2,
+"events": []
+}
+pause={
+"deadzone": 0.2,
+"events": []
+}
+open_phone={
+"deadzone": 0.2,
+"events": []
+}
+open_order_screen={
+"deadzone": 0.2,
+"events": []
+}
+open_manager_clipboard={
+"deadzone": 0.2,
+"events": []
+}
+toggle_debug_overlay={
+"deadzone": 0.2,
+"events": []
+}
+toggle_perspective={
+"deadzone": 0.2,
+"events": []
+}
+toggle_view={
+"deadzone": 0.2,
+"events": []
+}
+confirm={
+"deadzone": 0.2,
+"events": []
+}
+cancel={
+"deadzone": 0.2,
+"events": []
+}
+
+[rendering]
+
+textures/canvas_textures/default_texture=""

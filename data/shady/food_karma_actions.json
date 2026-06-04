@@ -1,0 +1,196 @@
+{
+  "actions": [
+    {
+      "id": "make_correctly",
+      "karma_delta": 2,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "remake_honestly",
+      "karma_delta": 2,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "cut_corner",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "serve_dropped_abstract",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "serve_burnt",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "use_old_fries",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "use_wrong_bag",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "add_petty_sauce",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "forget_sauce_on_purpose",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "give_rude_customer_worse_version",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "give_nice_customer_extra_care",
+      "karma_delta": 2,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "confess_mistake",
+      "karma_delta": 2,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "cover_up_mistake",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "blame_new_hire",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "blame_equipment",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    },
+    {
+      "id": "blame_customer_customization",
+      "karma_delta": -4,
+      "systems_affected": [
+        "food_karma",
+        "customer_karma",
+        "review_chance",
+        "hr_risk",
+        "guilt_events"
+      ],
+      "safety_note": "Abstract food-quality morality choice; no real tampering steps."
+    }
+  ]
+}

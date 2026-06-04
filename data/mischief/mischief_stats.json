@@ -1,0 +1,44 @@
+{
+  "stats": {
+    "player_mischief_level": {
+      "min": 0,
+      "max": 100,
+      "levels": [
+        "professional",
+        "expected_joker",
+        "closely_watched",
+        "walking_hr_incident"
+      ]
+    },
+    "coworker_prank_trust": {
+      "min": -100,
+      "max": 100,
+      "meaning": "How comfortable coworkers are joking with player"
+    },
+    "manager_suspicion": {
+      "min": 0,
+      "max": 100,
+      "meaning": "How much management blames player for weirdness"
+    },
+    "prank_war_heat": {
+      "min": 0,
+      "max": 8,
+      "levels": [
+        "none",
+        "friendly_jokes",
+        "annoying_nonsense",
+        "sides_forming",
+        "station_disruption",
+        "customer_notices",
+        "manager_intervention",
+        "hr_report",
+        "legendary_prank_disaster"
+      ]
+    },
+    "restaurant_stability": {
+      "min": 0,
+      "max": 100,
+      "meaning": "Operational/physical stability of the store"
+    }
+  }
+}

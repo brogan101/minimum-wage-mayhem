@@ -1,0 +1,707 @@
+{
+  "pranks": [
+    {
+      "id": "party_hat_mop",
+      "description": "Put a tiny party hat on the mop.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "staff_morale_up"
+      ],
+      "possible_risks": [
+        "manager_suspicion_small"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "chosen_headset",
+      "description": "Rename the good headset The Chosen One.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "coworker_laugh"
+      ],
+      "possible_risks": [
+        "eventlog_joke"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_motivational_quote",
+      "description": "Replace corporate poster with fake motivational quote.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "staff_morale_up"
+      ],
+      "possible_risks": [
+        "manager_suspicion_small"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "printer_googly_eyes",
+      "description": "Put googly eyes on the receipt printer.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "staff_morale_up"
+      ],
+      "possible_risks": [
+        "inspection_risk_small"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "department_of_sauce",
+      "description": "Label the sauce rack Department of Sauce.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "morale_up"
+      ],
+      "possible_risks": [
+        "customer_confusion_small"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "ghost_employee_office",
+      "description": "Put sticky note on freezer: Ghost Employee Office.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "coworker_laugh"
+      ],
+      "possible_risks": [
+        "new_hire_confusion_small"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "survive_whiteboard",
+      "description": "Change break room whiteboard to Today's Goal: Survive.",
+      "severity_level": 1,
+      "category": "harmless",
+      "possible_rewards": [
+        "morale_up"
+      ],
+      "possible_risks": [
+        "manager_sigh"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "harmless"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "hide_good_headset",
+      "description": "Hide the good headset.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "prank_war_heat_up"
+      ],
+      "possible_risks": [
+        "drive_thru_accuracy_down"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "move_name_tag",
+      "description": "Move coworker's name tag.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "coworker_reaction"
+      ],
+      "possible_risks": [
+        "coworker_anger_possible"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "swap_station_labels",
+      "description": "Swap station labels.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "mischief_xp"
+      ],
+      "possible_risks": [
+        "station_confusion"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_out_of_sauce",
+      "description": "Put fake Out of Sauce sign up.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "staff_laugh"
+      ],
+      "possible_risks": [
+        "customer_confusion"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "clipboard_in_freezer",
+      "description": "Put manager clipboard in the freezer.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "staff_morale_up"
+      ],
+      "possible_risks": [
+        "manager_suspicion_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_callout_board",
+      "description": "Fill break room board with fake callout excuses.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "staff_laugh"
+      ],
+      "possible_risks": [
+        "manager_suspicion_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_corporate_rule_memo",
+      "description": "Create fake new corporate rule memo.",
+      "severity_level": 2,
+      "category": "annoying",
+      "possible_rewards": [
+        "prank_side_quest_possible"
+      ],
+      "possible_risks": [
+        "policy_confusion"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "annoying"
+      ],
+      "fallback": "generic_harmless_prank",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_coupon_live",
+      "description": "Fake coupon goes live by mistake.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "side_quest_unlock"
+      ],
+      "possible_risks": [
+        "coupon_war_risk"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "wrong_order_numbers",
+      "description": "Wrong order numbers get printed.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "mischief_xp"
+      ],
+      "possible_risks": [
+        "order_mistakes"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "sauce_labels_swapped",
+      "description": "Sauce labels get swapped.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "staff_laugh"
+      ],
+      "possible_risks": [
+        "customer_beef_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "headset_voice_filter",
+      "description": "Drive-thru headset voice filter activates.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "viral_clip_chance"
+      ],
+      "possible_risks": [
+        "customer_confusion"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "register_renamed_buttons",
+      "description": "Register button renamed incorrectly.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "eventlog_joke"
+      ],
+      "possible_risks": [
+        "register_errors_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "new_hire_fake_policy",
+      "description": "New Hire believes fake policy.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "quest_chain_start"
+      ],
+      "possible_risks": [
+        "training_setback"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_promotion_ten_minutes",
+      "description": "Coworker thinks they were promoted for 10 minutes.",
+      "severity_level": 3,
+      "category": "shift_disrupting",
+      "possible_rewards": [
+        "morale_swing"
+      ],
+      "possible_risks": [
+        "staff_drama"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "shift_disrupting"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "fake_inspection_real",
+      "description": "Fake corporate inspection accidentally summons real corporate.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "legendary_chain_possible"
+      ],
+      "possible_risks": [
+        "corporate_approval_down"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "sauce_pyramid_collapse",
+      "description": "Sauce packet pyramid collapses during rush.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "object_of_shift"
+      ],
+      "possible_risks": [
+        "station_delay",
+        "cleanliness_down"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "wrong_window_sign",
+      "description": "Prank sign sends customers to wrong window.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "viral_clip_chance"
+      ],
+      "possible_risks": [
+        "line_delay",
+        "beef_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "break_room_argument_prank",
+      "description": "Break room prank starts staff argument.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "drama_chain_start"
+      ],
+      "possible_risks": [
+        "staff_morale_split"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "free_fries_rumor",
+      "description": "Fake free fries rumor reaches drive-thru line.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "legendary_chain_possible"
+      ],
+      "possible_risks": [
+        "customer_queue_chaos"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "mop_bucket_spill_prank",
+      "description": "Coworker prank causes mop bucket spill.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "repair_task"
+      ],
+      "possible_risks": [
+        "cleanliness_down",
+        "hr_risk"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    },
+    {
+      "id": "manager_training_retaliation",
+      "description": "Manager gets pranked and retaliates with mandatory training.",
+      "severity_level": 4,
+      "category": "restaurant_mayhem",
+      "possible_rewards": [
+        "fake_training_assigned"
+      ],
+      "possible_risks": [
+        "manager_trust_down"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_suspicion",
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "mischief",
+        "prank",
+        "restaurant_mayhem"
+      ],
+      "fallback": "generic_prank_backfire",
+      "safety_note": "Cartoon workplace prank; no real sabotage instructions."
+    }
+  ]
+}

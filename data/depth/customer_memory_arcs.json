@@ -1,0 +1,123 @@
+{
+  "arcs": [
+    {
+      "id": "patient_regular",
+      "stages": [
+        "first_polite_order",
+        "remembers_player",
+        "tips_after_good_shift",
+        "warns_about_bad_customer"
+      ],
+      "tone": "normal",
+      "hooks": [
+        "customer_memory",
+        "tips",
+        "review"
+      ]
+    },
+    {
+      "id": "coupon_rival_softening",
+      "stages": [
+        "coupon_argument",
+        "player_handles_fairly",
+        "customer_returns_suspicious",
+        "becomes_weird_regular"
+      ],
+      "tone": "balanced",
+      "hooks": [
+        "beef",
+        "review",
+        "reputation"
+      ]
+    },
+    {
+      "id": "app_confusion_regular",
+      "stages": [
+        "app_problem",
+        "blames_store",
+        "player_teaches_fix_abstractly",
+        "regular_brings_screenshot_binder"
+      ],
+      "tone": "friction",
+      "hooks": [
+        "review",
+        "memory",
+        "mission"
+      ]
+    },
+    {
+      "id": "dog_driver_fan",
+      "stages": [
+        "dog_barks_order",
+        "player_gets_it_right",
+        "dog_driver_tips",
+        "dog_becomes_shift_good_omen"
+      ],
+      "tone": "weird",
+      "hooks": [
+        "tips",
+        "morale",
+        "object_memory"
+      ]
+    },
+    {
+      "id": "exact_change_grudge",
+      "stages": [
+        "coin_delay",
+        "line_honks",
+        "player_recovers",
+        "customer_returns_with_labeled_bag_of_coins"
+      ],
+      "tone": "friction",
+      "hooks": [
+        "line_pressure",
+        "memory"
+      ]
+    },
+    {
+      "id": "normal_family_guilt",
+      "stages": [
+        "simple_order",
+        "player_makes_choice",
+        "kid_thanks_player",
+        "food_karma_callback"
+      ],
+      "tone": "normal",
+      "hooks": [
+        "food_karma",
+        "guilt",
+        "recap"
+      ]
+    },
+    {
+      "id": "review_misunderstander",
+      "stages": [
+        "witnesses_chaos",
+        "leaves_wrong_review",
+        "corporate_reads_it",
+        "player_can_respond_as_manager"
+      ],
+      "tone": "balanced",
+      "hooks": [
+        "review",
+        "career",
+        "manager_mode"
+      ]
+    },
+    {
+      "id": "pull_forward_enemy",
+      "stages": [
+        "takes_pull_forward_personally",
+        "player_deescalates_or_fails",
+        "future_line_event",
+        "possible_rival_or_recovery"
+      ],
+      "tone": "friction",
+      "hooks": [
+        "beef",
+        "customer_rival",
+        "review"
+      ]
+    }
+  ]
+}

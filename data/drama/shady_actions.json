@@ -1,0 +1,592 @@
+[
+  {
+    "id": "fry_grease",
+    "name": "Fryer Grease Spill",
+    "risk": 20,
+    "reward": "none",
+    "consequence": "Slippery Floor",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 5,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "burger_theft",
+    "name": "Snatched a Burger",
+    "risk": 40,
+    "reward": "hunger_reduction",
+    "consequence": "Warning",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 10,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "register_skim",
+    "name": "Pocketing the Change",
+    "risk": 30,
+    "reward": "cash_increase",
+    "consequence": "Audit",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 7,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "nap_time",
+    "name": "Freezer Nap",
+    "risk": 50,
+    "reward": "energy_gain",
+    "consequence": "Probation",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 12,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "sauce_trade",
+    "name": "Black Market Sauce",
+    "risk": 60,
+    "reward": "high_cash",
+    "consequence": "Sack",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 15,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "fake_mop",
+    "name": "The Phantom Clean",
+    "risk": 10,
+    "reward": "stress_reduction",
+    "consequence": "Bathroom Duty",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 2,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "coupon_fraud",
+    "name": "Forging Coupons",
+    "risk": 35,
+    "reward": "customer_happiness",
+    "consequence": "Training Video",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "trash_nap",
+    "name": "Hiding in the Dumpster",
+    "risk": 70,
+    "reward": "total_peace",
+    "consequence": "Firing",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 17,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "inventory_lie",
+    "name": "Lying about Stock",
+    "risk": 25,
+    "reward": "less_work",
+    "consequence": "Audit",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 6,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "friend_freebie",
+    "name": "The 'Homie' Discount",
+    "risk": 20,
+    "reward": "social_stat",
+    "consequence": "Warning",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "suspicion_gain": 5,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "accept_writeup"
+    ],
+    "safety_note": "Fictional abstract workplace risk; no real-world instructions."
+  },
+  {
+    "id": "quality_control_fries",
+    "name": "Quality Control Fries",
+    "description": "Eat a small amount of inventory as a hunger shortcut.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "fake_clean",
+    "name": "Fake Clean",
+    "description": "Pretend a spill is handled with no actual cleaning.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "coupon_button_abuse",
+    "name": "Coupon Button Abuse",
+    "description": "Use fictional coupon logic too generously.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "hide_bad_review",
+    "name": "Hide Bad Review",
+    "description": "Try to bury a bad review from the manager clipboard.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "cover_employee_side_hustle",
+    "name": "Cover Employee Side Hustle",
+    "description": "Cover a vague off-books side hustle; abstract only.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "moderate",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "manager_understaff_gamble",
+    "name": "Understaff Gamble",
+    "description": "As manager, save labor short-term and risk chaos.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "moderate",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "delay_equipment_report",
+    "name": "Delay Equipment Report",
+    "description": "Pretend broken equipment can wait.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  },
+  {
+    "id": "clock_in_confidence",
+    "name": "Clock-In Confidence",
+    "description": "Mark yourself ready while wildly unprepared.",
+    "risk": 35,
+    "reward": "short_term_relief",
+    "consequence": "suspicion_and_hr_seed",
+    "severity": "minor",
+    "actor_types": [
+      "player",
+      "npc_employee",
+      "player_manager"
+    ],
+    "business_types": [
+      "fast_food_drive_thru",
+      "coffee_shop",
+      "gas_station",
+      "pizza_shop",
+      "movie_theater"
+    ],
+    "suspicion_gain": 8,
+    "witnesses": [
+      "coworker",
+      "customer",
+      "corporate_climber"
+    ],
+    "recovery_options": [
+      "confess",
+      "fix_later",
+      "snitch_on_self",
+      "accept_writeup"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "hr",
+      "morale",
+      "corporate"
+    ],
+    "safety_note": "Abstract fictional risk/reward choice. No real-world instructions."
+  }
+]

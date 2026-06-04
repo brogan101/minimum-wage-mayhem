@@ -1,0 +1,132 @@
+# PHASE RUN ALL PROMPT — V21 HARD-AUDITED CANONICAL ORDER
+
+Paste this to Codex:
+
+Read `AGENTS.md`, `CODEX_START_HERE.md`, `V21_HARD_AUDIT_REPORT.md`, and this file first.
+
+Use this repo as the source of truth. Work phase-by-phase. Do not skip ahead. Do not claim completion without proof from validation and actual files changed.
+
+## Hard Scope
+
+- Godot 4.x
+- GDScript
+- Fully 3D walk-around interaction
+- Single-player local-only
+- Offline-first
+- Local save files only
+- Controller-compatible input through Godot InputMap actions
+- No multiplayer, no co-op, no servers, no online backend, no remote database
+- Adult/shady content must stay fictional, abstract, UI-choice based, non-instructional, and consequence-driven
+
+## Mandatory After Every Phase
+
+1. Run `python tools/validate_all.py`.
+2. If Godot is available, run `godot4 --headless --path . --quit` or `godot --headless --path . --quit`.
+3. Update `IMPLEMENTATION_STATUS.md`.
+4. Update `VALIDATION_REPORT.md`.
+5. Update `PHASE_LOG.md`.
+6. Update `SOLO_SHIFT_ACCEPTANCE_TEST.md`.
+7. Report what the player can actually do now.
+
+## Canonical Phase Order
+
+### Phase 0 — Repo Audit And Validation Baseline
+- Run all validators.
+- Fix boot-blocking parse/JSON/path/local-only errors.
+- Confirm project opens as Godot 4.x structure.
+- Do not start gameplay features until validation passes.
+
+### Phase 1 — Boot + 3D Player + Input
+- Main scene loads.
+- Player spawns in 3D.
+- Keyboard/mouse movement/look works.
+- Controller-compatible InputMap actions exist.
+- No multiplayer/server code active.
+
+### Phase 2 — Interaction + Pickup/Drop
+- Raycast interaction works.
+- Interact prompts exist.
+- Pickup/drop works.
+- Held item fallback exists.
+
+### Phase 3 — Stations + Food State
+- One station works.
+- Food changes RAW -> COOKED -> BURNT.
+- Visual feedback exists.
+- EventLog records station and item changes.
+
+### Phase 4 — Customer + Order + Delivery
+- One customer/order generates.
+- HUD displays order.
+- Player bags and delivers.
+- Order validates.
+- Cash/XP/customer reaction update.
+
+### Phase 5 — Full Mini Shift
+- Three customers.
+- One small customer variance event.
+- One employee callout/workday modifier.
+- Shift timer/end condition.
+- Results screen/log.
+- One review and one HR report from EventLog.
+- Local save works.
+
+### Phase 6 — Connected Deep-System Examples
+- Add exactly one connected example each for customer variance, random reason, callout, snitch/shady consequence, workday modifier, fallback, and comedy pacing.
+- Do not build full catalogs into live gameplay yet.
+
+### Phase 7 — Content Depth And Linkage
+Read `PHASE_7_CONTENT_DEPTH_AND_LINKAGE.md`.
+- Wire V15 catalogs into managers.
+- Customer tiers must stay balanced.
+- Missions/quests/events must affect EventLog, HUD/results, reviews, HR, progression, persona, and save data.
+
+### Phase 8 — Campaign Progression And Manager Path
+Read `PHASE_8_CAMPAIGN_PROGRESSION_AND_MANAGER_PATH.md`.
+- Wire career ladder, pay, better shifts, authority unlocks, area unlocks, station certifications, write-ups/recovery, store duties, promotion board, and Manager Trial Shift.
+- Preserve District/CEO/custom-brand/multi-store as future local progression flags only.
+
+### Phase 9 — Maximum Chaos / WTF Incident Layer
+Read `PHASE_9_MAXIMUM_CHAOS_WTF_INCIDENT_LAYER.md`.
+- Wire UnhingedIncidentDirector, SlapstickBrawlManager, ShadySuspicionManager, IncidentChainManager, HRIncidentReporter, ViralClipManager, CalloutManager, ManagerArchetypeManager, reputation labels, legendary WTF shift chains, and expanded recap.
+- Do not make every shift a brawl. Use chaos budgets, recovery windows, tutorial blocks, rarity, and validation.
+
+### Phase 10 — Workplace Mischief / Pranks / Daily Tasks
+Read `PHASE_10_WORKPLACE_MISCHIEF_PRANKS_AND_DAILY_TASKS.md`.
+- Wire MischiefDirector, PrankWarManager, DailyTaskManager, RestaurantDamageManager, MischiefRecapManager, prank data, backfire rolls, daily tasks, side quests, story events, damage/repair tasks, and mischief recap.
+- Keep pranks optional, risky, and connected.
+
+### Phase 11 — Fireable Offenses / Dirty Employee / Suspicion
+Read `PHASE_11_FIREABLE_OFFENSES_DIRTY_EMPLOYEE_CONSEQUENCE_LAYER.md`.
+- Wire SuspicionManager, FireableOffenseManager, ShadyChoiceManager, TipJarManager, RegisterIntegrityManager, InventoryMisconductManager, FoodKarmaManager, AbstractImpairmentManager, ManagerCoverupManager, and FiringRecoveryManager.
+- Keep all shady/fireable content abstract and non-instructional.
+
+### Phase 12 — Emergent Chaos / Restaurant Memory
+Read `PHASE_12_EMERGENT_CHAOS_RESTAURANT_MEMORY.md`.
+- Wire EmergentEventDirector, IncidentComposer, RestaurantMemoryManager, EvidenceManager, StoreObjectMemoryManager, ConsequenceMatrixManager, EmergentMissionGenerator, MultiKarmaManager, DynamicReputationLabelManager, GeneratedRecapManager, and FutureChainTriggerManager.
+- Main rule: the restaurant remembers. Do not make fixed scripted quests when generated missions/events can be composed from state.
+
+## Final Rule
+
+If a phase is too large, implement the smallest playable slice of that phase, validate it, document what works, and continue. Do not jump to later phases while earlier acceptance criteria are failing.
+
+After Phase 12 and after MVP/V16/V17/V18/V19/V20 are working structurally, run Phase 13 using `PHASE_13_GLOBAL_DEPTH_EXPANSION_AND_BALANCE.md`.
+
+Phase 13 integrates:
+- DepthDirector
+- NormalcyBalanceDirector
+- DepthEventLinker
+- WorldTextureManager
+- ShiftFlavorManager
+- ContentDensityValidatorRuntime
+- 30 global depth bundles
+- normal/friction/weird/wild shift balancing
+- customer memory arcs
+- coworker social web
+- manager/home/commute/store operations depth
+- minigames
+- recovery routes
+- store identity mutations
+- asset/audio/performance/fallback requirements
+
+Do not change the restaurant story-event count. Keep wild chaos paced and balanced with normal playable work.

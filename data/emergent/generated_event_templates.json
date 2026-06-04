@@ -1,0 +1,60 @@
+{
+  "templates": [
+    {
+      "id": "tip_jar_incident",
+      "required_tags": [
+        "tip_jar"
+      ],
+      "mission_possible": true,
+      "evidence_possible": true
+    },
+    {
+      "id": "fake_policy_incident",
+      "required_tags": [
+        "policy_confusion"
+      ],
+      "mission_possible": true,
+      "evidence_possible": true
+    },
+    {
+      "id": "sauce_economy_incident",
+      "required_tags": [
+        "sauce"
+      ],
+      "mission_possible": true,
+      "legendary_possible": true
+    },
+    {
+      "id": "object_mythology_incident",
+      "required_tags": [
+        "object_memory"
+      ],
+      "mission_possible": false,
+      "object_label_possible": true
+    },
+    {
+      "id": "manager_coverup_incident",
+      "required_tags": [
+        "coverup"
+      ],
+      "mission_possible": true,
+      "evidence_possible": true
+    },
+    {
+      "id": "food_karma_incident",
+      "required_tags": [
+        "food_karma"
+      ],
+      "mission_possible": true,
+      "karma_heavy": true
+    },
+    {
+      "id": "prank_backfire_incident",
+      "required_tags": [
+        "prank"
+      ],
+      "mission_possible": true,
+      "prank_heat_change": true
+    }
+  ]
+}

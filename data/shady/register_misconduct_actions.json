@@ -1,0 +1,191 @@
+{
+  "actions": [
+    {
+      "id": "count_drawer_honestly",
+      "risk": "low",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "hide_small_discrepancy",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "blame_system_error",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "blame_coupon_bug",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "blame_payment_confusion",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "give_fake_discount",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "abuse_employee_discount",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "ring_wrong_item",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "void_suspicious_order",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "create_fake_refund",
+      "risk": "medium",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "give_friend_discount",
+      "risk": "high",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "use_manager_code",
+      "risk": "high",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "ask_coworker_cover",
+      "risk": "high",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "report_discrepancy_early",
+      "risk": "low",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "let_manager_discover_later",
+      "risk": "high",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "frame_register_gremlin",
+      "risk": "high",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    },
+    {
+      "id": "confess_and_train",
+      "risk": "low",
+      "systems_affected": [
+        "register_discrepancy",
+        "manager_trust",
+        "corporate_audit_risk",
+        "hr_risk"
+      ],
+      "safety_note": "Abstract register gameplay choice; no real financial instruction."
+    }
+  ]
+}

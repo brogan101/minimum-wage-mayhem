@@ -1,0 +1,53 @@
+{
+  "profiles": [
+    {
+      "id": "tired_office_worker",
+      "normal_order": "combo_no_changes",
+      "funny_trait": "apologizes to the menu board",
+      "chaos_ceiling": "minor"
+    },
+    {
+      "id": "construction_regular",
+      "normal_order": "big_lunch",
+      "funny_trait": "judges fry structure",
+      "chaos_ceiling": "minor"
+    },
+    {
+      "id": "after_school_parent",
+      "normal_order": "kids_meals",
+      "funny_trait": "orders while negotiating backseat treaty",
+      "chaos_ceiling": "moderate"
+    },
+    {
+      "id": "night_shift_nurse",
+      "normal_order": "coffee_and_fries",
+      "funny_trait": "kind but terrifyingly tired",
+      "chaos_ceiling": "minor"
+    },
+    {
+      "id": "college_budget_runner",
+      "normal_order": "cheap_menu_combo",
+      "funny_trait": "calculates price like final exam",
+      "chaos_ceiling": "minor"
+    },
+    {
+      "id": "quiet_regular",
+      "normal_order": "same_order",
+      "funny_trait": "nods like a cowboy",
+      "chaos_ceiling": "none"
+    },
+    {
+      "id": "dad_joke_guy",
+      "normal_order": "burger_meal",
+      "funny_trait": "one joke then leaves",
+      "chaos_ceiling": "minor"
+    },
+    {
+      "id": "post_game_fan",
+      "normal_order": "multiple_meals",
+      "funny_trait": "argues with radio broadcast",
+      "chaos_ceiling": "moderate"
+    }
+  ],
+  "rule": "Normal customers still need identity, but most should not derail the shift."
+}

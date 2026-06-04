@@ -1,0 +1,49 @@
+{
+  "acceptance": [
+    {
+      "id": "restaurant_story_count_locked",
+      "must_pass": true,
+      "check": "restaurant_story_events_count_unchanged"
+    },
+    {
+      "id": "depth_bundles_30",
+      "must_pass": true,
+      "check": "at_least_30_depth_bundles"
+    },
+    {
+      "id": "bundle_system_links",
+      "must_pass": true,
+      "check": "each_bundle_3_systems"
+    },
+    {
+      "id": "normal_balance_exists",
+      "must_pass": true,
+      "check": "normalcy_weights_present"
+    },
+    {
+      "id": "fallbacks_exist",
+      "must_pass": true,
+      "check": "fallback_requirements_present"
+    },
+    {
+      "id": "asset_requirements_exist",
+      "must_pass": true,
+      "check": "asset_audio_traceability_present"
+    },
+    {
+      "id": "performance_budgets_exist",
+      "must_pass": true,
+      "check": "performance_budgets_present"
+    },
+    {
+      "id": "research_patterns_exist",
+      "must_pass": true,
+      "check": "research_patterns_8_plus"
+    },
+    {
+      "id": "manager_home_store_customer_depth",
+      "must_pass": true,
+      "check": "core_area_files_present"
+    }
+  ]
+}

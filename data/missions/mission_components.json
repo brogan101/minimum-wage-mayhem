@@ -1,0 +1,54 @@
+{
+  "problem_types": [
+    "tip_jar",
+    "sauce_black_market",
+    "bad_off_duty_shift",
+    "fake_corporate_memo",
+    "manager_coverup",
+    "object_mythology",
+    "food_karma_guilt",
+    "prank_backfire",
+    "register_discrepancy",
+    "customer_rival"
+  ],
+  "objectives": [
+    "investigate",
+    "confess",
+    "replace",
+    "frame",
+    "repair",
+    "deescalate",
+    "report",
+    "cover_up",
+    "train",
+    "survive",
+    "make_it_policy"
+  ],
+  "time_pressure": [
+    "none",
+    "before_rush",
+    "before_manager_returns",
+    "before_corporate_call",
+    "before_shift_end",
+    "before_customer_posts_review"
+  ],
+  "risks": [
+    "hr_report",
+    "promotion_delay",
+    "coworker_rival",
+    "review_risk",
+    "demotion_risk",
+    "fired_risk",
+    "store_stability_down"
+  ],
+  "rewards": [
+    "xp",
+    "cash",
+    "manager_trust",
+    "staff_morale",
+    "promotion_progress",
+    "reputation_label",
+    "object_label",
+    "future_chain_unlock"
+  ]
+}

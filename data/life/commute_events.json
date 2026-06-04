@@ -1,0 +1,482 @@
+[
+  {
+    "event_id": "gas_light_panic",
+    "display_name": "Gas Light Panic",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "gas_light_panic_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "bus_late",
+    "display_name": "Bus Late",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "bus_late_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "coworker_needs_ride",
+    "display_name": "Coworker Needs Ride",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "coworker_needs_ride_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "forgot_uniform_hat",
+    "display_name": "Forgot Uniform Hat",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "forgot_uniform_hat_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "rain_soaks_shoes",
+    "display_name": "Rain Soaks Shoes",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "rain_soaks_shoes_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "customer_recognizes_you_off_shift",
+    "display_name": "Customer Recognizes You Off Shift",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "customer_recognizes_you_off_shift_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "traffic_behind_school_bus",
+    "display_name": "Traffic Behind School Bus",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "traffic_behind_school_bus_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "car_smells_like_fries",
+    "display_name": "Car Smells Like Fries",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "car_smells_like_fries_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "phone_gps_lies",
+    "display_name": "Phone GPS Lies",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "phone_gps_lies_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "parking_lot_drama",
+    "display_name": "Parking Lot Drama",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "parking_lot_drama_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "rival_billboard_taunts_you",
+    "display_name": "Rival Billboard Taunts You",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "rival_billboard_taunts_you_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "train_crossing_forever",
+    "display_name": "Train Crossing Forever",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "train_crossing_forever_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "bike_chain_betrayal",
+    "display_name": "Bike Chain Betrayal",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "bike_chain_betrayal_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "rideshare_driver_overshares",
+    "display_name": "Rideshare Driver Overshares",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "rideshare_driver_overshares_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "manager_calls_before_shift",
+    "display_name": "Manager Calls Before Shift",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "manager_calls_before_shift_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "flat_tire_on_top",
+    "display_name": "Flat Tire On Top",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "flat_tire_on_top_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "wrong_turn_into_rival_store",
+    "display_name": "Wrong Turn Into Rival Store",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "wrong_turn_into_rival_store_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "coffee_spill_lap",
+    "display_name": "Coffee Spill Lap",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "coffee_spill_lap_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "no_parking_left",
+    "display_name": "No Parking Left",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "no_parking_left_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  },
+  {
+    "event_id": "construction_detour",
+    "display_name": "Construction Detour",
+    "category": "commute",
+    "rarity": "common",
+    "effects": [
+      "late_risk",
+      "stress_change",
+      "first_customer_patience_change"
+    ],
+    "player_choices": [
+      "pay_money",
+      "accept_late",
+      "call_manager",
+      "ask_coworker",
+      "walk_it_off"
+    ],
+    "next_shift_modifier": "construction_detour_modifier",
+    "systems_touched": [
+      "life",
+      "shift",
+      "eventlog"
+    ]
+  }
+]

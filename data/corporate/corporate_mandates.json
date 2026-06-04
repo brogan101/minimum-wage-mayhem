@@ -1,0 +1,332 @@
+[
+  {
+    "id": "smile_mandate",
+    "name": "The Smile Mandate",
+    "goal": "Maintain 90% smile rating",
+    "reward": 100,
+    "penalty": "Training Video"
+  },
+  {
+    "id": "upsell_sodas",
+    "name": "Soda Push",
+    "goal": "Upsell 10 sodas",
+    "reward": 200,
+    "penalty": "None"
+  },
+  {
+    "id": "zero_burns",
+    "name": "The Perfect Patty",
+    "goal": "Zero burnt burgers",
+    "reward": 150,
+    "penalty": "Demotion"
+  },
+  {
+    "id": "speed_demon",
+    "name": "The Flash",
+    "goal": "Average delivery < 45s",
+    "reward": 300,
+    "penalty": "None"
+  },
+  {
+    "id": "sauce_saver",
+    "name": "Sauce Conservation",
+    "goal": "Reduce sauce usage by 20%",
+    "reward": 100,
+    "penalty": "None"
+  },
+  {
+    "id": "eye_contact",
+    "name": "Eye-Contact Efficiency",
+    "goal": "Stare at 20 customers",
+    "reward": 100,
+    "penalty": "None"
+  },
+  {
+    "id": "fresh_tastic",
+    "name": "The 'Fresh-tastic' Greeting",
+    "goal": "Use greeting 50 times",
+    "reward": 150,
+    "penalty": "None"
+  },
+  {
+    "id": "inventory_lie",
+    "name": "The Inventory Lie",
+    "goal": "Mark 5 broken items as 'fixed'",
+    "reward": 200,
+    "penalty": "Audit Risk"
+  },
+  {
+    "id": "upsell_gold",
+    "name": "The Gold Standard",
+    "goal": "Sell 1 Gold Foil Burger",
+    "reward": 500,
+    "penalty": "None"
+  },
+  {
+    "id": "no_refunds",
+    "name": "The Iron Wall",
+    "goal": "Zero refunds this shift",
+    "reward": 400,
+    "penalty": "High Beef"
+  },
+  {
+    "id": "napkin_conservation",
+    "name": "Napkin Conservation",
+    "goal": "Complete napkin conservation without making the store worse.",
+    "reward": 100,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "sauce_is_privilege",
+    "name": "Sauce Is Privilege",
+    "goal": "Complete sauce is privilege without making the store worse.",
+    "reward": 110,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "smile_audit",
+    "name": "Smile Audit",
+    "goal": "Complete smile audit without making the store worse.",
+    "reward": 120,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "freshness_without_waste",
+    "name": "Freshness Without Waste",
+    "goal": "Complete freshness without waste without making the store worse.",
+    "reward": 130,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "zero_vibe_leakage",
+    "name": "Zero Vibe Leakage",
+    "goal": "Complete zero vibe leakage without making the store worse.",
+    "reward": 140,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "no_nug_word",
+    "name": "No Nug Word",
+    "goal": "Complete no nug word without making the store worse.",
+    "reward": 150,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "drive_thru_speed_week",
+    "name": "Drive Thru Speed Week",
+    "goal": "Complete drive thru speed week without making the store worse.",
+    "reward": 160,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "manual_mode_drill",
+    "name": "Manual Mode Drill",
+    "goal": "Complete manual mode drill without making the store worse.",
+    "reward": 170,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "review_response_day",
+    "name": "Review Response Day",
+    "goal": "Complete review response day without making the store worse.",
+    "reward": 180,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "staff_synergy_hour",
+    "name": "Staff Synergy Hour",
+    "goal": "Complete staff synergy hour without making the store worse.",
+    "reward": 190,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pickle_neutrality",
+    "name": "Pickle Neutrality",
+    "goal": "Complete pickle neutrality without making the store worse.",
+    "reward": 200,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "app_promo_push",
+    "name": "App Promo Push",
+    "goal": "Complete app promo push without making the store worse.",
+    "reward": 210,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "mystery_shopper_paranoia",
+    "name": "Mystery Shopper Paranoia",
+    "goal": "Complete mystery shopper paranoia without making the store worse.",
+    "reward": 220,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "bag_geometry_standard",
+    "name": "Bag Geometry Standard",
+    "goal": "Complete bag geometry standard without making the store worse.",
+    "reward": 230,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "employee_voice_warmth",
+    "name": "Employee Voice Warmth",
+    "goal": "Complete employee voice warmth without making the store worse.",
+    "reward": 240,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "corporate_camera_prep",
+    "name": "Corporate Camera Prep",
+    "goal": "Complete corporate camera prep without making the store worse.",
+    "reward": 250,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "energy_policy_awareness",
+    "name": "Energy Policy Awareness",
+    "goal": "Complete energy policy awareness without making the store worse.",
+    "reward": 260,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "no_drama_visible",
+    "name": "No Drama Visible",
+    "goal": "Complete no drama visible without making the store worse.",
+    "reward": 270,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "upsell_water_somehow",
+    "name": "Upsell Water Somehow",
+    "goal": "Complete upsell water somehow without making the store worse.",
+    "reward": 280,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "receipt_legibility_week",
+    "name": "Receipt Legibility Week",
+    "goal": "Complete receipt legibility week without making the store worse.",
+    "reward": 290,
+    "penalty": "Training Video / Corporate Approval Loss",
+    "systems_touched": [
+      "corporate",
+      "shift",
+      "reviews",
+      "eventlog"
+    ]
+  }
+]

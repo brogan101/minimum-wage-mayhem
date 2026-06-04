@@ -1,0 +1,69 @@
+{
+  "archetypes": [
+    {
+      "id": "tip_jar_trial",
+      "component_tags": [
+        "tip_jar",
+        "evidence"
+      ],
+      "routes": [
+        "honest",
+        "shady",
+        "coworker_loyalty"
+      ]
+    },
+    {
+      "id": "sauce_black_market",
+      "component_tags": [
+        "sauce",
+        "shady"
+      ],
+      "routes": [
+        "report",
+        "join",
+        "regulate",
+        "ignore"
+      ]
+    },
+    {
+      "id": "bad_off_duty_choice_shift",
+      "component_tags": [
+        "home_life",
+        "energy"
+      ],
+      "routes": [
+        "tell_manager",
+        "lie",
+        "ask_for_help",
+        "power_through"
+      ]
+    },
+    {
+      "id": "fake_corporate_memo",
+      "component_tags": [
+        "prank",
+        "policy_confusion"
+      ],
+      "routes": [
+        "remove",
+        "enforce",
+        "blame_corporate",
+        "expose"
+      ]
+    },
+    {
+      "id": "manager_trial_from_hell_generated",
+      "component_tags": [
+        "manager_trial",
+        "chaos"
+      ],
+      "routes": [
+        "lead",
+        "delegate",
+        "cover_up",
+        "staff_first",
+        "corporate_first"
+      ]
+    }
+  ]
+}

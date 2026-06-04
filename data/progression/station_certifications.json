@@ -1,0 +1,77 @@
+{
+  "certifications": [
+    {
+      "id": "cleaning_basics",
+      "name": "Cleaning Basics Certification",
+      "unlock_rank": "new_hire",
+      "required_for": [
+        "trainee"
+      ]
+    },
+    {
+      "id": "burger_assembly",
+      "name": "Burger Assembly Certification",
+      "unlock_rank": "trainee",
+      "required_for": [
+        "crew_member"
+      ]
+    },
+    {
+      "id": "fryer_cert",
+      "name": "Fryer Certification",
+      "unlock_rank": "crew_member",
+      "required_for": [
+        "fry_cook"
+      ]
+    },
+    {
+      "id": "register_cert",
+      "name": "Register Certification",
+      "unlock_rank": "crew_member",
+      "required_for": [
+        "register_goblin"
+      ]
+    },
+    {
+      "id": "drive_thru_cert",
+      "name": "Drive-Thru Certification",
+      "unlock_rank": "register_goblin",
+      "required_for": [
+        "window_warrior"
+      ]
+    },
+    {
+      "id": "trainer_cert",
+      "name": "Trainer Certification",
+      "unlock_rank": "window_warrior",
+      "required_for": [
+        "crew_trainer"
+      ]
+    },
+    {
+      "id": "shift_lead_cert",
+      "name": "Shift Lead Certification",
+      "unlock_rank": "crew_trainer",
+      "required_for": [
+        "shift_lead"
+      ]
+    },
+    {
+      "id": "key_holder_cert",
+      "name": "Opening/Closing Certification",
+      "unlock_rank": "shift_lead",
+      "required_for": [
+        "key_holder"
+      ]
+    },
+    {
+      "id": "manager_readiness",
+      "name": "Manager Readiness Certification",
+      "unlock_rank": "key_holder",
+      "required_for": [
+        "assistant_manager",
+        "store_manager"
+      ]
+    }
+  ]
+}

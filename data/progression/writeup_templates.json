@@ -1,0 +1,39 @@
+{
+  "writeups": [
+    {
+      "id": "emotional_support_napkins",
+      "name": "Emotional Support Napkins",
+      "severity": 1,
+      "reason": "Customer received bag containing only napkins and vibes.",
+      "recovery_task": "complete_bag_audit"
+    },
+    {
+      "id": "manager_voice_unauthorized",
+      "name": "Unauthorized Manager Voice",
+      "severity": 1,
+      "reason": "Used manager voice before earning manager voice.",
+      "recovery_task": "complete_customer_recovery_training"
+    },
+    {
+      "id": "sauce_economy_failure",
+      "name": "Sauce Economy Failure",
+      "severity": 2,
+      "reason": "Failed to control sauce distribution during rush.",
+      "recovery_task": "complete_sauce_precision_trial"
+    },
+    {
+      "id": "fake_clean_spill",
+      "name": "Emotionally Cleaned Spill",
+      "severity": 2,
+      "reason": "Marked spill as cleaned when it remained physically present.",
+      "recovery_task": "complete_clean_shift"
+    },
+    {
+      "id": "fryer_aura_incident",
+      "name": "Fryer Aura Incident",
+      "severity": 1,
+      "reason": "Corporate disliked the player's fry aura.",
+      "recovery_task": "complete_fryer_certification"
+    }
+  ]
+}

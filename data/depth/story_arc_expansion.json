@@ -1,0 +1,64 @@
+{
+  "arcs": [
+    {
+      "id": "clean_worker_path",
+      "trigger": "low_suspicion_high_accuracy",
+      "beats": [
+        "manager_notices",
+        "corporate_approves",
+        "staff_tests_player",
+        "promotion_boost"
+      ]
+    },
+    {
+      "id": "funny_problematic_path",
+      "trigger": "high_prank_high_performance",
+      "beats": [
+        "staff_legend",
+        "manager_suspicion",
+        "hr_warning",
+        "promotion_somehow"
+      ]
+    },
+    {
+      "id": "shady_survivor_path",
+      "trigger": "high_suspicion_high_results",
+      "beats": [
+        "audit_risk",
+        "coverup_offer",
+        "hard_choice",
+        "manager_material_somehow"
+      ]
+    },
+    {
+      "id": "staff_hero_path",
+      "trigger": "high_coworker_karma",
+      "beats": [
+        "coworker_save",
+        "corporate_doubts",
+        "manager_trial_help",
+        "staff_loyalty_ending"
+      ]
+    },
+    {
+      "id": "corporate_pet_path",
+      "trigger": "high_corporate_low_staff",
+      "beats": [
+        "promotion_hint",
+        "staff_pushback",
+        "snitch_event",
+        "lonely_manager_path"
+      ]
+    },
+    {
+      "id": "chaos_legend_path",
+      "trigger": "high_chaos_survival",
+      "beats": [
+        "viral_clip",
+        "regulars_recognize_player",
+        "district_flag_future",
+        "store_legend"
+      ]
+    }
+  ]
+}

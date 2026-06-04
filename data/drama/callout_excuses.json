@@ -1,0 +1,752 @@
+[
+  {
+    "excuse_id": "grandpa_again_emotionally_different",
+    "display_name": "Grandpa Again Emotionally Different",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Grandpa Again Emotionally Different.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "car_started_but_spiritually_refused",
+    "display_name": "Car Started But Spiritually Refused",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Car Started But Spiritually Refused.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "shirt_is_haunted",
+    "display_name": "Shirt Is Haunted",
+    "believability": 10,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Shirt Is Haunted.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "dog_looked_sad",
+    "display_name": "Dog Looked Sad",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Dog Looked Sad.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "tire_is_flat_on_top",
+    "display_name": "Tire Is Flat On Top",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Tire Is Flat On Top.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "phone_died_accountability_died",
+    "display_name": "Phone Died Accountability Died",
+    "believability": 70,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Phone Died Accountability Died.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "availability_inversion",
+    "display_name": "Availability Inversion",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Availability Inversion.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "calendar_hurt_feelings",
+    "display_name": "Calendar Hurt Feelings",
+    "believability": 70,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Calendar Hurt Feelings.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "party_theme_ignore_responsibilities",
+    "display_name": "Party Theme Ignore Responsibilities",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Party Theme Ignore Responsibilities.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "bus_wrong_dimension_figuratively",
+    "display_name": "Bus Wrong Dimension Figuratively",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Bus Wrong Dimension Figuratively.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "stomach_filed_complaint",
+    "display_name": "Stomach Filed Complaint",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Stomach Filed Complaint.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "gravity_aggressive",
+    "display_name": "Gravity Aggressive",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Gravity Aggressive.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "shoes_at_someone_elses_house",
+    "display_name": "Shoes At Someone Elses House",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Shoes At Someone Elses House.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "fish_has_union_meeting",
+    "display_name": "Fish Has Union Meeting",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Fish Has Union Meeting.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "manager_voice_not_loading",
+    "display_name": "Manager Voice Not Loading",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Manager Voice Not Loading.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "dream_said_i_was_off",
+    "display_name": "Dream Said I Was Off",
+    "believability": 10,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Dream Said I Was Off.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "family_group_chat_emergency",
+    "display_name": "Family Group Chat Emergency",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Family Group Chat Emergency.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "lake_still_has_me",
+    "display_name": "Lake Still Has Me",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Lake Still Has Me.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "laundry_ate_pants",
+    "display_name": "Laundry Ate Pants",
+    "believability": 10,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Laundry Ate Pants.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "pet_snake_scheduling_conflict",
+    "display_name": "Pet Snake Scheduling Conflict",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Pet Snake Scheduling Conflict.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "cousin_emotional_rehearsal_dinner",
+    "display_name": "Cousin Emotional Rehearsal Dinner",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Cousin Emotional Rehearsal Dinner.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "uncle_fish_funeral",
+    "display_name": "Uncle Fish Funeral",
+    "believability": 70,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Uncle Fish Funeral.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "allergic_to_mornings",
+    "display_name": "Allergic To Mornings",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Allergic To Mornings.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "uber_became_life_coach",
+    "display_name": "Uber Became Life Coach",
+    "believability": 70,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Uber Became Life Coach.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "uniform_is_too_loud",
+    "display_name": "Uniform Is Too Loud",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Uniform Is Too Loud.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "keys_are_in_car_car_is_in_drama",
+    "display_name": "Keys Are In Car Car Is In Drama",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Keys Are In Car Car Is In Drama.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "sneezed_once_lost_confidence",
+    "display_name": "Sneezed Once Lost Confidence",
+    "believability": 20,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Sneezed Once Lost Confidence.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "cat_standing_on_apron",
+    "display_name": "Cat Standing On Apron",
+    "believability": 35,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Cat Standing On Apron.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "phone_on_1_percent_spiritually",
+    "display_name": "Phone On 1 Percent Spiritually",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "Phone On 1 Percent Spiritually.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  },
+  {
+    "excuse_id": "i_am_pursuing_offsite_excellence",
+    "display_name": "I Am Pursuing Offsite Excellence",
+    "believability": 50,
+    "repeat_penalty": 20,
+    "manager_options": [
+      "accept",
+      "deny",
+      "find_replacement",
+      "write_up",
+      "coach",
+      "cover_station"
+    ],
+    "shift_effects": [
+      "station_uncovered",
+      "morale_shift",
+      "rush_difficulty_up"
+    ],
+    "funny_line": "I Am Pursuing Offsite Excellence.",
+    "eventlog_tags": [
+      "callout",
+      "staffing",
+      "drama"
+    ]
+  }
+]

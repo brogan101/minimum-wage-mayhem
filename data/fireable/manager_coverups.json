@@ -1,0 +1,424 @@
+{
+  "coverups": [
+    {
+      "id": "manager_coverup_001",
+      "description": "Covers up missing inventory",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_002",
+      "description": "Blames New Hire",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_003",
+      "description": "Blames player",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_004",
+      "description": "Changes schedule after the fact",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_005",
+      "description": "Deletes bad complaint",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_006",
+      "description": "Pretends camera is broken",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_007",
+      "description": "Hides inspection issue",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_008",
+      "description": "Uses staff tips for team fund",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_009",
+      "description": "Gives friend free food",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_010",
+      "description": "Protects favorite employee",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_011",
+      "description": "Demotes player unfairly",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_012",
+      "description": "Blocks promotion",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_013",
+      "description": "Offers player deal to stay quiet",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_014",
+      "description": "Makes player sign weird form",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_015",
+      "description": "Rewrites incident report",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_016",
+      "description": "Claims customer fight was team building",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_017",
+      "description": "Tells player to say register was down",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_018",
+      "description": "Gives fake raise promise",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_019",
+      "description": "Threatens worse shifts",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    },
+    {
+      "id": "manager_coverup_020",
+      "description": "Offers promotion for loyalty",
+      "player_routes": [
+        "go_along",
+        "refuse",
+        "report",
+        "use_leverage",
+        "save_evidence",
+        "pretend_not_know",
+        "side_with_staff"
+      ],
+      "systems_affected": [
+        "manager_trust",
+        "corporate_approval",
+        "staff_loyalty",
+        "promotion_path",
+        "demotion_risk"
+      ],
+      "safety_note": "Abstract workplace coverup choice; no real-world evasion method."
+    }
+  ]
+}

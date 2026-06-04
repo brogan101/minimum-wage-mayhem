@@ -1,0 +1,61 @@
+{
+  "rules": [
+    {
+      "label": "sauce_criminal",
+      "conditions": [
+        "sauce_incidents_3"
+      ]
+    },
+    {
+      "label": "customer_whisperer",
+      "conditions": [
+        "beef_deescalations_5"
+      ]
+    },
+    {
+      "label": "walking_hr_report",
+      "conditions": [
+        "hr_reports_5"
+      ]
+    },
+    {
+      "label": "food_karma_fugitive",
+      "conditions": [
+        "food_karma_low"
+      ]
+    },
+    {
+      "label": "staff_hero",
+      "conditions": [
+        "coworker_karma_high"
+      ]
+    },
+    {
+      "label": "corporate_pet",
+      "conditions": [
+        "corporate_karma_high",
+        "staff_morale_low"
+      ]
+    },
+    {
+      "label": "mop_menace",
+      "conditions": [
+        "mop_incidents_3"
+      ]
+    },
+    {
+      "label": "manager_material_somehow",
+      "conditions": [
+        "promotion_high",
+        "suspicion_high"
+      ]
+    },
+    {
+      "label": "somehow_still_employed",
+      "conditions": [
+        "fired_risk_high",
+        "shifts_survived"
+      ]
+    }
+  ]
+}

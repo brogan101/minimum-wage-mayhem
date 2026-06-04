@@ -1,0 +1,1983 @@
+[
+  {
+    "id": "coupon_warrior",
+    "name": "Coupon Warrior",
+    "weights": {
+      "ValueMeal": 60,
+      "Soda": 10,
+      "Burger": 10
+    },
+    "modifiers": [
+      "Discounted",
+      "Expired Coupon",
+      "Stacking",
+      "Spiritually Valid"
+    ],
+    "patience": 0.2,
+    "beef_multiplier": 1.8,
+    "tip_behavior": "none",
+    "description": "Believes coupons are a currency and treats the register like a courtroom.",
+    "tier": "normal_flavor",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "gym_bro",
+    "name": "Gym Bro",
+    "weights": {
+      "ProteinBurger": 50,
+      "Salad": 30,
+      "Water": 20
+    },
+    "modifiers": [
+      "No Bun",
+      "Extra Patty",
+      "Double Protein",
+      "No Sauce"
+    ],
+    "patience": 0.8,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "medium",
+    "description": "Huge guy in a tiny car. Only cares about macros and 'the gains'.",
+    "tier": "annoying",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "influencer",
+    "name": "Influencer",
+    "weights": {
+      "AestheticDrink": 40,
+      "FancyFries": 30,
+      "Burger": 30
+    },
+    "modifiers": [
+      "Extra Sauce",
+      "Aesthetic Plating",
+      "Viral Request",
+      "Hold for Photo"
+    ],
+    "patience": 0.3,
+    "beef_multiplier": 1.5,
+    "tip_behavior": "random",
+    "description": "Livestreaming the order. If you mess up, it's going on a story for 1 million people.",
+    "tier": "karen_moment",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "pta_commander",
+    "name": "PTA Commander",
+    "weights": {
+      "KidsMeal": 70,
+      "Burger": 10,
+      "Soda": 20
+    },
+    "modifiers": [
+      "No Pickles",
+      "No Onions",
+      "Separate Bags",
+      "Specifically For Brayden"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.3,
+    "tip_behavior": "low",
+    "description": "Ordering for 6 children. Treats the drive-thru like a military deployment.",
+    "tier": "wholesome_weird",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "finance_bro",
+    "name": "Finance Bro",
+    "weights": {
+      "Burger": 40,
+      "Soda": 30,
+      "Coffee": 30
+    },
+    "modifiers": [
+      "Streamlined",
+      "Quickest Possible",
+      "No Small Talk"
+    ],
+    "patience": 0.1,
+    "beef_multiplier": 1.6,
+    "tip_behavior": "high",
+    "description": "On a work call. Wants the transaction optimized for maximum efficiency.",
+    "tier": "legendary",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "conspiracy_uncle",
+    "name": "Conspiracy Uncle",
+    "weights": {
+      "Burger": 30,
+      "Fries": 30,
+      "Water": 40
+    },
+    "modifiers": [
+      "No Government Cheese",
+      "Sourced Locally",
+      "No Fluoride"
+    ],
+    "patience": 0.6,
+    "beef_multiplier": 1.2,
+    "tip_behavior": "none",
+    "description": "Does not trust the menu board. Believes the ranch is a tracking device.",
+    "tier": "normal_flavor",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "dad_joke_guy",
+    "name": "Dad Joke Guy",
+    "weights": {
+      "Burger": 50,
+      "Fries": 20,
+      "Soda": 30
+    },
+    "modifiers": [
+      "Ham-Burger",
+      "Fry-day Special"
+    ],
+    "patience": 1.0,
+    "beef_multiplier": 0.5,
+    "tip_behavior": "low",
+    "description": "Cannot order without a pun. High patience, but lowers staff morale.",
+    "tier": "annoying",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "fancy_critic",
+    "name": "Fancy Food Critic",
+    "weights": {
+      "Burger": 50,
+      "FancyFries": 50
+    },
+    "modifiers": [
+      "Artisanal",
+      "Correct Temperature",
+      "Symmetric Plating"
+    ],
+    "patience": 0.4,
+    "beef_multiplier": 1.7,
+    "tip_behavior": "high",
+    "description": "Treats fast food like fine dining. Will critique the 'ambition' of the ketchup.",
+    "tier": "karen_moment",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "monster_truck_lady",
+    "name": "Tiny Old Lady In Monster Truck",
+    "weights": {
+      "Nuggets": 100
+    },
+    "modifiers": [
+      "47 Nuggets",
+      "Extra Dipping Sauce"
+    ],
+    "patience": 1.0,
+    "beef_multiplier": 0.2,
+    "tip_behavior": "high",
+    "description": "Sweet as pie, but you can't hear her over the engine of her 66-inch tires.",
+    "tier": "wholesome_weird",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "dog_driver",
+    "name": "Dog Driver",
+    "weights": {
+      "Burger": 100
+    },
+    "modifiers": [
+      "Plain",
+      "No Onions"
+    ],
+    "patience": 1.0,
+    "beef_multiplier": 0.0,
+    "tip_behavior": "none",
+    "description": "A Golden Retriever in a tiny car. Nobody questions it. The most polite customer.",
+    "tier": "legendary",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "rich_guy",
+    "name": "Rich Guy Ordering Poorly",
+    "weights": {
+      "SingleFry": 40,
+      "IceCube": 30,
+      "HalfNugget": 30
+    },
+    "modifiers": [
+      "Limo Delivery",
+      "Gold Foil"
+    ],
+    "patience": 0.3,
+    "beef_multiplier": 1.4,
+    "tip_behavior": "insane",
+    "description": "Pulls up in a limo to order a single ice cube. Tips $100 if you don't blink.",
+    "tier": "normal_flavor",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "college_crew",
+    "name": "College Party Crew",
+    "weights": {
+      "LargeFries": 50,
+      "BigDrink": 50
+    },
+    "modifiers": [
+      "The Big Thing",
+      "The Other Big Thing",
+      "Everything On It"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.2,
+    "tip_behavior": "none",
+    "description": "Six people in one car. They all order at once. Absolute sonic chaos.",
+    "tier": "annoying",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake"
+    ],
+    "hated_recovery": [
+      "ignored"
+    ],
+    "memory_behavior": "generic_repeat_memory",
+    "reason_tags": [
+      "generic_service_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "tired_office_worker",
+    "name": "Tired Office Worker",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "No Small Talk",
+      "Fast Please"
+    ],
+    "patience": 0.85,
+    "beef_multiplier": 0.7,
+    "tip_behavior": "medium",
+    "description": "Just wants lunch and silence. Funny because they understand the pain too well.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "work_burnout",
+      "fast_lunch"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "off_duty_retail_worker",
+    "name": "Off-Duty Retail Worker",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Understands Pain",
+      "No Bag Drama"
+    ],
+    "patience": 0.9,
+    "beef_multiplier": 0.5,
+    "tip_behavior": "medium",
+    "description": "Has seen things. Gives mercy when the player is struggling.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "honesty",
+      "quick_fix"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "worker_solidarity"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "budget_student",
+    "name": "Budget Student",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Cheapest Combo",
+      "Water Cup"
+    ],
+    "patience": 0.75,
+    "beef_multiplier": 0.8,
+    "tip_behavior": "low",
+    "description": "Counts every dollar but usually means well.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "money_pressure",
+      "coupon_question"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "quiet_regular",
+    "name": "Quiet Regular",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Same As Usual"
+    ],
+    "patience": 0.9,
+    "beef_multiplier": 0.4,
+    "tip_behavior": "medium",
+    "description": "Barely speaks, always gets the same thing, becomes a useful rhythm break.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "regular_order"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "construction_lunch_runner",
+    "name": "Construction Lunch Runner",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Large Bag",
+      "Extra Napkins"
+    ],
+    "patience": 0.7,
+    "beef_multiplier": 1.0,
+    "tip_behavior": "medium",
+    "description": "Ordering for a crew and trying not to mess it up.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "crew_order",
+      "time_pressure"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "post_shift_nurse",
+    "name": "Post-Shift Nurse",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Coffee If Available",
+      "No Delay"
+    ],
+    "patience": 0.65,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "medium",
+    "description": "Exhausted, polite, dangerous if coffee is forgotten.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "exhausted_worker"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "dad_after_practice",
+    "name": "Practice Dad",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Kid Meals",
+      "Extra Ketchup"
+    ],
+    "patience": 0.6,
+    "beef_multiplier": 1.0,
+    "tip_behavior": "low",
+    "description": "Has a van full of kids and no remaining dignity.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "family_order"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "food_app_pickup_guy",
+    "name": "Food App Pickup Guy",
+    "tier": "normal_flavor",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Pickup Confusion"
+    ],
+    "patience": 0.65,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "low",
+    "description": "Shows up for an order nobody remembers accepting.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "app_confusion"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "passenger_seat_commander",
+    "name": "Passenger Seat Commander",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Muffled Order",
+      "Repeat Needed"
+    ],
+    "patience": 0.45,
+    "beef_multiplier": 1.3,
+    "tip_behavior": "low",
+    "description": "Driver says nothing; passenger yells from the far side like a drive-thru ventriloquist.",
+    "behavior_hooks": [
+      "audio_guess",
+      "repeat_cost"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "passenger_ordering"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "exact_change_grandpa",
+    "name": "Exact Change Grandpa",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Coin Payment",
+      "Receipt Check"
+    ],
+    "patience": 0.65,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "low",
+    "description": "Pays in tiny change and makes the line question time itself.",
+    "behavior_hooks": [
+      "payment_delay"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "exact_change"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "window_addon_artist",
+    "name": "Window Add-On Artist",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Last Second Add-On"
+    ],
+    "patience": 0.55,
+    "beef_multiplier": 1.2,
+    "tip_behavior": "low",
+    "description": "Adds three things at the window after the bag is sealed.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "window_addon"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "receipt_lawyer",
+    "name": "Receipt Lawyer",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Receipt Trial",
+      "Price Question"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.4,
+    "tip_behavior": "none",
+    "description": "Reads receipts like constitutional documents.",
+    "behavior_hooks": [
+      "receipt_review"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "receipt_font",
+      "price_argument"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "bag_checker",
+    "name": "Bag Checker",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Count Items",
+      "Sauce Audit"
+    ],
+    "patience": 0.55,
+    "beef_multiplier": 1.2,
+    "tip_behavior": "low",
+    "description": "Counts the bag one item at a time while the line ferments.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "bag_check"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "wrong_speaker_box",
+    "name": "Wrong Speaker Box",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Incomplete Order"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.3,
+    "tip_behavior": "low",
+    "description": "Drives past the speaker and starts ordering at the window like that was the plan.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "missed_speaker"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "silent_pointer",
+    "name": "Silent Pointer",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Vague Order"
+    ],
+    "patience": 0.6,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "low",
+    "description": "Points at the menu through glass and expects telepathy.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "vague_order"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "fresh_fries_only",
+    "name": "Fresh Fries Only",
+    "tier": "annoying",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Fresh Fries",
+      "No Old Fries"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.2,
+    "tip_behavior": "low",
+    "description": "Believes fries expire emotionally after six seconds.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "fresh_demand"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "expired_coupon_litigator",
+    "name": "Expired Coupon Litigator",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Expired Coupon",
+      "Manager Demand"
+    ],
+    "patience": 0.25,
+    "beef_multiplier": 1.9,
+    "tip_behavior": "none",
+    "description": "Treats an expired coupon like a Supreme Court brief.",
+    "behavior_hooks": [
+      "coupon_court"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "expired_coupon",
+      "policy_lawyer"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "straw_in_hand_complainer",
+    "name": "Straw-In-Hand Complainer",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Straw Complaint"
+    ],
+    "patience": 0.35,
+    "beef_multiplier": 1.6,
+    "tip_behavior": "none",
+    "description": "Complains the straw is missing while visibly holding it.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "obvious_item_missing"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "pickle_energy_accuser",
+    "name": "Pickle Energy Accuser",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "No Pickles",
+      "Vibe Complaint"
+    ],
+    "patience": 0.35,
+    "beef_multiplier": 1.7,
+    "tip_behavior": "none",
+    "description": "No pickles present, but the burger still has pickle energy.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "pickle_energy"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "owner_name_dropper",
+    "name": "Owner Name Dropper",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Manager Demand"
+    ],
+    "patience": 0.3,
+    "beef_multiplier": 1.8,
+    "tip_behavior": "none",
+    "description": "Says they know the owner. Usually knows a guy named Brian who once used the bathroom.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "fake_authority"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "app_lawyer",
+    "name": "App Lawyer",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "App Deal Missing"
+    ],
+    "patience": 0.3,
+    "beef_multiplier": 1.8,
+    "tip_behavior": "none",
+    "description": "Does not have the app open, but insists the deal exists spiritually.",
+    "behavior_hooks": [
+      "coupon_court",
+      "app_conflict"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "app_deal_no_app"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "napkin_policy_rebel",
+    "name": "Napkin Policy Rebel",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Extra Napkins",
+      "Corporate Conflict"
+    ],
+    "patience": 0.35,
+    "beef_multiplier": 1.6,
+    "tip_behavior": "none",
+    "description": "Turns napkin count into a civil rights movement.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "napkin_count"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "pull_forward_refuser",
+    "name": "Pull-Forward Refuser",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Window Standoff"
+    ],
+    "patience": 0.25,
+    "beef_multiplier": 1.9,
+    "tip_behavior": "none",
+    "description": "Thinks pulling forward is a personal attack.",
+    "behavior_hooks": [
+      "pull_forward_negotiation"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "line_timer_conflict"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "review_threatener",
+    "name": "Review Threatener",
+    "tier": "karen_moment",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Review Threat"
+    ],
+    "patience": 0.3,
+    "beef_multiplier": 1.7,
+    "tip_behavior": "none",
+    "description": "Threatens a one-star review over bag geometry.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "bag_fold",
+      "review_threat"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "monster_truck_grandma",
+    "name": "Monster Truck Grandma",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Simple Combo",
+      "Extra Respect"
+    ],
+    "patience": 0.8,
+    "beef_multiplier": 0.7,
+    "tip_behavior": "high",
+    "description": "Tiny old lady in a truck taller than the building. Tips in ancient cash.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "unexpected_vehicle"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "wrong_order_liker",
+    "name": "Wrong Order Enjoyer",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Chaos Positive"
+    ],
+    "patience": 0.85,
+    "beef_multiplier": 0.4,
+    "tip_behavior": "medium",
+    "description": "Gets the wrong order and decides it changed their life.",
+    "behavior_hooks": [
+      "wrong_success"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "happy_accident"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "kid_food_critic",
+    "name": "Kid Food Critic",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Presentation Matters"
+    ],
+    "patience": 0.7,
+    "beef_multiplier": 0.8,
+    "tip_behavior": "medium",
+    "description": "Gives sincere reviews like a tiny Michelin inspector.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "kid_review"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "burned_out_manager_customer",
+    "name": "Burned-Out Manager Customer",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "No Fuss",
+      "Sympathy Tip"
+    ],
+    "patience": 0.9,
+    "beef_multiplier": 0.4,
+    "tip_behavior": "high",
+    "description": "A manager from another store who sees the chaos and quietly respects it.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "manager_solidarity"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "pep_talk_regular",
+    "name": "Pep Talk Regular",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Morale Boost"
+    ],
+    "patience": 0.85,
+    "beef_multiplier": 0.5,
+    "tip_behavior": "medium",
+    "description": "Notices staff morale and gives a weirdly effective speech.",
+    "behavior_hooks": [
+      "morale_boost"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "regular_kindness"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "influencer_accidental_boost",
+    "name": "Accidental Influencer",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Viral Chance"
+    ],
+    "patience": 0.55,
+    "beef_multiplier": 1.1,
+    "tip_behavior": "high",
+    "description": "Tries to film a complaint but accidentally makes the store look hilarious.",
+    "behavior_hooks": [
+      "viral_review"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "social_media"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "fryer_complimenter",
+    "name": "Fryer Complimenter",
+    "tier": "wholesome_weird",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Fryer Praise"
+    ],
+    "patience": 0.8,
+    "beef_multiplier": 0.4,
+    "tip_behavior": "medium",
+    "description": "Compliments the fryer directly and the staff morale improves for reasons no one can explain.",
+    "behavior_hooks": [
+      "order_modifier",
+      "reaction_variant",
+      "memory_flag"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "object_compliment"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "coupon_warrior_legend",
+    "name": "Coupon Warrior Prime",
+    "tier": "legendary",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Coupon Court",
+      "Stacking",
+      "Expired Coupon"
+    ],
+    "patience": 0.2,
+    "beef_multiplier": 2.2,
+    "tip_behavior": "none",
+    "description": "The final form of coupon litigation. Has tabs.",
+    "behavior_hooks": [
+      "legendary_mission",
+      "coupon_court"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "coupon_boss"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "dog_driver_birthday",
+    "name": "Dog Driver Birthday Crew",
+    "tier": "legendary",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Dog Party",
+      "Plain Patties"
+    ],
+    "patience": 0.9,
+    "beef_multiplier": 0.5,
+    "tip_behavior": "high",
+    "description": "Dog Driver brings friends. The shift becomes adorable and operationally impossible.",
+    "behavior_hooks": [
+      "legendary_shift"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "dog_party"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "wrong_restaurant_identity_crisis",
+    "name": "Wrong Restaurant Identity Crisis Guy",
+    "tier": "legendary",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Wrong Menu",
+      "Substitute Trial"
+    ],
+    "patience": 0.35,
+    "beef_multiplier": 1.7,
+    "tip_behavior": "low",
+    "description": "Has ordered from the wrong chain so often he questions reality.",
+    "behavior_hooks": [
+      "story_arc"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "wrong_restaurant"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  },
+  {
+    "id": "mystery_shopper_maybe",
+    "name": "Maybe Mystery Shopper",
+    "tier": "legendary",
+    "weights": {
+      "Burger": 35,
+      "Fries": 25,
+      "Soda": 25,
+      "ValueMeal": 15
+    },
+    "modifiers": [
+      "Quality Audit"
+    ],
+    "patience": 0.5,
+    "beef_multiplier": 1.5,
+    "tip_behavior": "medium",
+    "description": "Everyone might be the secret shopper. This one knows it and enjoys the fear.",
+    "behavior_hooks": [
+      "mystery_shopper"
+    ],
+    "recovery_preferences": [
+      "apology",
+      "fresh_remake",
+      "coupon_compromise"
+    ],
+    "hated_recovery": [
+      "ignored",
+      "sarcasm_at_wrong_time"
+    ],
+    "memory_behavior": "can_become_fan_or_rival",
+    "reason_tags": [
+      "audit_paranoia"
+    ],
+    "systems_touched": [
+      "orders",
+      "beef",
+      "reviews",
+      "eventlog",
+      "customer_memory"
+    ]
+  }
+]

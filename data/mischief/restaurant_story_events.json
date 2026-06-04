@@ -1,0 +1,2884 @@
+{
+  "events": [
+    {
+      "id": "story_event_001",
+      "category": "drive_thru",
+      "description": "Customer refuses to pull forward.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_002",
+      "category": "drive_thru",
+      "description": "Customer says they are the only car, then line instantly forms.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_003",
+      "category": "drive_thru",
+      "description": "Customer adds six items at the window.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_004",
+      "category": "drive_thru",
+      "description": "Customer says they ordered online but never placed order.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_005",
+      "category": "drive_thru",
+      "description": "Customer shows phone screen at impossible angle.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_006",
+      "category": "drive_thru",
+      "description": "Customer orders from passenger seat while driver disagrees.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_007",
+      "category": "drive_thru",
+      "description": "Customer's truck is too loud to hear order.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_008",
+      "category": "drive_thru",
+      "description": "Customer tries to pay with a cup full of coins.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_009",
+      "category": "drive_thru",
+      "description": "Customer hands employee trash.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_010",
+      "category": "drive_thru",
+      "description": "Customer asks for manager before ordering.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_011",
+      "category": "drive_thru",
+      "description": "Customer wants refund but refuses to return food.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_012",
+      "category": "drive_thru",
+      "description": "Customer says you forgot my sauce before receiving bag.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_013",
+      "category": "drive_thru",
+      "description": "Customer changes entire order after paying.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_014",
+      "category": "drive_thru",
+      "description": "Customer claims app coupon should work without app.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_015",
+      "category": "drive_thru",
+      "description": "Customer believes pull-forward is personal disrespect.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_016",
+      "category": "drive_thru",
+      "description": "Customer parks at window and starts eating.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_017",
+      "category": "drive_thru",
+      "description": "Customer asks for fresh fries, then complains they are hot.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_018",
+      "category": "drive_thru",
+      "description": "Customer orders same as last time but has never been there.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_019",
+      "category": "drive_thru",
+      "description": "Customer asks if burger can be made less burger.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_020",
+      "category": "drive_thru",
+      "description": "Customer asks for no ice then complains drink is warm.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_021",
+      "category": "drive_thru",
+      "description": "Customer audits exact sauce count.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_022",
+      "category": "drive_thru",
+      "description": "Customer tries to order breakfast during dinner.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_023",
+      "category": "drive_thru",
+      "description": "Customer wants lunch item during breakfast and says other location does it.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_024",
+      "category": "drive_thru",
+      "description": "Customer asks if chicken sandwich has chicken.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_025",
+      "category": "drive_thru",
+      "description": "Customer asks for food remade because it looks tired.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_026",
+      "category": "drive_thru",
+      "description": "Customer says receipt is wrong because taxes exist.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_027",
+      "category": "drive_thru",
+      "description": "Customer gives five separate payment methods.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_028",
+      "category": "drive_thru",
+      "description": "Customer's dog barks order better than driver.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_029",
+      "category": "drive_thru",
+      "description": "Customer refuses to leave until receipt printer apologizes.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_030",
+      "category": "drive_thru",
+      "description": "Customer throws food or drink in rare escalation event.",
+      "severity": "major",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "drive_thru"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_031",
+      "category": "sauce",
+      "description": "Missing sauce creates major Beef.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_032",
+      "category": "sauce",
+      "description": "Customer demands compensation sauce.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_033",
+      "category": "sauce",
+      "description": "Sauce rack is empty during rush.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_034",
+      "category": "sauce",
+      "description": "Coworker hoards sauce.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_035",
+      "category": "sauce",
+      "description": "Manager bans extra sauce.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_036",
+      "category": "sauce",
+      "description": "Customer tries to trade old coupon for sauce.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_037",
+      "category": "sauce",
+      "description": "Sauce labels get switched.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_038",
+      "category": "sauce",
+      "description": "Sauce packet explodes in bag.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_039",
+      "category": "sauce",
+      "description": "Customer asks for impossible sauce mix.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_040",
+      "category": "sauce",
+      "description": "Customer treats sauce like legal currency.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_041",
+      "category": "sauce",
+      "description": "Customer counts sauce packets at window.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_042",
+      "category": "sauce",
+      "description": "Coworker starts underground sauce economy.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_043",
+      "category": "sauce",
+      "description": "Corporate sends sauce ration memo.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_044",
+      "category": "sauce",
+      "description": "New Hire gives entire sauce box away.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_045",
+      "category": "sauce",
+      "description": "Sauce shortage causes staff argument.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "sauce"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_046",
+      "category": "register_payment",
+      "description": "Card reader fails mid-rush.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_047",
+      "category": "register_payment",
+      "description": "Receipt printer jams.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_048",
+      "category": "register_payment",
+      "description": "Register drawer is short.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_049",
+      "category": "register_payment",
+      "description": "Customer pays all in coins.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_050",
+      "category": "register_payment",
+      "description": "Customer's card declines and they blame employee.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_051",
+      "category": "register_payment",
+      "description": "Customer demands old price from years ago.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_052",
+      "category": "register_payment",
+      "description": "Customer uses fake coupon.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_053",
+      "category": "register_payment",
+      "description": "Customer says app price is different.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_054",
+      "category": "register_payment",
+      "description": "Customer wants refund to different payment method.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_055",
+      "category": "register_payment",
+      "description": "Register changes language by accident.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_056",
+      "category": "register_payment",
+      "description": "Register button labels are wrong from prank.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_057",
+      "category": "register_payment",
+      "description": "Customer asks if taxes can be removed.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_058",
+      "category": "register_payment",
+      "description": "Customer wants split payment between six people.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_059",
+      "category": "register_payment",
+      "description": "Register freezes while customer stares.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_060",
+      "category": "register_payment",
+      "description": "Receipt prints nonsense message.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "register_payment"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_061",
+      "category": "food_kitchen",
+      "description": "Fryer overheats.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_062",
+      "category": "food_kitchen",
+      "description": "Grill cooks unevenly.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_063",
+      "category": "food_kitchen",
+      "description": "Fries burn during customer argument.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_064",
+      "category": "food_kitchen",
+      "description": "Patty falls behind grill.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_065",
+      "category": "food_kitchen",
+      "description": "Bun stock runs low.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_066",
+      "category": "food_kitchen",
+      "description": "Cheese gets left in wrong spot.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_067",
+      "category": "food_kitchen",
+      "description": "Drink station sprays soda.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_068",
+      "category": "food_kitchen",
+      "description": "Ice machine dies.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_069",
+      "category": "food_kitchen",
+      "description": "Bagging table gets overloaded.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_070",
+      "category": "food_kitchen",
+      "description": "Wrong bag goes to wrong customer.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_071",
+      "category": "food_kitchen",
+      "description": "Customer wants food fresh but instant.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_072",
+      "category": "food_kitchen",
+      "description": "New Hire cooks lettuce.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_073",
+      "category": "food_kitchen",
+      "description": "Coworker eats fries from station.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_074",
+      "category": "food_kitchen",
+      "description": "Order screen glitches.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_075",
+      "category": "food_kitchen",
+      "description": "Food bag rips at window.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_076",
+      "category": "food_kitchen",
+      "description": "Customer wants item not on menu.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_077",
+      "category": "food_kitchen",
+      "description": "Customer demands secret menu item.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_078",
+      "category": "food_kitchen",
+      "description": "Manager changes menu mid-shift.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_079",
+      "category": "food_kitchen",
+      "description": "Corporate mandates lower waste.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_080",
+      "category": "food_kitchen",
+      "description": "Player must decide whether to remake or cut corners.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "food_kitchen"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_081",
+      "category": "lobby_counter",
+      "description": "Customer stands at counter and says nothing.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_082",
+      "category": "lobby_counter",
+      "description": "Customer asks where restroom is while standing next to sign.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_083",
+      "category": "lobby_counter",
+      "description": "Customer blocks counter to count change.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_084",
+      "category": "lobby_counter",
+      "description": "Family changes order repeatedly.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_085",
+      "category": "lobby_counter",
+      "description": "Customer complains lobby is too quiet.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_086",
+      "category": "lobby_counter",
+      "description": "Customer complains music has bad fry energy.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_087",
+      "category": "lobby_counter",
+      "description": "Customer wants table service in fast-food restaurant.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_088",
+      "category": "lobby_counter",
+      "description": "Customer leaves tray on trash can.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_089",
+      "category": "lobby_counter",
+      "description": "Kid spills drink.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_090",
+      "category": "lobby_counter",
+      "description": "Customer tries to walk behind counter.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_091",
+      "category": "lobby_counter",
+      "description": "Customer wants free refill for cup from another restaurant.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_092",
+      "category": "lobby_counter",
+      "description": "Customer asks employee to charge phone.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_093",
+      "category": "lobby_counter",
+      "description": "Customer takes condiment bin.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_094",
+      "category": "lobby_counter",
+      "description": "Customer starts livestreaming complaint.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_095",
+      "category": "lobby_counter",
+      "description": "Customer tries to return half-eaten food.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "lobby_counter"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_096",
+      "category": "coworker",
+      "description": "Coworker calls out with ridiculous excuse.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_097",
+      "category": "coworker",
+      "description": "Coworker hides in freezer.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_098",
+      "category": "coworker",
+      "description": "Coworker starts gossip during rush.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_099",
+      "category": "coworker",
+      "description": "Coworker refuses station because vibes are bad.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_100",
+      "category": "coworker",
+      "description": "Coworker gives friend free food.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_101",
+      "category": "coworker",
+      "description": "Coworker blames player for wrong bag.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_102",
+      "category": "coworker",
+      "description": "Coworker starts prank war.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_103",
+      "category": "coworker",
+      "description": "Coworker steals good headset.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_104",
+      "category": "coworker",
+      "description": "Coworker clocks in then disappears.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_105",
+      "category": "coworker",
+      "description": "Coworker thinks they are promoted.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_106",
+      "category": "coworker",
+      "description": "Coworker starts sauce economy.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_107",
+      "category": "coworker",
+      "description": "Coworker eats customer fries.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_108",
+      "category": "coworker",
+      "description": "Coworker creates fake policy.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_109",
+      "category": "coworker",
+      "description": "Coworker breaks mop and hides it.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_110",
+      "category": "coworker",
+      "description": "Coworker posts group chat rumor.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "coworker"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_111",
+      "category": "manager",
+      "description": "Manager hides in office.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_112",
+      "category": "manager",
+      "description": "Manager blames player for corporate issue.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_113",
+      "category": "manager",
+      "description": "Manager announces new policy mid-rush.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_114",
+      "category": "manager",
+      "description": "Manager starts smile initiative.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_115",
+      "category": "manager",
+      "description": "Manager protects bad employee.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_116",
+      "category": "manager",
+      "description": "Manager panics during rush.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_117",
+      "category": "manager",
+      "description": "Manager leaves player acting lead.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_118",
+      "category": "manager",
+      "description": "Manager gives impossible task.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_119",
+      "category": "manager",
+      "description": "Manager asks player to handle customer fight.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_120",
+      "category": "manager",
+      "description": "Manager creates fake training.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_121",
+      "category": "manager",
+      "description": "Manager denies break for stupid reason.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_122",
+      "category": "manager",
+      "description": "Manager gives player promotion hint.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_123",
+      "category": "manager",
+      "description": "Manager loses clipboard.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_124",
+      "category": "manager",
+      "description": "Manager makes player fix prank damage.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_125",
+      "category": "manager",
+      "description": "Manager gets pranked and retaliates with mandatory meeting.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "manager"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_126",
+      "category": "corporate",
+      "description": "Corporate sends new coupon rule.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_127",
+      "category": "corporate",
+      "description": "Corporate starts surprise inspection.",
+      "severity": "major",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_128",
+      "category": "corporate",
+      "description": "Corporate sends mystery shopper.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_129",
+      "category": "corporate",
+      "description": "Corporate app breaks.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_130",
+      "category": "corporate",
+      "description": "Corporate demands faster drive-thru times.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_131",
+      "category": "corporate",
+      "description": "Corporate bans free sauce.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_132",
+      "category": "corporate",
+      "description": "Corporate sends impossible sales goal.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_133",
+      "category": "corporate",
+      "description": "Corporate asks for smile compliance.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_134",
+      "category": "corporate",
+      "description": "Corporate review system misreads sarcasm.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_135",
+      "category": "corporate",
+      "description": "Corporate calls during rush.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_136",
+      "category": "corporate",
+      "description": "Corporate makes player watch training video.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_137",
+      "category": "corporate",
+      "description": "Corporate blames store for app problem.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_138",
+      "category": "corporate",
+      "description": "Corporate sends wrong uniforms.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_139",
+      "category": "corporate",
+      "description": "Corporate sends fake inspirational posters.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_140",
+      "category": "corporate",
+      "description": "Corporate promotes manager who was not there.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "corporate"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_141",
+      "category": "prank",
+      "description": "Good headset is hidden.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_142",
+      "category": "prank",
+      "description": "Mop gets promoted.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_143",
+      "category": "prank",
+      "description": "Fake corporate memo appears.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_144",
+      "category": "prank",
+      "description": "Sauce labels swapped.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_145",
+      "category": "prank",
+      "description": "New Hire believes fryer has moods.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_146",
+      "category": "prank",
+      "description": "Manager clipboard frozen in freezer.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_147",
+      "category": "prank",
+      "description": "Fake secret menu spreads.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_148",
+      "category": "prank",
+      "description": "Fake inspection gets too realistic.",
+      "severity": "major",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_149",
+      "category": "prank",
+      "description": "Register labels renamed.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_150",
+      "category": "prank",
+      "description": "Drive-thru sign moved slightly wrong.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_151",
+      "category": "prank",
+      "description": "Break room whiteboard filled with fake callouts.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_152",
+      "category": "prank",
+      "description": "Receipt printer googly eyes improve morale.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_153",
+      "category": "prank",
+      "description": "Coworker locker filled with napkins.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_154",
+      "category": "prank",
+      "description": "Fake free fries rumor starts.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_155",
+      "category": "prank",
+      "description": "Prank war causes customer confusion.",
+      "severity": "moderate",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "prank"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_156",
+      "category": "home_outside",
+      "description": "Player wakes up late.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_157",
+      "category": "home_outside",
+      "description": "Uniform is dirty.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_158",
+      "category": "home_outside",
+      "description": "Coworker group chat explodes.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_159",
+      "category": "home_outside",
+      "description": "Rent text hits before shift.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_160",
+      "category": "home_outside",
+      "description": "Car barely starts.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_161",
+      "category": "home_outside",
+      "description": "Neighbor kept player up.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_162",
+      "category": "home_outside",
+      "description": "Player forgot hat.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_163",
+      "category": "home_outside",
+      "description": "Customer recognizes player off shift.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_164",
+      "category": "home_outside",
+      "description": "Friend asks for free food.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_165",
+      "category": "home_outside",
+      "description": "Player gets good breakfast buff.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_166",
+      "category": "home_outside",
+      "description": "Player has bad sleep debuff.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_167",
+      "category": "home_outside",
+      "description": "Player receives weird manager text.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_168",
+      "category": "home_outside",
+      "description": "Player dreams about fryer.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_169",
+      "category": "home_outside",
+      "description": "Player's shoes are wet.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_170",
+      "category": "home_outside",
+      "description": "Player arrives stressed and late.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "home_outside"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_171",
+      "category": "review_viral",
+      "description": "Customer leaves bad review with wrong details.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_172",
+      "category": "review_viral",
+      "description": "Customer leaves good review for chaos.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_173",
+      "category": "review_viral",
+      "description": "Viral clip misrepresents event.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_174",
+      "category": "review_viral",
+      "description": "Customer praises player but insults store.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_175",
+      "category": "review_viral",
+      "description": "Review says food was fine but vibes were criminal.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_176",
+      "category": "review_viral",
+      "description": "Corporate sees clip.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_177",
+      "category": "review_viral",
+      "description": "Staff morale improves from viral clip.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_178",
+      "category": "review_viral",
+      "description": "Customer rival appears after review.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_179",
+      "category": "review_viral",
+      "description": "Fake review storm begins.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    },
+    {
+      "id": "story_event_180",
+      "category": "review_viral",
+      "description": "Player can respond as manager later.",
+      "severity": "minor",
+      "systems_affected": [
+        "eventlog",
+        "shift_results"
+      ],
+      "eventlog_tags": [
+        "restaurant_story",
+        "review_viral"
+      ],
+      "fallback": "generic_restaurant_story_event",
+      "safety_note": "Fictionalized fast-food pattern; no real brands, people, posts, quotes, or usernames."
+    }
+  ]
+}

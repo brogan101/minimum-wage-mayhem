@@ -1,0 +1,177 @@
+{
+  "incidents": [
+    {
+      "id": "coupon_binder_standoff",
+      "name": "Coupon Binder Standoff",
+      "category": "customer_chaos",
+      "severity": "moderate",
+      "rarity": "uncommon",
+      "business_types": [
+        "fast_food_drive_thru"
+      ],
+      "trigger_conditions": [
+        "coupon_customer",
+        "register_active"
+      ],
+      "blocked_conditions": [
+        "tutorial_shift",
+        "recovery_window"
+      ],
+      "chaos_cost": 5,
+      "cognitive_load": 4,
+      "player_choices": [
+        "manager_voice",
+        "coupon_compromise",
+        "deny_coupon",
+        "call_manager",
+        "fresh_fries_bribe"
+      ],
+      "consequences": [
+        "beef_change",
+        "line_delay",
+        "review_risk",
+        "corporate_policy_note"
+      ],
+      "eventlog_tags": [
+        "coupon",
+        "customer_chaos",
+        "register"
+      ],
+      "hr_hook": true,
+      "review_hook": true,
+      "recap_hook": true,
+      "fallback": "generic_coupon_argument",
+      "safety_note": "Behavior-based customer entitlement; no protected-class targeting."
+    },
+    {
+      "id": "manager_vanishing_act",
+      "name": "Manager Has Left The Building",
+      "category": "manager_chaos",
+      "severity": "major",
+      "rarity": "rare",
+      "business_types": [
+        "fast_food_drive_thru"
+      ],
+      "trigger_conditions": [
+        "rush_active",
+        "manager_present",
+        "manager_panic_high"
+      ],
+      "blocked_conditions": [
+        "tutorial_shift"
+      ],
+      "chaos_cost": 8,
+      "cognitive_load": 7,
+      "player_choices": [
+        "act_as_manager",
+        "find_manager",
+        "call_corporate",
+        "delegate_to_coworker"
+      ],
+      "consequences": [
+        "manager_trust_change",
+        "promotion_boost_possible",
+        "staff_morale_change",
+        "corporate_approval_change"
+      ],
+      "eventlog_tags": [
+        "manager",
+        "acting_manager",
+        "rush"
+      ],
+      "hr_hook": true,
+      "review_hook": false,
+      "recap_hook": true,
+      "fallback": "manager_unavailable_minor",
+      "safety_note": "Workplace comedy incident."
+    },
+    {
+      "id": "register_short_trial",
+      "name": "Register Trial",
+      "category": "career_chaos",
+      "severity": "moderate",
+      "rarity": "uncommon",
+      "business_types": [
+        "fast_food_drive_thru"
+      ],
+      "trigger_conditions": [
+        "register_active",
+        "cash_handling_unlocked"
+      ],
+      "blocked_conditions": [
+        "tutorial_shift"
+      ],
+      "chaos_cost": 6,
+      "cognitive_load": 5,
+      "player_choices": [
+        "investigate",
+        "take_blame",
+        "blame_register",
+        "report_coworker",
+        "request_count"
+      ],
+      "consequences": [
+        "manager_trust_change",
+        "shady_suspicion_change",
+        "writeup_risk",
+        "promotion_delay_possible"
+      ],
+      "eventlog_tags": [
+        "register",
+        "career",
+        "shady_suspicion"
+      ],
+      "hr_hook": true,
+      "review_hook": false,
+      "recap_hook": true,
+      "fallback": "minor_register_mismatch",
+      "safety_note": "Abstract register issue; no theft instruction."
+    },
+    {
+      "id": "drive_thru_object_scramble",
+      "name": "Drive-Thru Object Scramble",
+      "category": "slapstick_brawl",
+      "severity": "major",
+      "rarity": "rare",
+      "business_types": [
+        "fast_food_drive_thru"
+      ],
+      "trigger_conditions": [
+        "beef_maxed",
+        "late_night_or_legendary",
+        "not_deescalated"
+      ],
+      "blocked_conditions": [
+        "tutorial_shift",
+        "recovery_window"
+      ],
+      "chaos_cost": 9,
+      "cognitive_load": 8,
+      "player_choices": [
+        "manager_voice",
+        "offer_fresh_fries",
+        "deploy_wet_floor_sign",
+        "call_manager",
+        "sir_this_is_drive_thru"
+      ],
+      "consequences": [
+        "viral_clip_chance",
+        "hr_report",
+        "review_mutation",
+        "store_cleanliness_loss",
+        "reputation_label_possible"
+      ],
+      "eventlog_tags": [
+        "slapstick",
+        "brawl",
+        "drive_thru",
+        "rare"
+      ],
+      "hr_hook": true,
+      "review_hook": true,
+      "recap_hook": true,
+      "fallback": "customer_leaves_angry",
+      "safety_note": "Cartoon slapstick only; no gore, dangerous weapon detail, or combat instruction."
+    }
+  ]
+}

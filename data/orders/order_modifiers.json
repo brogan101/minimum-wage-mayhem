@@ -1,0 +1,386 @@
+[
+  {
+    "id": "no_pickles",
+    "name": "No Pickles",
+    "type": "removal",
+    "impact": "Beef +5 if present"
+  },
+  {
+    "id": "extra_cheese",
+    "name": "Extra Cheese",
+    "type": "addition",
+    "impact": "Cost +$1.00"
+  },
+  {
+    "id": "no_onion",
+    "name": "No Onion",
+    "type": "removal",
+    "impact": "Beef +5 if present"
+  },
+  {
+    "id": "extra_patty",
+    "name": "Extra Patty",
+    "type": "addition",
+    "impact": "Cost +$2.00"
+  },
+  {
+    "id": "well_done",
+    "name": "Well Done",
+    "type": "state",
+    "impact": "Cooking time x1.5"
+  },
+  {
+    "id": "light_ice",
+    "name": "Light Ice",
+    "type": "state",
+    "impact": "Fill time -10%"
+  },
+  {
+    "id": "extra_sauce",
+    "name": "Extra Sauce",
+    "type": "addition",
+    "impact": "Cost +$0.50"
+  },
+  {
+    "id": "no_bun",
+    "name": "No Bun",
+    "type": "removal",
+    "impact": "Standard for GymBros"
+  },
+  {
+    "id": "double_sauce",
+    "name": "Double Sauce",
+    "type": "addition",
+    "impact": "High risk of spill"
+  },
+  {
+    "id": "half_caf",
+    "name": "Half Caf",
+    "type": "state",
+    "impact": "Specialized for CoffeeDLC"
+  },
+  {
+    "id": "arranged_circle",
+    "name": "Arranged in a Circle",
+    "type": "visual",
+    "impact": "Complexity +5"
+  },
+  {
+    "id": "room_temp",
+    "name": "Room Temperature",
+    "type": "state",
+    "impact": "No heating required"
+  },
+  {
+    "id": "spiritually_valid",
+    "name": "Spiritually Valid",
+    "type": "special",
+    "impact": "Coupon Warrior only"
+  },
+  {
+    "id": "no_government_cheese",
+    "name": "No Government Cheese",
+    "type": "removal",
+    "impact": "Conspiracy Uncle only"
+  },
+  {
+    "id": "gold_foil",
+    "name": "Gold Foil Wrapping",
+    "type": "visual",
+    "impact": "Cost +$10.00"
+  },
+  {
+    "id": "separate_bags",
+    "name": "Separate Bags",
+    "type": "logistics",
+    "impact": "Bagging time x2"
+  },
+  {
+    "id": "no_ice",
+    "name": "No Ice",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "sauce_on_side",
+    "name": "Sauce On Side",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "burnt_but_not_burnt",
+    "name": "Burnt But Not Burnt",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "fresh_fries",
+    "name": "Fresh Fries",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "extra_napkins",
+    "name": "Extra Napkins",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "no_napkins_for_policy",
+    "name": "No Napkins For Policy",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "plain_burger",
+    "name": "Plain Burger",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "cut_in_half",
+    "name": "Cut In Half",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "mystery_sauce",
+    "name": "Mystery Sauce",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "tiny_drink",
+    "name": "Tiny Drink",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "large_but_actually_medium",
+    "name": "Large But Actually Medium",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "no_pickle_energy",
+    "name": "No Pickle Energy",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "receipt_in_bag",
+    "name": "Receipt In Bag",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "dog_plain_patty",
+    "name": "Dog Plain Patty",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "kid_presentation",
+    "name": "Kid Presentation",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "manager_special",
+    "name": "Manager Special",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "silent_pointer_guess",
+    "name": "Silent Pointer Guess",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "wrong_restaurant_substitute",
+    "name": "Wrong Restaurant Substitute",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "coin_payment_delay",
+    "name": "Coin Payment Delay",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "mobile_app_proof",
+    "name": "Mobile App Proof",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "extra_straw",
+    "name": "Extra Straw",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "no_straw",
+    "name": "No Straw",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "spite_straw",
+    "name": "Spite Straw",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  },
+  {
+    "id": "exact_sauce_count",
+    "name": "Exact Sauce Count",
+    "type": "modifier",
+    "impact": "Affects order validation, Beef, wait time, or comedy reason generation.",
+    "systems_touched": [
+      "orders",
+      "validation",
+      "beef",
+      "eventlog"
+    ]
+  }
+]

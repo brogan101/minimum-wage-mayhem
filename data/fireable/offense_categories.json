@@ -1,0 +1,149 @@
+{
+  "categories": [
+    {
+      "id": "theft",
+      "display_name": "Theft",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "tip_jar_theft",
+      "display_name": "Tip Jar Theft",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "register_misconduct",
+      "display_name": "Register Misconduct",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "inventory_theft",
+      "display_name": "Inventory Theft",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "food_tampering",
+      "display_name": "Food Tampering",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "food_safety_violation",
+      "display_name": "Food Safety Violation",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "time_theft",
+      "display_name": "Time Theft",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "fake_discounts",
+      "display_name": "Fake Discounts",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "coupon_abuse",
+      "display_name": "Coupon Abuse",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "free_food_schemes",
+      "display_name": "Free Food Schemes",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "harassment_drama",
+      "display_name": "Harassment Drama",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "coworker_sabotage",
+      "display_name": "Coworker Sabotage",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "customer_conflict",
+      "display_name": "Customer Conflict",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "physical_fight",
+      "display_name": "Physical Fight",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "abstract_impairment",
+      "display_name": "Abstract Impairment",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "break_abuse",
+      "display_name": "Break Abuse",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "manager_coverup",
+      "display_name": "Manager Coverup",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "policy_fraud",
+      "display_name": "Policy Fraud",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "fake_documentation",
+      "display_name": "Fake Documentation",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "equipment_sabotage",
+      "display_name": "Equipment Sabotage",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "store_vandalism",
+      "display_name": "Store Vandalism",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "prank_gone_too_far",
+      "display_name": "Prank Gone Too Far",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "corporate_deception",
+      "display_name": "Corporate Deception",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "review_manipulation",
+      "display_name": "Review Manipulation",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "loyalty_betrayal",
+      "display_name": "Loyalty Betrayal",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "evidence_hiding",
+      "display_name": "Evidence Hiding",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "snitching",
+      "display_name": "Snitching",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "workplace_favor_pressure",
+      "display_name": "Workplace Favor Pressure",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    },
+    {
+      "id": "weird_superstition_nonsense",
+      "display_name": "Weird Superstition Nonsense",
+      "safety_note": "Fictional abstract workplace misconduct category."
+    }
+  ]
+}

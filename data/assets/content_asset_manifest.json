@@ -1,0 +1,182 @@
+[
+  {
+    "asset_id": "drive_thru_window",
+    "display_name": "Drive-Thru Window",
+    "type": "model",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "mvp"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "customer_car_variants",
+    "display_name": "Customer Car Variants",
+    "type": "model",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "food_bag",
+    "display_name": "Food Bag",
+    "type": "model/material",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "mvp"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "sauce_packets",
+    "display_name": "Sauce Packet Variants",
+    "type": "model/material",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "hr_printer",
+    "display_name": "HR Printer",
+    "type": "model/audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "mvp"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "phone_group_chat",
+    "display_name": "Phone UI / Group Chat",
+    "type": "ui/audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "apartment_props",
+    "display_name": "Apartment Props",
+    "type": "model/material",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "mop",
+    "display_name": "Mop Prop",
+    "type": "model",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "energy_drink_can",
+    "display_name": "Energy Drink Can",
+    "type": "model/material",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "manager_clipboard",
+    "display_name": "Manager Clipboard",
+    "type": "model/ui",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "mvp"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "customer_voice_stingers",
+    "display_name": "Customer Reaction Stingers",
+    "type": "audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "fryer_sizzle",
+    "display_name": "Fryer Sizzle",
+    "type": "audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "review_popup",
+    "display_name": "Review Popup UI",
+    "type": "ui/audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "gossip_ping",
+    "display_name": "Gossip/Phone Ping",
+    "type": "audio",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  },
+  {
+    "asset_id": "callout_text_ui",
+    "display_name": "Call-Out Text UI",
+    "type": "ui",
+    "source_plan": "procedural_or_cc0_needed",
+    "used_by": [
+      "v15_depth"
+    ],
+    "required_for_mvp": false,
+    "fallback": "procedural primitive/material + text label",
+    "license_requirement": "CC0/public-domain/commercial-use verified if external"
+  }
+]

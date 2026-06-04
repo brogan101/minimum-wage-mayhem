@@ -1,0 +1,91 @@
+{
+  "chains": [
+    {
+      "id": "good_headset_war",
+      "name": "The Good Headset War",
+      "steps": [
+        "player_hides_headset",
+        "coworker_retaliates",
+        "drive_thru_accuracy_drops",
+        "manager_notices",
+        "confess_frame_fix_or_escalate",
+        "headset_cult_forms",
+        "hr_report"
+      ],
+      "outcomes": [
+        "manager_suspicion_change",
+        "coworker_loyalty_change",
+        "hr_report"
+      ]
+    },
+    {
+      "id": "fake_memo_disaster",
+      "name": "The Fake Memo Disaster",
+      "steps": [
+        "fake_memo_posted",
+        "new_hire_follows_it",
+        "customer_confused",
+        "manager_believes_corporate_sent_it",
+        "corporate_denies_it",
+        "player_fixes_policy_confusion"
+      ],
+      "outcomes": [
+        "corporate_approval_change",
+        "policy_confusion_tag"
+      ]
+    },
+    {
+      "id": "sauce_union",
+      "name": "The Sauce Union",
+      "steps": [
+        "player_jokes_about_sauce_rights",
+        "coworkers_repeat_it",
+        "sauce_hoarder_leads",
+        "customers_hear",
+        "corporate_bans_sauce_jokes",
+        "sauce_shortage",
+        "player_negotiates_peace"
+      ],
+      "outcomes": [
+        "staff_morale_change",
+        "sauce_reputation_change",
+        "legendary_chain_possible"
+      ]
+    },
+    {
+      "id": "mop_uprising",
+      "name": "The Mop Uprising",
+      "steps": [
+        "mop_promoted",
+        "manager_gets_mad",
+        "mop_scheduled_as_shift_lead",
+        "new_hire_follows_mop",
+        "customer_sees_mop_at_window",
+        "hr_training_module",
+        "mop_legendary_object"
+      ],
+      "outcomes": [
+        "staff_morale_up",
+        "manager_suspicion_up",
+        "mop_object_legend"
+      ]
+    },
+    {
+      "id": "prank_too_far",
+      "name": "Prank Too Far",
+      "steps": [
+        "repeat_pranks",
+        "coworker_loyalty_drops",
+        "coworker_refuses_help",
+        "player_overwhelmed",
+        "customer_beef_rises",
+        "apologize_double_down_or_blame",
+        "promotion_path_affected"
+      ],
+      "outcomes": [
+        "promotion_progress_change",
+        "coworker_rival_possible"
+      ]
+    }
+  ]
+}

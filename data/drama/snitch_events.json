@@ -1,0 +1,422 @@
+[
+  {
+    "event_id": "report_fake_cleaning",
+    "display_name": "Report Fake Cleaning",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "report_sauce_hoarder",
+    "display_name": "Report Sauce Hoarder",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "report_employee_side_hustle_rumor",
+    "display_name": "Report Employee Side Hustle Rumor",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "corporate_climber_reports_napkin_abuse",
+    "display_name": "Corporate Climber Reports Napkin Abuse",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "customer_reports_rude_fry_energy",
+    "display_name": "Customer Reports Rude Fry Energy",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "player_reports_fake_complaint_hustler",
+    "display_name": "Player Reports Fake Complaint Hustler",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "group_chat_screenshot_leak",
+    "display_name": "Group Chat Screenshot Leak",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "employee_reports_burger_theft",
+    "display_name": "Employee Reports Burger Theft",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "kyle_posts_lake_photo_while_called_out",
+    "display_name": "Kyle Posts Lake Photo While Called Out",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "manager_hides_review_exposed",
+    "display_name": "Manager Hides Review Exposed",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "anonymous_sauce_narc",
+    "display_name": "Anonymous Sauce Narc",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "rival_store_fake_review_exposed",
+    "display_name": "Rival Store Fake Review Exposed",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "report_register_confidence",
+    "display_name": "Report Register Confidence",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "snitch_on_self_by_accident",
+    "display_name": "Snitch On Self By Accident",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  },
+  {
+    "event_id": "clipboard_rat_promotion_push",
+    "display_name": "Clipboard Rat Promotion Push",
+    "player_choices": [
+      "snitch",
+      "cover",
+      "ignore",
+      "warn_privately",
+      "use_as_leverage_abstract"
+    ],
+    "positive_effects": [
+      "corporate_approval_up",
+      "audit_protection"
+    ],
+    "negative_effects": [
+      "staff_morale_down",
+      "loyalty_down",
+      "gossip_up"
+    ],
+    "systems_touched": [
+      "snitch",
+      "morale",
+      "corporate",
+      "eventlog",
+      "hr"
+    ],
+    "safety_note": "Any leverage/cover-up is abstract and consequence-driven."
+  }
+]

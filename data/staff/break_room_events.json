@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "id": "break_room_trial",
+      "name": "The Break Room Trial",
+      "effects": [
+        "staff_loyalty_change",
+        "leadership_score_change"
+      ]
+    },
+    {
+      "id": "sauce_warehouse_discovered",
+      "name": "Sauce Warehouse Discovered",
+      "effects": [
+        "inventory_recovered",
+        "coworker_rival_possible"
+      ]
+    }
+  ]
+}

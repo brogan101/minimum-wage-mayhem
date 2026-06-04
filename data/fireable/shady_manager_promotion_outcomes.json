@@ -1,0 +1,36 @@
+{
+  "outcomes": [
+    {
+      "id": "clean_manager",
+      "description": "High trust, stable staff, fewer chaos penalties."
+    },
+    {
+      "id": "staff_hero_manager",
+      "description": "Staff loves player, corporate is unsure."
+    },
+    {
+      "id": "corporate_pet_manager",
+      "description": "Corporate loves player, staff loyalty low."
+    },
+    {
+      "id": "shady_manager",
+      "description": "Promoted despite suspicious history; unlocks shady manager mechanics."
+    },
+    {
+      "id": "chaos_manager",
+      "description": "Promoted because player survives disasters better than anyone."
+    },
+    {
+      "id": "last_option_manager",
+      "description": "Everyone else got fired, quit, or disappeared."
+    },
+    {
+      "id": "blackmail_manager",
+      "description": "Player knows too much and gets promoted to contain problem."
+    },
+    {
+      "id": "liability_manager",
+      "description": "Promotion is temporary, but player keeps the keys."
+    }
+  ]
+}

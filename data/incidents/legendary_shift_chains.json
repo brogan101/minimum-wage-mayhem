@@ -1,0 +1,103 @@
+{
+  "legendary_shift_chains": [
+    {
+      "id": "sauce_economy_collapse",
+      "name": "The Sauce Economy Collapse",
+      "steps": [
+        "sauce_delivery_short",
+        "sauce_hoarder_hides_packets",
+        "corporate_bans_free_sauce",
+        "employee_trade_starts",
+        "coupon_warrior_arrives",
+        "impossible_sauce_count"
+      ],
+      "outcomes": [
+        "sauce_reputation_change",
+        "corporate_approval_change",
+        "staff_morale_change",
+        "hr_report",
+        "badge_sauce_crisis_survivor"
+      ],
+      "gated": true
+    },
+    {
+      "id": "manager_left_building",
+      "name": "The Manager Has Left The Building",
+      "steps": [
+        "manager_overwhelmed",
+        "manager_hides",
+        "corporate_calls",
+        "rush_starts",
+        "player_acting_manager",
+        "coworker_drama",
+        "customer_demands_manager"
+      ],
+      "outcomes": [
+        "promotion_boost",
+        "manager_trust_change",
+        "acting_manager_title",
+        "store_legend_recap"
+      ],
+      "gated": true
+    },
+    {
+      "id": "coupon_war",
+      "name": "The Coupon War",
+      "steps": [
+        "app_coupon_breaks",
+        "coupon_binder_arrives",
+        "mobile_app_lawyer_arrives",
+        "register_misprices",
+        "corporate_policy_update",
+        "line_takes_sides"
+      ],
+      "outcomes": [
+        "register_training_unlocked",
+        "coupon_policy_change",
+        "viral_clip_chance",
+        "corporate_approval_risk"
+      ],
+      "gated": true
+    },
+    {
+      "id": "ghost_employee_shift",
+      "name": "The Ghost Employee Shift",
+      "steps": [
+        "employee_clocked_in",
+        "employee_missing",
+        "manager_insists_they_are_working",
+        "player_finds_clues",
+        "employee_appears_as_customer",
+        "station_coverage_collapses"
+      ],
+      "outcomes": [
+        "staff_morale_shift",
+        "manager_trust_change",
+        "ghost_employee_recurring"
+      ],
+      "gated": true
+    },
+    {
+      "id": "manager_trial_from_hell",
+      "name": "The Manager Trial From Hell",
+      "steps": [
+        "acting_manager",
+        "employee_callout",
+        "employee_drama",
+        "equipment_failure",
+        "corporate_mandate",
+        "customer_beef",
+        "optional_shady_opportunity",
+        "brawl_chance"
+      ],
+      "outcomes": [
+        "promotion_store_manager",
+        "promotion_delayed",
+        "staff_respect",
+        "corporate_fear",
+        "unique_recap"
+      ],
+      "gated": true
+    }
+  ]
+}

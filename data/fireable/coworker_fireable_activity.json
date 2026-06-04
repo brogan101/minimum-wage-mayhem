@@ -1,0 +1,592 @@
+{
+  "events": [
+    {
+      "id": "coworker_fireable_001",
+      "description": "Coworker steals from tip jar.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_002",
+      "description": "Coworker gives friend free food.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_003",
+      "description": "Coworker fakes clock-in.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_004",
+      "description": "Coworker hides during rush.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_005",
+      "description": "Coworker eats customer food.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_006",
+      "description": "Coworker sells fake secret menu.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_007",
+      "description": "Coworker starts fake coupon ring.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_008",
+      "description": "Coworker uses manager code.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_009",
+      "description": "Coworker blames player for drawer shortage.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_010",
+      "description": "Coworker steals good headset.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_011",
+      "description": "Coworker records customer argument.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_012",
+      "description": "Coworker starts fight with customer.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_013",
+      "description": "Coworker threatens to quit every shift.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_014",
+      "description": "Coworker sabotages station.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_015",
+      "description": "Coworker posts fake review.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_016",
+      "description": "Coworker steals employee lunch.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_017",
+      "description": "Coworker creates break room complaint pool.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_018",
+      "description": "Coworker trades sauces for favors.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_019",
+      "description": "Coworker claims store property is emotionally theirs.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_020",
+      "description": "Coworker sleeps in freezer.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_021",
+      "description": "Coworker starts parking-lot side hustle as abstract event.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_022",
+      "description": "Coworker uses store phone for weird personal business.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_023",
+      "description": "Coworker keeps borrowing register change.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_024",
+      "description": "Coworker marks fake waste.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_025",
+      "description": "Coworker creates fake HR report.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_026",
+      "description": "Coworker leaks schedule.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_027",
+      "description": "Coworker tries to sell the mop online.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    },
+    {
+      "id": "coworker_fireable_028",
+      "description": "Coworker frames player using sauce packets.",
+      "player_response_options": [
+        "ignore",
+        "join",
+        "stop",
+        "report",
+        "cover",
+        "use_as_leverage",
+        "warn_anonymously",
+        "help_clean_up"
+      ],
+      "systems_affected": [
+        "staff_morale",
+        "manager_trust",
+        "suspicion",
+        "eventlog"
+      ],
+      "safety_note": "Fictional coworker misconduct event."
+    }
+  ]
+}

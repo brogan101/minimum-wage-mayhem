@@ -1,0 +1,156 @@
+{
+  "side_quests": [
+    {
+      "id": "good_headset_heist",
+      "name": "The Good Headset Heist",
+      "objectives": [
+        "search_break_room",
+        "ask_coworkers",
+        "check_manager_office",
+        "follow_receipt_printer_clue",
+        "return_keep_or_frame"
+      ],
+      "outcomes": [
+        "manager_trust_up",
+        "drive_thru_performance_up",
+        "staff_drama_chain",
+        "ghost_employee_event"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "sauce_packet_cold_war",
+      "name": "Sauce Packet Cold War",
+      "objectives": [
+        "find_sauce_hoarder",
+        "expose_join_ignore_or_regulate"
+      ],
+      "outcomes": [
+        "corporate_approval_up",
+        "coworker_loyalty_change",
+        "sauce_shortage_later",
+        "leadership_score_up"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "fake_corporate_memo",
+      "name": "The Fake Corporate Memo",
+      "objectives": [
+        "find_author",
+        "remove_enforce_or_blame_corporate"
+      ],
+      "outcomes": [
+        "manager_trust_up",
+        "morale_up",
+        "policy_confusion_up"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "break_room_trial",
+      "name": "Break Room Trial",
+      "objectives": [
+        "interview_staff",
+        "check_fridge",
+        "inspect_sauce_trail",
+        "choose_suspect"
+      ],
+      "outcomes": [
+        "leadership_up",
+        "coworker_rival",
+        "staff_morale_down",
+        "shady_karma_up"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "window_3_conspiracy",
+      "name": "The Window 3 Conspiracy",
+      "objectives": [
+        "correct_new_hire",
+        "play_along",
+        "ask_manager",
+        "make_fake_sign"
+      ],
+      "outcomes": [
+        "training_up",
+        "morale_up",
+        "customer_confusion",
+        "hr_note"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "mop_promotion",
+      "name": "The Mop Promotion",
+      "objectives": [
+        "keep_joke_going",
+        "shut_it_down",
+        "use_mop_as_mascot",
+        "report_to_manager",
+        "schedule_mop"
+      ],
+      "outcomes": [
+        "staff_morale_up",
+        "manager_suspicion_up",
+        "mop_based_hr_report",
+        "legendary_object_path"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    },
+    {
+      "id": "coupon_binder_prophecy",
+      "name": "The Coupon Binder Prophecy",
+      "objectives": [
+        "prepare_register",
+        "stock_sauce",
+        "warn_staff",
+        "hide_from_window",
+        "fake_coupon_unavailable_sign"
+      ],
+      "outcomes": [
+        "big_xp",
+        "coworker_trust_down",
+        "beef_risk",
+        "coupon_war_veteran_badge"
+      ],
+      "optional": true,
+      "eventlog_tags": [
+        "mischief",
+        "side_quest"
+      ],
+      "fallback": "generic_prank_sidequest"
+    }
+  ]
+}

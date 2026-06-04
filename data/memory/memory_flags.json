@@ -1,0 +1,18 @@
+{
+  "flags": [
+    "player_suspected_tip_jar",
+    "player_saved_shift",
+    "player_caused_shift_disaster",
+    "mop_promoted",
+    "receipt_printer_accused_player",
+    "coupon_war_survivor",
+    "sauce_crisis_seen",
+    "manager_coverup_known",
+    "normal_family_guilt_seen",
+    "new_hire_believed_policy",
+    "corporate_climber_snitched",
+    "good_headset_missing_again",
+    "restaurant_stability_low",
+    "player_manager_material_somehow"
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "offenses": [
+    {
+      "offense_id": "tip_jar_pocketing",
+      "display_name": "Tip Jar Pocketing",
+      "category": [
+        "tip_jar_theft",
+        "theft"
+      ],
+      "severity": "moderate",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": true,
+      "food_safety_flag": false,
+      "base_detection_chance": 20,
+      "reward": [
+        "cash_delta"
+      ],
+      "risk": [
+        "manager_suspicion_up",
+        "coworker_trust_down"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Tip Jar Pocketing became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "register_discrepancy_cover",
+      "display_name": "Register Discrepancy Cover",
+      "category": [
+        "register_misconduct"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": true,
+      "food_safety_flag": false,
+      "base_detection_chance": 30,
+      "reward": [
+        "avoid_immediate_writeup"
+      ],
+      "risk": [
+        "corporate_audit_risk_up"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Register Discrepancy Cover became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "fake_refund",
+      "display_name": "Fake Refund",
+      "category": [
+        "register_misconduct",
+        "policy_fraud"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": true,
+      "food_safety_flag": false,
+      "base_detection_chance": 40,
+      "reward": [
+        "cash_delta"
+      ],
+      "risk": [
+        "fired_risk_up",
+        "audit_risk_up"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Fake Refund became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "sauce_box_hoarding",
+      "display_name": "Sauce Box Hoarding",
+      "category": [
+        "inventory_theft",
+        "free_food_schemes"
+      ],
+      "severity": "minor",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 12,
+      "reward": [
+        "coworker_loyalty_up"
+      ],
+      "risk": [
+        "sauce_shortage_risk"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -1,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Sauce Box Hoarding became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "employee_meal_abuse",
+      "display_name": "Employee Meal Abuse",
+      "category": [
+        "inventory_theft",
+        "free_food_schemes"
+      ],
+      "severity": "moderate",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 18,
+      "reward": [
+        "hunger_down"
+      ],
+      "risk": [
+        "inventory_discrepancy_up"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Employee Meal Abuse became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "questionable_order",
+      "display_name": "Questionable Order",
+      "category": [
+        "food_safety_violation",
+        "food_tampering"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": true,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": true,
+      "base_detection_chance": 35,
+      "reward": [
+        "time_saved"
+      ],
+      "risk": [
+        "food_karma_down",
+        "fired_risk_up"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Questionable Order became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "time_clock_hiding",
+      "display_name": "Hiding While Clocked In",
+      "category": [
+        "time_theft",
+        "break_abuse"
+      ],
+      "severity": "moderate",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 22,
+      "reward": [
+        "stress_down"
+      ],
+      "risk": [
+        "manager_trust_down"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Hiding While Clocked In became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "coworker_frame_job",
+      "display_name": "Coworker Frame Job",
+      "category": [
+        "coworker_sabotage",
+        "loyalty_betrayal"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 38,
+      "reward": [
+        "avoid_blame"
+      ],
+      "risk": [
+        "staff_morale_down",
+        "future_rival"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Coworker Frame Job became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "customer_conflict_escalation",
+      "display_name": "Customer Conflict Escalation",
+      "category": [
+        "customer_conflict",
+        "physical_fight"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": true,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 45,
+      "reward": [
+        "beef_resolved_short"
+      ],
+      "risk": [
+        "viral_clip_risk",
+        "writeup_risk"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Customer Conflict Escalation became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "abstract_shift_impairment",
+      "display_name": "Not Fit For Window",
+      "category": [
+        "abstract_impairment"
+      ],
+      "severity": "major",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 32,
+      "reward": [
+        "temporary_speed_or_confidence"
+      ],
+      "risk": [
+        "wrong_bag_chance",
+        "hr_report_risk"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 10,
+      "fired_risk_delta": 15,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Not Fit For Window became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "fake_corporate_memo",
+      "display_name": "Fake Corporate Memo",
+      "category": [
+        "fake_documentation",
+        "corporate_deception"
+      ],
+      "severity": "moderate",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 25,
+      "reward": [
+        "mischief_reputation"
+      ],
+      "risk": [
+        "policy_confusion"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -5,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Fake Corporate Memo became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    },
+    {
+      "offense_id": "mop_on_payroll",
+      "display_name": "Mop On Payroll",
+      "category": [
+        "weird_superstition_nonsense",
+        "fake_documentation"
+      ],
+      "severity": "minor",
+      "illegal_flag": false,
+      "gross_flag": false,
+      "violence_flag": false,
+      "theft_flag": false,
+      "food_safety_flag": false,
+      "base_detection_chance": 10,
+      "reward": [
+        "staff_morale_up"
+      ],
+      "risk": [
+        "hr_confusion"
+      ],
+      "hr_report_template": "generic_fireable_offense_report",
+      "review_template": "generic_incident_review",
+      "promotion_delta": -1,
+      "demotion_risk_delta": 3,
+      "fired_risk_delta": 4,
+      "karma_delta": -5,
+      "repeat_multiplier": 1.5,
+      "possible_recovery_actions": [
+        "confess",
+        "complete_training",
+        "repair_damage",
+        "apologize",
+        "improve_next_shift"
+      ],
+      "rare_outcomes": [
+        "somehow_promoted",
+        "manager_coverup",
+        "coworker_takes_blame"
+      ],
+      "funny_recap_text": "Mop On Payroll became a whole thing.",
+      "safety_note": "Fictional abstract gameplay choice; no real-world instructions."
+    }
+  ]
+}

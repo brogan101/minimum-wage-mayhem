@@ -1,0 +1,80 @@
+{
+  "coworkers": [
+    {
+      "id": "new_hire",
+      "likes": [
+        "patient_training",
+        "being_included"
+      ],
+      "dislikes": [
+        "being_framed",
+        "fake_policies"
+      ],
+      "can_save_player_by": "admitting_small_mistake"
+    },
+    {
+      "id": "sauce_hoarder",
+      "likes": [
+        "sauce_respect",
+        "not_snitching"
+      ],
+      "dislikes": [
+        "sauce_audits"
+      ],
+      "can_save_player_by": "finding_missing_sauce"
+    },
+    {
+      "id": "corporate_climber",
+      "likes": [
+        "rules",
+        "documentation"
+      ],
+      "dislikes": [
+        "mischief",
+        "shady_choices"
+      ],
+      "can_save_player_by": "knowing_policy"
+    },
+    {
+      "id": "ghost_employee",
+      "likes": [
+        "being_left_alone",
+        "mystery"
+      ],
+      "dislikes": [
+        "camera_questions"
+      ],
+      "can_save_player_by": "appearing_exactly_once"
+    },
+    {
+      "id": "register_gremlin",
+      "likes": [
+        "register_respect",
+        "coins"
+      ],
+      "dislikes": [
+        "drawer_blame"
+      ],
+      "can_save_player_by": "fixing_jam"
+    },
+    {
+      "id": "kitchen_menace",
+      "likes": [
+        "speed",
+        "chaos"
+      ],
+      "dislikes": [
+        "overexplaining"
+      ],
+      "can_save_player_by": "clearing_rush"
+    }
+  ],
+  "relationship_effects": [
+    "station_help",
+    "cover_story_support",
+    "snitch_chance",
+    "prank_retaliation",
+    "morale_boost",
+    "future_quest_unlock"
+  ]
+}

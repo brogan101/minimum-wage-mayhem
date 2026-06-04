@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "id": "polite_order_streak",
+      "effect": "composure_up",
+      "recap_line": "For once, people ordered food like adults."
+    },
+    {
+      "id": "coworker_refills_without_asking",
+      "effect": "morale_up",
+      "recap_line": "A coworker helped without creating a legal issue."
+    },
+    {
+      "id": "customer_says_thanks",
+      "effect": "kindness_karma_up",
+      "recap_line": "One customer used manners. HR is investigating."
+    },
+    {
+      "id": "clean_station_bonus",
+      "effect": "speed_up_small",
+      "recap_line": "The station was clean enough to have a future."
+    },
+    {
+      "id": "normal_family_served_correctly",
+      "effect": "food_karma_up",
+      "recap_line": "A normal family ate normal food. Somehow rare."
+    },
+    {
+      "id": "drive_thru_flow_smooth",
+      "effect": "corporate_approval_up_small",
+      "recap_line": "The timer did not scream."
+    },
+    {
+      "id": "quiet_break_moment",
+      "effect": "stress_down",
+      "recap_line": "You experienced 45 seconds of peace."
+    },
+    {
+      "id": "regular_tips_normally",
+      "effect": "tips_up_small",
+      "recap_line": "A regular tipped without starting lore."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "campaign_goal": "Become Store Manager",
+  "campaign_tagline": "A full comedy campaign where every dumb shift is pushing the player toward Store Manager and insanity.",
+  "ranks": [
+    {
+      "id": "new_hire",
+      "name": "New Hire",
+      "pay_rate": 7.25,
+      "unlocks": [
+        "clock_in",
+        "basic_interaction",
+        "basic_cleaning"
+      ],
+      "next": "trainee"
+    },
+    {
+      "id": "trainee",
+      "name": "Trainee",
+      "pay_rate": 8.0,
+      "unlocks": [
+        "basic_burger",
+        "basic_fries",
+        "basic_drink",
+        "simple_handoff"
+      ],
+      "next": "crew_member"
+    },
+    {
+      "id": "crew_member",
+      "name": "Crew Member",
+      "pay_rate": 9.25,
+      "unlocks": [
+        "grill",
+        "fryer",
+        "drink_station",
+        "bagging_station",
+        "sauce_rack"
+      ],
+      "next": "fry_cook"
+    },
+    {
+      "id": "fry_cook",
+      "name": "Fry Cook / Kitchen Worker",
+      "pay_rate": 10.25,
+      "unlocks": [
+        "cook_quality",
+        "prep_stock",
+        "holding_timers",
+        "waste_tracking"
+      ],
+      "next": "register_goblin"
+    },
+    {
+      "id": "register_goblin",
+      "name": "Register Goblin",
+      "pay_rate": 10.75,
+      "unlocks": [
+        "register",
+        "coupon_validation",
+        "customer_recovery"
+      ],
+      "next": "window_warrior"
+    },
+    {
+      "id": "window_warrior",
+      "name": "Drive-Thru Window Warrior",
+      "pay_rate": 11.25,
+      "unlocks": [
+        "pull_forward",
+        "line_pressure_meter",
+        "window_recovery"
+      ],
+      "next": "crew_trainer"
+    },
+    {
+      "id": "crew_trainer",
+      "name": "Crew Trainer",
+      "pay_rate": 12.0,
+      "unlocks": [
+        "train_coworker",
+        "training_board",
+        "coaching_prompts"
+      ],
+      "next": "shift_lead"
+    },
+    {
+      "id": "shift_lead",
+      "name": "Shift Lead",
+      "pay_rate": 13.25,
+      "unlocks": [
+        "station_assignment",
+        "break_approval",
+        "minor_complaints"
+      ],
+      "next": "key_holder"
+    },
+    {
+      "id": "key_holder",
+      "name": "Key Holder",
+      "pay_rate": 14.25,
+      "unlocks": [
+        "open_store",
+        "close_store",
+        "register_count",
+        "restricted_storage"
+      ],
+      "next": "assistant_manager"
+    },
+    {
+      "id": "assistant_manager",
+      "name": "Assistant Manager",
+      "pay_rate": 16.0,
+      "unlocks": [
+        "schedule_draft",
+        "hr_reports",
+        "review_response",
+        "small_upgrades"
+      ],
+      "next": "store_manager"
+    },
+    {
+      "id": "store_manager",
+      "name": "Store Manager",
+      "pay_rate": 20.0,
+      "unlocks": [
+        "full_office",
+        "hiring",
+        "firing",
+        "coaching",
+        "full_schedule",
+        "store_upgrades",
+        "policy_tools"
+      ],
+      "next": "post_manager"
+    }
+  ]
+}

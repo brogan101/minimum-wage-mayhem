@@ -1,0 +1,322 @@
+[
+  {
+    "side_hustle_id": "extra_shift",
+    "display_name": "Extra Shift",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 10,
+    "money_reward": 20,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "delivery_app_run",
+    "display_name": "Delivery App Run",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 15,
+    "money_reward": 30,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "mowing_lawns",
+    "display_name": "Mowing Lawns",
+    "type": "legal",
+    "time_cost": 3,
+    "energy_cost": 20,
+    "money_reward": 40,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "fix_neighbor_wi_fi",
+    "display_name": "Fix Neighbor Wi-Fi",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 25,
+    "money_reward": 50,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "sell_old_junk",
+    "display_name": "Sell Old Junk",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 10,
+    "money_reward": 60,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "plasma_appointment_fictional",
+    "display_name": "Plasma Appointment Fictional",
+    "type": "fictional_gray",
+    "time_cost": 3,
+    "energy_cost": 15,
+    "money_reward": 20,
+    "risk": "medium",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "focus_group",
+    "display_name": "Focus Group",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 20,
+    "money_reward": 30,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "sign_spinner_gig",
+    "display_name": "Sign Spinner Gig",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 25,
+    "money_reward": 40,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "dog_walking",
+    "display_name": "Dog Walking",
+    "type": "legal",
+    "time_cost": 3,
+    "energy_cost": 10,
+    "money_reward": 50,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "mystery_shopper_side_gig",
+    "display_name": "Mystery Shopper Side Gig",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 15,
+    "money_reward": 60,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "thrift_resell",
+    "display_name": "Thrift Resell",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 20,
+    "money_reward": 20,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "clean_garage",
+    "display_name": "Clean Garage",
+    "type": "legal",
+    "time_cost": 3,
+    "energy_cost": 25,
+    "money_reward": 30,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "coworker_ride_favor",
+    "display_name": "Coworker Ride Favor",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 10,
+    "money_reward": 40,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "sauce_packet_trading_fictional",
+    "display_name": "Sauce Packet Trading Fictional",
+    "type": "fictional_gray",
+    "time_cost": 2,
+    "energy_cost": 15,
+    "money_reward": 50,
+    "risk": "medium",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "secret_menu_hype_post",
+    "display_name": "Secret Menu Hype Post",
+    "type": "legal",
+    "time_cost": 3,
+    "energy_cost": 20,
+    "money_reward": 60,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "cover_employee_shift",
+    "display_name": "Cover Employee Shift",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 25,
+    "money_reward": 20,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "pawn_old_console",
+    "display_name": "Pawn Old Console",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 10,
+    "money_reward": 30,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "move_couch_for_regular",
+    "display_name": "Move Couch For Regular",
+    "type": "legal",
+    "time_cost": 3,
+    "energy_cost": 15,
+    "money_reward": 40,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "odd_job_from_landlord",
+    "display_name": "Odd Job From Landlord",
+    "type": "legal",
+    "time_cost": 1,
+    "energy_cost": 20,
+    "money_reward": 50,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  },
+  {
+    "side_hustle_id": "budget_night_in",
+    "display_name": "Budget Night In",
+    "type": "legal",
+    "time_cost": 2,
+    "energy_cost": 25,
+    "money_reward": 60,
+    "risk": "low",
+    "next_shift_effect": "energy_or_stress_modifier",
+    "systems_touched": [
+      "money",
+      "life",
+      "workday_modifiers"
+    ],
+    "safety_note": "Fictionalized/abstract; not real-world advice."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "tracked_values": [
+    "suspicion",
+    "witness_count",
+    "camera_risk",
+    "snitch_risk",
+    "manager_trust",
+    "corporate_audit_risk",
+    "inventory_mismatch",
+    "register_discrepancy",
+    "repeat_offender_count"
+  ],
+  "rule": "Abstract risk system only; no real-world theft instruction."
+}

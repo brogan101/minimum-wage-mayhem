@@ -1,0 +1,184 @@
+{
+  "excuses": [
+    {
+      "id": "callout_001",
+      "text": "My emotional support lizard has court.",
+      "believability": 55,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": true
+    },
+    {
+      "id": "callout_002",
+      "text": "The moon said no.",
+      "believability": 53,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_003",
+      "text": "I woke up with manager energy and need to heal.",
+      "believability": 51,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_004",
+      "text": "My cousin borrowed my shoes.",
+      "believability": 49,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_005",
+      "text": "I got trapped in a group chat.",
+      "believability": 47,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_006",
+      "text": "My grandma died again.",
+      "believability": 45,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": true
+    },
+    {
+      "id": "callout_007",
+      "text": "My laundry is holding my pants hostage.",
+      "believability": 43,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_008",
+      "text": "I accidentally became a DJ last night.",
+      "believability": 41,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_009",
+      "text": "My horoscope said no fryer today.",
+      "believability": 39,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_010",
+      "text": "I forgot how pants work.",
+      "believability": 37,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_011",
+      "text": "I am experiencing fryer-related astrology.",
+      "believability": 35,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": true
+    },
+    {
+      "id": "callout_012",
+      "text": "I had a dream I already worked today, and spiritually that counts.",
+      "believability": 33,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_013",
+      "text": "My car key is in a chicken nugget box somewhere.",
+      "believability": 31,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_014",
+      "text": "I am legally not allowed near the mop bucket today.",
+      "believability": 29,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_015",
+      "text": "I'm not late. The schedule is early.",
+      "believability": 27,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_016",
+      "text": "My alarm clock betrayed the company.",
+      "believability": 25,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": true
+    },
+    {
+      "id": "callout_017",
+      "text": "I got promoted at my other job to unemployed.",
+      "believability": 23,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_018",
+      "text": "My shoes are emotionally unavailable.",
+      "believability": 21,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_019",
+      "text": "My neighbor's rooster challenged me.",
+      "believability": 19,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    },
+    {
+      "id": "callout_020",
+      "text": "I cannot work because I know too much.",
+      "believability": 17,
+      "station_coverage_effect": "station_uncovered",
+      "player_workload_effect": "increased",
+      "can_be_fake": true,
+      "can_show_as_customer": false
+    }
+  ]
+}

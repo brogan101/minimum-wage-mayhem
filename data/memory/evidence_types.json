@@ -1,0 +1,79 @@
+{
+  "evidence_types": [
+    {
+      "id": "camera_footage",
+      "strength": 8,
+      "decay_shifts": 5
+    },
+    {
+      "id": "coworker_witness",
+      "strength": 6,
+      "decay_shifts": 3
+    },
+    {
+      "id": "customer_witness",
+      "strength": 5,
+      "decay_shifts": 2
+    },
+    {
+      "id": "missing_money",
+      "strength": 9,
+      "decay_shifts": 6
+    },
+    {
+      "id": "missing_inventory",
+      "strength": 7,
+      "decay_shifts": 5
+    },
+    {
+      "id": "drawer_mismatch",
+      "strength": 8,
+      "decay_shifts": 4
+    },
+    {
+      "id": "tip_jar_discrepancy",
+      "strength": 7,
+      "decay_shifts": 4
+    },
+    {
+      "id": "suspicious_receipt",
+      "strength": 6,
+      "decay_shifts": 8
+    },
+    {
+      "id": "review",
+      "strength": 4,
+      "decay_shifts": 10
+    },
+    {
+      "id": "hr_report",
+      "strength": 8,
+      "decay_shifts": 12
+    },
+    {
+      "id": "viral_clip",
+      "strength": 10,
+      "decay_shifts": 20
+    },
+    {
+      "id": "manager_note",
+      "strength": 6,
+      "decay_shifts": 8
+    },
+    {
+      "id": "rumor",
+      "strength": 3,
+      "decay_shifts": 3
+    },
+    {
+      "id": "object_involved",
+      "strength": 5,
+      "decay_shifts": 10
+    },
+    {
+      "id": "food_quality_issue",
+      "strength": 7,
+      "decay_shifts": 3
+    }
+  ]
+}

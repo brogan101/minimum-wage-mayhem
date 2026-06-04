@@ -1,0 +1,44 @@
+{
+  "fallbacks": [
+    {
+      "system": "DepthDirector",
+      "failure": "bundle_missing",
+      "fallback": "skip_bundle_log_warning"
+    },
+    {
+      "system": "NormalcyBalanceDirector",
+      "failure": "invalid_weights",
+      "fallback": "use_default_50_25_15_10"
+    },
+    {
+      "system": "CustomerMemory",
+      "failure": "customer_missing",
+      "fallback": "use_normal_regular"
+    },
+    {
+      "system": "CoworkerSocialWeb",
+      "failure": "relationship_missing",
+      "fallback": "neutral_relationship"
+    },
+    {
+      "system": "HomeLifeDepth",
+      "failure": "modifier_missing",
+      "fallback": "no_modifier"
+    },
+    {
+      "system": "EquipmentPersonality",
+      "failure": "object_missing",
+      "fallback": "generic_equipment"
+    },
+    {
+      "system": "MissionDetour",
+      "failure": "route_missing",
+      "fallback": "simple_recovery_task"
+    },
+    {
+      "system": "StoreIdentity",
+      "failure": "mutation_conflict",
+      "fallback": "highest_priority_mutation_only"
+    }
+  ]
+}

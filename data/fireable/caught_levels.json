@@ -1,0 +1,50 @@
+{
+  "levels": [
+    {
+      "id": "caught_but_excused",
+      "severity": 0,
+      "effects": [
+        "warning_or_rumor"
+      ],
+      "description": "Manager laughs it off or coworker covers."
+    },
+    {
+      "id": "caught_minor",
+      "severity": 1,
+      "effects": [
+        "verbal_warning",
+        "minor_hr_note",
+        "promotion_slow"
+      ]
+    },
+    {
+      "id": "caught_serious",
+      "severity": 2,
+      "effects": [
+        "written_warning",
+        "demotion_risk_up",
+        "shift_restriction"
+      ]
+    },
+    {
+      "id": "caught_major",
+      "severity": 3,
+      "effects": [
+        "suspension_possible",
+        "promotion_block",
+        "major_hr_report",
+        "fired_risk_up"
+      ]
+    },
+    {
+      "id": "caught_legendary",
+      "severity": 4,
+      "effects": [
+        "viral_clip",
+        "store_scandal",
+        "possible_firing",
+        "career_history_scar"
+      ]
+    }
+  ]
+}

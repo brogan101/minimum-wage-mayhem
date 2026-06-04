@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "id": "slept_well",
+      "tone": "normal",
+      "work_modifier": "composure_up",
+      "mission_hook": "quiet_shift_bonus"
+    },
+    {
+      "id": "bad_sleep_neighbors_again",
+      "tone": "normal",
+      "work_modifier": "focus_down",
+      "mission_hook": "energy_management"
+    },
+    {
+      "id": "rent_math_panic",
+      "tone": "friction",
+      "work_modifier": "tip_focus_up_stress_up",
+      "mission_hook": "money_pressure_shift"
+    },
+    {
+      "id": "uniform_laundry_failure",
+      "tone": "friction",
+      "work_modifier": "corporate_scrutiny_up",
+      "mission_hook": "recover_cleanliness_score"
+    },
+    {
+      "id": "coworker_texts_for_ride",
+      "tone": "balanced",
+      "work_modifier": "coworker_loyalty_choice",
+      "mission_hook": "ride_or_refuse"
+    },
+    {
+      "id": "good_breakfast_buff",
+      "tone": "normal",
+      "work_modifier": "mistake_chance_down",
+      "mission_hook": "none"
+    },
+    {
+      "id": "apartment_argument_heard",
+      "tone": "friction",
+      "work_modifier": "stress_up",
+      "mission_hook": "patience_test"
+    },
+    {
+      "id": "manager_text_before_shift",
+      "tone": "balanced",
+      "work_modifier": "manager_pressure_preloaded",
+      "mission_hook": "pre_shift_dread"
+    }
+  ]
+}

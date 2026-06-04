@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "id": "minor_rule_break_reported",
+      "source": "corporate_climber",
+      "effects": [
+        "corporate_approval_up",
+        "staff_morale_down"
+      ]
+    },
+    {
+      "id": "player_eating_inventory_reported",
+      "source": "random_coworker",
+      "effects": [
+        "suspicion_up",
+        "writeup_risk"
+      ]
+    }
+  ]
+}

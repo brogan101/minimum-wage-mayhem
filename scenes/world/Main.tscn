@@ -1,0 +1,287 @@
+[gd_scene load_steps=23 format=3 uid="uid://bmfwknht0y2b4"]
+
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_main"]
+[ext_resource type="Script" path="res://scripts/items/PickupItem.gd" id="2_pickup"]
+[ext_resource type="Script" path="res://scripts/stations/Interactable.gd" id="3_interactable"]
+[ext_resource type="Script" path="res://scripts/items/FoodItem.gd" id="4_food"]
+[ext_resource type="Script" path="res://scripts/stations/GrillStation.gd" id="5_grill"]
+[ext_resource type="Script" path="res://scripts/staff/StaffDirector.gd" id="6_staff_director"]
+[ext_resource type="Script" path="res://scripts/staff/CoworkerNPC.gd" id="7_coworker"]
+[ext_resource type="Script" path="res://scripts/store/StoreOpsDirector.gd" id="8_store_ops"]
+[ext_resource type="Script" path="res://scripts/store/StoreOpsStation.gd" id="9_store_station"]
+[ext_resource type="Script" path="res://scripts/mischief/DailyTaskManager.gd" id="10_daily_tasks"]
+[ext_resource type="Script" path="res://scripts/stations/DriveThruWindow.gd" id="11_drive_thru"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_floor"]
+size = Vector3(16, 0.2, 16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_floor"]
+size = Vector3(16, 0.2, 16)
+
+[sub_resource type="BoxMesh" id="BoxMesh_station"]
+size = Vector3(1.4, 1.2, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_station"]
+size = Vector3(1.4, 1.2, 0.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_item"]
+size = Vector3(0.45, 0.18, 0.45)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_item"]
+size = Vector3(0.45, 0.18, 0.45)
+
+[sub_resource type="BoxMesh" id="BoxMesh_counter"]
+size = Vector3(3, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_counter"]
+size = Vector3(3, 1, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_coworker"]
+radius = 0.35
+height = 1.4
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_coworker"]
+radius = 0.35
+height = 1.4
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="RestaurantFloor" type="StaticBody3D" parent="World"]
+metadata/phase = "Phase 1 MVP boot floor"
+
+[node name="FloorMesh" type="MeshInstance3D" parent="World/RestaurantFloor"]
+mesh = SubResource("BoxMesh_floor")
+
+[node name="FloorCollision" type="CollisionShape3D" parent="World/RestaurantFloor"]
+shape = SubResource("BoxShape3D_floor")
+
+[node name="DriveThruMarker" type="Marker3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.2, -4)
+
+[node name="RegisterMarker" type="Marker3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0.2, -3)
+
+[node name="KitchenMarker" type="Marker3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.2, 4)
+
+[node name="GrillStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.9, 3.6)
+script = ExtResource("5_grill")
+cooking_temperature = 0.0
+interact_text = "Use grill"
+
+[node name="GrillMesh" type="MeshInstance3D" parent="World/GrillStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="GrillCollision" type="CollisionShape3D" parent="World/GrillStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="CookingArea" type="Area3D" parent="World/GrillStation"]
+
+[node name="CookingAreaCollision" type="CollisionShape3D" parent="World/GrillStation/CookingArea"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="RawPatty" type="RigidBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 1.2, 3.6)
+mass = 0.25
+script = ExtResource("4_food")
+cook_time = 1.0
+burn_time = 2.0
+item_name = "Raw Patty"
+is_food = true
+
+[node name="PattyMesh" type="MeshInstance3D" parent="World/RawPatty"]
+mesh = SubResource("BoxMesh_item")
+
+[node name="PattyCollision" type="CollisionShape3D" parent="World/RawPatty"]
+shape = SubResource("BoxShape3D_item")
+
+[node name="TrainingCounter" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 1.2)
+script = ExtResource("3_interactable")
+interact_text = "Check prep counter"
+
+[node name="CounterMesh" type="MeshInstance3D" parent="World/TrainingCounter"]
+mesh = SubResource("BoxMesh_counter")
+
+[node name="CounterCollision" type="CollisionShape3D" parent="World/TrainingCounter"]
+shape = SubResource("BoxShape3D_counter")
+
+[node name="TrainingBurger" type="RigidBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 1.2)
+mass = 0.35
+script = ExtResource("2_pickup")
+item_name = "Training Burger"
+is_food = true
+
+[node name="BurgerMesh" type="MeshInstance3D" parent="World/TrainingBurger"]
+mesh = SubResource("BoxMesh_item")
+
+[node name="BurgerCollision" type="CollisionShape3D" parent="World/TrainingBurger"]
+shape = SubResource("BoxShape3D_item")
+
+[node name="RegisterStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0.9, -2.2)
+script = ExtResource("3_interactable")
+interact_text = "Open register"
+
+[node name="RegisterMesh" type="MeshInstance3D" parent="World/RegisterStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="RegisterCollision" type="CollisionShape3D" parent="World/RegisterStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="DriveThruStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2, 0.9, -2.2)
+script = ExtResource("11_drive_thru")
+interact_text = "Hand off order"
+
+[node name="DriveThruMesh" type="MeshInstance3D" parent="World/DriveThruStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="DriveThruCollision" type="CollisionShape3D" parent="World/DriveThruStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="SauceStockStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8, 0.9, 2.8)
+script = ExtResource("9_store_station")
+duty_id = "restock_sauce"
+station_label = "Restock sauce"
+
+[node name="SauceStockMesh" type="MeshInstance3D" parent="World/SauceStockStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="SauceStockCollision" type="CollisionShape3D" parent="World/SauceStockStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="BaggingTableStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.9, -0.4)
+script = ExtResource("9_store_station")
+duty_id = "clear_bagging_table"
+station_label = "Clear bagging table"
+
+[node name="BaggingTableMesh" type="MeshInstance3D" parent="World/BaggingTableStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="BaggingTableCollision" type="CollisionShape3D" parent="World/BaggingTableStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="FryerCheckStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0.9, 2.8)
+script = ExtResource("9_store_station")
+duty_id = "check_fryer"
+station_label = "Check fryer"
+
+[node name="FryerCheckMesh" type="MeshInstance3D" parent="World/FryerCheckStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="FryerCheckCollision" type="CollisionShape3D" parent="World/FryerCheckStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="TrashRunStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0.9, 2.8)
+script = ExtResource("9_store_station")
+duty_id = "take_out_trash"
+station_label = "Take out trash"
+
+[node name="TrashRunMesh" type="MeshInstance3D" parent="World/TrashRunStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="TrashRunCollision" type="CollisionShape3D" parent="World/TrashRunStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="CleaningStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2, 0.9, 0.8)
+script = ExtResource("9_store_station")
+duty_id = "clean_spill"
+station_label = "Clean station"
+
+[node name="CleaningMesh" type="MeshInstance3D" parent="World/CleaningStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="CleaningCollision" type="CollisionShape3D" parent="World/CleaningStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="RegisterCheckStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 0.9, -3.2)
+script = ExtResource("9_store_station")
+duty_id = "open_register"
+station_label = "Count register"
+
+[node name="RegisterCheckMesh" type="MeshInstance3D" parent="World/RegisterCheckStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="RegisterCheckCollision" type="CollisionShape3D" parent="World/RegisterCheckStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="RecoveryStation" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 0.9, 1.2)
+script = ExtResource("9_store_station")
+duty_id = "repair_minor_issue"
+station_label = "Fix minor issue"
+repairs_issue = true
+issue_id = "fryer_timer_drift"
+
+[node name="RecoveryMesh" type="MeshInstance3D" parent="World/RecoveryStation"]
+mesh = SubResource("BoxMesh_station")
+
+[node name="RecoveryCollision" type="CollisionShape3D" parent="World/RecoveryStation"]
+shape = SubResource("BoxShape3D_station")
+
+[node name="CoworkerRiley" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8, 0.8, 2.4)
+script = ExtResource("7_coworker")
+
+[node name="RileyMesh" type="MeshInstance3D" parent="World/CoworkerRiley"]
+mesh = SubResource("CapsuleMesh_coworker")
+
+[node name="RileyCollision" type="CollisionShape3D" parent="World/CoworkerRiley"]
+shape = SubResource("CapsuleShape3D_coworker")
+
+[node name="CoworkerCasey" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8, 0.8, -1.6)
+script = ExtResource("7_coworker")
+coworker_id = "casey"
+assigned_station = "register"
+
+[node name="CaseyMesh" type="MeshInstance3D" parent="World/CoworkerCasey"]
+mesh = SubResource("CapsuleMesh_coworker")
+
+[node name="CaseyCollision" type="CollisionShape3D" parent="World/CoworkerCasey"]
+shape = SubResource("CapsuleShape3D_coworker")
+
+[node name="CoworkerMorgan" type="StaticBody3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8, 0.8, -1.6)
+script = ExtResource("7_coworker")
+coworker_id = "morgan"
+assigned_station = "drive_thru"
+
+[node name="MorganMesh" type="MeshInstance3D" parent="World/CoworkerMorgan"]
+mesh = SubResource("CapsuleMesh_coworker")
+
+[node name="MorganCollision" type="CollisionShape3D" parent="World/CoworkerMorgan"]
+shape = SubResource("CapsuleShape3D_coworker")
+
+[node name="StaffDirector" type="Node" parent="."]
+script = ExtResource("6_staff_director")
+
+[node name="StoreOpsDirector" type="Node" parent="."]
+script = ExtResource("8_store_ops")
+
+[node name="DailyTaskManager" type="Node" parent="."]
+script = ExtResource("10_daily_tasks")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 0, 10, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1")

@@ -1,0 +1,20 @@
+{
+  "budgets": {
+    "active_customers": 8,
+    "active_coworkers": 6,
+    "active_physics_props": 40,
+    "active_depth_events": 3,
+    "active_wild_events": 1,
+    "active_memory_entries_per_shift": 80,
+    "active_rumors": 5,
+    "active_object_labels": 10,
+    "max_eventlog_entries_visible": 12,
+    "max_daily_tasks": 5
+  },
+  "rules": [
+    "despawn_delivered_food",
+    "pool_common_props",
+    "throttle_rumor_generation",
+    "wild_event_cooldown_required"
+  ]
+}

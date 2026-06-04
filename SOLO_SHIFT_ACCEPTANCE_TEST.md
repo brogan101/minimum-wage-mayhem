@@ -1,0 +1,131 @@
+# Solo Shift Acceptance Test
+
+Update this after every Codex phase.
+
+| Step | Status | Evidence/File | Notes |
+|---|---|---|---|
+| Godot project exists | Working | project.godot | Present in uploaded repo |
+| Main scene exists | Working | scenes/world/Main.tscn | Main scene configured |
+| Main scene loads | Working | scenes/world/Main.tscn / tools/bin/godot.exe | `godot --headless --path . --quit` boots main scene without SCRIPT ERROR/ERROR output |
+| Player scene exists | Working | scenes/player/Player.tscn | Present |
+| Player spawns in 3D | Working | scripts/Main.gd / scenes/world/Main.tscn | Headless boot prints `MVP boot: Player spawned.` |
+| Player moves/looks | Partial | scripts/player/PlayerController.gd / tools/phase18_softlock_feel_check.gd | Action-based movement, first-person camera, tuned movement/look defaults, and fall reset are automated-validated; manual/interactive feel still needs verification |
+| Controller-compatible input actions exist | Working | project.godot / scripts/managers/InputBootstrap.gd / tools/validate_all.py | Required actions are declared and runtime bootstrap adds keyboard/controller events |
+| First/third-person camera support | Partial | scenes/player/Player.tscn / scripts/player/PerspectiveManager.gd | First- and third-person cameras exist and toggle code loads; manual toggle still needs interactive verification |
+| HUD boot proof visible | Partial | scenes/ui/GameHUD.tscn / scripts/ui/GameHUD.gd / scripts/Main.gd | Boot-status label is wired and HUD loads in headless; visible placement needs interactive verification |
+| Interaction prompt exists | Partial | scenes/ui/GameHUD.tscn / scripts/ui/GameHUD.gd / scripts/player/PlayerInteraction.gd / tools/phase18_softlock_feel_check.gd | Prompt updates and fallback feedback are wired; visible placement still needs interactive verification |
+| Player can interact | Working | scripts/player/PlayerInteraction.gd / scripts/stations/Interactable.gd / scenes/world/Main.tscn / tools/phase2_runtime_check.gd | Runtime check verifies register interaction and EventLog entry |
+| Player can pick up/drop item | Working | scripts/player/PlayerInteraction.gd / scripts/items/PickupItem.gd / scenes/world/Main.tscn / tools/phase2_runtime_check.gd | Runtime check verifies Training Burger pickup/drop, EventLog entries, and lost-item reset |
+| Station changes item state | Working | scenes/world/Main.tscn / scripts/stations/CookingStation.gd / scripts/items/FoodItem.gd / tools/phase3_runtime_check.gd | Runtime check verifies Raw Patty placed on GrillStation and changed RAW -> COOKED -> BURNT with visual/EventLog proof |
+| Coworker NPCs exist | Working | scenes/world/Main.tscn / scripts/staff/CoworkerNPC.gd / tools/phase4_runtime_check.gd | Runtime check verifies three physical coworker NPCs in scene |
+| Coworkers affect stations | Working | scripts/staff/StaffDirector.gd / tools/phase4_runtime_check.gd | Runtime check verifies help, mistakes, callout, station swap, and coverage modifiers |
+| Staff relationships tracked | Working | scripts/staff/StaffDirector.gd / tools/phase4_runtime_check.gd | Runtime check verifies morale, trust, willingness/help effects, and review risk changes |
+| Store ops stations exist | Working | scenes/world/Main.tscn / scripts/store/StoreOpsStation.gd / tools/phase5_runtime_check.gd | Sauce, bagging, fryer, trash, cleaning, register, and recovery stations exist as 3D interactables |
+| Store duties affect gameplay | Working | scripts/store/StoreOpsDirector.gd / tools/phase5_runtime_check.gd | Runtime check verifies speed, accuracy, patience, cleanliness, review risk, manager trust, and corporate approval hooks |
+| Equipment issue recovery works | Working | scripts/store/StoreOpsDirector.gd / scenes/world/Main.tscn / tools/phase5_runtime_check.gd | Runtime check verifies minor fryer issue trigger and recovery station repair |
+| Store duties appear in shift recap | Working | scripts/managers/ShiftResultManager.gd / scripts/store/StoreOpsDirector.gd / tools/phase5_runtime_check.gd | Runtime check verifies recap entries are collected |
+| Daily tasks generated | Working | scripts/mischief/DailyTaskManager.gd / tools/phase6_runtime_check.gd | Runtime check verifies balanced normal, customer, station, manager, recovery, and small funny task generation |
+| Daily tasks visible in HUD | Partial | scenes/ui/GameHUD.tscn / scripts/ui/GameHUD.gd / tools/phase6_runtime_check.gd | HUD hook is runtime-validated; visual placement still needs interactive verification |
+| Daily tasks complete from gameplay | Working | scripts/mischief/DailyTaskManager.gd / scripts/store/StoreOpsDirector.gd / scripts/staff/StaffDirector.gd / tools/phase6_runtime_check.gd | Runtime check verifies station, customer, and coworker dialogue task progress |
+| Daily task rewards work | Working | WalletManager / CareerManager / scripts/mischief/DailyTaskManager.gd / tools/phase6_runtime_check.gd | Runtime check verifies cash/tips and XP rewards plus progression hook totals |
+| Daily tasks appear in shift recap | Working | ShiftResultManager.gd / scripts/mischief/DailyTaskManager.gd / tools/phase6_runtime_check.gd | Runtime check verifies recap/finalization entries |
+| Strong shift recap generated | Working | scripts/managers/ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies money, XP, tips, customers, accuracy, wait, patience, Beef, staff, manager, corporate, tasks, reviews, warnings, and notable moment |
+| Local progress saves | Working | scripts/managers/SaveSystem.gd / tools/phase7_runtime_check.gd | Runtime check verifies local save roundtrip and saved last/next shift data |
+| Next shift setup generated | Working | scripts/managers/ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies next-shift setup and shift number advance |
+| Progression unlock hooks exist | Working | scripts/managers/ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies unlock hook generation without full campaign implementation |
+| Recoverable fail states exist | Working | scripts/managers/ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies fail-state field for warning/probation-style recovery |
+| Career rank ladder exists | Working | scripts/managers/CareerManager.gd / tools/phase8_runtime_check.gd | Runtime check verifies Trainee start, 11-rank path, and Store Manager goal |
+| Shift performance drives promotion | Working | ShiftResultManager.gd / CareerManager.gd / tools/phase8_runtime_check.gd | Runtime check verifies a good playable shift promotes from Trainee |
+| Career risks tracked | Working | scripts/managers/CareerManager.gd / tools/phase8_runtime_check.gd | Runtime check verifies warnings, write-ups, demotion risk, and fired risk fields |
+| Campaign milestones/history tracked | Working | scripts/managers/CareerManager.gd / tools/phase8_runtime_check.gd | Runtime check verifies shift performance history, campaign milestones, and career recap history |
+| Manager trial setup exists | Working | scripts/managers/CareerManager.gd / data/missions/manager_trial_shift.json / tools/phase8_runtime_check.gd | Runtime check verifies Acting Store Manager readiness and pending Store Manager trial state |
+| Career progress saves/loads | Working | SaveSystem.gd / CareerManager.gd / tools/phase8_runtime_check.gd | Runtime check verifies saved career history and manager trial readiness |
+| Chaos incident runtime wired | Working | scripts/drama/ChaosIncidentRuntime.gd / scripts/Main.gd / tools/phase9_runtime_check.gd | Runtime check verifies all requested Phase 9 managers are wired into the playable scene |
+| Chaos data catalogs load | Working | data/incidents / data/fights / data/shady / data/staff / data/hr / data/reviews / data/career / data/reputation / tools/phase9_runtime_check.gd | Runtime check verifies required Phase 9 data families, including legendary shift chains |
+| Tutorial chaos gating works | Working | scripts/drama/ChaosIncidentRuntime.gd / tools/phase9_runtime_check.gd | Runtime check verifies tutorial blocks moderate incident and slapstick brawl |
+| Chaos pacing works | Working | scripts/drama/ChaosIncidentRuntime.gd / tools/phase9_runtime_check.gd | Runtime check verifies budget consumption, cooldowns, and recovery-window blocking |
+| Incidents affect gameplay | Working | ChaosIncidentRuntime.gd / StaffDirector.gd / StoreOpsDirector.gd / CareerManager.gd / tools/phase9_runtime_check.gd | Runtime check verifies staff morale, review risk, demotion risk, HR/review logs, reputation labels, and career impact |
+| Slapstick brawl gated | Working | scripts/drama/SlapstickBrawlManager.gd / scripts/drama/ChaosIncidentRuntime.gd / tools/phase9_runtime_check.gd | Runtime check verifies post-tutorial slapstick brawl can trigger and remains cartoonish/non-gory |
+| Chaos appears in shift recap | Working | scripts/managers/ShiftResultManager.gd / tools/phase9_runtime_check.gd | Runtime check verifies Phase 9 incidents, HR reports, reviews, and reputation labels in shift result data |
+| Mischief runtime wired | Working | scripts/mischief/MischiefDirector.gd / scripts/Main.gd / tools/phase10_runtime_check.gd | Runtime check verifies MischiefDirector, PrankWarManager, RestaurantDamageManager, MischiefRecapManager, and DailyTaskManager in playable scene |
+| Mischief data catalogs load | Working | data/mischief/*.json / tools/phase10_runtime_check.gd | Runtime check verifies prank, backfire, prank-war, side quest, daily task, damage, stats, consequence, and 180 story-event catalogs |
+| Optional pranks work | Working | scripts/mischief/MischiefDirector.gd / tools/phase10_runtime_check.gd | Runtime check verifies tutorial gating and harmless optional prank resolution |
+| Pranks affect gameplay | Working | MischiefDirector.gd / StaffDirector.gd / CareerManager.gd / WalletManager / tools/phase10_runtime_check.gd | Runtime check verifies morale, cash, XP, promotion progress, suspicion, and EventLog hooks |
+| Coworker pranks work | Working | scripts/mischief/MischiefDirector.gd / tools/phase10_runtime_check.gd | Runtime check verifies coworker can prank the player and log it |
+| Prank wars are gated | Working | scripts/mischief/PrankWarManager.gd / tools/phase10_runtime_check.gd | Runtime check verifies prank-war escalation is heat/cooldown tracked |
+| Restaurant damage repair works | Working | scripts/mischief/RestaurantDamageManager.gd / tools/phase10_runtime_check.gd | Runtime check verifies prank backfire creates repairable damage and repair logs it |
+| Mischief appears in shift recap | Working | scripts/mischief/MischiefRecapManager.gd / scripts/managers/ShiftResultManager.gd / tools/phase10_runtime_check.gd | Runtime check verifies Mischief section, prank count, backfires, and repaired damage in shift results |
+| Consequence runtime wired | Working | scripts/consequences/*.gd / scripts/Main.gd / tools/phase11_runtime_check.gd | Runtime check verifies all requested Phase 11 managers are in the playable scene |
+| Clean play remains valid | Working | TipJarManager.gd / FireableOffenseManager.gd / SuspicionManager.gd / tools/phase11_runtime_check.gd | Runtime check verifies clean action avoids suspicion increase and preserves promotion progress |
+| Shady choices are UI-driven | Working | ShadyChoiceManager.gd / data/fireable/ui_choice_templates.json / tools/phase11_runtime_check.gd | Runtime check verifies UI template choices route to abstract consequence results |
+| Suspicion and detection work | Working | SuspicionManager.gd / FireableOffenseManager.gd / tools/phase11_runtime_check.gd | Runtime check verifies suspicion changes and detection rolls are recorded |
+| Caught levels affect career | Working | FireableOffenseManager.gd / CareerManager.gd / tools/phase11_runtime_check.gd | Runtime check verifies caught levels, HR/reviews, demotion risk, fired risk, and career incident history |
+| Category managers feed consequences | Working | TipJar/RegisterIntegrity/Inventory/FoodKarma/AbstractImpairment/ManagerCoverup managers / tools/phase11_runtime_check.gd | Runtime check verifies each required category routes to consequences |
+| Firing recovery exists | Working | FiringRecoveryManager.gd / data/fireable/firing_routes.json / tools/phase11_runtime_check.gd | Runtime check verifies fired-risk path creates a recoverable route and recovery step can complete |
+| Consequences save and recap | Working | ShiftResultManager.gd / SaveSystem.gd / tools/phase11_runtime_check.gd | Runtime check verifies consequence section in shift report and saved last-shift payload |
+| Emergent runtime wired | Working | scripts/emergent / scripts/memory / scripts/Main.gd / tools/phase12_runtime_check.gd | Runtime check verifies all required Phase 12 managers are in the playable scene |
+| Events compose from state | Working | IncidentComposer.gd / EmergentEventDirector.gd / tools/phase12_runtime_check.gd | Runtime check verifies deterministic generated event from prior shift/consequence state |
+| Restaurant memory records events | Working | RestaurantMemoryManager.gd / tools/phase12_runtime_check.gd | Runtime check verifies generated event is stored in career memory |
+| Evidence persists | Working | EvidenceManager.gd / data/memory/evidence_types.json / tools/phase12_runtime_check.gd | Runtime check verifies evidence is created and remains active |
+| Store objects remember | Working | StoreObjectMemoryManager.gd / tools/phase12_runtime_check.gd | Runtime check verifies repeated tip jar incidents create object history and label |
+| Generated missions work | Working | EmergentMissionGenerator.gd / data/missions/generated_mission_archetypes.json / tools/phase12_runtime_check.gd | Runtime check verifies mission generated from event tags |
+| Karma and reputation update | Working | MultiKarmaManager.gd / DynamicReputationLabelManager.gd / tools/phase12_runtime_check.gd | Runtime check verifies karma history and dynamic reputation label generation |
+| Generated recap saves | Working | GeneratedRecapManager.gd / ShiftResultManager.gd / SaveSystem.gd / tools/phase12_runtime_check.gd | Runtime check verifies restaurant memory section and saved emergent summary |
+| Global depth runtime wired | Working | scripts/depth/*.gd / scripts/Main.gd / tools/phase13_runtime_check.gd | Runtime check verifies DepthDirector, NormalcyBalanceDirector, DepthEventLinker, WorldTextureManager, ShiftFlavorManager, and ContentDensityValidatorRuntime in playable scene |
+| Depth data catalogs load | Working | data/depth/*.json / tools/phase13_runtime_check.gd | Runtime check verifies 24 required Phase 13 catalogs and 30+ depth bundles |
+| Phase 13 balance target works | Working | NormalcyBalanceDirector.gd / DepthDirector.gd / tools/phase13_runtime_check.gd | Runtime check verifies 45-60% normal, 20-30% friction, 10-20% weird, and 5-10% wild mix |
+| Normal shift texture works | Working | WorldTextureManager.gd / data/depth/quiet_normal_events.json / tools/phase13_runtime_check.gd | Runtime check verifies quiet normal event generation and EventLog entry |
+| World rumors work | Working | WorldTextureManager.gd / data/depth/world_rumors.json / tools/phase13_runtime_check.gd | Runtime check verifies rumor generation and EventLog entry |
+| Customer/coworker/manager depth hooks exist | Working | DepthDirector.gd / data/depth/customer_memory_arcs.json / data/depth/customer_normalcy_profiles.json / data/depth/coworker_social_web.json / data/depth/manager_pressure_situations.json | Static and runtime checks verify these catalogs load into the depth director for shift generation |
+| Home/commute/store/equipment flavor works | Working | ShiftFlavorManager.gd / data/depth/home_life_depth_events.json / data/depth/commute_micro_events.json / data/depth/store_ops_depth.json / data/depth/equipment_personality.json / tools/phase13_runtime_check.gd | Runtime check verifies shift flavor history and store-operation effects |
+| Minigame depth hooks exist | Working | ShiftFlavorManager.gd / data/depth/minigames.json / tools/phase13_runtime_check.gd | Runtime check verifies minigame data is loaded into generated shift flavor |
+| Recovery and promotion detours exist | Working | DepthDirector.gd / data/depth/recovery_routes.json / data/depth/promotion_detours.json / tools/phase13_runtime_check.gd | Runtime check verifies recovery routes and promotion detours are exposed in the depth summary |
+| Store identity mutations exist | Working | DepthDirector.gd / data/depth/store_identity_mutations.json / tools/phase13_runtime_check.gd | Runtime check verifies store mutation hooks are exposed in the depth summary |
+| Content density budgets work | Working | ContentDensityValidatorRuntime.gd / data/depth/performance_budgets.json / data/depth/bug_fallback_requirements.json / tools/phase13_runtime_check.gd | Runtime check verifies content-density/performance budget validation passes |
+| Global depth saves and recaps | Working | ShiftResultManager.gd / SaveSystem.gd / tools/phase13_runtime_check.gd | Runtime check verifies Global Depth and Depth Balance report sections plus saved depth summary |
+| Stabilization audit exists | Working | PHASE_14_STABILIZATION_AUDIT.md | Audit records checked areas, broken items, fixes, remains, validation, Godot status, full-shift status, save/load, progression, and 180 story-event lock |
+| 3D drive-thru handoff works | Working | scenes/world/Main.tscn / scripts/stations/DriveThruWindow.gd / tools/phase14_full_shift_smoke.gd | Runtime check verifies carried Training Burger can be handed off through the 3D DriveThruStation |
+| Customer/order generated | Working | scripts/Main.gd / OrderManager.gd / tools/phase14_full_shift_smoke.gd | Fallback order is generated and completed in full-shift smoke |
+| One full shift playable | Working | tools/phase14_full_shift_smoke.gd / tools/phase18_softlock_feel_check.gd | Runtime checks verify boot/New Game, order handoff, customer clear, shift completion, recap, save/load, progression, depth persistence, and return-to-menu without first-shift softlock |
+| Save/load after full shift works | Working | SaveSystem.gd / tools/phase14_full_shift_smoke.gd | Runtime check verifies saved completed shift loads back with career and last-shift data |
+| Progression after full shift works | Working | CareerManager.gd / ShiftResultManager.gd / tools/phase14_full_shift_smoke.gd | Runtime check verifies shift result applies career progression and shift performance history |
+| Main menu first screen | Working | scripts/ui/MainMenuUI.gd / scripts/Main.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies main menu appears before the shift and HUD is hidden at menu |
+| New game flow works | Working | Main.gd / MainMenuUI.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies New Game starts player in 3D with active shift and HUD |
+| Continue/load flow works | Working | Main.gd / SaveSystem.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies Continue loads local save and starts a playable shift |
+| Pause/resume works | Working | Main.gd / MainMenuUI.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies pause menu opens, pauses tree, resumes, and unpauses |
+| Settings menu works | Working | MainMenuUI.gd / GameHUD.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies high contrast and performance setting toggles; fullscreen/volume hooks exist |
+| Controls screen works | Working | MainMenuUI.gd / InputBootstrap.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies keyboard/mouse and controller controls are documented and InputMap actions exist |
+| Save/load UX works | Working | Main.gd / MainMenuUI.gd / SaveSystem.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies pause-menu save/load reports status |
+| End shift recap presentation works | Working | Main.gd / MainMenuUI.gd / ShiftResultManager.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies End Shift opens recap presentation and includes result text |
+| Return to menu works | Working | Main.gd / MainMenuUI.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies return-to-menu hides HUD and restores menu |
+| HUD shift timer/objective/station feedback | Working | GameHUD.tscn / GameHUD.gd / tools/phase15_menu_playability_check.gd | Runtime check verifies timer and objective tracker populate during shift; station feedback hook exists |
+| Steam prep docs exist | Working | README.md / STEAM_READINESS_CHECKLIST.md / PLAYTEST_CHECKLIST.md / KNOWN_ISSUES.md / ASSET_ATTRIBUTION.md / EXPORT_NOTES.md | Validator checks future Steam prep docs without claiming Steam readiness |
+| Phase 16 repo state audit exists | Working | PHASE_16_FULL_REPO_STATE_AUDIT_AND_CLEANUP.md | Full repo structure, V13 crosswalk, phase state, gameplay state, system integration, cleanup, and next roadmap documented |
+| Project source of truth exists | Working | PROJECT_SOURCE_OF_TRUTH.md | Future Codex reading order and V13 reference-pack handling documented |
+| V13 reference pack classified | Working | PHASE_16_FULL_REPO_STATE_AUDIT_AND_CLEANUP.md | Numbered files present are `00`-`35`, `41`-`48`, and `99`; `36`-`40` are absent/proposed-only |
+| Phase 17 report exists | Working | PHASE_17_VISIBLE_PLAYTEST_AND_GRAYBOX_TO_DEMO_REPORT.md | Graybox-to-demo pass documented with validation proof and remaining manual gaps |
+| Restaurant has demo dressing | Working | scripts/Main.gd / tools/phase17_demo_visual_check.gd | Runtime check verifies dressing node, floor zones, drive-thru lane, handoff mat, wall/menu dressing, and station signs |
+| Major stations are identifiable | Working | scripts/Main.gd / tools/phase17_demo_visual_check.gd | Register, drive-thru, grill, fryer, prep/bagging, sauce/restock, fix-it, trash, clean, and clock-out/end-shift signs are validated |
+| Physical clock-out station works | Working | scripts/stations/ClockOutStation.gd / tools/phase17_demo_visual_check.gd | Runtime check verifies in-world clock-out station is interactable and opens the shift recap |
+| CustomerCar visual flow exists | Working | scenes/customers/CustomerCar.tscn / scripts/customers/CustomerCar.gd / tools/phase17_demo_visual_check.gd | Runtime check verifies CustomerCar scene loads, spawns, reaches the drive-thru, and creates an active order |
+| CustomerCar color variation exists | Working | scenes/customers/CustomerCar.tscn / scripts/customers/CustomerCar.gd / tools/phase17_demo_visual_check.gd | Runtime check verifies one red/blue/yellow/green body variant is selected and visible |
+| HUD/order display visible | Working | scenes/ui/GameHUD.tscn / scripts/ui/GameHUD.gd / tools/phase17_demo_visual_check.gd | Runtime check verifies readable order ticket, customer drive-thru status, held-item line, first-shift guidance, event feed, and task panels |
+| Placeholder audio hooks exist | Working | scripts/managers/AudioManager.gd / tools/phase17_demo_visual_check.gd | Hooks exist and fall back safely while final audio files are missing |
+| Rendered screenshot proof | Working | artifacts/phase17_rendered_demo.png / tools/phase17_rendered_screenshot.gd | Real Vulkan renderer saved a scripted overview screenshot; manual player-controlled screenshots still pending |
+| First-person screenshot proof | Working | artifacts/phase17_player_view_demo.png / tools/phase17_player_view_screenshot.gd | Real Vulkan renderer saved a first-person camera screenshot; manual movement/look feel still pending |
+| Phase 18 softlock/feel report exists | Working | PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md | First-shift tuning, softlock checks, validation status, and remaining manual/controller gaps documented |
+| First-shift feel tuning automated | Working | scripts/player/PlayerController.gd / scripts/player/PlayerInteraction.gd / scripts/managers/ShiftManager.gd / tools/phase18_softlock_feel_check.gd | Runtime check verifies calmer movement/look defaults, forgiving interaction range, longer shift timer, and player fall reset |
+| Customer clears after handoff | Working | scripts/customers/CustomerCar.gd / tools/phase18_softlock_feel_check.gd | Runtime check verifies the CustomerCar is not stuck waiting forever after fulfillment |
+| Physical controller hardware test | Partial | tools/phase18_softlock_feel_check.gd / project.godot / scripts/managers/InputBootstrap.gd | No physical controller was detected in Phase 18; controller-compatible InputMap events are validated |
+| Phase 19 repo manifest exists | Working | FILE_INCLUSION_MANIFEST.md / GITHUB_PUBLISH_REPORT.md | Included/excluded repo patterns and GitHub push status are documented |
+| Prep affordances visible | Working | scripts/Main.gd / tools/phase19_playtest_prep_check.gd | Runtime check verifies prep arrows, bag stack, fries bin, soda cup stack, and labels |
+| HUD viewport prep check | Working | scripts/ui/GameHUD.gd / tools/phase19_playtest_prep_check.gd | Runtime check verifies key HUD elements fit 1280x720, 1366x768, and 1920x1080 |
+| Bagging works | Partial | scripts/items/FoodBag.gd | Guard added; scene test needed |
+| Drive-thru delivery works | Partial | scripts/stations/DriveThruWindow.gd | Guard added; scene test needed |
+| Order validation works | Partial | scripts/managers/OrderManager.gd | Simple validation exists |
+| Customer reaction works | Partial | BeefManager/DriveThruWindow | Needs in-scene test |
+| Cash/XP updates | Working | WalletManager / CareerManager / tools/phase8_runtime_check.gd | Runtime check verifies cash, tips, XP, and career progression from gameplay |
+| EventLog records events | Partial | scripts/managers/EventLog.gd | Core logger exists |
+| One small event triggers | Working | scripts/store/StoreOpsDirector.gd / tools/phase5_runtime_check.gd | Runtime check verifies minor equipment issue trigger and repair |
+| Shift ends | Working | ShiftManager.gd / ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies shift completion path through result manager |
+| Results/HR/review generated | Working | ShiftResultManager.gd / tools/phase7_runtime_check.gd | Runtime check verifies reviews and warning/write-up fields |

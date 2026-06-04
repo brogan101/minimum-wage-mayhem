@@ -1,0 +1,92 @@
+{
+  "managers": [
+    {
+      "id": "checked_out_manager",
+      "name": "Checked-Out Manager",
+      "competence": 30,
+      "panic": 20,
+      "blame": 60,
+      "helpfulness": 15
+    },
+    {
+      "id": "corporate_worshipper",
+      "name": "Corporate Worshipper",
+      "competence": 55,
+      "panic": 30,
+      "blame": 70,
+      "helpfulness": 25
+    },
+    {
+      "id": "chaos_goblin_manager",
+      "name": "Chaos Goblin Manager",
+      "competence": 45,
+      "panic": 50,
+      "blame": 35,
+      "helpfulness": 40
+    },
+    {
+      "id": "ex_fry_cook_legend",
+      "name": "Ex-Fry Cook Legend",
+      "competence": 85,
+      "panic": 10,
+      "blame": 20,
+      "helpfulness": 85
+    },
+    {
+      "id": "nepotism_manager",
+      "name": "Nepotism Manager",
+      "competence": 35,
+      "panic": 40,
+      "blame": 80,
+      "helpfulness": 20
+    },
+    {
+      "id": "panic_manager",
+      "name": "Panic Manager",
+      "competence": 40,
+      "panic": 90,
+      "blame": 55,
+      "helpfulness": 25
+    },
+    {
+      "id": "fake_corporate_genius",
+      "name": "Fake Corporate Genius",
+      "competence": 25,
+      "panic": 45,
+      "blame": 65,
+      "helpfulness": 10
+    },
+    {
+      "id": "night_shift_menace",
+      "name": "Night Shift Menace",
+      "competence": 60,
+      "panic": 30,
+      "blame": 25,
+      "helpfulness": 50
+    },
+    {
+      "id": "inspirational_disaster",
+      "name": "Inspirational Disaster",
+      "competence": 35,
+      "panic": 60,
+      "blame": 30,
+      "helpfulness": 35
+    },
+    {
+      "id": "coupon_tyrant",
+      "name": "Coupon Tyrant",
+      "competence": 55,
+      "panic": 40,
+      "blame": 70,
+      "helpfulness": 30
+    },
+    {
+      "id": "vanishing_manager",
+      "name": "The Vanishing Manager",
+      "competence": 20,
+      "panic": 50,
+      "blame": 90,
+      "helpfulness": 5
+    }
+  ]
+}

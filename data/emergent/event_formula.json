@@ -1,0 +1,16 @@
+{
+  "formula": [
+    "actor",
+    "problem",
+    "location",
+    "object",
+    "witness",
+    "cover_story",
+    "immediate_consequence",
+    "delayed_consequence",
+    "hr_interpretation",
+    "review_interpretation",
+    "career_impact"
+  ],
+  "rule": "All generated events must use compatible components and produce EventLog, consequence, and memory entries."
+}

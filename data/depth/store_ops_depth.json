@@ -1,0 +1,52 @@
+{
+  "ops": [
+    {
+      "id": "sauce_par_level",
+      "normal_task": "count_sauce",
+      "neglect_effect": "sauce_shortage",
+      "manager_rank_hook": "shift_lead"
+    },
+    {
+      "id": "bag_station_flow",
+      "normal_task": "clear_bagging_table",
+      "neglect_effect": "wrong_bag_risk",
+      "manager_rank_hook": "crew_member"
+    },
+    {
+      "id": "fryer_oil_mood",
+      "normal_task": "check_fryer",
+      "neglect_effect": "cook_time_variance",
+      "manager_rank_hook": "fry_cook"
+    },
+    {
+      "id": "bathroom_key_control",
+      "normal_task": "track_key",
+      "neglect_effect": "customer_counter_delay",
+      "manager_rank_hook": "key_holder"
+    },
+    {
+      "id": "trash_rotation",
+      "normal_task": "take_trash",
+      "neglect_effect": "cleanliness_down",
+      "manager_rank_hook": "trainee"
+    },
+    {
+      "id": "drive_thru_timer_reset",
+      "normal_task": "check_timer",
+      "neglect_effect": "corporate_pressure_up",
+      "manager_rank_hook": "window_warrior"
+    },
+    {
+      "id": "register_change_count",
+      "normal_task": "verify_change",
+      "neglect_effect": "coin_customer_delay",
+      "manager_rank_hook": "register_goblin"
+    },
+    {
+      "id": "opening_prep_readiness",
+      "normal_task": "prep_opening",
+      "neglect_effect": "morning_rush_starts_bad",
+      "manager_rank_hook": "key_holder"
+    }
+  ]
+}

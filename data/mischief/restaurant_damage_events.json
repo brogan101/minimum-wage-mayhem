@@ -1,0 +1,288 @@
+{
+  "damage_events": [
+    {
+      "id": "sauce_rack_knocked_over",
+      "description": "Sauce rack knocked over.",
+      "repair_tasks": [
+        "clean_spill",
+        "restock_sauce"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "mop_bucket_spill",
+      "description": "Mop bucket spill.",
+      "repair_tasks": [
+        "clean_spill",
+        "submit_hr_note"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "drive_thru_sign_misaligned",
+      "description": "Drive-thru sign misaligned.",
+      "repair_tasks": [
+        "fix_signage"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "receipt_printer_jammed",
+      "description": "Receipt printer jammed.",
+      "repair_tasks": [
+        "reset_printer"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "register_frozen",
+      "description": "Register frozen.",
+      "repair_tasks": [
+        "reset_register"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "headset_missing",
+      "description": "Headset missing.",
+      "repair_tasks": [
+        "find_headset"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "freezer_door_stuck",
+      "description": "Freezer door stuck.",
+      "repair_tasks": [
+        "unstick_freezer"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "order_screen_flickering",
+      "description": "Order screen flickering.",
+      "repair_tasks": [
+        "reboot_order_screen"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "drink_machine_sprays",
+      "description": "Drink machine sprays.",
+      "repair_tasks": [
+        "clean_spill",
+        "reset_drink_machine"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "trash_bag_leaks",
+      "description": "Trash bag leaks.",
+      "repair_tasks": [
+        "take_trash_out",
+        "clean_spill"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "bagging_table_cluttered",
+      "description": "Bagging table cluttered.",
+      "repair_tasks": [
+        "clear_bagging_table"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "manager_office_locked",
+      "description": "Manager office locked.",
+      "repair_tasks": [
+        "find_key"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "lobby_floor_sticky",
+      "description": "Lobby floor sticky.",
+      "repair_tasks": [
+        "mop_lobby"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "corporate_poster_ripped",
+      "description": "Corporate poster ripped.",
+      "repair_tasks": [
+        "replace_poster"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "schedule_board_erased",
+      "description": "Schedule board erased.",
+      "repair_tasks": [
+        "reprint_schedule"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "staff_morale_board_vandalized",
+      "description": "Staff morale board vandalized.",
+      "repair_tasks": [
+        "apologize_to_staff"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "bathroom_key_missing",
+      "description": "Bathroom key missing.",
+      "repair_tasks": [
+        "find_bathroom_key"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "light_flickers",
+      "description": "Light flickers.",
+      "repair_tasks": [
+        "submit_maintenance_note"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "ice_machine_jammed",
+      "description": "Ice machine jammed.",
+      "repair_tasks": [
+        "reset_ice_machine"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    },
+    {
+      "id": "fry_basket_misplaced",
+      "description": "Fry basket misplaced.",
+      "repair_tasks": [
+        "find_fry_basket"
+      ],
+      "temporary_effects": [
+        "restaurant_stability_down",
+        "station_delay_possible"
+      ],
+      "fallback": "generic_repair_task",
+      "repairable": true,
+      "permanent_save_damage": false
+    }
+  ]
+}

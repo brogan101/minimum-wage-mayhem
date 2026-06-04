@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "id": "unusual_sauce_leadership",
+      "reason": "Unusual sauce leadership style",
+      "recovery": "sauce_precision_trial"
+    },
+    {
+      "id": "mop_adjacent_incidents",
+      "reason": "Too many mop-adjacent incidents",
+      "recovery": "mop_based_deescalation_training"
+    },
+    {
+      "id": "coupon_binder_footage",
+      "reason": "Corporate reviewed the coupon binder footage",
+      "recovery": "coupon_combat_avoidance"
+    },
+    {
+      "id": "wet_floor_investigation",
+      "reason": "Promotion delayed pending wet floor sign investigation",
+      "recovery": "clean_shift"
+    }
+  ]
+}

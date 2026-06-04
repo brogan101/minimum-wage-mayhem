@@ -1,0 +1,40 @@
+{
+  "detours": [
+    {
+      "id": "promotion_delayed_sauce",
+      "cause": "sauce_incident",
+      "recovery": "sauce_precision_trial",
+      "funny_note": "Promotion delayed by condiment governance."
+    },
+    {
+      "id": "promotion_delayed_mop",
+      "cause": "mop_incident",
+      "recovery": "mop_based_deescalation",
+      "funny_note": "Leadership concerns involving cleaning equipment."
+    },
+    {
+      "id": "promotion_delayed_review",
+      "cause": "bad_review",
+      "recovery": "review_recovery_shift",
+      "funny_note": "Corporate read the review and misunderstood it worse."
+    },
+    {
+      "id": "promotion_boost_saved_shift",
+      "cause": "saved_shift",
+      "recovery": "none",
+      "funny_note": "You were the only disaster that prevented a bigger disaster."
+    },
+    {
+      "id": "promotion_detour_staff_vote",
+      "cause": "staff_loyalty_high",
+      "recovery": "staff_support_scene",
+      "funny_note": "The crew supports you, which corporate finds suspicious."
+    },
+    {
+      "id": "promotion_detour_corporate_pet",
+      "cause": "corporate_approval_high",
+      "recovery": "staff_trust_repair",
+      "funny_note": "Corporate likes you. The break room does not."
+    }
+  ]
+}

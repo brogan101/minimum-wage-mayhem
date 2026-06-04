@@ -1,0 +1,64 @@
+{
+  "categories": {
+    "normal": [
+      "restock_sauce",
+      "clean_lobby",
+      "prep_buns",
+      "check_fryer",
+      "count_cups",
+      "take_trash_out",
+      "fill_ice",
+      "clean_spill",
+      "stock_bags",
+      "check_bathroom"
+    ],
+    "fast_food_chaos": [
+      "calm_angry_customer",
+      "serve_three_correct_drive_thru_orders",
+      "survive_lunch_rush",
+      "keep_sauce_stock_above_minimum",
+      "fix_register_jam",
+      "keep_new_hire_from_burning_food",
+      "handle_coupon_dispute",
+      "complete_shift_no_thrown_food",
+      "prevent_window_blocking",
+      "pull_forward_three_cars_without_beef"
+    ],
+    "manager": [
+      "complete_opening_checklist",
+      "complete_closing_checklist",
+      "assign_coworker_to_station",
+      "approve_or_deny_break",
+      "respond_to_review",
+      "check_schedule",
+      "handle_callout",
+      "coach_employee",
+      "record_incident",
+      "meet_corporate_mandate"
+    ],
+    "prank": [
+      "pull_harmless_prank_without_getting_caught",
+      "make_coworker_laugh_during_rush",
+      "start_break_room_rumor",
+      "hide_cursed_receipt_roll",
+      "put_googly_eyes_on_object",
+      "create_fake_award",
+      "prank_manager_without_career_damage",
+      "discover_who_pranked_player",
+      "end_prank_war_peacefully",
+      "escalate_prank_war_and_survive"
+    ],
+    "karma": [
+      "do_good_deed_for_normal_customer",
+      "fix_mistake_honestly",
+      "avoid_shady_shortcut",
+      "help_coworker_you_dislike",
+      "redeem_bad_review",
+      "serve_normal_family_correctly",
+      "refuse_food_tampering",
+      "return_missing_item_before_complaint",
+      "let_customer_win_small_dispute",
+      "take_blame_for_minor_mistake"
+    ]
+  }
+}

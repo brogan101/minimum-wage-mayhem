@@ -1,0 +1,702 @@
+[
+  {
+    "event_id": "neighbor_party_sleep_theft",
+    "display_name": "Neighbor Party Sleep Theft",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Neighbor Party Sleep Theft creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "neighbor_party_sleep_theft_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "unexpected_adult_party_guests",
+    "display_name": "Unexpected Adult Party Guests",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Unexpected Adult Party Guests creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "unexpected_adult_party_guests_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": "Adult/home chaos remains non-explicit and consequence-driven."
+  },
+  {
+    "event_id": "coworker_on_couch_after_calling_out",
+    "display_name": "Coworker On Couch After Calling Out",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Coworker On Couch After Calling Out creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "coworker_on_couch_after_calling_out_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "landlord_inspection_panic",
+    "display_name": "Landlord Inspection Panic",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Landlord Inspection Panic creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "landlord_inspection_panic_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "uniform_still_wet",
+    "display_name": "Uniform Still Wet",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Uniform Still Wet creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "uniform_still_wet_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "coffee_machine_foam_explosion",
+    "display_name": "Coffee Machine Foam Explosion",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Coffee Machine Foam Explosion creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "coffee_machine_foam_explosion_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "pet_fish_judgment",
+    "display_name": "Pet Fish Judgment",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Pet Fish Judgment creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "pet_fish_judgment_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "customer_at_apartment_door",
+    "display_name": "Customer At Apartment Door",
+    "category": "home_chaos",
+    "rarity": "common",
+    "severity": "minor",
+    "setup": "Customer At Apartment Door creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "customer_at_apartment_door_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "wrong_delivery_food_mountain",
+    "display_name": "Wrong Delivery Food Mountain",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Wrong Delivery Food Mountain creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "wrong_delivery_food_mountain_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "phone_charger_betrayal",
+    "display_name": "Phone Charger Betrayal",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Phone Charger Betrayal creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "phone_charger_betrayal_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "rent_text_during_rush_prep",
+    "display_name": "Rent Text During Rush Prep",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Rent Text During Rush Prep creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "rent_text_during_rush_prep_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "room_smells_like_fries",
+    "display_name": "Room Smells Like Fries",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Room Smells Like Fries creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "room_smells_like_fries_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "alarm_clock_manager_mode",
+    "display_name": "Alarm Clock Manager Mode",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Alarm Clock Manager Mode creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "alarm_clock_manager_mode_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "forgot_hat_crisis",
+    "display_name": "Forgot Hat Crisis",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Forgot Hat Crisis creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "forgot_hat_crisis_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "apartment_water_shutoff",
+    "display_name": "Apartment Water Shutoff",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Apartment Water Shutoff creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "apartment_water_shutoff_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "neighbor_asks_for_free_sauce",
+    "display_name": "Neighbor Asks For Free Sauce",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Neighbor Asks For Free Sauce creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "neighbor_asks_for_free_sauce_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "roommate_ate_meal_prep",
+    "display_name": "Roommate Ate Meal Prep",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Roommate Ate Meal Prep creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "roommate_ate_meal_prep_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "package_stolen_by_weather",
+    "display_name": "Package Stolen By Weather",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Package Stolen By Weather creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "package_stolen_by_weather_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "work_shoes_missing",
+    "display_name": "Work Shoes Missing",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Work Shoes Missing creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "work_shoes_missing_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  },
+  {
+    "event_id": "doomscroll_spiral",
+    "display_name": "Doomscroll Spiral",
+    "category": "home_chaos",
+    "rarity": "uncommon",
+    "severity": "minor",
+    "setup": "Doomscroll Spiral creates a pre-shift problem that follows the player to work.",
+    "player_choices": [
+      "solve_responsibly",
+      "ignore",
+      "make_it_worse",
+      "ask_coworker",
+      "spend_money"
+    ],
+    "effects": [
+      "energy_change",
+      "stress_change",
+      "workday_modifier"
+    ],
+    "next_shift_modifier": "doomscroll_spiral_modifier",
+    "counterplay": [
+      "sleep_later",
+      "buy_food",
+      "call_landlord",
+      "use_manager_voice",
+      "accept_penalty"
+    ],
+    "systems_touched": [
+      "life",
+      "workday_modifiers",
+      "eventlog",
+      "shift"
+    ],
+    "safety_note": ""
+  }
+]

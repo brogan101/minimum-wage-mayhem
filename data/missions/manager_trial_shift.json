@@ -1,0 +1,39 @@
+{
+  "mission_id": "manager_trial_shift",
+  "display_name": "Manager Trial Shift",
+  "mission_type": "campaign_gate",
+  "unlock_condition": "assistant_manager_ready",
+  "required_events": [
+    "coworker_callout",
+    "corporate_goal",
+    "rush_wave",
+    "customer_beef",
+    "equipment_issue",
+    "employee_drama"
+  ],
+  "success_conditions": [
+    "shift_completed",
+    "customer_satisfaction_minimum",
+    "staff_morale_not_destroyed",
+    "major_issue_contained"
+  ],
+  "failure_conditions": [
+    "shift_aborted",
+    "store_collapse",
+    "too_many_active_writeups"
+  ],
+  "partial_success_conditions": [
+    "shift_completed_with_hr_concerns"
+  ],
+  "rewards": [
+    "rank_store_manager",
+    "manager_office_access",
+    "full_schedule_control"
+  ],
+  "failure_rewards": [
+    "recovery_goals",
+    "funny_hr_report",
+    "retry_later"
+  ],
+  "safety_note": "Campaign boss shift; no unsafe content."
+}

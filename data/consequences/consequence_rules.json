@@ -1,0 +1,29 @@
+{
+  "tracked_values": [
+    "cash_delta",
+    "tip_delta",
+    "xp_delta",
+    "time_lost",
+    "customer_beef",
+    "customer_patience",
+    "staff_morale",
+    "coworker_loyalty",
+    "manager_trust",
+    "manager_suspicion",
+    "corporate_approval",
+    "store_stability",
+    "cleanliness",
+    "inventory",
+    "suspicion",
+    "evidence_created",
+    "karma_changes",
+    "hr_report_chance",
+    "review_chance",
+    "viral_clip_chance",
+    "promotion_progress",
+    "demotion_risk",
+    "fired_risk",
+    "future_chain_chance"
+  ],
+  "rule": "Every generated event/mischief/shady/mission action should pass through this matrix."
+}

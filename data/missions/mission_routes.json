@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "honest",
+    "shady",
+    "lazy",
+    "aggressive",
+    "prank",
+    "manager",
+    "coworker_loyalty",
+    "corporate_pet",
+    "redemption"
+  ]
+}

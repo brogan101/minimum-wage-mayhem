@@ -1,0 +1,19 @@
+{
+  "tracked_values": [
+    "suspicion",
+    "witnesses",
+    "camera_risk",
+    "coworker_loyalty",
+    "manager_trust",
+    "corporate_approval",
+    "shady_karma",
+    "cash",
+    "hr_risk",
+    "promotion_progress",
+    "demotion_risk",
+    "fired_risk",
+    "eventlog",
+    "end_shift_recap"
+  ],
+  "rule": "Every shady/fireable choice must affect at least one tracked value."
+}

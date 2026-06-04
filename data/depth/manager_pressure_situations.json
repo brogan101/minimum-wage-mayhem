@@ -1,0 +1,56 @@
+{
+  "situations": [
+    {
+      "id": "timer_pressure",
+      "manager_types": [
+        "corporate_worshipper",
+        "panic_manager"
+      ],
+      "effect": "drive_thru_timer_focus",
+      "funny_line_seed": "The timer is judging us."
+    },
+    {
+      "id": "inspection_warning",
+      "manager_types": [
+        "panic_manager",
+        "fake_corporate_genius"
+      ],
+      "effect": "cleanliness_priority_up",
+      "funny_line_seed": "Clean things that can be seen by people with clipboards."
+    },
+    {
+      "id": "raise_conversation",
+      "manager_types": [
+        "checked_out_manager",
+        "corporate_worshipper"
+      ],
+      "effect": "promotion_hint_or_delay",
+      "funny_line_seed": "Your raise is emotionally approved."
+    },
+    {
+      "id": "callout_blame_shift",
+      "manager_types": [
+        "vanishing_manager",
+        "nepotism_manager"
+      ],
+      "effect": "player_workload_up",
+      "funny_line_seed": "This is a growth opportunity for someone who is already here."
+    },
+    {
+      "id": "mandatory_fun",
+      "manager_types": [
+        "inspirational_disaster"
+      ],
+      "effect": "morale_event_or_staff_anger",
+      "funny_line_seed": "Team building starts when the fryer stops screaming."
+    },
+    {
+      "id": "manager_disappears",
+      "manager_types": [
+        "vanishing_manager"
+      ],
+      "effect": "acting_manager_pressure",
+      "funny_line_seed": "If anyone asks, I was never management."
+    }
+  ]
+}

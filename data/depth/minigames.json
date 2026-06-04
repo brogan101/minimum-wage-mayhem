@@ -1,0 +1,60 @@
+{
+  "minigames": [
+    {
+      "id": "bag_audit_snap",
+      "duration_seconds": 20,
+      "skill": "accuracy",
+      "failure": "wrong_bag_risk",
+      "normal_or_wild": "normal"
+    },
+    {
+      "id": "sauce_count_speed",
+      "duration_seconds": 15,
+      "skill": "precision",
+      "failure": "sauce_beef",
+      "normal_or_wild": "friction"
+    },
+    {
+      "id": "receipt_printer_unjam",
+      "duration_seconds": 12,
+      "skill": "timing",
+      "failure": "register_delay",
+      "normal_or_wild": "normal"
+    },
+    {
+      "id": "pull_forward_diplomacy",
+      "duration_seconds": 18,
+      "skill": "deescalation",
+      "failure": "beef_up",
+      "normal_or_wild": "friction"
+    },
+    {
+      "id": "fryer_timing_chain",
+      "duration_seconds": 30,
+      "skill": "station_mastery",
+      "failure": "waste_up",
+      "normal_or_wild": "normal"
+    },
+    {
+      "id": "manager_voice_meter",
+      "duration_seconds": 10,
+      "skill": "tone",
+      "failure": "customer_patience_down",
+      "normal_or_wild": "friction"
+    },
+    {
+      "id": "spill_route_cleanup",
+      "duration_seconds": 25,
+      "skill": "movement",
+      "failure": "cleanliness_down",
+      "normal_or_wild": "normal"
+    },
+    {
+      "id": "coupon_logic_puzzle",
+      "duration_seconds": 25,
+      "skill": "policy",
+      "failure": "review_risk",
+      "normal_or_wild": "weird"
+    }
+  ]
+}

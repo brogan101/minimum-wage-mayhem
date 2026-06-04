@@ -1,0 +1,46 @@
+{
+  "outcomes": [
+    {
+      "id": "customer_leaves_embarrassed",
+      "effects": [
+        "beef_down",
+        "staff_morale_up"
+      ]
+    },
+    {
+      "id": "customer_banned",
+      "effects": [
+        "future_rival_possible",
+        "corporate_review"
+      ]
+    },
+    {
+      "id": "viral_clip",
+      "effects": [
+        "viral_clip_event",
+        "reputation_mutation"
+      ]
+    },
+    {
+      "id": "player_written_up",
+      "effects": [
+        "writeup",
+        "promotion_delay_possible"
+      ]
+    },
+    {
+      "id": "store_legend",
+      "effects": [
+        "staff_morale_up",
+        "reputation_label_store_legend"
+      ]
+    },
+    {
+      "id": "hr_gets_everything_wrong",
+      "effects": [
+        "hr_report",
+        "fake_training_assigned"
+      ]
+    }
+  ]
+}

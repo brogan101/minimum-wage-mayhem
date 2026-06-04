@@ -1,0 +1,44 @@
+{
+  "events": [
+    {
+      "id": "green_lights_all_way",
+      "modifier": "on_time_confidence",
+      "tone": "normal"
+    },
+    {
+      "id": "gas_light_negotiation",
+      "modifier": "money_pressure_up",
+      "tone": "friction"
+    },
+    {
+      "id": "stuck_behind_school_bus",
+      "modifier": "late_risk",
+      "tone": "normal"
+    },
+    {
+      "id": "sees_regular_customer_in_traffic",
+      "modifier": "customer_callback_possible",
+      "tone": "weird"
+    },
+    {
+      "id": "rival_store_billboard",
+      "modifier": "rival_chain_rumor",
+      "tone": "normal"
+    },
+    {
+      "id": "coffee_spill_before_shift",
+      "modifier": "uniform_shame",
+      "tone": "friction"
+    },
+    {
+      "id": "perfect_parking_spot",
+      "modifier": "morale_small_up",
+      "tone": "normal"
+    },
+    {
+      "id": "parking_lot_bird_judgment",
+      "modifier": "chaos_karma_tiny_up",
+      "tone": "weird"
+    }
+  ]
+}

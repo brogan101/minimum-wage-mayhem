@@ -1,0 +1,220 @@
+{
+  "actions": [
+    {
+      "id": "eat_fries_from_station",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "quality_nugget",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "take_sauce_home",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "hide_extra_food",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "give_friend_free_meal",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "mark_waste_and_keep",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "take_expired_food",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "call_food_expired",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "put_food_in_locker",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "sneak_food_home",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "use_food_for_home_buff",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "trade_food_for_coworker_favor",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "trade_food_for_schedule_favor",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "give_free_food_to_calm_beef",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "give_free_food_for_loyalty",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "report_coworker_food_theft",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "join_food_scheme",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    },
+    {
+      "id": "stop_food_scheme",
+      "risk": "medium",
+      "systems_affected": [
+        "inventory_loss",
+        "food_cost",
+        "staff_morale",
+        "shady_suspicion",
+        "store_profit"
+      ],
+      "safety_note": "Abstract inventory choice."
+    }
+  ]
+}

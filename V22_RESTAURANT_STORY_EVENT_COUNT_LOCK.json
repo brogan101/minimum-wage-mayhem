@@ -1,0 +1,6 @@
+{
+  "file": "data/mischief/restaurant_story_events.json",
+  "before_count": 180,
+  "after_count": 180,
+  "rule": "Restaurant story events must stay the same number."
+}

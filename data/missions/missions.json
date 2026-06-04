@@ -1,0 +1,3467 @@
+[
+  {
+    "mission_id": "first_perfect_burger",
+    "display_name": "First Perfect Burger",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete first perfect burger objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "First Perfect Burger should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "no_burnt_fries",
+    "display_name": "No Burnt Fries",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete no burnt fries objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "No Burnt Fries should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "five_accurate_bags",
+    "display_name": "Five Accurate Bags",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete five accurate bags objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Five Accurate Bags should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "three_drinks_no_spill",
+    "display_name": "Three Drinks No Spill",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete three drinks no spill objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Three Drinks No Spill should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "sauce_precision_trial",
+    "display_name": "Sauce Precision Trial",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete sauce precision trial objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Sauce Precision Trial should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "fresh_fry_timing",
+    "display_name": "Fresh Fry Timing",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete fresh fry timing objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Fresh Fry Timing should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "drive_thru_audio_guess",
+    "display_name": "Drive-Thru Audio Guess",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete drive-thru audio guess objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Drive-Thru Audio Guess should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "bag_audit_basics",
+    "display_name": "Bag Audit Basics",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete bag audit basics objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Bag Audit Basics should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "pull_forward_diplomacy",
+    "display_name": "Pull-Forward Diplomacy",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete pull-forward diplomacy objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Pull-Forward Diplomacy should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "lunch_rush_survival",
+    "display_name": "Lunch Rush Survival",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete lunch rush survival objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Lunch Rush Survival should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "manual_mode_register",
+    "display_name": "Manual Mode Register",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete manual mode register objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Manual Mode Register should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "clean_counter_speedrun",
+    "display_name": "Clean Counter Speedrun",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete clean counter speedrun objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Clean Counter Speedrun should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "window_warrior_trial",
+    "display_name": "Window Warrior Trial",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete window warrior trial objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Window Warrior Trial should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "perfect_recovery_order",
+    "display_name": "Perfect Recovery Order",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete perfect recovery order objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Perfect Recovery Order should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "no_waste_shift",
+    "display_name": "No Waste Shift",
+    "mission_type": "work_skill",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete no waste shift objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "No Waste Shift should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "calm_coupon_warrior",
+    "display_name": "Calm Coupon Warrior",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete calm coupon warrior objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Calm Coupon Warrior should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "earn_dog_driver_loyalty",
+    "display_name": "Earn Dog Driver Loyalty",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete earn dog driver loyalty objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Earn Dog Driver Loyalty should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "defeat_dad_joke_guy_with_dad_joke",
+    "display_name": "Defeat Dad Joke Guy With Dad Joke",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete defeat dad joke guy with dad joke objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Defeat Dad Joke Guy With Dad Joke should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "recover_influencer_review",
+    "display_name": "Recover Influencer Review",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete recover influencer review objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Recover Influencer Review should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "handle_pta_commander",
+    "display_name": "Handle PTA Commander",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete handle pta commander objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Handle PTA Commander should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "survive_finance_bro",
+    "display_name": "Survive Finance Bro",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete survive finance bro objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Survive Finance Bro should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "expose_fake_complaint_hustler",
+    "display_name": "Expose Fake Complaint Hustler",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete expose fake complaint hustler objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Expose Fake Complaint Hustler should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "win_monster_truck_grandma_approval",
+    "display_name": "Win Monster Truck Grandma Approval",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete win monster truck grandma approval objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Win Monster Truck Grandma Approval should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "convert_wrong_restaurant_guy",
+    "display_name": "Convert Wrong Restaurant Guy",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete convert wrong restaurant guy objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Convert Wrong Restaurant Guy should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "beat_app_lawyer_in_coupon_court",
+    "display_name": "Beat App Lawyer In Coupon Court",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete beat app lawyer in coupon court objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Beat App Lawyer In Coupon Court should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "impress_fancy_food_critic",
+    "display_name": "Impress Fancy Food Critic",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete impress fancy food critic objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Impress Fancy Food Critic should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "de_escalate_straw_complaint",
+    "display_name": "De-escalate Straw Complaint",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete de-escalate straw complaint objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "De-escalate Straw Complaint should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "solve_passenger_seat_translation",
+    "display_name": "Solve Passenger Seat Translation",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete solve passenger seat translation objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Solve Passenger Seat Translation should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "stop_receipt_lawyer",
+    "display_name": "Stop Receipt Lawyer",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete stop receipt lawyer objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Stop Receipt Lawyer should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "save_customer_from_own_order",
+    "display_name": "Save Customer From Own Order",
+    "mission_type": "customer_social",
+    "unlock_condition": "rank:trainee",
+    "objective_steps": [
+      "Complete save customer from own order objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Save Customer From Own Order should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "train_new_hire",
+    "display_name": "Train New Hire",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete train new hire objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Train New Hire should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "find_ghost_employee",
+    "display_name": "Find Ghost Employee",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete find ghost employee objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Find Ghost Employee should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "stop_sauce_hoarder",
+    "display_name": "Stop Sauce Hoarder",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete stop sauce hoarder objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Stop Sauce Hoarder should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "coach_kitchen_menace",
+    "display_name": "Coach Kitchen Menace",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete coach kitchen menace objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Coach Kitchen Menace should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "keep_overqualified_one_from_quitting",
+    "display_name": "Keep Overqualified One From Quitting",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete keep overqualified one from quitting objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Keep Overqualified One From Quitting should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "group_chat_court",
+    "display_name": "Group Chat Court",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete group chat court objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Group Chat Court should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "kyle_accountability_arc",
+    "display_name": "Kyle Accountability Arc",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete kyle accountability arc objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Kyle Accountability Arc should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "corporate_climber_audit_day",
+    "display_name": "Corporate Climber Audit Day",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete corporate climber audit day objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Corporate Climber Audit Day should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "fake_clean_investigation",
+    "display_name": "Fake Clean Investigation",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete fake clean investigation objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Fake Clean Investigation should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "forbidden_side_hustle_incident",
+    "display_name": "Forbidden Side Hustle Incident",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete forbidden side hustle incident objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Forbidden Side Hustle Incident should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": "Risky/adult content remains abstract and consequence-driven."
+  },
+  {
+    "mission_id": "break_room_treaty",
+    "display_name": "Break Room Treaty",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete break room treaty objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Break Room Treaty should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "schedule_peace_talks",
+    "display_name": "Schedule Peace Talks",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete schedule peace talks objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Schedule Peace Talks should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "relationship_fallout_coverage",
+    "display_name": "Relationship Fallout Coverage",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete relationship fallout coverage objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Relationship Fallout Coverage should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": "Risky/adult content remains abstract and consequence-driven."
+  },
+  {
+    "mission_id": "rival_store_poaching",
+    "display_name": "Rival Store Poaching",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete rival store poaching objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Rival Store Poaching should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "manager_favoritism_scandal",
+    "display_name": "Manager Favoritism Scandal",
+    "mission_type": "employee_drama",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete manager favoritism scandal objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Manager Favoritism Scandal should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "first_schedule",
+    "display_name": "First Schedule",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete first schedule objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "First Schedule should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "first_call_out_crisis",
+    "display_name": "First Call-Out Crisis",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete first call-out crisis objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "First Call-Out Crisis should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "first_inspection",
+    "display_name": "First Inspection",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete first inspection objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "First Inspection should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "first_coaching_choice",
+    "display_name": "First Coaching Choice",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete first coaching choice objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "First Coaching Choice should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "morale_recovery_week",
+    "display_name": "Morale Recovery Week",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete morale recovery week objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Morale Recovery Week should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "fix_inventory_shortage",
+    "display_name": "Fix Inventory Shortage",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete fix inventory shortage objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Fix Inventory Shortage should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "upgrade_equipment_before_rush",
+    "display_name": "Upgrade Equipment Before Rush",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete upgrade equipment before rush objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Upgrade Equipment Before Rush should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "resolve_hr_stack",
+    "display_name": "Resolve HR Stack",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete resolve hr stack objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Resolve HR Stack should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "handle_audit",
+    "display_name": "Handle Audit",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete handle audit objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Handle Audit should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "save_store_reputation",
+    "display_name": "Save Store Reputation",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete save store reputation objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Save Store Reputation should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "build_training_plan",
+    "display_name": "Build Training Plan",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete build training plan objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Build Training Plan should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "stop_shady_culture_spread",
+    "display_name": "Stop Shady Culture Spread",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete stop shady culture spread objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Stop Shady Culture Spread should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "repair_corporate_trust",
+    "display_name": "Repair Corporate Trust",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete repair corporate trust objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Repair Corporate Trust should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "staff_burnout_intervention",
+    "display_name": "Staff Burnout Intervention",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete staff burnout intervention objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Staff Burnout Intervention should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "cut_wait_times_without_mutiny",
+    "display_name": "Cut Wait Times Without Mutiny",
+    "mission_type": "manager",
+    "unlock_condition": "rank:shift_lead",
+    "objective_steps": [
+      "Complete cut wait times without mutiny objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Cut Wait Times Without Mutiny should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": false,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "staff",
+      "morale"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "make_rent",
+    "display_name": "Make Rent",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete make rent objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Make Rent should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "get_gas_before_shift",
+    "display_name": "Get Gas Before Shift",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete get gas before shift objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Get Gas Before Shift should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "laundry_emergency",
+    "display_name": "Laundry Emergency",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete laundry emergency objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Laundry Emergency should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "survive_no_sleep_shift",
+    "display_name": "Survive No Sleep Shift",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete survive no sleep shift objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Survive No Sleep Shift should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "budget_week",
+    "display_name": "Budget Week",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete budget week objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Budget Week should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "plasma_appointment_recovery",
+    "display_name": "Plasma Appointment Recovery",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete plasma appointment recovery objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Plasma Appointment Recovery should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "fix_car",
+    "display_name": "Fix Car",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete fix car objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Fix Car should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "side_hustle_weekend",
+    "display_name": "Side Hustle Weekend",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete side hustle weekend objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Side Hustle Weekend should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": "Risky/adult content remains abstract and consequence-driven."
+  },
+  {
+    "mission_id": "bad_commute_recovery",
+    "display_name": "Bad Commute Recovery",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete bad commute recovery objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Bad Commute Recovery should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "phone_bill_panic",
+    "display_name": "Phone Bill Panic",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete phone bill panic objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Phone Bill Panic should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "apartment_inspection",
+    "display_name": "Apartment Inspection",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete apartment inspection objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Apartment Inspection should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "neighbor_party_recovery",
+    "display_name": "Neighbor Party Recovery",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete neighbor party recovery objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Neighbor Party Recovery should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "ride_from_coworker",
+    "display_name": "Ride From Coworker",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete ride from coworker objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Ride From Coworker should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "buy_food_or_gas",
+    "display_name": "Buy Food Or Gas",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete buy food or gas objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Buy Food Or Gas should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  },
+  {
+    "mission_id": "pet_fish_judgment_day",
+    "display_name": "Pet Fish Judgment Day",
+    "mission_type": "outside_world",
+    "unlock_condition": "day:2",
+    "objective_steps": [
+      "Complete pet fish judgment day objective step 1",
+      "React to the dynamic complication",
+      "Finish with a consequence or reward"
+    ],
+    "success_conditions": [
+      "required_event_resolved",
+      "shift_not_failed"
+    ],
+    "failure_conditions": [
+      "shift_failed",
+      "ignored_too_long"
+    ],
+    "partial_success_conditions": [
+      "resolved_with_penalty"
+    ],
+    "rewards": [
+      "cash",
+      "xp",
+      "reputation_or_morale_change"
+    ],
+    "consequences": [
+      "eventlog_entry",
+      "review_or_hr_seed",
+      "future_callback_flag"
+    ],
+    "comedy_hook": "Pet Fish Judgment Day should create a playable joke with setup, twist, payoff, and consequence.",
+    "repeatable": true,
+    "cooldown": 1,
+    "systems_touched": [
+      "shift",
+      "eventlog",
+      "hud",
+      "progression",
+      "life",
+      "workday_modifiers"
+    ],
+    "business_types": [
+      "fast_food_drive_thru"
+    ],
+    "safety_note": ""
+  }
+]

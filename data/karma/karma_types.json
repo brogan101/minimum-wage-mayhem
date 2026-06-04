@@ -1,0 +1,64 @@
+{
+  "karma_types": [
+    {
+      "id": "food_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "customer_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "coworker_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "shady_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "prank_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "corporate_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "manager_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "chaos_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "kindness_karma",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    },
+    {
+      "id": "guilt_conscience",
+      "min": -100,
+      "max": 100,
+      "default": 0
+    }
+  ]
+}

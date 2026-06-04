@@ -1,0 +1,84 @@
+# Godot 4 generated/editor state
+.godot/
+.import/
+*.import
+
+# Local Godot binaries, downloads, and setup outputs
+tools/downloads/
+tools/bin/
+*.zip
+*.7z
+*.rar
+
+# Runtime/user data and saves
+user://
+savegame.json
+*.save
+*.tmp
+*.temp
+
+# Python/editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+tools/*.gd.uid
+
+# Generated screenshots/artifacts
+artifacts/
+*.png.import
+*.jpg.import
+*.jpeg.import
+*.webp.import
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local secrets/config
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Prompt/reference/archive clutter not needed for build/test
+PHASE_PACK/
+disabled_not_in_scope/
+CODEX_RUN_ALL_PHASES_PROMPT_V21.txt
+CODEX_PHASE_7_PROMPT.txt
+V*_VALIDATION_OUTPUT.txt
+V*_VALIDATION_RESULT.txt
+V*_VALIDATION_RESULT.md
+V*_VALIDATION_OUTPUT.md
+V*_VALIDATION_RESULT.json
+V*_VALIDATION_OUTPUT.json
+V*_VALIDATION_RESULT.*
+V*_VALIDATION_OUTPUT.*
+V*_VALIDATION_RESULT
+V*_VALIDATION_OUTPUT
+V*_VALIDATION*.txt
+V*_VALIDATION*.md
+V*_VALIDATION*.json
+V*_VALIDATION*.log
+V*_VALIDATE_ALL_OUTPUT.txt
+V*_VALIDATE_ALL_RESULT.txt
+V*_NEW_FILE_MANIFEST.json
+V20_SOURCE_PROMPT_IMPORTED.md
+V14_PACKAGE_AUDIT_SUMMARY.md
+V15_*
+V16_*
+V17_*
+V18_*
+V19_*
+V20_*
+V21_*
+V22_*
+!V22_RESTAURANT_STORY_EVENT_COUNT_LOCK.json
+V23_VALIDATION_OUTPUT.txt

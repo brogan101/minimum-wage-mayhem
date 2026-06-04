@@ -1,0 +1,26 @@
+{
+  "events": [
+    {
+      "id": "coupon_binder_clip",
+      "effects": [
+        "customer_traffic_up",
+        "corporate_approval_down",
+        "staff_morale_up"
+      ]
+    },
+    {
+      "id": "mop_deescalation_clip",
+      "effects": [
+        "reputation_mutation",
+        "fake_training_assigned"
+      ]
+    },
+    {
+      "id": "manager_hidden_freezer_clip",
+      "effects": [
+        "manager_trust_down",
+        "player_promotion_boost_possible"
+      ]
+    }
+  ]
+}

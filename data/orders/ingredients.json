@@ -1,0 +1,11 @@
+[
+  {"id": "standard_fry", "name": "Fries", "base_cost": 2.0, "cook_time": 3.0, "burn_time": 8.0},
+  {"id": "premium_burger", "name": "The Corporate Behemoth", "base_cost": 8.0, "cook_time": 5.0, "burn_time": 12.0},
+  {"id": "mystery_shake", "name": "The Void Shake", "base_cost": 4.0, "cook_time": 0.0, "burn_time": 0.0},
+  {"id": "golden_nugget", "name": "Golden Nugget", "base_cost": 15.0, "cook_time": 4.0, "burn_time": 10.0},
+  {"id": "soda_large", "name": "Mega-Gulp", "base_cost": 3.0, "cook_time": 0.0, "burn_time": 0.0},
+  {"id": "ice_cube", "name": "Single Luxury Ice Cube", "base_cost": 1.0, "cook_time": 0.0, "burn_time": 0.0},
+  {"id": "sauce_ranch", "name": "Ranch", "base_cost": 0.5, "cook_time": 0.0, "burn_time": 0.0},
+  {"id": "sauce_bbq", "name": "BBQ", "base_cost": 0.5, "cook_time": 0.0, "burn_time": 0.0},
+  {"id": "sauce_mystery", "name": "The Secret Sauce", "base_cost": 1.0, "cook_time": 0.0, "burn_time": 0.0}
+]

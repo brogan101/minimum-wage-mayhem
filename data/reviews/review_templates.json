@@ -1,0 +1,672 @@
+[
+  {
+    "template": "They forgot my straw. This country is finished. {rating} stars.",
+    "rating": 1
+  },
+  {
+    "template": "The cashier looked like he had not slept since Tuesday. Relatable. {rating} stars.",
+    "rating": 4
+  },
+  {
+    "template": "My bag had 12 sauces and no food. Honestly, I respect the confidence. {rating} stars.",
+    "rating": 3
+  },
+  {
+    "template": "The employee said 'please be normal' when I pulled up. Fair. {rating} stars.",
+    "rating": 5
+  },
+  {
+    "template": "I asked for no pickles. The burger had pickle energy. {rating} stars.",
+    "rating": 1
+  },
+  {
+    "template": "Wait time was 20 minutes, but the employee gave me a free nugget. Forgiven. {rating} stars.",
+    "rating": 4
+  },
+  {
+    "template": "The burger was a circle. I prefer squares. {rating} stars.",
+    "rating": 1
+  },
+  {
+    "template": "I love that they let me bring my dog in the car. {rating} stars.",
+    "rating": 5
+  },
+  {
+    "template": "The soda was 90% ice. I am now a popsicle. {rating} stars.",
+    "rating": 2
+  },
+  {
+    "template": "The manager tried to 'streamline' my order by throwing the bag at me. {rating} stars.",
+    "rating": 3
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Case #1. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Case #2. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Case #3. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Case #4. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Case #5. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Case #6. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Case #7. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Case #8. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Case #9. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Case #10. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Case #11. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Case #12. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Case #13. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Case #14. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Case #15. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Case #16. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Case #17. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Case #18. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Case #19. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Case #20. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Case #21. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Case #22. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Case #23. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Case #24. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Case #25. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Case #26. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Case #27. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Case #28. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Case #29. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Case #30. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Case #31. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Case #32. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Case #33. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Case #34. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Case #35. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Case #36. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Case #37. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Case #38. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Case #39. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Case #40. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Case #41. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Case #42. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Case #43. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Case #44. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Case #45. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Case #46. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Case #47. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Case #48. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Case #49. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Case #50. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Case #51. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Case #52. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Case #53. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Case #54. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Case #55. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Case #56. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Case #57. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Case #58. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Case #59. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Case #60. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Case #61. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Case #62. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Case #63. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Case #64. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Case #65. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Case #66. {rating} stars.",
+    "rating": 1,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Case #67. {rating} stars.",
+    "rating": 2,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Case #68. {rating} stars.",
+    "rating": 3,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Case #69. {rating} stars.",
+    "rating": 4,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Case #70. {rating} stars.",
+    "rating": 5,
+    "tags": [
+      "v15",
+      "comedy",
+      "event_driven"
+    ]
+  }
+]

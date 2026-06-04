@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "id": "bad_sleep_neighbors",
+      "modifier": "low_energy",
+      "work_effect": "slower_sprint"
+    },
+    {
+      "id": "uniform_disaster",
+      "modifier": "uniform_shame",
+      "work_effect": "corporate_scrutiny_up"
+    },
+    {
+      "id": "coworker_group_chat_fight",
+      "modifier": "social_drama",
+      "work_effect": "coworker_drama_more_likely"
+    },
+    {
+      "id": "customer_recognizes_off_clock",
+      "modifier": "customer_recognition_risk",
+      "work_effect": "off_work_customer_may_appear"
+    },
+    {
+      "id": "alarm_clock_betrayal",
+      "modifier": "late_arrival",
+      "work_effect": "manager_warning"
+    }
+  ]
+}

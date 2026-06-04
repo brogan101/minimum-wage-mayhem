@@ -1,0 +1,1082 @@
+[
+  {
+    "chain_id": "kyle_redemption_or_collapse",
+    "display_name": "Kyle Redemption Or Collapse",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "dog_driver_vip_loyalty",
+    "display_name": "Dog Driver VIP Loyalty",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "coupon_warrior_legal_fantasy",
+    "display_name": "Coupon Warrior Legal Fantasy",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "corporate_climber_takeover",
+    "display_name": "Corporate Climber Takeover",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "sauce_economy_black_market_fictional",
+    "display_name": "Sauce Economy Black Market Fictional",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "rival_store_spy",
+    "display_name": "Rival Store Spy",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "mystery_shopper_paranoia",
+    "display_name": "Mystery Shopper Paranoia",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "ghost_employee_investigation",
+    "display_name": "Ghost Employee Investigation",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "overqualified_one_burnout",
+    "display_name": "Overqualified One Burnout",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "app_lawyer_convention_build_up",
+    "display_name": "App Lawyer Convention Build-Up",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "shady_culture_audit",
+    "display_name": "Shady Culture Audit",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "one_bad_decision_chain",
+    "display_name": "One Bad Decision Chain",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "one_good_prep_chain",
+    "display_name": "One Good Prep Chain",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "store_personality_arc",
+    "display_name": "Store Personality Arc",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "staff_culture_arc",
+    "display_name": "Staff Culture Arc",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "first_manager_meltdown",
+    "display_name": "First Manager Meltdown",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "relationship_fallout_coverage_arc",
+    "display_name": "Relationship Fallout Coverage Arc",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "snitch_reputation_spiral",
+    "display_name": "Snitch Reputation Spiral",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "bad_sleep_comeback",
+    "display_name": "Bad Sleep Comeback",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  },
+  {
+    "chain_id": "manager_trust_recovery",
+    "display_name": "Manager Trust Recovery",
+    "start_conditions": [
+      "dynamic_trigger_or_rank"
+    ],
+    "stages": [
+      {
+        "stage": 1,
+        "event": "setup",
+        "player_choices": [
+          "engage",
+          "ignore",
+          "snitch",
+          "cover",
+          "fix"
+        ]
+      },
+      {
+        "stage": 2,
+        "event": "complication",
+        "player_choices": [
+          "solve_clean",
+          "solve_shady",
+          "delegate",
+          "delay"
+        ]
+      },
+      {
+        "stage": 3,
+        "event": "payoff",
+        "player_choices": [
+          "accept_consequence",
+          "repair_reputation",
+          "double_down"
+        ]
+      }
+    ],
+    "possible_endings": [
+      "redemption",
+      "collapse",
+      "promotion",
+      "rivalry",
+      "running_gag"
+    ],
+    "systems_touched": [
+      "eventlog",
+      "missions",
+      "reputation",
+      "reviews",
+      "hr"
+    ],
+    "safety_note": "Adult or risky arcs are offscreen/abstract and never instructional."
+  }
+]

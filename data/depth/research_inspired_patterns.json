@@ -1,0 +1,55 @@
+{
+  "patterns": [
+    {
+      "id": "late_window_addon",
+      "source_pattern": "last-second add-ons at pickup window",
+      "game_adaptation": "line_pressure and kitchen_rework"
+    },
+    {
+      "id": "mobile_order_no_name",
+      "source_pattern": "mobile pickup confusion",
+      "game_adaptation": "identity_check_minigame"
+    },
+    {
+      "id": "passenger_seat_order",
+      "source_pattern": "passenger-side ordering communication issue",
+      "game_adaptation": "speaker_clarity_penalty"
+    },
+    {
+      "id": "loud_engine_order",
+      "source_pattern": "loud engine/music makes order hard to hear",
+      "game_adaptation": "misheard_order_roll"
+    },
+    {
+      "id": "trash_at_window",
+      "source_pattern": "customer hands over trash",
+      "game_adaptation": "sanitation_choice_and_beef"
+    },
+    {
+      "id": "coin_payment_delay",
+      "source_pattern": "paying with small change delays line",
+      "game_adaptation": "register_timer_friction"
+    },
+    {
+      "id": "bag_audit_window_block",
+      "source_pattern": "checking bags at the window blocks throughput",
+      "game_adaptation": "pull_forward_diplomacy"
+    },
+    {
+      "id": "coupon_app_conflict",
+      "source_pattern": "app/coupon issue blamed on store",
+      "game_adaptation": "policy_deescalation_minigame"
+    },
+    {
+      "id": "pull_forward_personal",
+      "source_pattern": "customer feels pull-forward is personal",
+      "game_adaptation": "customer_personality_beef_trigger"
+    },
+    {
+      "id": "too_chatty_delay",
+      "source_pattern": "well-meaning chatting can slow line",
+      "game_adaptation": "friendly_regular_time_tradeoff"
+    }
+  ],
+  "rule": "Inspired by broad patterns only. Do not copy real people, posts, brands, quotes, or videos."
+}

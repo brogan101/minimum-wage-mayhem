@@ -1,0 +1,68 @@
+{
+  "mutations": [
+    {
+      "id": "sauce_drama_store",
+      "condition": "sauce_incidents_high",
+      "effects": [
+        "sauce_customers_more_likely",
+        "sauce_rumors"
+      ]
+    },
+    {
+      "id": "clean_store_somehow",
+      "condition": "clean_shift_streak",
+      "effects": [
+        "inspection_bonus",
+        "staff_pride"
+      ]
+    },
+    {
+      "id": "cursed_register_store",
+      "condition": "register_incidents_high",
+      "effects": [
+        "register_2_label",
+        "payment_friction_up"
+      ]
+    },
+    {
+      "id": "staff_family_store",
+      "condition": "coworker_karma_high",
+      "effects": [
+        "coworker_help_more_likely",
+        "corporate_skeptical"
+      ]
+    },
+    {
+      "id": "viral_clip_store",
+      "condition": "viral_events_3",
+      "effects": [
+        "traffic_up",
+        "corporate_attention_up"
+      ]
+    },
+    {
+      "id": "mop_mythology_store",
+      "condition": "mop_incidents_3",
+      "effects": [
+        "mop_sidequest",
+        "hr_weirdness"
+      ]
+    },
+    {
+      "id": "corporate_pet_store",
+      "condition": "corporate_approval_high",
+      "effects": [
+        "policy_mandates_more_likely",
+        "staff_morale_risk"
+      ]
+    },
+    {
+      "id": "chaos_legend_store",
+      "condition": "legendary_shifts_survived",
+      "effects": [
+        "wild_customers_more_likely",
+        "promotion_story_boost"
+      ]
+    }
+  ]
+}

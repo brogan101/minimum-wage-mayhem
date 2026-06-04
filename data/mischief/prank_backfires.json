@@ -1,0 +1,66 @@
+{
+  "backfire_types": [
+    {
+      "id": "minor_backfire",
+      "severity": 1,
+      "effects": [
+        "coworker_annoyed",
+        "manager_suspicion_small",
+        "eventlog_joke"
+      ]
+    },
+    {
+      "id": "gameplay_backfire",
+      "severity": 2,
+      "effects": [
+        "order_delayed",
+        "wrong_item_risk",
+        "station_confusion",
+        "staff_morale_split"
+      ]
+    },
+    {
+      "id": "restaurant_backfire",
+      "severity": 3,
+      "effects": [
+        "spill_created",
+        "sauce_rack_knocked",
+        "line_slows",
+        "corporate_phone_rings"
+      ]
+    },
+    {
+      "id": "career_backfire",
+      "severity": 4,
+      "effects": [
+        "hr_report",
+        "writeup",
+        "manager_trust_down",
+        "promotion_delay"
+      ]
+    },
+    {
+      "id": "legendary_backfire",
+      "severity": 5,
+      "effects": [
+        "coupon_war",
+        "real_inspection",
+        "sauce_economy_collapse",
+        "manager_meltdown"
+      ]
+    }
+  ],
+  "roll_inputs": [
+    "prank_severity",
+    "manager_suspicion",
+    "coworker_relationship",
+    "current_chaos",
+    "customer_patience",
+    "station_coverage",
+    "time_of_shift",
+    "corporate_presence",
+    "player_reputation",
+    "prank_war_heat",
+    "restaurant_stability"
+  ]
+}

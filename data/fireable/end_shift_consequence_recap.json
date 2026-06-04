@@ -1,0 +1,21 @@
+{
+  "fields": [
+    "shady_actions",
+    "caught_level",
+    "suspicion_delta",
+    "hr_reports",
+    "fake_trainings",
+    "writeups",
+    "manager_trust_delta",
+    "corporate_approval_delta",
+    "promotion_progress_delta",
+    "demotion_risk_delta",
+    "fired_risk_delta",
+    "most_suspicious_moment",
+    "career_note"
+  ],
+  "example": {
+    "most_suspicious_moment": "Tip jar contained an IOU and one fry.",
+    "career_note": "Promotion still possible, but HR now knows your name pronunciation."
+  }
+}

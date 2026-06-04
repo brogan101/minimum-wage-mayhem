@@ -1,0 +1,34 @@
+{
+  "triggers": [
+    {
+      "id": "beef_maxed",
+      "weight": 20,
+      "blocked_in_tutorial": true
+    },
+    {
+      "id": "customer_refuses_to_leave",
+      "weight": 15,
+      "blocked_in_tutorial": true
+    },
+    {
+      "id": "savage_comeback_overuse",
+      "weight": 10,
+      "blocked_in_tutorial": true
+    },
+    {
+      "id": "two_customers_argue",
+      "weight": 8,
+      "blocked_in_tutorial": true
+    },
+    {
+      "id": "manager_escalates_customer",
+      "weight": 8,
+      "blocked_in_tutorial": true
+    },
+    {
+      "id": "legendary_chain_required",
+      "weight": 100,
+      "gated": true
+    }
+  ]
+}

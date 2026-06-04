@@ -1,0 +1,82 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/customers/CustomerCar.gd" id="1_car"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_body"]
+size = Vector3(1.65, 0.55, 2.15)
+
+[sub_resource type="BoxMesh" id="BoxMesh_cabin"]
+size = Vector3(1.15, 0.45, 0.9)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wheel"]
+size = Vector3(0.34, 0.34, 0.22)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_body"]
+size = Vector3(1.65, 0.75, 2.15)
+
+[sub_resource type="StandardMaterial3D" id="Material_car_red"]
+albedo_color = Color(0.9, 0.18, 0.12, 1)
+roughness = 0.62
+
+[sub_resource type="StandardMaterial3D" id="Material_car_blue"]
+albedo_color = Color(0.12, 0.38, 0.95, 1)
+roughness = 0.62
+
+[sub_resource type="StandardMaterial3D" id="Material_car_yellow"]
+albedo_color = Color(0.95, 0.78, 0.12, 1)
+roughness = 0.62
+
+[sub_resource type="StandardMaterial3D" id="Material_car_green"]
+albedo_color = Color(0.1, 0.72, 0.38, 1)
+roughness = 0.62
+
+[node name="CustomerCar" type="RigidBody3D"]
+script = ExtResource("1_car")
+start_position = Vector3(-8.5, 0.45, -5)
+window_position = Vector3(-6.2, 0.45, -2.2)
+
+[node name="BodyMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_body")
+
+[node name="BodyRed" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_body")
+surface_material_override/0 = SubResource("Material_car_red")
+
+[node name="BodyBlue" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_body")
+surface_material_override/0 = SubResource("Material_car_blue")
+
+[node name="BodyYellow" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_body")
+surface_material_override/0 = SubResource("Material_car_yellow")
+
+[node name="BodyGreen" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("BoxMesh_body")
+surface_material_override/0 = SubResource("Material_car_green")
+
+[node name="CabinMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48, -0.15)
+mesh = SubResource("BoxMesh_cabin")
+
+[node name="WheelFrontLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92, -0.28, -0.7)
+mesh = SubResource("BoxMesh_wheel")
+
+[node name="WheelFrontRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92, -0.28, -0.7)
+mesh = SubResource("BoxMesh_wheel")
+
+[node name="WheelBackLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92, -0.28, 0.7)
+mesh = SubResource("BoxMesh_wheel")
+
+[node name="WheelBackRight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.92, -0.28, 0.7)
+mesh = SubResource("BoxMesh_wheel")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_body")

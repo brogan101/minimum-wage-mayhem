@@ -1,0 +1,59 @@
+[
+  {
+    "axis": "reliable_vs_flaky",
+    "effects": [
+      "manager_trust",
+      "callout_reaction"
+    ]
+  },
+  {
+    "axis": "honest_vs_shady",
+    "effects": [
+      "audit_risk",
+      "employee_trust"
+    ]
+  },
+  {
+    "axis": "corporate_pet_vs_crew_loyalist",
+    "effects": [
+      "promotion",
+      "morale"
+    ]
+  },
+  {
+    "axis": "calm_vs_chaos_amplifier",
+    "effects": [
+      "beef",
+      "reviews"
+    ]
+  },
+  {
+    "axis": "fast_sloppy_vs_slow_accurate",
+    "effects": [
+      "wait_time",
+      "accuracy"
+    ]
+  },
+  {
+    "axis": "snitch_vs_coverup_artist",
+    "effects": [
+      "corporate",
+      "gossip"
+    ]
+  },
+  {
+    "axis": "prepared_vs_disaster_prone",
+    "effects": [
+      "workday_modifiers",
+      "life_events"
+    ]
+  },
+  {
+    "axis": "messy_personal_life_vs_locked_in",
+    "effects": [
+      "home_chaos",
+      "relationship_events",
+      "shift_focus"
+    ]
+  }
+]

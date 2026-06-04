@@ -1,0 +1,10 @@
+{
+  "rumors": [
+    "People are saying [ACTOR] did something with [OBJECT].",
+    "The rumor is [OBJECT] remembers [INCIDENT].",
+    "Staff thinks [COVER_STORY] is official policy now.",
+    "Corporate may have heard about [INCIDENT].",
+    "Someone said [WITNESS] saw the whole thing.",
+    "Nobody knows why [LOCATION] smells like accountability."
+  ]
+}

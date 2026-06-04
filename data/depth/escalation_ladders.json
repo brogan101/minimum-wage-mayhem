@@ -1,0 +1,60 @@
+{
+  "ladders": [
+    {
+      "id": "coupon_dispute",
+      "steps": [
+        "question",
+        "minor_annoyance",
+        "policy_confusion",
+        "manager_request",
+        "review_risk",
+        "coupon_war_chance"
+      ]
+    },
+    {
+      "id": "sauce_shortage",
+      "steps": [
+        "low_stock",
+        "customer_asks_extra",
+        "coworker_blames_player",
+        "manager_ration",
+        "line_reacts",
+        "sauce_economy_chance"
+      ]
+    },
+    {
+      "id": "bad_sleep_shift",
+      "steps": [
+        "minor_focus_loss",
+        "small_mistake",
+        "coworker_notice",
+        "manager_comment",
+        "recovery_choice",
+        "writeup_or_comeback"
+      ]
+    },
+    {
+      "id": "prank_war",
+      "steps": [
+        "joke",
+        "retaliation",
+        "station_confusion",
+        "customer_notices",
+        "manager_intervenes",
+        "hr_report_or_truce"
+      ]
+    },
+    {
+      "id": "register_discrepancy",
+      "steps": [
+        "small_mismatch",
+        "recount",
+        "witness",
+        "manager_suspicion",
+        "evidence_created",
+        "investigation_or_confession"
+      ]
+    }
+  ],
+  "rule": "Problems escalate stepwise. Do not jump to legendary unless gates are met."
+}

@@ -1,0 +1,30 @@
+{
+  "opening": [
+    "turn_on_equipment",
+    "stock_stations",
+    "check_freezer",
+    "prep_food",
+    "count_register",
+    "clean_lobby",
+    "review_schedule",
+    "read_corporate_note"
+  ],
+  "mid_shift": [
+    "serve_customers",
+    "restock",
+    "clean_spills",
+    "manage_station_coverage",
+    "watch_timers",
+    "keep_drive_thru_moving",
+    "maintain_morale"
+  ],
+  "closing": [
+    "clean_equipment",
+    "count_register",
+    "discard_old_food",
+    "lock_doors",
+    "restock_for_morning",
+    "submit_report",
+    "handle_last_minute_customer"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "fields": [
+    "biggest_incident_survived",
+    "most_chaotic_shift",
+    "worst_hr_report",
+    "most_loyal_coworker",
+    "biggest_rival_customer",
+    "times_demoted",
+    "times_promoted",
+    "shady_reputation",
+    "corporate_reputation",
+    "staff_reputation",
+    "viral_events",
+    "manager_trial_result"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "interactions": [
+    {
+      "id": "car_behind_honks",
+      "trigger": "window_delay",
+      "effect": "front_customer_patience_down"
+    },
+    {
+      "id": "passenger_corrects_driver",
+      "trigger": "complex_order",
+      "effect": "order_confusion_up"
+    },
+    {
+      "id": "regular_warns_new_customer",
+      "trigger": "known_coupon_rival",
+      "effect": "line_gossip"
+    },
+    {
+      "id": "customer_defends_player",
+      "trigger": "high_customer_karma",
+      "effect": "beef_down"
+    },
+    {
+      "id": "customer_records_other_customer",
+      "trigger": "customer_beef_high",
+      "effect": "viral_clip_chance"
+    },
+    {
+      "id": "two_cars_argue_pull_forward",
+      "trigger": "line_pressure_high",
+      "effect": "manager_attention"
+    },
+    {
+      "id": "dog_driver_barks_at_coupon_warrior",
+      "trigger": "dog_driver_and_coupon",
+      "effect": "morale_up_beef_down"
+    },
+    {
+      "id": "normal_customer_gets_dragged_into_lore",
+      "trigger": "wild_event_nearby",
+      "effect": "review_interpretation_weird"
+    }
+  ]
+}

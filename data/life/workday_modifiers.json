@@ -1,0 +1,191 @@
+[
+  {
+    "modifier_id": "bad_sleep",
+    "display_name": "Bad Sleep",
+    "effects": [
+      "energy_down",
+      "drop_chance_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Bad Sleep",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "great_sleep",
+    "display_name": "Great Sleep",
+    "effects": [
+      "energy_up",
+      "composure_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Great Sleep",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "energy_drink_boost",
+    "display_name": "Energy Drink Boost",
+    "effects": [
+      "speed_up_short",
+      "precision_down"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Energy Drink Boost",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "energy_drink_crash",
+    "display_name": "Energy Drink Crash",
+    "effects": [
+      "speed_down",
+      "composure_down"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Energy Drink Crash",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "skipped_meal",
+    "display_name": "Skipped Meal",
+    "effects": [
+      "hunger_down",
+      "inventory_temptation_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Skipped Meal",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "real_food",
+    "display_name": "Real Food",
+    "effects": [
+      "focus_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Real Food",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "no_gas",
+    "display_name": "No Gas",
+    "effects": [
+      "late_risk",
+      "stress_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "No Gas",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "neighbor_party",
+    "display_name": "Neighbor Party",
+    "effects": [
+      "sleep_down",
+      "mood_mixed"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Neighbor Party",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "plasma_appointment_fictional",
+    "display_name": "Plasma Appointment Fictional",
+    "effects": [
+      "money_up",
+      "energy_down"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Plasma Appointment Fictional",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": ""
+  },
+  {
+    "modifier_id": "sketchy_pick_me_up_abstract",
+    "display_name": "Sketchy Pick Me Up Abstract",
+    "effects": [
+      "unstable_energy",
+      "suspicion_up"
+    ],
+    "visible_to_player": true,
+    "hud_label": "Sketchy Pick Me Up Abstract",
+    "duration": "next_shift",
+    "counterplay": [
+      "sleep",
+      "food",
+      "break",
+      "npc_help",
+      "manager_schedule"
+    ],
+    "safety_note": "Abstract risky adult choice, no real-world instruction."
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "templates": [
+    {
+      "id": "tip_jar",
+      "interactable": "tip_jar",
+      "choices": [
+        "leave_it",
+        "count_honestly",
+        "take_little",
+        "take_lot",
+        "blame_customer",
+        "move_for_safety",
+        "ask_new_hire_watch"
+      ]
+    },
+    {
+      "id": "coworker_caught",
+      "interactable": "coworker",
+      "choices": [
+        "ignore",
+        "join",
+        "warn",
+        "report",
+        "ask_for_cut",
+        "use_for_customer_beef",
+        "frame_corporate_climber"
+      ]
+    },
+    {
+      "id": "break_room_fog",
+      "interactable": "break_room",
+      "choices": [
+        "leave_immediately",
+        "ask",
+        "join_team_meeting",
+        "tell_manager",
+        "open_back_door",
+        "blame_fryer_fumes",
+        "avoid_window"
+      ]
+    },
+    {
+      "id": "angry_customer",
+      "interactable": "customer",
+      "choices": [
+        "corporate_apology",
+        "fresh_fries",
+        "manager_voice",
+        "pull_forward",
+        "savage_comeback",
+        "call_manager",
+        "duck",
+        "say_drive_thru"
+      ]
+    },
+    {
+      "id": "manager_coverup",
+      "interactable": "manager",
+      "choices": [
+        "go_along",
+        "refuse",
+        "ask_whats_in_it",
+        "tell_coworker",
+        "save_evidence",
+        "report_corporate",
+        "pretend_not_hear",
+        "use_leverage"
+      ]
+    }
+  ],
+  "safety_note": "Choices are abstract UI labels and must not provide real-world procedural details."
+}

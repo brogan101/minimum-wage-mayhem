@@ -1,0 +1,116 @@
+{
+  "chains": [
+    {
+      "id": "sauce_betrayal_chain",
+      "name": "The Sauce Betrayal",
+      "category": "coworker_chaos",
+      "stages": [
+        "sauce_inventory_missing",
+        "customer_complains",
+        "manager_blames_player",
+        "player_expose_or_cover",
+        "favor_or_rival_created"
+      ],
+      "player_routes": [
+        "listen",
+        "cause",
+        "join",
+        "avoid"
+      ],
+      "outcomes": [
+        "staff_morale_change",
+        "coworker_loyalty_change",
+        "future_favor",
+        "future_rival"
+      ],
+      "eventlog_tags": [
+        "sauce",
+        "coworker",
+        "drama_chain"
+      ]
+    },
+    {
+      "id": "fake_sick_day_chain",
+      "name": "The Fake Sick Day",
+      "category": "callout_chaos",
+      "stages": [
+        "employee_calls_out",
+        "player_covers_station",
+        "employee_appears_as_customer",
+        "player_confront_ignore_or_snitch",
+        "schedule_consequence"
+      ],
+      "player_routes": [
+        "listen",
+        "cause",
+        "join",
+        "avoid"
+      ],
+      "outcomes": [
+        "manager_trust_change",
+        "staff_morale_change",
+        "callout_history_update"
+      ],
+      "eventlog_tags": [
+        "callout",
+        "employee_drama",
+        "fake_sick"
+      ]
+    },
+    {
+      "id": "snitch_spiral_chain",
+      "name": "The Snitch Spiral",
+      "category": "reputation_chaos",
+      "stages": [
+        "corporate_climber_reports_minor_break",
+        "manager_gets_strict",
+        "staff_morale_drops",
+        "player_sides_staff_or_corporate",
+        "promotion_path_shift"
+      ],
+      "player_routes": [
+        "listen",
+        "cause",
+        "join",
+        "avoid"
+      ],
+      "outcomes": [
+        "corporate_approval_change",
+        "staff_morale_change",
+        "snitch_label_possible"
+      ],
+      "eventlog_tags": [
+        "snitch",
+        "corporate",
+        "staff_morale"
+      ]
+    },
+    {
+      "id": "break_room_trial_chain",
+      "name": "The Break Room Trial",
+      "category": "coworker_chaos",
+      "stages": [
+        "lunch_stolen",
+        "staff_accuses_each_other",
+        "player_investigates_or_ignores",
+        "wrong_or_correct_accusation",
+        "hr_misidentifies_sandwich"
+      ],
+      "player_routes": [
+        "listen",
+        "join",
+        "avoid"
+      ],
+      "outcomes": [
+        "leadership_score_change",
+        "staff_loyalty_change",
+        "hr_report"
+      ],
+      "eventlog_tags": [
+        "break_room",
+        "drama",
+        "hr"
+      ]
+    }
+  ]
+}

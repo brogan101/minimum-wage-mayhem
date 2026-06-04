@@ -1,0 +1,100 @@
+{
+  "objects": [
+    {
+      "id": "mop",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "wet_floor_sign",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "tip_jar",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "receipt_printer",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "register_2",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "good_headset",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "fryer",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "grill",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "sauce_rack",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "freezer",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "bathroom_key",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "corporate_phone",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "manager_clipboard",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "hr_printer",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "trash_can",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    },
+    {
+      "id": "drive_thru_window",
+      "incident_count": 0,
+      "labels": [],
+      "legendary_threshold": 3
+    }
+  ]
+}

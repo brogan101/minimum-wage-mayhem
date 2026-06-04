@@ -1,0 +1,39 @@
+{
+  "actions": [
+    {
+      "id": "eat_inventory",
+      "severity": "minor",
+      "reward": "hunger_down",
+      "risk": "suspicion_up",
+      "safety_note": "Cartoon workplace shortcut."
+    },
+    {
+      "id": "give_friend_free_food",
+      "severity": "moderate",
+      "reward": "relationship_up",
+      "risk": "inventory_loss_and_audit",
+      "safety_note": "Abstract game action; no real method."
+    },
+    {
+      "id": "fake_clean_spill",
+      "severity": "moderate",
+      "reward": "time_saved",
+      "risk": "cleanliness_risk_and_writeup",
+      "safety_note": "Cartoon shortcut with consequences."
+    },
+    {
+      "id": "hide_mistake_in_trash",
+      "severity": "moderate",
+      "reward": "avoid_immediate_beef",
+      "risk": "evidence_flag",
+      "safety_note": "Abstract workplace choice."
+    },
+    {
+      "id": "use_manager_code_early",
+      "severity": "major",
+      "reward": "short_term_solution",
+      "risk": "manager_trust_loss_and_writeup",
+      "safety_note": "Fictional system misuse; no real bypass details."
+    }
+  ]
+}

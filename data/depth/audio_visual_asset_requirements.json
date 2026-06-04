@@ -1,0 +1,107 @@
+{
+  "requirements": [
+    {
+      "system": "customer_memory_arcs",
+      "models": [
+        "customer_variants"
+      ],
+      "textures": [
+        "uniform_casual_clothes"
+      ],
+      "audio": [
+        "small_reaction_lines"
+      ],
+      "fallback": "colored_capsule_customer_with_label"
+    },
+    {
+      "system": "coworker_social_web",
+      "models": [
+        "coworker_variants"
+      ],
+      "textures": [
+        "name_tags"
+      ],
+      "audio": [
+        "gossip_ping"
+      ],
+      "fallback": "labeled NPC capsule"
+    },
+    {
+      "system": "equipment_personality",
+      "models": [
+        "receipt_printer",
+        "mop",
+        "headset",
+        "fryer"
+      ],
+      "textures": [
+        "simple_prop_materials"
+      ],
+      "audio": [
+        "printer_jam",
+        "fryer_sizzle",
+        "headset_beep"
+      ],
+      "fallback": "primitive prop plus label"
+    },
+    {
+      "system": "home_life_depth",
+      "models": [
+        "phone_ui",
+        "bed",
+        "laundry_basket"
+      ],
+      "textures": [
+        "apartment_props"
+      ],
+      "audio": [
+        "phone_buzz",
+        "alarm"
+      ],
+      "fallback": "2D UI cards"
+    },
+    {
+      "system": "minigames",
+      "models": [
+        "timer_ui",
+        "progress_meter"
+      ],
+      "textures": [
+        "simple_ui"
+      ],
+      "audio": [
+        "success_sting",
+        "fail_sting"
+      ],
+      "fallback": "HUD-only prompt"
+    },
+    {
+      "system": "store_identity",
+      "models": [
+        "wall_board",
+        "rumor_board"
+      ],
+      "textures": [
+        "sticky_notes"
+      ],
+      "audio": [
+        "marker_squeak"
+      ],
+      "fallback": "text-only board"
+    },
+    {
+      "system": "normal_shift_texture",
+      "models": [
+        "small_props"
+      ],
+      "textures": [
+        "counter_clutter"
+      ],
+      "audio": [
+        "ambient_murmur"
+      ],
+      "fallback": "ambient text event"
+    }
+  ],
+  "asset_rule": "Use procedural primitives and simple materials until verified CC0/commercial-use assets are sourced."
+}

@@ -1,0 +1,46 @@
+{
+  "triggers": [
+    {
+      "id": "tip_jar_cold_case",
+      "conditions": [
+        "tip_jar",
+        "evidence_exists",
+        "unresolved"
+      ],
+      "chain": "tip_jar_trial"
+    },
+    {
+      "id": "mop_mythology",
+      "conditions": [
+        "mop",
+        "object_incident_count_3"
+      ],
+      "chain": "mop_uprising"
+    },
+    {
+      "id": "sauce_crisis",
+      "conditions": [
+        "sauce",
+        "inventory_low",
+        "customer_beef_high"
+      ],
+      "chain": "sauce_economy_collapse"
+    },
+    {
+      "id": "manager_trial_callback",
+      "conditions": [
+        "manager_trial_active",
+        "past_coverup"
+      ],
+      "chain": "manager_trial_from_hell"
+    },
+    {
+      "id": "food_guilt",
+      "conditions": [
+        "food_karma_low",
+        "normal_family_customer"
+      ],
+      "chain": "guilt_event"
+    }
+  ]
+}

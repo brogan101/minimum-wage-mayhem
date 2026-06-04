@@ -1,0 +1,224 @@
+{
+  "actions": [
+    {
+      "id": "leave_it_alone",
+      "risk": "low",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "count_tips_honestly",
+      "risk": "low",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "split_tips_fairly",
+      "risk": "low",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "pocket_small_amount",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "pocket_large_amount",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "blame_customer",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "blame_new_hire",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "move_jar_for_safety",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "claim_morale_fund",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "add_fake_iou",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "borrow_temporarily",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "replace_with_coupon",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "use_to_calm_customer",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "buy_staff_snack",
+      "risk": "medium",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "report_coworker",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "catch_coworker",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "stage_fake_sting",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "hide_during_chaos",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "accidentally_bag_tip_jar",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    },
+    {
+      "id": "customer_tips_weird_object",
+      "risk": "high",
+      "systems_affected": [
+        "tips",
+        "suspicion",
+        "staff_morale",
+        "manager_trust"
+      ],
+      "safety_note": "Abstract tip jar choice."
+    }
+  ]
+}

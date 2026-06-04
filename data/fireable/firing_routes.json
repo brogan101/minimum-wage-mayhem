@@ -1,0 +1,45 @@
+{
+  "routes": [
+    {
+      "id": "previous_week_restart",
+      "description": "Restart from previous week."
+    },
+    {
+      "id": "demoted_to_trainee",
+      "description": "Demoted to Trainee."
+    },
+    {
+      "id": "transferred_to_worse_location",
+      "description": "Transferred to cursed location."
+    },
+    {
+      "id": "forced_retraining_arc",
+      "description": "Forced retraining arc."
+    },
+    {
+      "id": "probation_mode",
+      "description": "Last chance shift conditions."
+    },
+    {
+      "id": "appeal_meeting",
+      "description": "Appeal meeting mini-event."
+    },
+    {
+      "id": "night_shift_punishment",
+      "description": "Night shift punishment route."
+    },
+    {
+      "id": "somehow_rehired",
+      "description": "Store is too desperate to lose player."
+    },
+    {
+      "id": "lost_paperwork",
+      "description": "Manager lost firing paperwork."
+    },
+    {
+      "id": "corporate_typo_promotion",
+      "description": "Corporate accidentally promotes player due to typo."
+    }
+  ],
+  "rule": "Avoid permanent game-over unless player explicitly chooses hard mode."
+}

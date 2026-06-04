@@ -1,0 +1,312 @@
+[
+  {
+    "event_id": "coworker_crush_rumor",
+    "display_name": "Coworker Crush Rumor",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Coworker Crush Rumor creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "offscreen_relationship_fallout",
+    "display_name": "Offscreen Relationship Fallout",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Offscreen Relationship Fallout creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "unexpected_family_responsibility_rumor",
+    "display_name": "Unexpected Family Responsibility Rumor",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Unexpected Family Responsibility Rumor creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "cover_her_shift_arc",
+    "display_name": "Cover Her Shift Arc",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Cover Her Shift Arc creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "hr_awkward_meeting",
+    "display_name": "HR Awkward Meeting",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "HR Awkward Meeting creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "break_room_jealousy_spiral",
+    "display_name": "Break Room Jealousy Spiral",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Break Room Jealousy Spiral creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "schedule_conflict_due_to_personal_drama",
+    "display_name": "Schedule Conflict Due To Personal Drama",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Schedule Conflict Due To Personal Drama creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "player_persona_becomes_messy",
+    "display_name": "Player Persona Becomes Messy",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Player Persona Becomes Messy creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "coworker_asks_for_support",
+    "display_name": "Coworker Asks For Support",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Coworker Asks For Support creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  },
+  {
+    "event_id": "gossip_turns_into_manager_problem",
+    "display_name": "Gossip Turns Into Manager Problem",
+    "category": "mature_social_consequence",
+    "explicit_content": false,
+    "setup": "Gossip Turns Into Manager Problem creates adult social drama without explicit content.",
+    "player_choices": [
+      "be_responsible",
+      "avoid_it",
+      "snitch",
+      "cover_shift",
+      "make_it_worse",
+      "talk_to_hr"
+    ],
+    "effects": [
+      "persona_axis_change",
+      "schedule_pressure",
+      "staff_morale_change",
+      "gossip_event",
+      "possible_hr_report"
+    ],
+    "systems_touched": [
+      "persona",
+      "staffing",
+      "gossip",
+      "hr",
+      "life",
+      "shift"
+    ],
+    "safety_note": "Consensual/offscreen adult relationship consequence only; no explicit content or coercion."
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "levels": [
+    {
+      "id": "micro",
+      "weight": 40,
+      "description": "Small funny friction",
+      "max_per_shift": 5
+    },
+    {
+      "id": "minor",
+      "weight": 30,
+      "description": "Noticeable disruption",
+      "max_per_shift": 3
+    },
+    {
+      "id": "moderate",
+      "weight": 18,
+      "description": "Shift-changing incident",
+      "max_per_shift": 2
+    },
+    {
+      "id": "major",
+      "weight": 9,
+      "description": "Big workplace disaster",
+      "max_per_shift": 1
+    },
+    {
+      "id": "legendary",
+      "weight": 3,
+      "description": "Rare story-worthy chain",
+      "max_per_shift": 1,
+      "gated": true
+    }
+  ],
+  "tutorial_blocked": [
+    "moderate",
+    "major",
+    "legendary"
+  ]
+}

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/apartment/HubManager.gd" id="1_hub"]
+
+[node name="Apartment" type="Node3D"]
+script = ExtResource("1_hub")
+
+[node name="Floor" type="CSGBox3D" parent="."]
+size = Vector3(10, 0.1, 10)
+material = SubResource("StandardMaterial3D_1")
+
+[node name="Wall1" type="CSGBox3D" parent="."]
+size = Vector3(10, 4, 0.2)
+position = Vector3(0, 2, -5)
+
+[node name="Wall2" type="CSGBox3D" parent="."]
+size = Vector3(0.2, 4, 10)
+position = Vector3(-5, 2, 0)
+
+[node name="Bed" type="StaticBody3D" parent="."]
+position = Vector3(-3, 0, -3)
+# Bed mesh and CollisionShape would be here

@@ -1,0 +1,630 @@
+[
+  {
+    "template": "Employee told customer, '{text}'. Result: {result}.",
+    "example_text": "You are not emotionally ready for extra ranch",
+    "example_result": "Customer complaint filed. Employee morale increased."
+  },
+  {
+    "template": "Register was short {amount} and employee had suspicious confidence. Result: {result}.",
+    "example_amount": "$3.12",
+    "example_result": "Register training assigned."
+  },
+  {
+    "template": "Employee ate {item} from {count} orders. Result: {result}.",
+    "example_item": "fries",
+    "example_count": "6",
+    "example_result": "Fry Tax policy created."
+  },
+  {
+    "template": "Customer demanded manager. Employee put on a tie and returned as manager. Result: {result}.",
+    "example_result": "Technically effective. Still not allowed."
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Incident #1. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Incident #2. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Incident #3. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Incident #4. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Incident #5. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Incident #6. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Incident #7. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Incident #8. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Incident #9. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Incident #10. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Incident #11. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Incident #12. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Incident #13. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Incident #14. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Incident #15. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Incident #16. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Incident #17. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Incident #18. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Incident #19. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Incident #20. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Incident #21. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Incident #22. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Incident #23. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Incident #24. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Incident #25. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Incident #26. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Incident #27. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Incident #28. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Incident #29. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Incident #30. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Incident #31. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Incident #32. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Incident #33. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Incident #34. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Incident #35. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Incident #36. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Incident #37. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Incident #38. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Incident #39. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Incident #40. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Incident #41. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Incident #42. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Incident #43. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Incident #44. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Incident #45. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Incident #46. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Incident #47. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Incident #48. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Incident #49. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Incident #50. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Incident #51. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Incident #52. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Incident #53. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Incident #54. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Incident #55. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Incident #56. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A staff group chat argument leaked into my combo. Incident #57. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I was asked to pull forward and found myself spiritually changed. Incident #58. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The cashier solved my complaint with a single ranch and dead eyes. Incident #59. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "This store is either cursed or managed by performance artists. Incident #60. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The bag had more emotional range than the cashier. Incident #61. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I asked for no pickles and received pickle lore. Incident #62. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The dog in front of me got better service and honestly earned it. Incident #63. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The fries were late but the drama was fresh. Incident #64. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Someone yelled “who snitched” and my drink appeared instantly. Incident #65. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The employee looked like sleep was DLC. Incident #66. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I got the wrong order and somehow respected the confidence. Incident #67. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The manager voice was used irresponsibly. Incident #68. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Corporate should fear this location. Incident #69. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The drive-thru line developed a government. Incident #70. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "A mop had leadership energy. Incident #71. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The receipt font was hostile but the burger was fine. Incident #72. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "I saw a worker negotiate with a fryer and lose. Incident #73. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The sauce economy is unstable here. Incident #74. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "Five stars for chaos, two stars for napkins. Incident #75. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  },
+  {
+    "template": "The customer service voice had visible cracks. Incident #76. Result: {result}.",
+    "example_result": "Logged for training, morale, or future callback.",
+    "tags": [
+      "v15",
+      "eventlog_seed"
+    ]
+  }
+]

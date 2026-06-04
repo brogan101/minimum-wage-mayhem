@@ -1,0 +1,59 @@
+{
+  "layers": [
+    {
+      "id": "normal_orders",
+      "weight": 50,
+      "examples": [
+        "regular gets usual combo",
+        "polite customer asks simple question",
+        "coworker asks for restock help"
+      ],
+      "systems": [
+        "CustomerManager",
+        "ShiftManager"
+      ]
+    },
+    {
+      "id": "service_friction",
+      "weight": 25,
+      "examples": [
+        "payment delay",
+        "passenger seat order confusion",
+        "mobile order name missing",
+        "last-second add-on"
+      ],
+      "systems": [
+        "CustomerManager",
+        "ConsequenceMatrixManager"
+      ]
+    },
+    {
+      "id": "funny_weird",
+      "weight": 15,
+      "examples": [
+        "customer compliments receipt printer",
+        "coworker names fryer Greg",
+        "regular rates the mop"
+      ],
+      "systems": [
+        "EventLog",
+        "StoreObjectMemoryManager"
+      ]
+    },
+    {
+      "id": "wild_spike",
+      "weight": 10,
+      "examples": [
+        "coupon lawyer arrives",
+        "manager disappears",
+        "sauce economy rumor spreads"
+      ],
+      "systems": [
+        "ChaosDirector",
+        "RestaurantMemoryManager"
+      ],
+      "cooldown_required": true
+    }
+  ],
+  "rule": "Each shift should draw mostly normal/friction layers and only use wild spikes when budget allows."
+}
