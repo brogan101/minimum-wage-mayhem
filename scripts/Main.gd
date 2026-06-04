@@ -369,6 +369,7 @@ func _apply_phase17_demo_visuals():
 	_add_station_label("ClockOutStation", "CLOCK OUT\nEND SHIFT", Color(0.72, 1.0, 0.95))
 	_ensure_demo_light("KitchenSoftbox", Vector3(1.0, 4.2, 2.5), Color(1.0, 0.88, 0.68), 4.5)
 	_ensure_demo_light("DriveThruGlow", Vector3(-5.8, 3.4, -2.2), Color(1.0, 0.58, 0.18), 2.5)
+	_apply_phase21_cartoon_identity(dressing)
 
 func _set_world_environment():
 	var env_node = get_node_or_null("WorldEnvironment")
@@ -379,14 +380,107 @@ func _set_world_environment():
 		env = Environment.new()
 		env_node.environment = env
 	env.background_mode = 1
-	env.background_color = Color(0.58, 0.78, 0.95)
+	env.background_color = Color(0.62, 0.82, 0.98)
 	env.ambient_light_source = 2
-	env.ambient_light_color = Color(0.9, 0.82, 0.7)
-	env.ambient_light_energy = 0.85
+	env.ambient_light_color = Color(1.0, 0.86, 0.62)
+	env.ambient_light_energy = 1.08
 	var light = get_node_or_null("DirectionalLight3D")
 	if light:
-		light.light_energy = 1.15
+		light.light_energy = 1.45
 		light.shadow_enabled = true
+		light.rotation_degrees = Vector3(-48.0, -34.0, 0.0)
+
+func _apply_phase21_cartoon_identity(dressing: Node):
+	var cream = _mat("Phase21 cream wall stripe", Color(1.0, 0.86, 0.42), 0.75)
+	var red = _mat("Phase21 house red", Color(0.9, 0.12, 0.09), 0.65)
+	var blue = _mat("Phase21 ticket blue", Color(0.15, 0.48, 0.95), 0.62)
+	var yellow = _mat("Phase21 fry yellow", Color(1.0, 0.82, 0.12), 0.6)
+	var white = _mat("Phase21 paper white", Color(0.98, 0.96, 0.88), 0.72)
+	var black = _mat("Phase21 cartoon black", Color(0.03, 0.035, 0.04), 0.7)
+	var steel = _mat("Phase21 soft steel", Color(0.42, 0.46, 0.48), 0.48)
+	var glass = _mat("Phase21 soda glass", Color(0.65, 0.9, 1.0, 0.92), 0.35)
+	var bun = _mat("Phase21 bun", Color(0.93, 0.62, 0.25), 0.7)
+	var patty = _mat("Phase21 patty", Color(0.34, 0.16, 0.07), 0.8)
+	var lettuce = _mat("Phase21 lettuce", Color(0.28, 0.78, 0.2), 0.72)
+	var cheese = _mat("Phase21 cheese", Color(1.0, 0.78, 0.08), 0.68)
+	var asphalt = _mat("Phase21 asphalt", Color(0.09, 0.095, 0.1), 0.88)
+	var glowing_green = _mat("Phase21 handoff glow", Color(0.18, 1.0, 0.35), 0.5, Color(0.1, 0.95, 0.25, 1.0))
+
+	_add_floor_tiles(dressing, white, _mat("Phase21 tile grout", Color(0.78, 0.7, 0.58), 0.8))
+	_add_box(dressing, "Phase21WallStripeBack", Vector3(0.0, 2.15, 7.74), Vector3(15.6, 0.34, 0.08), cream, false)
+	_add_box(dressing, "Phase21WallStripeLeft", Vector3(-7.74, 2.15, 1.4), Vector3(0.08, 0.34, 11.6), cream, false)
+	_add_box(dressing, "Phase21BaseboardBack", Vector3(0.0, 0.48, 7.72), Vector3(15.7, 0.18, 0.1), red, false)
+	_add_box(dressing, "Phase21BaseboardRight", Vector3(7.72, 0.48, 0.0), Vector3(0.1, 0.18, 15.7), red, false)
+	_add_box(dressing, "Phase21CounterTrim", Vector3(0.0, 1.18, -2.1), Vector3(8.7, 0.16, 0.12), cream, false)
+	_add_box(dressing, "Phase21DriveThruWindowFrame", Vector3(-5.7, 1.45, -2.2), Vector3(0.12, 1.45, 1.55), black, false)
+	_add_box(dressing, "Phase21DriveThruAwning", Vector3(-5.95, 2.35, -2.2), Vector3(1.1, 0.18, 2.1), red, false)
+	_add_box(dressing, "Phase21DriveThruArrow", Vector3(-7.0, 0.23, -4.7), Vector3(1.15, 0.04, 0.18), cream, false)
+	_add_box(dressing, "Phase21DriveThruLaneBorderA", Vector3(-7.95, 0.22, -2.2), Vector3(0.09, 0.05, 6.6), yellow, false)
+	_add_box(dressing, "Phase21DriveThruLaneBorderB", Vector3(-6.05, 0.22, -2.2), Vector3(0.09, 0.05, 6.6), yellow, false)
+	_add_box(dressing, "Phase21HandoffTargetRing", Vector3(-5.78, 0.28, -2.2), Vector3(1.95, 0.05, 1.5), glowing_green, false)
+
+	_add_register_props(dressing, blue, black, white)
+	_add_grill_props(dressing, steel, black, red)
+	_add_fryer_props(dressing, steel, yellow, red)
+	_add_prep_props(dressing, white, red, yellow, glass)
+	_add_clockout_props(dressing, blue, white, red)
+	_add_food_readability_props(dressing, bun, patty, lettuce, cheese, white)
+	_add_label(dressing, "Phase21BrandWallSign", "MINIMUM WAGE MAYHEM\nOPEN UNTIL SOMEONE QUITS", Vector3(0.0, 3.05, 7.55), Color(1.0, 0.95, 0.55), 30)
+	_add_label(dressing, "Phase21WindowCue", "GREEN MAT = HANDOFF", Vector3(-5.9, 2.75, -2.2), Color(0.7, 1.0, 0.72), 18)
+	_ensure_demo_light("Phase21MenuGlow", Vector3(1.5, 3.2, -6.7), Color(1.0, 0.85, 0.45), 2.2)
+	_ensure_demo_light("Phase21PrepGlow", Vector3(-0.5, 3.6, 0.7), Color(0.7, 1.0, 0.78), 1.8)
+
+func _add_floor_tiles(dressing: Node, tile_mat: Material, grout_mat: Material):
+	for x in range(-3, 4):
+		_add_box(dressing, "Phase21FloorGroutX" + str(x), Vector3(float(x) * 2.0, 0.255, 0.0), Vector3(0.035, 0.025, 15.5), grout_mat, false)
+	for z in range(-3, 4):
+		_add_box(dressing, "Phase21FloorGroutZ" + str(z), Vector3(0.0, 0.256, float(z) * 2.0), Vector3(15.5, 0.025, 0.035), grout_mat, false)
+	_add_box(dressing, "Phase21PrepFloorPatch", Vector3(-0.8, 0.27, -0.4), Vector3(2.6, 0.035, 1.3), tile_mat, false)
+
+func _add_register_props(dressing: Node, blue: Material, black: Material, white: Material):
+	_add_box(dressing, "Phase21RegisterScreen", Vector3(3.8, 1.65, -2.05), Vector3(0.95, 0.58, 0.08), black, false)
+	_add_box(dressing, "Phase21RegisterGlow", Vector3(3.8, 1.65, -1.99), Vector3(0.78, 0.4, 0.035), blue, false)
+	_add_box(dressing, "Phase21ReceiptPrinter", Vector3(4.45, 1.35, -2.08), Vector3(0.48, 0.28, 0.34), white, false)
+	_add_box(dressing, "Phase21Keypad", Vector3(3.65, 1.28, -1.82), Vector3(0.7, 0.12, 0.44), blue, false)
+
+func _add_grill_props(dressing: Node, steel: Material, black: Material, red: Material):
+	_add_box(dressing, "Phase21GrillFlatTop", Vector3(1.8, 1.52, 3.48), Vector3(1.55, 0.12, 0.7), black, false)
+	for i in range(4):
+		_add_box(dressing, "Phase21GrillLine" + str(i), Vector3(1.26 + float(i) * 0.34, 1.6, 3.48), Vector3(0.05, 0.05, 0.62), steel, false)
+	_add_box(dressing, "Phase21GrillHeatKnobA", Vector3(1.35, 1.3, 3.12), Vector3(0.16, 0.16, 0.08), red, false)
+	_add_box(dressing, "Phase21GrillHeatKnobB", Vector3(1.72, 1.3, 3.12), Vector3(0.16, 0.16, 0.08), red, false)
+
+func _add_fryer_props(dressing: Node, steel: Material, yellow: Material, red: Material):
+	_add_box(dressing, "Phase21FryerVat", Vector3(3.8, 1.45, 2.55), Vector3(1.05, 0.36, 0.62), steel, false)
+	_add_box(dressing, "Phase21FryerOil", Vector3(3.8, 1.67, 2.55), Vector3(0.84, 0.05, 0.48), yellow, false)
+	_add_box(dressing, "Phase21FryerBasketHandle", Vector3(3.8, 1.86, 2.18), Vector3(0.62, 0.07, 0.08), red, false)
+	for i in range(5):
+		_add_box(dressing, "Phase21FryStick" + str(i), Vector3(3.52 + float(i) * 0.13, 1.82, 2.42), Vector3(0.05, 0.34, 0.05), yellow, false)
+
+func _add_prep_props(dressing: Node, white: Material, red: Material, yellow: Material, glass: Material):
+	_add_box(dressing, "Phase21TicketRail", Vector3(-0.1, 1.68, 0.18), Vector3(1.35, 0.07, 0.08), red, false)
+	_add_box(dressing, "Phase21OrderTicketCard", Vector3(-0.1, 1.88, 0.2), Vector3(0.72, 0.5, 0.04), white, false)
+	_add_label(dressing, "Phase21OrderTicketText", "ORDER\nBURGER", Vector3(-0.1, 1.88, 0.23), Color(0.05, 0.05, 0.05), 18)
+	_add_box(dressing, "Phase21BagMouth", Vector3(-0.8, 1.78, -0.4), Vector3(0.62, 0.06, 0.36), red, false)
+	_add_box(dressing, "Phase21SodaCupA", Vector3(-1.95, 1.78, 2.45), Vector3(0.28, 0.44, 0.28), glass, false)
+	_add_box(dressing, "Phase21SodaCupB", Vector3(-1.65, 1.78, 2.45), Vector3(0.28, 0.44, 0.28), glass, false)
+	_add_box(dressing, "Phase21SodaStripeA", Vector3(-1.95, 1.82, 2.27), Vector3(0.28, 0.07, 0.035), red, false)
+	_add_box(dressing, "Phase21FryCartonLip", Vector3(3.8, 1.86, 2.45), Vector3(0.62, 0.08, 0.36), red, false)
+	_add_box(dressing, "Phase21PrepCuttingBoard", Vector3(-0.08, 1.31, 1.2), Vector3(0.92, 0.06, 0.62), white, false)
+
+func _add_clockout_props(dressing: Node, blue: Material, white: Material, red: Material):
+	_add_box(dressing, "Phase21ClockFace", Vector3(6.25, 1.62, 3.72), Vector3(0.52, 0.42, 0.05), white, false)
+	_add_label(dressing, "Phase21ClockText", "DONE?", Vector3(6.25, 1.62, 3.77), Color(0.1, 0.12, 0.14), 16)
+	_add_box(dressing, "Phase21ClockButton", Vector3(6.25, 1.18, 3.68), Vector3(0.36, 0.16, 0.12), red, false)
+	_add_box(dressing, "Phase21ClockBaseStripe", Vector3(6.25, 0.56, 3.67), Vector3(1.05, 0.12, 0.12), blue, false)
+
+func _add_food_readability_props(dressing: Node, bun: Material, patty: Material, lettuce: Material, cheese: Material, paper: Material):
+	_add_box(dressing, "Phase21BurgerPaper", Vector3(0.0, 1.34, 1.2), Vector3(0.68, 0.04, 0.68), paper, false)
+	_add_box(dressing, "Phase21BurgerPatty", Vector3(0.0, 1.42, 1.2), Vector3(0.54, 0.08, 0.54), patty, false)
+	_add_box(dressing, "Phase21BurgerCheese", Vector3(0.0, 1.49, 1.2), Vector3(0.58, 0.035, 0.58), cheese, false)
+	_add_box(dressing, "Phase21BurgerLettuce", Vector3(0.0, 1.55, 1.2), Vector3(0.64, 0.035, 0.5), lettuce, false)
+	_add_box(dressing, "Phase21BurgerBunTop", Vector3(0.0, 1.64, 1.2), Vector3(0.5, 0.12, 0.5), bun, false)
+	_add_box(dressing, "Phase21RawPattyReadable", Vector3(2.8, 1.34, 3.6), Vector3(0.54, 0.08, 0.54), patty, false)
 
 func _mat(resource_name: String, color: Color, roughness: float = 0.75, emission: Color = Color(0, 0, 0, 0)) -> StandardMaterial3D:
 	var mat = StandardMaterial3D.new()
@@ -404,8 +498,9 @@ func _set_mesh_material(node_name: String, mat: Material):
 	if not node:
 		return
 	for child in node.get_children():
-		if child is MeshInstance3D and child.mesh and child.mesh.get_surface_count() > 0:
-			child.set_surface_override_material(0, mat)
+		var mesh_instance = child as MeshInstance3D
+		if mesh_instance and mesh_instance.mesh != null and mesh_instance.mesh.get_surface_count() > 0:
+			mesh_instance.set_surface_override_material(0, mat)
 
 func _add_box(parent: Node, node_name: String, pos: Vector3, size: Vector3, mat: Material, collision: bool):
 	if parent.get_node_or_null(node_name):
@@ -425,6 +520,32 @@ func _add_box(parent: Node, node_name: String, pos: Vector3, size: Vector3, mat:
 		var collision_shape = CollisionShape3D.new()
 		var shape = BoxShape3D.new()
 		shape.size = size
+		collision_shape.shape = shape
+		container.add_child(collision_shape)
+	return container
+
+func _add_cylinder(parent: Node, node_name: String, pos: Vector3, radius: float, height: float, mat: Material, collision: bool):
+	if parent.get_node_or_null(node_name):
+		return parent.get_node_or_null(node_name)
+	var container = StaticBody3D.new() if collision else Node3D.new()
+	container.name = node_name
+	container.position = pos
+	parent.add_child(container)
+	var mesh_instance = MeshInstance3D.new()
+	mesh_instance.name = node_name + "Mesh"
+	var cylinder = CylinderMesh.new()
+	cylinder.top_radius = radius
+	cylinder.bottom_radius = radius
+	cylinder.height = height
+	cylinder.radial_segments = 16
+	mesh_instance.mesh = cylinder
+	mesh_instance.set_surface_override_material(0, mat)
+	container.add_child(mesh_instance)
+	if collision:
+		var collision_shape = CollisionShape3D.new()
+		var shape = CylinderShape3D.new()
+		shape.radius = radius
+		shape.height = height
 		collision_shape.shape = shape
 		container.add_child(collision_shape)
 	return container

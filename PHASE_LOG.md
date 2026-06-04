@@ -1,5 +1,24 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-04 - Phase 21 Art Texture Prop Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read requested source-of-truth, Phase 19/20, manifest, publish, validation, status, acceptance, and known-issues docs.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Added procedural cartoon restaurant identity props/materials in `scripts/Main.gd`.
+- Improved walls, floor, counter, kitchen/prep, drive-thru lane, handoff zone, station silhouettes, food/order props, lighting, and brand signs using Godot primitives only.
+- Preserved Phase 19 prep affordances.
+- Improved `CustomerCar.gd` with cartoon windshield, bumpers, lights, and order bubble.
+- Improved `GameHUD.gd` with panel headers, accent strip, stronger colors, and font shadows.
+- Added `tools/phase21_art_direction_check.gd`.
+- Added `tools/phase21_rendered_screenshot.gd`.
+- Extended `tools/validate_all.py` with a Phase 21 contract.
+- Generated `artifacts/phase21_art_direction_demo.png` through the real Vulkan renderer.
+- Ran Phase 14 full-shift smoke successfully after the art pass.
+- Did not add external assets and did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: manual visible player-camera playtest, physical controller test, and functional drink/fry/bagging prep loops.
+
 ## 2026-06-04 - Phase 20 Repo Sync Save/Load Progression Stress Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

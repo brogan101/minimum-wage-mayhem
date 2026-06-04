@@ -17,6 +17,10 @@ No paid or third-party assets were added during Phase 17. The graybox-to-demo pa
 
 No external art/audio asset is currently approved for final release attribution in this file. Add every future third-party asset here before release.
 
+## Phase 21
+
+No external art/audio assets were added during Phase 21. The art pass uses Godot primitive meshes, runtime-generated materials, Label3D signs, and project-local GDScript only.
+
 ## Required Entry Format
 
 ```text

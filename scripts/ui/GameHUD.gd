@@ -203,13 +203,22 @@ func _apply_demo_layout():
 	var control = get_node_or_null("Control")
 	if not control:
 		return
-	_add_panel(control, "OrderPanel", Vector2(14, 14), Vector2(330, 235), Color(0.05, 0.05, 0.045, 0.82))
-	_add_panel(control, "ObjectivePanel", Vector2(365, 14), Vector2(540, 125), Color(0.05, 0.08, 0.11, 0.78))
-	_add_panel(control, "StatusPanel", Vector2(14, 265), Vector2(520, 205), Color(0.08, 0.055, 0.035, 0.78))
-	_add_panel(control, "TaskPanel", Vector2(930, 14), Vector2(335, 315), Color(0.04, 0.07, 0.05, 0.8))
-	_add_panel(control, "CareerPanel", Vector2(930, 346), Vector2(335, 175), Color(0.05, 0.055, 0.08, 0.78))
-	_add_panel(control, "PromptPanel", Vector2(360, 570), Vector2(560, 74), Color(0.02, 0.02, 0.02, 0.86))
+	_add_panel(control, "OrderPanel", Vector2(14, 14), Vector2(330, 235), Color(0.07, 0.045, 0.035, 0.88))
+	_add_panel(control, "OrderPanelHeader", Vector2(14, 14), Vector2(330, 34), Color(0.88, 0.12, 0.08, 0.95))
+	_add_panel(control, "ObjectivePanel", Vector2(365, 14), Vector2(540, 125), Color(0.035, 0.08, 0.12, 0.84))
+	_add_panel(control, "ObjectivePanelHeader", Vector2(365, 14), Vector2(540, 10), Color(1.0, 0.76, 0.14, 0.95))
+	_add_panel(control, "StatusPanel", Vector2(14, 265), Vector2(520, 205), Color(0.08, 0.055, 0.035, 0.84))
+	_add_panel(control, "StatusPanelHeader", Vector2(14, 265), Vector2(520, 10), Color(0.18, 0.72, 0.95, 0.95))
+	_add_panel(control, "TaskPanel", Vector2(930, 14), Vector2(335, 315), Color(0.035, 0.07, 0.05, 0.86))
+	_add_panel(control, "TaskPanelHeader", Vector2(930, 14), Vector2(335, 34), Color(0.22, 0.68, 0.34, 0.95))
+	_add_panel(control, "CareerPanel", Vector2(930, 346), Vector2(335, 175), Color(0.045, 0.05, 0.08, 0.84))
+	_add_panel(control, "CareerPanelHeader", Vector2(930, 346), Vector2(335, 10), Color(0.95, 0.72, 0.18, 0.95))
+	_add_panel(control, "PromptPanel", Vector2(360, 570), Vector2(560, 74), Color(0.015, 0.018, 0.02, 0.92))
+	_add_panel(control, "PromptPanelAccent", Vector2(360, 570), Vector2(560, 8), Color(0.18, 1.0, 0.35, 0.95))
 	order_title_label = _ensure_label(control, "OrderTitleLabel", Vector2(28, 24), Vector2(300, 28), "ORDER TICKET", 18, Color(1.0, 0.86, 0.42))
+	order_title_label.add_theme_color_override("font_shadow_color", Color(0.08, 0.02, 0.01, 1.0))
+	order_title_label.add_theme_constant_override("shadow_offset_x", 2)
+	order_title_label.add_theme_constant_override("shadow_offset_y", 2)
 	order_list.position = Vector2(28, 58)
 	order_list.size = Vector2(292, 165)
 	shift_timer_label.position = Vector2(380, 24)
@@ -259,6 +268,9 @@ func _apply_demo_layout():
 	for label in [cash_label, rank_label, current_mandate, shift_timer_label, objective_label, boot_status_label, interaction_prompt_label, station_feedback_label, staff_status_label, store_ops_status_label, daily_tasks_label]:
 		if label:
 			label.add_theme_color_override("font_color", Color(0.96, 0.96, 0.92))
+			label.add_theme_color_override("font_shadow_color", Color(0.02, 0.02, 0.02, 1.0))
+			label.add_theme_constant_override("shadow_offset_x", 1)
+			label.add_theme_constant_override("shadow_offset_y", 1)
 
 func _add_panel(parent: Control, panel_name: String, pos: Vector2, size: Vector2, color: Color):
 	if parent.get_node_or_null(panel_name):

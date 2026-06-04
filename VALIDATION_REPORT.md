@@ -1,4 +1,40 @@
-# Validation Report - Phase 20 Save/Load Progression Stress Pass
+# Validation Report - Phase 21 Art Texture Prop Pass
+
+## Phase 21 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 20 save/load progression stress contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 21 normal-renderer art check:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --path . --script res://tools/phase21_art_direction_check.gd
+[PASS] Phase 21 art direction runtime check passed
+```
+
+Phase 21 rendered screenshot:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --path . --script res://tools/phase21_rendered_screenshot.gd
+[PASS] Phase 21 rendered screenshot saved: res://artifacts/phase21_art_direction_demo.png
+```
+
+Full-shift regression:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+```
+
+Manual player-controlled visible playtest and physical controller validation remain pending.
+
+# Historical Validation Report - Phase 20 Save/Load Progression Stress Pass
 
 ## Phase 20 Current Validation
 

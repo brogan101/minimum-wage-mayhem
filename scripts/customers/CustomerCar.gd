@@ -14,6 +14,7 @@ func _ready():
 	freeze = true
 	global_position = start_position
 	_apply_customer_variant()
+	_apply_phase21_cartoon_details()
 	var order_manager = _autoload("OrderManager")
 	if order_manager and order_manager.has_signal("order_fulfilled"):
 		order_manager.order_fulfilled.connect(_on_order_fulfilled)
@@ -72,6 +73,56 @@ func _apply_customer_variant():
 		var body = get_node_or_null(str(variant["node"]))
 		if body:
 			body.visible = str(variant["node"]) == str(selected["node"])
+
+func _apply_phase21_cartoon_details():
+	var black = _mat("Car cartoon black", Color(0.03, 0.03, 0.035), 0.72)
+	var glass = _mat("Car blue glass", Color(0.55, 0.82, 1.0), 0.38)
+	var cream = _mat("Car headlight cream", Color(1.0, 0.92, 0.58), 0.45, Color(1.0, 0.85, 0.35, 1.0))
+	var red = _mat("Car tail light red", Color(1.0, 0.08, 0.04), 0.55)
+	var paper = _mat("Car order bubble paper", Color(1.0, 0.95, 0.8), 0.7)
+	_add_detail_box("Phase21Windshield", Vector3(0.0, 0.72, -0.48), Vector3(0.95, 0.25, 0.06), glass)
+	_add_detail_box("Phase21RearWindow", Vector3(0.0, 0.7, 0.27), Vector3(0.82, 0.22, 0.06), glass)
+	_add_detail_box("Phase21FrontBumper", Vector3(0.0, -0.02, -1.14), Vector3(1.7, 0.14, 0.12), black)
+	_add_detail_box("Phase21RearBumper", Vector3(0.0, -0.02, 1.14), Vector3(1.7, 0.14, 0.12), black)
+	_add_detail_box("Phase21HeadlightL", Vector3(-0.48, 0.06, -1.22), Vector3(0.28, 0.14, 0.04), cream)
+	_add_detail_box("Phase21HeadlightR", Vector3(0.48, 0.06, -1.22), Vector3(0.28, 0.14, 0.04), cream)
+	_add_detail_box("Phase21TailLightL", Vector3(-0.5, 0.04, 1.22), Vector3(0.24, 0.12, 0.04), red)
+	_add_detail_box("Phase21TailLightR", Vector3(0.5, 0.04, 1.22), Vector3(0.24, 0.12, 0.04), red)
+	_add_detail_box("Phase21OrderBubbleCard", Vector3(0.0, 1.2, -0.55), Vector3(1.1, 0.55, 0.04), paper)
+	if not get_node_or_null("Phase21OrderBubbleText"):
+		var label = Label3D.new()
+		label.name = "Phase21OrderBubbleText"
+		label.text = "1 BURGER\nPLEASE"
+		label.position = Vector3(0.0, 1.2, -0.5)
+		label.font_size = 22
+		label.pixel_size = 0.008
+		label.modulate = Color(0.06, 0.05, 0.04)
+		label.outline_size = 2
+		label.outline_modulate = Color(1.0, 0.94, 0.76)
+		add_child(label)
+
+func _add_detail_box(node_name: String, pos: Vector3, size: Vector3, mat: Material):
+	if get_node_or_null(node_name):
+		return
+	var mesh_instance = MeshInstance3D.new()
+	mesh_instance.name = node_name
+	mesh_instance.position = pos
+	var box = BoxMesh.new()
+	box.size = size
+	mesh_instance.mesh = box
+	mesh_instance.set_surface_override_material(0, mat)
+	add_child(mesh_instance)
+
+func _mat(resource_name: String, color: Color, roughness: float = 0.75, emission: Color = Color(0, 0, 0, 0)) -> StandardMaterial3D:
+	var mat = StandardMaterial3D.new()
+	mat.resource_name = resource_name
+	mat.albedo_color = color
+	mat.roughness = roughness
+	if emission.a > 0.0:
+		mat.emission_enabled = true
+		mat.emission = emission
+		mat.emission_energy_multiplier = 0.2
+	return mat
 
 func _autoload(name: String) -> Node:
 	return get_tree().root.get_node_or_null(name)

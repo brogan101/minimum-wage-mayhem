@@ -1,4 +1,25 @@
-# Implementation Status - Phase 20 Save/Load Progression Stress Pass
+# Implementation Status - Phase 21 Art Texture Prop Pass
+
+## Phase 21 Current Status
+
+Phase 21 is implemented as a primitive/procedural cartoon art-direction pass on top of the existing playable shift.
+
+Latest Phase 21 work:
+
+- Added Phase 21 restaurant identity props/materials in `scripts/Main.gd`: tile lines, wall stripes, baseboards, counter trim, branded sign, drive-thru frame/awning/lane borders/handoff ring, register props, grill/fryer props, prep/order/food props, soda/fries props, clock-out props, and warmer lighting.
+- Preserved Phase 19 bag/soda/fries/prep-arrow affordances.
+- Improved `scripts/customers/CustomerCar.gd` with runtime cartoon details: windshield, rear window, bumpers, headlights/tail lights, and order bubble.
+- Improved `scripts/ui/GameHUD.gd` with panel headers, accent strip, stronger panel colors, and text shadows.
+- Added `tools/phase21_art_direction_check.gd`.
+- Added `tools/phase21_rendered_screenshot.gd`.
+- Extended `tools/validate_all.py` with a Phase 21 art/prop contract.
+- Added `PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md`.
+- No external assets were added; attribution is updated.
+- Restaurant story-event count remains 180.
+
+Manual visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 20 Save/Load Progression Stress Pass
 
 ## Phase 20 Current Status
 

@@ -1433,6 +1433,85 @@ def validate_phase_20_save_load_stress_contract():
     if not report.exists():
         raise AssertionError("Missing Phase 20 report: PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md")
 
+def validate_phase_21_art_direction_contract():
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    car = (ROOT / "scripts/customers/CustomerCar.gd").read_text(encoding="utf-8")
+    smoke = ROOT / "tools/phase21_art_direction_check.gd"
+    screenshot = ROOT / "tools/phase21_rendered_screenshot.gd"
+    report = ROOT / "PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md"
+    attribution = (ROOT / "ASSET_ATTRIBUTION.md").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 21 report: PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md")
+
+    for fragment in [
+        "_apply_phase21_cartoon_identity",
+        "Phase21WallStripeBack",
+        "Phase21FloorGroutX",
+        "Phase21DriveThruWindowFrame",
+        "Phase21DriveThruAwning",
+        "Phase21HandoffTargetRing",
+        "Phase21RegisterScreen",
+        "Phase21GrillFlatTop",
+        "Phase21FryerVat",
+        "Phase21TicketRail",
+        "Phase21OrderTicketCard",
+        "Phase21SodaCupA",
+        "Phase21FryCartonLip",
+        "Phase21ClockFace",
+        "Phase21BrandWallSign",
+        "Phase21BurgerBunTop",
+    ]:
+        if fragment not in main:
+            raise AssertionError(f"Phase 21 Main art contract missing: {fragment}")
+
+    for fragment in [
+        "OrderPanelHeader",
+        "ObjectivePanelHeader",
+        "TaskPanelHeader",
+        "PromptPanelAccent",
+        "font_shadow_color",
+    ]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 21 HUD art contract missing: {fragment}")
+
+    for fragment in [
+        "_apply_phase21_cartoon_details",
+        "Phase21Windshield",
+        "Phase21FrontBumper",
+        "Phase21HeadlightL",
+        "Phase21OrderBubbleCard",
+        "Phase21OrderBubbleText",
+    ]:
+        if fragment not in car:
+            raise AssertionError(f"Phase 21 CustomerCar art contract missing: {fragment}")
+
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 21 art smoke: tools/phase21_art_direction_check.gd")
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Phase 21 prop exists:",
+        "Phase21WallStripeBack",
+        "Phase 19 prep affordance preserved",
+        "CustomerCar cartoon detail exists",
+        "HUD game-style panel exists",
+        "Art pass preserves active customer order flow",
+        "Phase 21 art direction runtime check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 21 smoke contract missing: {fragment}")
+
+    if not screenshot.exists():
+        raise AssertionError("Missing Phase 21 screenshot helper: tools/phase21_rendered_screenshot.gd")
+    screenshot_text = screenshot.read_text(encoding="utf-8")
+    for fragment in ["phase21_art_direction_demo.png", "Phase21OverviewCamera", "Phase 21 rendered screenshot saved"]:
+        if fragment not in screenshot_text:
+            raise AssertionError(f"Phase 21 screenshot helper missing: {fragment}")
+
+    if "Phase 21" not in attribution or "No external art/audio assets were added during Phase 21" not in attribution:
+        raise AssertionError("Phase 21 asset attribution note missing")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1511,6 +1590,7 @@ def main() -> int:
         validate_phase_18_softlock_feel_contract()
         validate_phase_19_github_playtest_prep_contract()
         validate_phase_20_save_load_stress_contract()
+        validate_phase_21_art_direction_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1594,6 +1674,7 @@ def main() -> int:
     print("[PASS] Phase 18 playtest/softlock/feel contract valid")
     print("[PASS] Phase 19 GitHub/playtest prep contract valid")
     print("[PASS] Phase 20 save/load progression stress contract valid")
+    print("[PASS] Phase 21 art direction/prop contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

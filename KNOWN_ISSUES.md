@@ -9,6 +9,12 @@ This is an early playable build, not a final Steam demo.
 - Phase 20 Godot stress emits a non-blocking tween warning after a delivered handoff object is freed.
 - Physical controller hardware validation remains pending.
 
+## Phase 21 Notes
+
+- Restaurant visuals are improved with procedural primitive art, but this is still placeholder art and not final asset production.
+- Phase 21 does not add functional drink/fry/bagging prep loops; those remain visual affordances.
+- The normal-renderer Phase 21 art check passes cleanly. The headless dummy renderer may emit a non-blocking mesh cleanup error in the visual smoke, so Phase 21 visual proof uses the normal renderer and full-shift proof uses the clean Phase 14 headless smoke.
+
 ## Gameplay
 
 - CustomerCar visual arrival scene now exists, has color variants, and is runtime-validated. Phase 18 verifies it does not stay waiting forever after fulfillment, but movement/readability still needs player-controlled visual playtest proof.

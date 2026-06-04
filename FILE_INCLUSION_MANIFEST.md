@@ -17,11 +17,11 @@ Keep the GitHub repo buildable, testable, and reviewable while excluding local G
 | `data/` | Required local JSON gameplay catalogs and story-event lock data. |
 | `assets/` | Current license-safe repo asset source; currently shader-only. |
 | `tools/*.py` | Static validators, including `tools/validate_all.py`. |
-| `tools/*.gd` | Godot runtime smoke checks through Phase 20. |
+| `tools/*.gd` | Godot runtime smoke checks through Phase 21 plus screenshot helpers. |
 | `tools/*.ps1`, `tools/*.sh` | Repo-local Godot setup/run helper scripts, without bundled binaries. |
 | `README.md`, `PROJECT_SOURCE_OF_TRUTH.md`, `AGENTS.md`, `CODEX_START_HERE.md` | Entry points and current project rules. |
 | `IMPLEMENTATION_STATUS.md`, `VALIDATION_REPORT.md`, `PHASE_LOG.md`, `SOLO_SHIFT_ACCEPTANCE_TEST.md`, `KNOWN_ISSUES.md` | Required end-of-phase tracking. |
-| `PHASE_0_*.md` through current phase reports, including `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md` | Active phase briefs/reports and proof history. |
+| `PHASE_0_*.md` through current phase reports, including `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md` and `PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md` | Active phase briefs/reports and proof history. |
 | `ASSET_ATTRIBUTION.md`, `ASSET_CREDITS.md`, `ASSET_REQUIREMENTS_V15.md`, `ASSET_SOURCING_PLAN.md`, `ASSET_VALIDATION.md` | Asset/license tracking and requirements. |
 | `EXPORT_NOTES.md`, `STEAM_READINESS_CHECKLIST.md`, `PLAYTEST_CHECKLIST.md` | Build/playtest/release prep docs. |
 | `V22_RESTAURANT_STORY_EVENT_COUNT_LOCK.json` | Required lock for the 180 restaurant story-event count. |
@@ -48,3 +48,9 @@ Keep the GitHub repo buildable, testable, and reviewable while excluding local G
 - `.gitignore` is not excluding needed game/build/test files.
 - Excluded clutter scan found no real tracked cache/download/artifact/prompt-pack/archive files.
 - `data/mischief/restaurant_story_events.json` remains included and locked at 180 events.
+
+## Phase 21 Audit Notes
+
+- Phase 21 added no external assets.
+- `tools/phase21_art_direction_check.gd` and `tools/phase21_rendered_screenshot.gd` are included as project validation/proof helpers.
+- `artifacts/phase21_art_direction_demo.png` is generated proof and remains excluded by `artifacts/`.

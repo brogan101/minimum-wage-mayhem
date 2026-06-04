@@ -127,6 +127,9 @@ Update this after every Codex phase.
 | Object memory save/load works | Working | scripts/memory/StoreObjectMemoryManager.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies drive-thru object incident count survives final reload |
 | Dynamic reputation save/load works | Working | scripts/reputation/DynamicReputationLabelManager.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies labels and evaluation history survive reloads |
 | Corrupt save fallback works | Working | scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies invalid JSON returns safe empty save data |
+| Phase 21 art pass exists | Working | scripts/Main.gd / tools/phase21_art_direction_check.gd / PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md | Runtime check verifies cartoon restaurant props, station details, CustomerCar details, HUD styling, and preserved Phase 19 affordances |
+| Restaurant identity improved | Working | scripts/Main.gd / artifacts/phase21_art_direction_demo.png | Real-renderer screenshot shows tile lines, wall stripes, branded sign, lane paint, station props, food/order props, and brighter cartoon colors |
+| HUD art styling improved | Working | scripts/ui/GameHUD.gd / tools/phase21_art_direction_check.gd | Runtime check verifies game-style panel headers and prompt accent |
 | Bagging works | Partial | scripts/items/FoodBag.gd | Guard added; scene test needed |
 | Drive-thru delivery works | Partial | scripts/stations/DriveThruWindow.gd | Guard added; scene test needed |
 | Order validation works | Partial | scripts/managers/OrderManager.gd | Simple validation exists |
