@@ -1,4 +1,27 @@
-# Implementation Status - Phase 19 GitHub Playtest Prep Pass
+# Implementation Status - Phase 20 Save/Load Progression Stress Pass
+
+## Phase 20 Current Status
+
+Phase 20 is implemented and Godot-headless validated. The build now has automated proof for two-shift save/load/progression/memory continuity, plus corrected repo/source-of-truth documentation.
+
+Latest Phase 20 work:
+
+- Pulled latest repo state from `origin/master`; repo was already up to date.
+- Confirmed GitHub remote `https://github.com/brogan101/minimum-wage-mayhem.git`.
+- Confirmed GitHub visibility is `PUBLIC`, not private, and corrected `GITHUB_PUBLISH_REPORT.md`.
+- Confirmed `CustomerCar.tscn` exists and stale missing-customer docs were corrected.
+- Confirmed `.gitignore` does not exclude needed game/build/test files.
+- Confirmed no real tracked Godot cache/download/zip/prompt/archive clutter.
+- Updated `SaveSystem.gd` to schema version 3 and to save/load corporate approval, EventLog, restaurant memory, store object memory, and dynamic reputation state.
+- Added save/load hooks to EventLog, RestaurantMemoryManager, StoreObjectMemoryManager, and DynamicReputationLabelManager.
+- Added `tools/phase20_multi_shift_save_load_stress.gd`.
+- Extended `tools/validate_all.py` with Phase 20 contract checks.
+- Godot Phase 20 stress proves shift 1 save/load, shift 2 save/load, wallet, XP/rank/promotion, shift history, trust/morale/corporate career fields, reviews/writeups, daily task recap, EventLog, restaurant memory, object memory, dynamic reputation, and corrupt-save fallback.
+- Restaurant story-event count remains 180.
+
+Manual visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 19 GitHub Playtest Prep Pass
 
 ## Current Status
 

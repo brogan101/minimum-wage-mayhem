@@ -12,8 +12,12 @@ func save_game(extra_data: Dictionary = {}) -> bool:
 	var career = _autoload("CareerManager")
 	var stat_manager = _autoload("StatManager")
 	var corporate = _autoload("CorporateManager")
+	var event_log = _autoload("EventLog")
+	var restaurant_memory = _runtime("RestaurantMemoryManager")
+	var object_memory = _runtime("StoreObjectMemoryManager")
+	var dynamic_reputation = _runtime("DynamicReputationLabelManager")
 	var save_data = {
-		"schema_version": 2,
+		"schema_version": 3,
 		"wallet": wallet.balance if wallet else 0.0,
 		"career": career.get_career_save_data() if career and career.has_method("get_career_save_data") else {
 			"rank": career.current_rank if career else 0,
@@ -22,6 +26,10 @@ func save_game(extra_data: Dictionary = {}) -> bool:
 		},
 		"stats": stat_manager.stats if stat_manager else {},
 		"corporate_approval": corporate.get_approval_rating() if corporate and corporate.has_method("get_approval_rating") else 0,
+		"event_log": event_log.get_save_data() if event_log and event_log.has_method("get_save_data") else {},
+		"restaurant_memory": restaurant_memory.get_save_data() if restaurant_memory and restaurant_memory.has_method("get_save_data") else {},
+		"store_object_memory": object_memory.get_save_data() if object_memory and object_memory.has_method("get_save_data") else {},
+		"dynamic_reputation": dynamic_reputation.get_save_data() if dynamic_reputation and dynamic_reputation.has_method("get_save_data") else {},
 		"progression": extra_data.get("progression", {}),
 		"last_shift": extra_data.get("last_shift", {}),
 		"next_shift": extra_data.get("next_shift", {}),
@@ -61,6 +69,11 @@ func load_game() -> Dictionary:
 		var wallet = _autoload("WalletManager")
 		var career = _autoload("CareerManager")
 		var stat_manager = _autoload("StatManager")
+		var corporate = _autoload("CorporateManager")
+		var event_log = _autoload("EventLog")
+		var restaurant_memory = _runtime("RestaurantMemoryManager")
+		var object_memory = _runtime("StoreObjectMemoryManager")
+		var dynamic_reputation = _runtime("DynamicReputationLabelManager")
 		if wallet:
 			wallet.balance = save_data.get("wallet", 0.0)
 		if career:
@@ -73,6 +86,16 @@ func load_game() -> Dictionary:
 				career.xp_to_next_rank = career_data.get("xp_to_next_rank", career.xp_to_next_rank)
 		if stat_manager:
 			stat_manager.stats = save_data.get("stats", stat_manager.stats)
+		if corporate:
+			corporate.approval_rating = int(save_data.get("corporate_approval", corporate.approval_rating))
+		if event_log and event_log.has_method("load_save_data"):
+			event_log.load_save_data(save_data.get("event_log", {}))
+		if restaurant_memory and restaurant_memory.has_method("load_save_data"):
+			restaurant_memory.load_save_data(save_data.get("restaurant_memory", {}))
+		if object_memory and object_memory.has_method("load_save_data"):
+			object_memory.load_save_data(save_data.get("store_object_memory", {}))
+		if dynamic_reputation and dynamic_reputation.has_method("load_save_data"):
+			dynamic_reputation.load_save_data(save_data.get("dynamic_reputation", {}))
 		last_save_data = save_data.duplicate(true)
 		print("Game Loaded Successfully!")
 		return save_data
@@ -101,3 +124,6 @@ func get_last_save_data() -> Dictionary:
 
 func _autoload(name: String) -> Node:
 	return get_tree().root.get_node_or_null(name)
+
+func _runtime(name: String) -> Node:
+	return get_tree().root.find_child(name, true, false)

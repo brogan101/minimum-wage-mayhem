@@ -120,6 +120,13 @@ Update this after every Codex phase.
 | Phase 19 repo manifest exists | Working | FILE_INCLUSION_MANIFEST.md / GITHUB_PUBLISH_REPORT.md | Included/excluded repo patterns and GitHub push status are documented |
 | Prep affordances visible | Working | scripts/Main.gd / tools/phase19_playtest_prep_check.gd | Runtime check verifies prep arrows, bag stack, fries bin, soda cup stack, and labels |
 | HUD viewport prep check | Working | scripts/ui/GameHUD.gd / tools/phase19_playtest_prep_check.gd | Runtime check verifies key HUD elements fit 1280x720, 1366x768, and 1920x1080 |
+| Phase 20 two-shift stress exists | Working | tools/phase20_multi_shift_save_load_stress.gd / PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md | Runtime check proves shift 1 save/load, shift 2 save/load, and final reload |
+| Corporate approval save/load works | Working | scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Phase 20 fixed and verifies restoring CorporateManager approval |
+| EventLog persists across reload | Working | scripts/managers/EventLog.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies event history carries into shift 2 save |
+| Restaurant memory save/load works | Working | scripts/memory/RestaurantMemoryManager.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies restaurant memory flags survive reloads |
+| Object memory save/load works | Working | scripts/memory/StoreObjectMemoryManager.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies drive-thru object incident count survives final reload |
+| Dynamic reputation save/load works | Working | scripts/reputation/DynamicReputationLabelManager.gd / scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies labels and evaluation history survive reloads |
+| Corrupt save fallback works | Working | scripts/managers/SaveSystem.gd / tools/phase20_multi_shift_save_load_stress.gd | Runtime check verifies invalid JSON returns safe empty save data |
 | Bagging works | Partial | scripts/items/FoodBag.gd | Guard added; scene test needed |
 | Drive-thru delivery works | Partial | scripts/stations/DriveThruWindow.gd | Guard added; scene test needed |
 | Order validation works | Partial | scripts/managers/OrderManager.gd | Simple validation exists |

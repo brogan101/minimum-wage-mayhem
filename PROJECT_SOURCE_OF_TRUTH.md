@@ -12,11 +12,21 @@ For future Codex runs, read in this order:
 4. `VALIDATION_REPORT.md`
 5. `PHASE_LOG.md`
 6. `SOLO_SHIFT_ACCEPTANCE_TEST.md`
-7. `PHASE_16_FULL_REPO_STATE_AUDIT_AND_CLEANUP.md`
-8. `PHASE_RUN_ALL_PROMPT.txt`
-9. Root `PHASE_*.md` files only as phase briefs/history, not as proof.
+7. `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md`
+8. `PHASE_19_GITHUB_PLAYTEST_PREP_REPORT.md`
+9. `PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md`
+10. Earlier `PHASE_*.md` files as phase briefs/history, not as proof.
 
-Use actual files, validation output, and runtime smoke checks as the source of truth. Do not infer implementation from markdown design docs or JSON catalogs alone.
+Use actual files, validator output, GitHub state, and Godot runtime smoke checks as the source of truth. Do not infer implementation from markdown design docs or JSON catalogs alone.
+
+## Current Repo Truth
+
+- Git remote: `https://github.com/brogan101/minimum-wage-mayhem.git`.
+- Default local branch in this workspace: `master`.
+- GitHub visibility checked with `gh repo view brogan101/minimum-wage-mayhem --json name,url,visibility,isPrivate`: `PUBLIC`, `isPrivate=false`.
+- `scenes/customers/CustomerCar.tscn` exists and is tracked.
+- `.gitignore` is not excluding needed project files; `project.godot`, `scenes/`, `scripts/`, `data/`, `assets/`, `tools/`, and current docs are tracked or trackable.
+- Tracked-file clutter scan found no actual `.godot/`, `.import/`, `tools/downloads/`, `tools/bin/`, `artifacts/`, prompt packs, zips, caches, disabled content, or historical validation snapshots. The only text-pattern hits were false positives: `project.godot` and `tools/validate_phase_pack.py`.
 
 ## Current Playable State
 
@@ -30,61 +40,18 @@ The current build is an early playable local-only Godot 4.x/GDScript slice. It s
 - grill food state changes
 - store duty stations
 - coworker/staff systems
-- fallback customer order generation
+- visible `CustomerCar` drive-thru arrival/order flow with fallback order generation if the car scene is missing
 - drive-thru handoff through `DriveThruWindow`
 - active shift timer/HUD
+- physical and menu end-shift flows
 - end-of-shift recap
 - local save/load
 - career progression toward Store Manager
-- runtime-wired chaos, mischief, consequences, restaurant memory, and depth/balance systems
+- runtime-wired chaos, mischief, consequences, restaurant memory, object memory, dynamic reputation, and depth/balance systems
 
-This is not a finished game and not a Steam demo. The full-shift proof currently uses fallback order/customer flow and simple placeholder visuals.
+Phase 20 specifically proves two-shift local continuity in automation: complete shift 1, save, reload, complete shift 2, save, reload again, and verify wallet, XP/rank/promotion progress, shift history, manager/staff/corporate career fields, reviews/writeups, daily task recap, EventLog history, restaurant memory, object memory, dynamic reputation, and corrupt-save fallback.
 
-## Active Root Phase Files
-
-Treat these as active phase briefs and history:
-
-- `PHASE_0_REPO_AUDIT_AND_VALIDATION.md`
-- `PHASE_1_BOOT_PLAYER_INPUT.md`
-- `PHASE_2_INTERACTION_PICKUP_DROP.md`
-- `PHASE_3_STATIONS_FOOD_STATE.md`
-- `PHASE_4_CUSTOMER_ORDER_DELIVERY.md`
-- `PHASE_5_FULL_MINI_SHIFT.md`
-- `PHASE_6_DEPTH_EXAMPLES.md`
-- `PHASE_7_CONTENT_DEPTH_AND_LINKAGE.md`
-- `PHASE_8_CAMPAIGN_PROGRESSION_AND_MANAGER_PATH.md`
-- `PHASE_9_MAXIMUM_CHAOS_WTF_INCIDENT_LAYER.md`
-- `PHASE_10_WORKPLACE_MISCHIEF_PRANKS_AND_DAILY_TASKS.md`
-- `PHASE_11_FIREABLE_OFFENSES_DIRTY_EMPLOYEE_CONSEQUENCE_LAYER.md`
-- `PHASE_12_EMERGENT_CHAOS_RESTAURANT_MEMORY.md`
-- `PHASE_13_GLOBAL_DEPTH_EXPANSION_AND_BALANCE.md`
-- `PHASE_14_STABILIZATION_AUDIT.md`
-- `PHASE_16_FULL_REPO_STATE_AUDIT_AND_CLEANUP.md`
-
-Phase 15 was implemented and validated through code, tools, and status docs, but there is no root `PHASE_15_*.md` brief.
-
-## How To Treat `PHASE_PACK/V13_REFERENCE`
-
-`PHASE_PACK/V13_REFERENCE/` is reference/design-only material. It is not the current phase order and should not be treated as 48 runnable phases.
-
-The numbered files present are `00` through `35`, `41` through `48`, and `99`. Files `36` through `40` are not present in this repo; they are only proposed by the V12 continuity audit.
-
-Use the V13 pack only to answer design questions or compare old requirements. Do not let it override current validation, current root status docs, or the local-only fast-food MVP priority.
-
-## Historical Docs
-
-Keep these for context, but do not treat them as current proof:
-
-- `V14_PACKAGE_AUDIT_SUMMARY.md`
-- `V21_HARD_AUDIT_REPORT.md`
-- `V22_*_OUTPUT.txt`
-- `V22_*_RESULT.txt`
-- `V23_FINAL_AUDIT_REPORT.md`
-- `CODEX_RUN_ALL_PHASES_PROMPT_V21.txt`
-- `RUN_ALL_PHASES_PROMPT_COPY_THIS.txt`
-- `PHASE_PACK/V13_REFERENCE/*`
-
-Some historical docs say Godot was not installed or runtime validation was pending. That was true in those earlier contexts. In this workspace, repo-local Godot 4.3 exists and headless/menu smoke validation has run.
+This is not a finished game and not a Steam demo. Manual visible playtest and physical controller proof are still pending.
 
 ## Validation Commands
 
@@ -94,36 +61,60 @@ Canonical static validation:
 python tools/validate_all.py
 ```
 
-Godot version and boot:
+Main Godot runtime smokes:
 
 ```text
-tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --version
-tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --quit
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
 ```
 
-Main runtime smokes:
+The console Godot binary may need filesystem access outside the workspace to write `user://logs` and local save data.
 
-```text
-tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script tools/phase14_full_shift_smoke.gd
-tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script tools/phase15_menu_playability_check.gd
-```
+## Systems Actually Wired Into Gameplay
 
-The console Godot binary may need filesystem access outside the workspace to write `user://logs`.
+- Menu/new game/continue/pause/save/load/end-shift flow.
+- Player movement/camera/input/interaction.
+- Pickup/drop and station interaction.
+- Grill/food-state station.
+- Store ops stations and duty effects.
+- Daily tasks and rewards.
+- Staff/coworker modifiers.
+- CustomerCar/order/handoff path.
+- Shift timer, recap, next-shift setup.
+- Wallet, CareerManager progression, CorporateManager approval.
+- EventLog.
+- Phase 9 chaos runtime, Phase 10 mischief runtime, Phase 11 consequence runtime, Phase 12 emergent memory runtime, Phase 13 global depth runtime.
+- Phase 20 save/load persistence for wallet, career, stats, corporate approval, EventLog, restaurant memory, store object memory, dynamic reputation, last shift, next shift, and progression hooks.
+
+## Scaffolded Only
+
+- Drink, fries, and bagging are visually called out but not yet complete as full prep gameplay loops.
+- Manager trial exists as career readiness/setup data, not a full playable trial.
+- Store Manager/future district hooks exist but are intentionally not expanded.
+- Settings UI exists, but persistent settings storage is not final.
+- Export presets and Steam demo packaging are not final.
+- Final audio assets are missing; audio hooks fall back safely.
+
+## Data/Docs Only
+
+- Many large content catalogs under `data/` are loaded or validated but not all entries are surfaced as rich visible gameplay.
+- Historical roadmap/design docs describe future breadth and should not be treated as current playable proof.
+- `PHASE_PACK/V13_REFERENCE/` remains reference/design-only and is not tracked in the clean GitHub repo.
 
 ## Current Blockers
 
 - Manual visible playtest is still pending.
 - Physical controller validation is still pending.
-- `CustomerCar.tscn` visual arrival scene is missing, so fallback order generation is used.
-- Bagging/drink/fry prep are not yet as clear as the fallback Training Burger handoff.
+- `DriveThruWindow` still reports missing `HandOffArea` and uses the working interact fallback.
+- Functional bagging/drink/fry prep needs a later gameplay pass.
 - HUD/menu/result presentation is functional but visually basic.
 - Final audio/assets/export presets are not ready.
-- No `.git` directory is present in this workspace, so `git diff --stat` cannot produce repo diff proof here.
+- GitHub repo visibility is public; if the desired state is private, change visibility in GitHub settings or via `gh repo edit brogan101/minimum-wage-mayhem --visibility private`.
 
 ## Next Recommended Phase
 
 Next phase should be:
 
-`PHASE_17_VISIBLE_PLAYTEST_CONTROLLER_CUSTOMER_CAR_AND_EXPORT_PREP`
+`Phase 21 - Manual Visible Playtest, Controller Hardware, Prep Loop, and Handoff Polish`
 
-Do not add another big content/depth pack before this. The next work should make the already-proven shift visibly playable and demo-readable.
+Do not add another large content/depth pack before this. The next work should make the proven two-shift loop feel good in a real window with a real player and controller.

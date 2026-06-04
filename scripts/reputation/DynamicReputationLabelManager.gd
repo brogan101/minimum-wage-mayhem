@@ -28,6 +28,16 @@ func evaluate(context: Dictionary) -> Array:
 func get_summary() -> Dictionary:
     return {"active_labels": active_labels.duplicate(), "evaluation_history": evaluation_history.duplicate(true)}
 
+func get_save_data() -> Dictionary:
+    return get_summary()
+
+func load_save_data(data: Dictionary) -> void:
+    active_labels.assign(data.get("active_labels", []))
+    evaluation_history.clear()
+    for entry in data.get("evaluation_history", []):
+        if typeof(entry) == TYPE_DICTIONARY:
+            evaluation_history.append(entry.duplicate(true))
+
 func _conditions_met(conditions: Array, context: Dictionary) -> bool:
     for condition in conditions:
         if not bool(context.get(str(condition), false)):

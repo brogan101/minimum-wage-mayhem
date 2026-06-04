@@ -26,5 +26,11 @@ func get_events_by_type(event_name: String) -> Array:
 			filtered.append(entry)
 	return filtered
 
+func get_save_data() -> Dictionary:
+	return {"logs": logs.duplicate(true)}
+
+func load_save_data(data: Dictionary) -> void:
+	logs = data.get("logs", []).duplicate(true)
+
 func clear_log():
 	logs.clear()

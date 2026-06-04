@@ -47,6 +47,15 @@ func get_summary() -> Dictionary:
         "rumor_history": rumor_history.duplicate()
     }
 
+func get_save_data() -> Dictionary:
+    return get_summary()
+
+func load_save_data(data: Dictionary) -> void:
+    shift_memory = data.get("shift_memory", []).duplicate(true)
+    career_memory = data.get("career_memory", []).duplicate(true)
+    active_flags.assign(data.get("active_flags", []))
+    rumor_history.assign(data.get("rumor_history", []))
+
 func _log(event_name: String, value: float, detail: String):
     var event_log = get_tree().root.get_node_or_null("EventLog")
     if event_log and event_log.has_method("log_event"):

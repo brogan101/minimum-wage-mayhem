@@ -1,5 +1,25 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-04 - Phase 20 Repo Sync Save/Load Progression Stress Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read the requested source-of-truth/status/report docs.
+- Ran `python tools/validate_all.py` before Phase 20 edits; validation passed and restaurant story-event count remained 180.
+- Confirmed `scenes/customers/CustomerCar.tscn` exists and is tracked.
+- Confirmed GitHub remote `https://github.com/brogan101/minimum-wage-mayhem.git`.
+- Confirmed GitHub visibility is `PUBLIC`, `isPrivate=false`; corrected stale Phase 19 private-repo wording.
+- Reviewed `.gitignore` and tracked files; no real cache/download/zip/prompt/archive clutter is tracked.
+- Updated `PROJECT_SOURCE_OF_TRUTH.md`, `GITHUB_PUBLISH_REPORT.md`, and `FILE_INCLUSION_MANIFEST.md`.
+- Updated `SaveSystem.gd` to schema version 3 and added save/load persistence for corporate approval, EventLog, restaurant memory, object memory, and dynamic reputation.
+- Added save/load hooks to EventLog, RestaurantMemoryManager, StoreObjectMemoryManager, and DynamicReputationLabelManager.
+- Added `tools/phase20_multi_shift_save_load_stress.gd`.
+- Extended `tools/validate_all.py` with a Phase 20 contract.
+- Ran Godot Phase 20 stress successfully: shift 1 save/load, shift 2 save/load, wallet, XP/rank/promotion, shift history, trust/morale/corporate fields, reviews/writeups, daily recap, EventLog, restaurant memory, object memory, dynamic reputation, and corrupt-save fallback passed.
+- Ran Phase 14 full-shift smoke successfully as a regression check.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: run a real visible/manual playtest with physical controller hardware, then finish functional bagging/drink/fries prep and handoff polish before adding more content.
+
 ## 2026-06-04 - Phase 19 GitHub Playtest Prep Pass
 
 - Ran `python tools/validate_all.py` before Phase 19 edits; validation passed and restaurant story-event count remained 180.

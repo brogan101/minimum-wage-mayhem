@@ -1372,6 +1372,67 @@ def validate_phase_19_github_playtest_prep_contract():
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 19 smoke contract missing: {fragment}")
 
+def validate_phase_20_save_load_stress_contract():
+    save_system = (ROOT / "scripts/managers/SaveSystem.gd").read_text(encoding="utf-8")
+    event_log = (ROOT / "scripts/managers/EventLog.gd").read_text(encoding="utf-8")
+    restaurant_memory = (ROOT / "scripts/memory/RestaurantMemoryManager.gd").read_text(encoding="utf-8")
+    object_memory = (ROOT / "scripts/memory/StoreObjectMemoryManager.gd").read_text(encoding="utf-8")
+    reputation = (ROOT / "scripts/reputation/DynamicReputationLabelManager.gd").read_text(encoding="utf-8")
+    smoke = ROOT / "tools/phase20_multi_shift_save_load_stress.gd"
+    report = ROOT / "PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md"
+
+    for rel in [
+        "PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md",
+        "PROJECT_SOURCE_OF_TRUTH.md",
+        "GITHUB_PUBLISH_REPORT.md",
+        "FILE_INCLUSION_MANIFEST.md",
+    ]:
+        if not (ROOT / rel).exists():
+            raise AssertionError(f"Missing Phase 20 repo/status file: {rel}")
+
+    for fragment in [
+        '"schema_version": 3',
+        '"corporate_approval"',
+        '"event_log"',
+        '"restaurant_memory"',
+        '"store_object_memory"',
+        '"dynamic_reputation"',
+        "load_save_data",
+        "_runtime",
+    ]:
+        if fragment not in save_system:
+            raise AssertionError(f"Phase 20 SaveSystem persistence contract missing: {fragment}")
+
+    for script_name, text in {
+        "EventLog.gd": event_log,
+        "RestaurantMemoryManager.gd": restaurant_memory,
+        "StoreObjectMemoryManager.gd": object_memory,
+        "DynamicReputationLabelManager.gd": reputation,
+    }.items():
+        for fragment in ["get_save_data", "load_save_data"]:
+            if fragment not in text:
+                raise AssertionError(f"Phase 20 {script_name} missing save/load hook: {fragment}")
+
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 20 multi-shift stress check: tools/phase20_multi_shift_save_load_stress.gd")
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Shift 1 completes and saves a served customer",
+        "Load after shift 1 returns save data",
+        "Shift 2 completes and saves",
+        "Two-shift career history persists in save",
+        "Corporate approval persists after shift 1 reload",
+        "Restaurant memory persists after shift 1 reload",
+        "Object memory incident count survives final reload",
+        "Corrupt save falls back safely",
+        "Phase 20 two-shift save/load progression stress check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 20 smoke contract missing: {fragment}")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 20 report: PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1449,6 +1510,7 @@ def main() -> int:
         validate_phase_17_demo_contract()
         validate_phase_18_softlock_feel_contract()
         validate_phase_19_github_playtest_prep_contract()
+        validate_phase_20_save_load_stress_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1531,6 +1593,7 @@ def main() -> int:
     print("[PASS] Phase 17 graybox-to-demo contract valid")
     print("[PASS] Phase 18 playtest/softlock/feel contract valid")
     print("[PASS] Phase 19 GitHub/playtest prep contract valid")
+    print("[PASS] Phase 20 save/load progression stress contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

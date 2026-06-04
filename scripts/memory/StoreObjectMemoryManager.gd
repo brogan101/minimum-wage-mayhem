@@ -42,6 +42,13 @@ func _add_label(object_id: String, label_id: String) -> void:
 func get_summary() -> Dictionary:
     return {"object_memory": object_memory.duplicate(true), "object_targets": object_targets.duplicate(true)}
 
+func get_save_data() -> Dictionary:
+    return get_summary()
+
+func load_save_data(data: Dictionary) -> void:
+    object_memory = data.get("object_memory", {}).duplicate(true)
+    object_targets = data.get("object_targets", object_targets).duplicate(true)
+
 func _load_json_array(path: String, key: String) -> Array:
     if not FileAccess.file_exists(path):
         push_warning("Missing data file: " + path)

@@ -2,6 +2,13 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 20 Notes
+
+- GitHub repo visibility currently reports as public, despite older Phase 19 text saying private.
+- Two-shift save/load/progression/memory continuity is automated-validated, but manual visible/windowed playtest remains pending.
+- Phase 20 Godot stress emits a non-blocking tween warning after a delivered handoff object is freed.
+- Physical controller hardware validation remains pending.
+
 ## Gameplay
 
 - CustomerCar visual arrival scene now exists, has color variants, and is runtime-validated. Phase 18 verifies it does not stay waiting forever after fulfillment, but movement/readability still needs player-controlled visual playtest proof.

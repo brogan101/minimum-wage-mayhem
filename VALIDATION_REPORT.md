@@ -1,4 +1,56 @@
-# Validation Report - Phase 19 GitHub Playtest Prep Pass
+# Validation Report - Phase 20 Save/Load Progression Stress Pass
+
+## Phase 20 Current Validation
+
+Static validation before Phase 20 edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 19 GitHub/playtest prep contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Godot Phase 20 stress:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Shift 1 completes and saves a served customer
+[PASS] Load after shift 1 returns save data
+[PASS] Wallet persists after shift 1 reload
+[PASS] Career history persists after shift 1 reload
+[PASS] Corporate approval persists after shift 1 reload
+[PASS] Restaurant memory persists after shift 1 reload
+[PASS] Dynamic reputation persists after shift 1 reload
+[PASS] Shift 2 completes and saves
+[PASS] Two-shift career history persists in save
+[PASS] XP/progression persists in save
+[PASS] Promotion progress persists in save
+[PASS] Trust/morale/corporate career fields persist in save
+[PASS] Reviews/writeups are preserved in last shift
+[PASS] Daily task recap is preserved in last shift
+[PASS] EventLog history carries into shift 2 save
+[PASS] Next shift setup advances after shift 2
+[PASS] Load after shift 2 returns save data
+[PASS] Wallet persists after shift 2 reload
+[PASS] Two-shift career history survives final reload
+[PASS] Shift 2 restaurant memory survives final reload
+[PASS] Object memory incident count survives final reload
+[PASS] Reputation evaluation history survives final reload
+[PASS] Corrupt save falls back safely
+[PASS] Phase 20 two-shift save/load progression stress check passed
+```
+
+Godot regression smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+```
+
+Known runtime note: Phase 20 stress emits a non-blocking Godot tween warning after the handoff object is freed. No script errors or failed assertions remain.
+
+# Historical Validation Report - Phase 19 GitHub Playtest Prep Pass
 
 ## Phase 19 Current Validation
 
