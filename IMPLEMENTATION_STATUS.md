@@ -1,4 +1,27 @@
-# Implementation Status - Phase 22 Manual Playtest Feel Bugfix Pass
+# Implementation Status - Phase 23 Core Gameplay Depth Pass
+
+## Phase 23 Current Status
+
+Phase 23 is implemented as a scoped core gameplay depth pass. It does not add a major chaos/content system and does not touch the 180 restaurant story-event catalog.
+
+Latest Phase 23 work:
+
+- `scripts/items/FoodBag.gd` is now a real order container with contents, bag summary, seal state, visual tint, and bagging event logs.
+- `scripts/store/StoreOpsStation.gd` gives the player an order bag at the bagging table and lets the fryer add Fries to carried bags.
+- `scripts/stations/GrillStation.gd` adds Burger to a carried order bag.
+- `scripts/stations/DrinkStation.gd` adds Soda to a carried order bag; `scripts/Main.gd` now creates a functional `DrinkFillStation`.
+- `scripts/managers/OrderManager.gd` now creates normal ticket templates with ticket IDs, patience, customer notes, validation details, cash/tips, XP, mistakes, and retry-friendly wrong handoffs.
+- `scripts/stations/DriveThruWindow.gd` now explains missing/extra items, keeps wrong tickets active for retry, and only consumes the handoff on success.
+- `scripts/customers/CustomerCar.gd` now shows ticket/retry bubble text and leaves only after a correct handoff.
+- `scripts/ui/GameHUD.gd` now shows ticket number, patience, prep path, customer note, and stable station feedback without prompt clobbering.
+- `scripts/managers/ShiftResultManager.gd` now includes order mistakes and last order feedback in recap/result data.
+- Added `tools/phase23_core_gameplay_depth_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 23 core gameplay depth contract.
+- Added `PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md`.
+
+Automated Godot proof validates bagging, Burger, missing-Fries retry, Beef feedback, Fries, Soda, drive-thru completion, tips, XP, recap, and save/load. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 22 Manual Playtest Feel Bugfix Pass
 
 ## Phase 22 Current Status
 

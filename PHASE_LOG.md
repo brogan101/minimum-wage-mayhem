@@ -1,5 +1,26 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-06 - Phase 23 Core Gameplay Depth Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 22 report, project source of truth, implementation status, validation report, phase log, solo-shift acceptance test, and known issues.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Turned `FoodBag.gd` into a real order container with contents, summaries, sealing, visual tint, and event logging.
+- Wired the bagging table to give or create order bags.
+- Wired grill, fryer, and drink station interactions into carried order bags.
+- Added a functional runtime `DrinkFillStation`.
+- Upgraded `OrderManager.gd` with normal order templates, ticket IDs, patience, customer notes, validation details, cash/tips, XP, and mistake tracking.
+- Changed drive-thru wrong handoffs to explain the issue, raise Beef modestly, keep the ticket active, and let the player retry.
+- Updated CustomerCar bubble/status behavior so cars leave only on correct handoff.
+- Updated HUD order ticket, patience, prep guidance, customer note, and station feedback behavior.
+- Updated shift recap/result data with order mistakes and last order feedback.
+- Added `tools/phase23_core_gameplay_depth_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 23 contract.
+- Added `PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md`.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: career/store-manager loop and more life-like cartoon material pass, after confirming Phase 23 regressions remain green.
+
 ## 2026-06-05 - Phase 22 Manual Playtest Feel Bugfix Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

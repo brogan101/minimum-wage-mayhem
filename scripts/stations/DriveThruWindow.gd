@@ -33,7 +33,6 @@ func interact(player: Node3D):
 		_set_hud_feedback("That is not part of this order. Check the ticket.")
 		print("That is not a valid order item.")
 		return
-	interaction.drop_item()
 	_deliver_contents(contents, carried)
 
 func _contents_from_body(body: Node) -> Array[String]:
@@ -65,30 +64,32 @@ func _deliver_contents(contents: Array[String], body: Node):
 	if order_manager.get("current_order") == null or order_manager.current_order.is_empty():
 		if order_manager.has_method("generate_new_order"):
 			order_manager.generate_new_order()
-	var success = order_manager.validate_bag(contents)
+	var validation = order_manager.validate_bag_detail(contents) if order_manager.has_method("validate_bag_detail") else {"success": order_manager.validate_bag(contents), "issue": "Order checked", "provided_summary": ",".join(contents)}
+	validation["container"] = "bag" if body and body.get("contained_items") != null else "loose"
+	var success = bool(validation.get("success", false))
 	if success:
 		if beef and beef.has_method("decrease_beef"):
 			beef.decrease_beef(20)
-		order_manager.fulfill_order(true)
-		_set_hud_feedback("Correct order delivered at the drive-thru.")
+		var payout = order_manager.fulfill_order(true, validation)
+		_set_hud_feedback("Correct: " + str(validation.get("provided_summary", ",".join(contents))) + ". " + str(payout.get("summary", "Order paid.")))
 		if juice and juice.has_method("trigger_pop"):
 			juice.trigger_pop(self)
 		if audio and audio.has_method("play_sfx"):
 			audio.play_sfx("cash_register")
 		_log("drive_thru_order_delivered", 1.0, ",".join(contents))
+		if body and body.is_inside_tree():
+			_clear_carried_item_if_needed(body)
+			body.queue_free()
 	else:
 		if beef and beef.has_method("increase_beef"):
-			beef.increase_beef(30, "Wrong order delivered")
-		order_manager.fulfill_order(false)
-		_set_hud_feedback("Wrong order. Check the ticket before handoff.")
+			beef.increase_beef(18, str(validation.get("issue", "Wrong order delivered")))
+		order_manager.fulfill_order(false, validation, true)
+		_set_hud_feedback(str(validation.get("issue", "Missing or extra item")) + ". Ticket stays active; fix the bag and try again.")
 		if juice and juice.has_method("trigger_shake"):
 			juice.trigger_shake(1.0, 0.3)
 		if audio and audio.has_method("play_sfx"):
 			audio.play_sfx("customer_yell")
 		_log("drive_thru_order_failed", 0.0, ",".join(contents))
-	if body and body.is_inside_tree():
-		_clear_carried_item_if_needed(body)
-		body.queue_free()
 
 func _create_handoff_area() -> Area3D:
 	var area = Area3D.new()

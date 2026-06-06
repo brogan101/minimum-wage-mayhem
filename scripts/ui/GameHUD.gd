@@ -64,8 +64,10 @@ func _update_order_display(order_data):
 		order_list.add_child(empty_label)
 		return
 	var customer_type = str(order_data.get("customer_type", "Customer"))
+	var ticket_id = str(order_data.get("ticket_id", "?"))
+	var patience = int(float(order_data.get("patience", 0.85)) * 100.0)
 	if order_title_label:
-		order_title_label.text = "ORDER TICKET - " + customer_type.to_upper()
+		order_title_label.text = "TICKET #" + ticket_id + " - " + customer_type.to_upper()
 	for item in order_data["items"]:
 		var label = Label.new()
 		var mods = item.get("modifiers", [])
@@ -73,15 +75,28 @@ func _update_order_display(order_data):
 		label.text = "[ ] " + str(item.get("item", "Unknown")) + " - " + mod_text
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		order_list.add_child(label)
-	set_customer_status(customer_type + " waiting at DRIVE-THRU.")
+	var prep_label = Label.new()
+	prep_label.text = "Prep: Bag -> Grill/Fryer/Soda -> Window\nPatience: " + str(patience) + "%"
+	prep_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	order_list.add_child(prep_label)
+	var note = str(order_data.get("customer_note", ""))
+	if note.length() > 0:
+		var note_label = Label.new()
+		note_label.text = note
+		note_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		order_list.add_child(note_label)
+	set_customer_status(customer_type + " waiting at DRIVE-THRU. Patience " + str(patience) + "%.")
 	add_event_feed_line("Order received: " + customer_type)
 
 func _update_beef_bar(value):
 	if not beef_bar:
 		return
+	beef_bar.visible = true
 	beef_bar.value = value
 	if value > 80:
 		beef_bar.modulate = Color.RED
+	elif value > 35:
+		beef_bar.modulate = Color.ORANGE
 	else:
 		beef_bar.modulate = Color.WHITE
 
@@ -106,8 +121,6 @@ func set_interaction_prompt(text: String):
 	if interaction_prompt_label:
 		interaction_prompt_label.text = text
 		interaction_prompt_label.visible = text.length() > 0
-	if station_feedback_label and text.length() > 0:
-		station_feedback_label.text = "Station: " + text.replace("E / A: ", "").replace("E / X: ", "")
 
 func set_shift_timer(seconds: float, active: bool):
 	if not shift_timer_label:
@@ -197,8 +210,10 @@ func _on_order_fulfilled(success: bool, reward: int):
 		set_customer_status("served correctly. Window is clear.")
 		set_station_feedback("Correct handoff. +$" + str(reward))
 	else:
-		set_customer_status("wrong order. Try the next ticket.")
-		set_station_feedback("Wrong handoff. Check the ticket before serving.")
+		var order_manager = _autoload("OrderManager")
+		var detail = order_manager.get_last_validation_summary() if order_manager and order_manager.has_method("get_last_validation_summary") else "Wrong order"
+		set_customer_status("still waiting. Fix the active ticket.")
+		set_station_feedback(detail + ". Fix it and try the same customer again.")
 
 func _apply_demo_layout():
 	var control = get_node_or_null("Control")
@@ -269,7 +284,7 @@ func _apply_demo_layout():
 	boot_status_label.visible = false
 	beef_bar.position = Vector2(365, 182)
 	beef_bar.size = Vector2(250, 18)
-	beef_bar.visible = false
+	beef_bar.visible = true
 	composure_bar.position = Vector2(365, 208)
 	composure_bar.size = Vector2(250, 18)
 	composure_bar.visible = false

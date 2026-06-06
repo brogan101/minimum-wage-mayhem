@@ -37,11 +37,12 @@ The current build is an early playable local-only Godot 4.x/GDScript slice. It s
 - player spawn in a 3D restaurant scene
 - action-based keyboard/mouse and controller-compatible InputMap controls
 - pickup/drop/interact flow
-- grill food state changes
+- first-pass order bagging with Burger, Fries, and Soda station components
+- grill food state changes and carried-bag Burger prep
 - store duty stations
 - coworker/staff systems
 - visible `CustomerCar` drive-thru arrival/order flow with fallback order generation if the car scene is missing
-- drive-thru handoff through `DriveThruWindow`, including a runtime `HandOffArea` fallback
+- drive-thru handoff through `DriveThruWindow`, including a runtime `HandOffArea` fallback, wrong-order feedback, retry-active tickets, and cash/tip/XP payout
 - active shift timer/HUD
 - physical and menu end-shift flows
 - end-of-shift recap
@@ -88,7 +89,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 
 ## Scaffolded Only
 
-- Drink, fries, and bagging are visually called out but not yet complete as full prep gameplay loops.
+- Drink, fries, and bagging have a functional first-pass loop through carried order bags, but still need animation/timing/presentation polish.
 - Manager trial exists as career readiness/setup data, not a full playable trial.
 - Store Manager/future district hooks exist but are intentionally not expanded.
 - Settings UI exists, but persistent settings storage is not final.
@@ -105,7 +106,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 
 - Manual visible playtest is still pending.
 - Physical controller validation is still pending.
-- Functional bagging/drink/fry prep needs a later gameplay pass.
+- Food prep needs manual feel, animation, timing, and presentation polish beyond the Phase 23 functional pass.
 - HUD/menu/result presentation is functional but visually basic.
 - Final audio/assets/export presets are not ready.
 - GitHub repo visibility is public; if the desired state is private, change visibility in GitHub settings or via `gh repo edit brogan101/minimum-wage-mayhem --visibility private`.
@@ -114,6 +115,6 @@ The console Godot binary may need filesystem access outside the workspace to wri
 
 Next phase should be:
 
-`Phase 21 - Manual Visible Playtest, Controller Hardware, Prep Loop, and Handoff Polish`
+`Phase 24 - Career, Store Manager Path, Multi-Shift Loop, and Life-Like Cartoon Material Polish`
 
-Do not add another large content/depth pack before this. The next work should make the proven two-shift loop feel good in a real window with a real player and controller.
+Do not add another large content/depth pack before this. The next work should make the multi-shift career path visible and continue improving the procedural placeholder materials toward a more life-like cartoon style.

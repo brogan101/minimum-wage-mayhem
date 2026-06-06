@@ -37,11 +37,16 @@ func _on_reached_window():
 	waiting_for_order = true
 	print("Customer car waiting at the drive-thru.")
 	var order_manager = _autoload("OrderManager")
+	var order_data = {}
 	if order_manager and order_manager.has_method("generate_new_order"):
-		order_manager.generate_new_order()
+		order_data = order_manager.generate_new_order(customer_type)
+		if typeof(order_data) == TYPE_DICTIONARY and order_data.has("customer_type"):
+			customer_type = str(order_data.get("customer_type", customer_type))
+		_set_order_bubble(order_manager.get_current_order_summary() if order_manager.has_method("get_current_order_summary") else "ORDER READY")
 	var hud = get_tree().root.find_child("GameHUD", true, false)
 	if hud and hud.has_method("set_customer_status"):
-		hud.set_customer_status(customer_type + " car waiting at the DRIVE-THRU window.")
+		var patience = int(float(order_data.get("patience", 0.85)) * 100.0) if typeof(order_data) == TYPE_DICTIONARY else 85
+		hud.set_customer_status(customer_type + " waiting at DRIVE-THRU. Patience " + str(patience) + "%.")
 	var event_log = _autoload("EventLog")
 	if event_log and event_log.has_method("log_event"):
 		event_log.log_event("customer_car_waiting", 1.0, customer_type)
@@ -52,16 +57,19 @@ func leave_restaurant():
 	tween.tween_property(self, "global_position", start_position + Vector3(20, 0, 0), 3.0)
 	tween.finished.connect(queue_free)
 
-func _on_order_fulfilled(_success: bool, _reward: int):
-	if waiting_for_order:
+func _on_order_fulfilled(success: bool, _reward: int):
+	if waiting_for_order and success:
+		_set_order_bubble("THANKS")
 		leave_restaurant()
+	elif waiting_for_order:
+		_set_order_bubble("TRY AGAIN\nCHECK TICKET")
 
 func _apply_customer_variant():
 	var variants = [
-		{"label": "Red sedan", "node": "BodyRed", "color": "red"},
-		{"label": "Blue compact", "node": "BodyBlue", "color": "blue"},
-		{"label": "Yellow hatchback", "node": "BodyYellow", "color": "yellow"},
-		{"label": "Green coupe", "node": "BodyGreen", "color": "green"}
+		{"label": "Regular", "node": "BodyRed", "color": "red"},
+		{"label": "Lunch Driver", "node": "BodyBlue", "color": "blue"},
+		{"label": "Thirsty Commuter", "node": "BodyYellow", "color": "yellow"},
+		{"label": "Regular", "node": "BodyGreen", "color": "green"}
 	]
 	var selected = variants.pick_random()
 	customer_type = str(selected["label"])
@@ -100,6 +108,11 @@ func _apply_phase21_cartoon_details():
 		label.outline_size = 2
 		label.outline_modulate = Color(1.0, 0.94, 0.76)
 		add_child(label)
+
+func _set_order_bubble(text: String):
+	var label = get_node_or_null("Phase21OrderBubbleText")
+	if label:
+		label.text = text.replace("Ticket #", "#")
 
 func _add_detail_box(node_name: String, pos: Vector3, size: Vector3, mat: Material):
 	if get_node_or_null(node_name):

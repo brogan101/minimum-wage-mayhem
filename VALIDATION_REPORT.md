@@ -1,4 +1,42 @@
-# Validation Report - Phase 22 Manual Playtest Feel Bugfix Pass
+# Validation Report - Phase 23 Core Gameplay Depth Pass
+
+## Phase 23 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 22 manual playtest/feel contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 23 gameplay smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase23_core_gameplay_depth_check.gd
+[PASS] Bagging station gives the player an order bag
+[PASS] Grill adds Burger to carried bag
+[PASS] Wrong order keeps the active ticket for retry
+[PASS] HUD explains the missing item
+[PASS] Fryer adds Fries to carried bag
+[PASS] Drink station adds Soda to carried bag
+[PASS] Save/load still works after deeper gameplay
+[PASS] Phase 23 core gameplay depth check passed
+```
+
+Static validation after edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 23 core gameplay depth contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Godot headless dummy renderer note: some smokes may emit non-blocking `mesh_get_surface_count` cleanup messages after passing assertions. These did not fail the Phase 23 command.
+
+# Historical Validation Report - Phase 22 Manual Playtest Feel Bugfix Pass
 
 ## Phase 22 Current Validation
 

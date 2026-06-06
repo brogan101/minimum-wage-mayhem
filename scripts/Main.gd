@@ -37,6 +37,7 @@ const ShiftFlavorManagerScript = preload("res://scripts/depth/ShiftFlavorManager
 const ContentDensityValidatorRuntimeScript = preload("res://scripts/depth/ContentDensityValidatorRuntime.gd")
 const MainMenuUIScript = preload("res://scripts/ui/MainMenuUI.gd")
 const ClockOutStationScript = preload("res://scripts/stations/ClockOutStation.gd")
+const DrinkStationScript = preload("res://scripts/stations/DrinkStation.gd")
 
 var flow: Node
 var current_world: Node = null
@@ -133,9 +134,9 @@ func start_new_shift():
 	add_child(sm)
 	sm.start_shift()
 	if hud and hud.has_method("set_objective_status"):
-		hud.set_objective_status("Serve the active order: Ticket -> Burger -> Green DRIVE-THRU Mat -> Clock Out.")
+		hud.set_objective_status("Serve the ticket: Bag -> Burger/Fries/Soda as requested -> Green DRIVE-THRU Mat -> Clock Out.")
 	if hud and hud.has_method("set_first_shift_guidance"):
-		hud.set_first_shift_guidance("Follow the floor arrows. Start at ORDER TICKET, grab the burger, hand it off on the green mat, then clock out.")
+		hud.set_first_shift_guidance("Follow the floor arrows and ticket. Get a paper bag, add requested food at stations, hand it off on the green mat, then clock-out.")
 	var stat_manager = _autoload("StatManager")
 	var current_stats = {
 		"Energy": stat_manager.stats.get("Energy", 100.0) if stat_manager else 100.0,
@@ -353,15 +354,21 @@ func _apply_phase17_demo_visuals():
 		clock_out_station.set_script(ClockOutStationScript)
 	if clock_out_station:
 		clock_out_station.set("interact_text", "Clock out / end shift")
+	var drink_station = _add_box(dressing, "DrinkFillStation", Vector3(-1.8, 0.9, 2.45), Vector3(0.95, 1.05, 0.75), soda_mat, true)
+	if drink_station and not drink_station.get_script():
+		drink_station.set_script(DrinkStationScript)
+	if drink_station:
+		drink_station.set("interact_text", "Add soda to bag")
 	_add_label(dressing, "MenuBoardLabel", "MINIMUM WAGE MAYHEM\nBurger - Fries - Soda", Vector3(1.5, 2.35, -7.52), Color(1.0, 0.95, 0.65), 34)
-	_add_label(dressing, "PrepFlowLabel", "PREP FLOW:\nTicket -> Burger -> Bag -> Window", Vector3(-0.85, 1.85, -0.25), Color(1.0, 0.95, 0.7), 22)
-	_add_label(dressing, "SodaAffordanceLabel", "SODA CUPS\nfuture drink prep", Vector3(-1.8, 2.05, 2.45), Color(0.95, 1.0, 1.0), 18)
-	_add_label(dressing, "FriesAffordanceLabel", "FRIES BIN\nfuture fry prep", Vector3(3.8, 2.05, 2.45), Color(1.0, 0.92, 0.5), 18)
+	_add_label(dressing, "PrepFlowLabel", "PREP FLOW:\nTicket -> Bag -> Food -> Window", Vector3(-0.85, 1.85, -0.25), Color(1.0, 0.95, 0.7), 22)
+	_add_label(dressing, "SodaAffordanceLabel", "SODA\nadd to bag", Vector3(-1.8, 2.05, 2.45), Color(0.95, 1.0, 1.0), 18)
+	_add_label(dressing, "FriesAffordanceLabel", "FRIES\nadd to bag", Vector3(3.8, 2.05, 2.45), Color(1.0, 0.92, 0.5), 18)
 	_add_station_label("RegisterStation", "REGISTER", Color(0.75, 0.86, 1.0))
 	_add_station_label("DriveThruStation", "DRIVE-THRU\nHAND OFF HERE", Color(1.0, 0.88, 0.45))
-	_add_station_label("GrillStation", "GRILL", Color(1.0, 0.55, 0.35))
-	_add_station_label("FryerCheckStation", "FRYER", Color(1.0, 0.9, 0.35))
-	_add_station_label("BaggingTableStation", "PREP\nBAGGING", Color(0.65, 1.0, 0.7))
+	_add_station_label("GrillStation", "GRILL\nADD BURGER", Color(1.0, 0.55, 0.35))
+	_add_station_label("FryerCheckStation", "FRYER\nADD FRIES", Color(1.0, 0.9, 0.35))
+	_add_station_label("BaggingTableStation", "BAGGING\nGET BAG", Color(0.65, 1.0, 0.7))
+	_add_station_label("DrinkFillStation", "DRINK\nADD SODA", Color(0.75, 1.0, 1.0))
 	_add_station_label("SauceStockStation", "SAUCE\nRESTOCK", Color(0.9, 0.7, 1.0))
 	_add_station_label("RecoveryStation", "FIX-IT", Color(1.0, 0.82, 0.45))
 	_add_station_label("TrashRunStation", "TRASH", Color(0.8, 0.85, 0.85))
@@ -462,7 +469,7 @@ func _add_fryer_props(dressing: Node, steel: Material, yellow: Material, red: Ma
 func _add_prep_props(dressing: Node, white: Material, red: Material, yellow: Material, glass: Material):
 	_add_box(dressing, "Phase21TicketRail", Vector3(-0.1, 1.68, 0.18), Vector3(1.35, 0.07, 0.08), red, false)
 	_add_box(dressing, "Phase21OrderTicketCard", Vector3(-0.1, 1.88, 0.2), Vector3(0.72, 0.5, 0.04), white, false)
-	_add_label(dressing, "Phase21OrderTicketText", "ORDER\nBURGER", Vector3(-0.1, 1.88, 0.23), Color(0.05, 0.05, 0.05), 18)
+	_add_label(dressing, "Phase21OrderTicketText", "ORDER\nCHECK HUD", Vector3(-0.1, 1.88, 0.23), Color(0.05, 0.05, 0.05), 18)
 	_add_box(dressing, "Phase21BagMouth", Vector3(-0.8, 1.78, -0.4), Vector3(0.62, 0.06, 0.36), red, false)
 	_add_box(dressing, "Phase21SodaCupA", Vector3(-1.95, 1.78, 2.45), Vector3(0.28, 0.44, 0.28), glass, false)
 	_add_box(dressing, "Phase21SodaCupB", Vector3(-1.65, 1.78, 2.45), Vector3(0.28, 0.44, 0.28), glass, false)

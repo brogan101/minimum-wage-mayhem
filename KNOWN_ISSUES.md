@@ -13,7 +13,7 @@ This is an early playable build, not a final Steam demo.
 
 - Restaurant visuals are improved with procedural primitive art, but this is still placeholder art and not final asset production.
 - Phase 21 redo improves layout readability, camera FOV/look defaults, route guidance, and HUD hierarchy, but it is still not a full manual playtest pass.
-- Phase 21 does not add functional drink/fry/bagging prep loops; those remain visual affordances.
+- Phase 21 did not add functional drink/fry/bagging prep loops; Phase 23 adds a first functional pass for them.
 - The normal-renderer Phase 21 art check passes cleanly. The headless dummy renderer may emit a non-blocking mesh cleanup error in the visual smoke, so Phase 21 visual proof uses the normal renderer and full-shift proof uses the clean Phase 14 headless smoke.
 
 ## Phase 22 Notes
@@ -22,13 +22,20 @@ This is an early playable build, not a final Steam demo.
 - DriveThruWindow now creates a runtime `HandOffArea` fallback, so the previous missing-target warning is resolved.
 - Phase 22 is automated/script validated, not a claimed human manual playtest.
 
+## Phase 23 Notes
+
+- Phase 23 adds functional first-pass bagging, Burger, Fries, and Soda prep through carried order bags.
+- Wrong/incomplete drive-thru handoffs now teach the missing/extra item, raise Beef modestly, keep the ticket active, and allow retry.
+- Customer order variety is intentionally normal and small: Regular, Lunch Driver, and Thirsty Commuter.
+- Phase 23 is automated/script validated, not a claimed human manual playtest.
+
 ## Gameplay
 
 - CustomerCar visual arrival scene now exists, has color variants, and is runtime-validated. Phase 18 verifies it does not stay waiting forever after fulfillment, but movement/readability still needs player-controlled visual playtest proof.
 - Manual visible movement/camera/HUD layout verification is still pending. Phase 18 tuned defaults and checked them through automation, but did not claim a human manual session.
 - Physical clock-out is runtime-validated, but final placement should still be checked during a player-controlled playtest.
 - Some deeper systems are structurally connected and runtime-tested through managers, but still need visible in-game presentation polish.
-- Phase 19 adds visible bag/soda/fries prep affordances, but functional drink/fry/bagging gameplay beyond the Training Burger fallback still needs a later pass before a public demo.
+- Phase 23 adds a functional first pass for bag/soda/fries prep, but it is still primitive and needs manual feel, animation, timing, and presentation polish before a public demo.
 
 ## UI
 
@@ -41,7 +48,7 @@ This is an early playable build, not a final Steam demo.
 ## Audio/Assets
 
 - Some audio hooks fall back because final audio files are missing.
-- Current visuals use procedural Godot primitives, runtime materials, Label3D signs, and simple UI panels.
+- Current visuals use procedural Godot primitives, runtime materials, Label3D signs, and simple UI panels. They need a more life-like cartoon material/texture pass.
 - Final licensed asset attribution is pending.
 
 ## Build/Export

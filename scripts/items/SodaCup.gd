@@ -6,6 +6,7 @@ class_name SodaCup
 
 func fill():
 	is_filled = true
+	item_name = "Soda"
 	update_visuals()
 	print(name, " is now filled with sugary syrup!")
 

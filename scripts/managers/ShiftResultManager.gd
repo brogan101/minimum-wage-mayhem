@@ -90,15 +90,19 @@ func build_shift_result_data(player_stats: Dictionary = {}) -> Dictionary:
 	var current_xp = career.current_xp if career else 0.0
 	var completed_tasks = _count_tasks(daily_tasks, "completed")
 	var failed_tasks = _count_tasks(daily_tasks, "failed")
+	var order_tips = order_manager.get_tips_earned() if order_manager and order_manager.has_method("get_tips_earned") else 0
+	var order_mistakes = order_manager.get_mistake_count() if order_manager and order_manager.has_method("get_mistake_count") else 0
 	var result = {
 		"shift_number": shift_number,
 		"money_earned": current_wallet - float(shift_start_snapshot.get("wallet", 0.0)),
 		"xp_earned": current_xp - float(shift_start_snapshot.get("xp", 0.0)),
-		"tips": int(daily_rewards.get("tips", 0)),
+		"tips": int(daily_rewards.get("tips", 0)) + int(order_tips),
 		"customers_served": order_manager.orders_completed if order_manager else int(player_stats.get("completed", 0)),
 		"order_accuracy": order_manager.get_order_accuracy() if order_manager and order_manager.has_method("get_order_accuracy") else 1.0,
 		"average_wait": order_manager.get_average_wait() if order_manager and order_manager.has_method("get_average_wait") else 0.0,
 		"average_patience": order_manager.get_average_patience() if order_manager and order_manager.has_method("get_average_patience") else float(store_effects.get("customer_patience", 1.0)),
+		"order_mistakes": order_mistakes,
+		"last_order_feedback": order_manager.get_last_validation_summary() if order_manager and order_manager.has_method("get_last_validation_summary") else "No order mistakes",
 		"beef_incidents": beef_incidents.size(),
 		"current_beef": beef.current_beef if beef else 0.0,
 		"staff_morale_change": int(staff_effects.get("staff_morale", 0)) - int(shift_start_snapshot.get("staff_morale", 0)),
@@ -155,6 +159,8 @@ func format_shift_report(result: Dictionary) -> String:
 	report += "Tips: $" + str(result.get("tips", 0)) + "\n"
 	report += "Customers Served: " + str(result.get("customers_served", 0)) + "\n"
 	report += "Order Accuracy: " + str(int(float(result.get("order_accuracy", 1.0)) * 100.0)) + "%\n"
+	report += "Mistakes: " + str(result.get("order_mistakes", 0)) + "\n"
+	report += "Last Order Feedback: " + str(result.get("last_order_feedback", "No order feedback")) + "\n"
 	report += "Average Wait: " + str(snapped(float(result.get("average_wait", 0.0)), 0.1)) + "s\n"
 	report += "Average Patience: " + str(int(float(result.get("average_patience", 1.0)) * 100.0)) + "%\n"
 	report += "Beef Incidents: " + str(result.get("beef_incidents", 0)) + "\n"

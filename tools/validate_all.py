@@ -1264,7 +1264,7 @@ def validate_phase_18_softlock_feel_contract():
         "ORDER TICKET",
         "CLOCK OUT",
         "DRIVE-THRU",
-        "Green DRIVE-THRU Mat",
+        "Bag -> Burger/Fries/Soda",
     ]:
         if fragment not in main + hud:
             raise AssertionError(f"Phase 18 first-shift guidance missing: {fragment}")
@@ -1615,6 +1615,70 @@ def validate_phase_22_manual_playtest_feel_contract():
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 22 smoke contract missing: {fragment}")
 
+def validate_phase_23_core_gameplay_depth_contract():
+    report = ROOT / "PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md"
+    smoke = ROOT / "tools/phase23_core_gameplay_depth_check.gd"
+    food_bag = (ROOT / "scripts/items/FoodBag.gd").read_text(encoding="utf-8")
+    store_station = (ROOT / "scripts/store/StoreOpsStation.gd").read_text(encoding="utf-8")
+    grill = (ROOT / "scripts/stations/GrillStation.gd").read_text(encoding="utf-8")
+    drink = (ROOT / "scripts/stations/DrinkStation.gd").read_text(encoding="utf-8")
+    order_manager = (ROOT / "scripts/managers/OrderManager.gd").read_text(encoding="utf-8")
+    drive_thru = (ROOT / "scripts/stations/DriveThruWindow.gd").read_text(encoding="utf-8")
+    customer_car = (ROOT / "scripts/customers/CustomerCar.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    shift_results = (ROOT / "scripts/managers/ShiftResultManager.gd").read_text(encoding="utf-8")
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 23 report: PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 23 smoke: tools/phase23_core_gameplay_depth_check.gd")
+
+    for fragment in ["add_item", "add_contents", "seal_bag", "get_contents_summary", "food_bag_item_added"]:
+        if fragment not in food_bag:
+            raise AssertionError(f"Phase 23 bag contract missing: {fragment}")
+
+    for fragment in ["_handle_bagging_table", "_handle_fryer", "Fries added to bag", "Grabbed an empty bag"]:
+        if fragment not in store_station:
+            raise AssertionError(f"Phase 23 prep station contract missing: {fragment}")
+
+    for fragment in ["Burger added to bag", "Soda added to bag", "DrinkFillStation"]:
+        if fragment not in grill + drink + main:
+            raise AssertionError(f"Phase 23 station/component contract missing: {fragment}")
+
+    for fragment in ["ORDER_TEMPLATES", "validate_bag_detail", "keep_order_active", "tips_earned", "mistake_count", "Ticket #"]:
+        if fragment not in order_manager:
+            raise AssertionError(f"Phase 23 order manager contract missing: {fragment}")
+
+    for fragment in ["Ticket stays active", "Missing", "container", "validate_bag_detail"]:
+        if fragment not in drive_thru:
+            raise AssertionError(f"Phase 23 drive-thru validation contract missing: {fragment}")
+
+    for fragment in ["TRY AGAIN", "Patience", "generate_new_order(customer_type)"]:
+        if fragment not in customer_car:
+            raise AssertionError(f"Phase 23 customer flow contract missing: {fragment}")
+
+    for fragment in ["TICKET #", "Patience:", "Prep: Bag", "get_last_validation_summary"]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 23 HUD ticket contract missing: {fragment}")
+
+    for fragment in ["order_mistakes", "Last Order Feedback", "Mistakes:"]:
+        if fragment not in shift_results:
+            raise AssertionError(f"Phase 23 recap contract missing: {fragment}")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Bagging station gives the player an order bag",
+        "Wrong order keeps the active ticket for retry",
+        "Fryer adds Fries to carried bag",
+        "Drink station adds Soda to carried bag",
+        "Recap shows mistakes",
+        "Save/load still works after deeper gameplay",
+        "Phase 23 core gameplay depth check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 23 smoke contract missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1695,6 +1759,7 @@ def main() -> int:
         validate_phase_20_save_load_stress_contract()
         validate_phase_21_art_direction_contract()
         validate_phase_22_manual_playtest_feel_contract()
+        validate_phase_23_core_gameplay_depth_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1780,6 +1845,7 @@ def main() -> int:
     print("[PASS] Phase 20 save/load progression stress contract valid")
     print("[PASS] Phase 21 art direction/prop contract valid")
     print("[PASS] Phase 22 manual playtest/feel contract valid")
+    print("[PASS] Phase 23 core gameplay depth contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")
