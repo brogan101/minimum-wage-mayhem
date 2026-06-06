@@ -88,7 +88,8 @@ func _spawn_player_if_missing():
 	if player_scene:
 		var player = player_scene.instantiate()
 		player.name = "Player"
-		player.position = Vector3(0, 2, 4)
+		player.position = Vector3(0, 2, -5.45)
+		player.rotation_degrees = Vector3(0, 180, 0)
 		add_child(player)
 		print("MVP boot: Player spawned.")
 	else:
@@ -132,9 +133,9 @@ func start_new_shift():
 	add_child(sm)
 	sm.start_shift()
 	if hud and hud.has_method("set_objective_status"):
-		hud.set_objective_status("Objective: deliver the ticket at DRIVE-THRU, clear one duty if you can, then clock out.")
+		hud.set_objective_status("Serve the active order: Ticket -> Burger -> Green DRIVE-THRU Mat -> Clock Out.")
 	if hud and hud.has_method("set_first_shift_guidance"):
-		hud.set_first_shift_guidance("Read ORDER TICKET -> pick up Training Burger -> hand it out at DRIVE-THRU -> use CLOCK OUT station or pause.")
+		hud.set_first_shift_guidance("Follow the floor arrows. Start at ORDER TICKET, grab the burger, hand it off on the green mat, then clock out.")
 	var stat_manager = _autoload("StatManager")
 	var current_stats = {
 		"Energy": stat_manager.stats.get("Energy", 100.0) if stat_manager else 100.0,
@@ -370,6 +371,7 @@ func _apply_phase17_demo_visuals():
 	_ensure_demo_light("KitchenSoftbox", Vector3(1.0, 4.2, 2.5), Color(1.0, 0.88, 0.68), 4.5)
 	_ensure_demo_light("DriveThruGlow", Vector3(-5.8, 3.4, -2.2), Color(1.0, 0.58, 0.18), 2.5)
 	_apply_phase21_cartoon_identity(dressing)
+	_apply_phase21_redo_layout(dressing)
 
 func _set_world_environment():
 	var env_node = get_node_or_null("WorldEnvironment")
@@ -482,6 +484,65 @@ func _add_food_readability_props(dressing: Node, bun: Material, patty: Material,
 	_add_box(dressing, "Phase21BurgerBunTop", Vector3(0.0, 1.64, 1.2), Vector3(0.5, 0.12, 0.5), bun, false)
 	_add_box(dressing, "Phase21RawPattyReadable", Vector3(2.8, 1.34, 3.6), Vector3(0.54, 0.08, 0.54), patty, false)
 
+func _apply_phase21_redo_layout(dressing: Node):
+	var lobby_mat = _mat("Phase21 redo lobby blue", Color(0.2, 0.45, 0.95), 0.68)
+	var prep_mat = _mat("Phase21 redo prep green", Color(0.16, 0.72, 0.34), 0.64)
+	var kitchen_mat = _mat("Phase21 redo kitchen orange", Color(1.0, 0.48, 0.12), 0.62)
+	var service_mat = _mat("Phase21 redo service red", Color(0.9, 0.12, 0.08), 0.64)
+	var restock_mat = _mat("Phase21 redo restock purple", Color(0.58, 0.26, 0.9), 0.66)
+	var clock_mat = _mat("Phase21 redo clock teal", Color(0.0, 0.82, 0.76), 0.62)
+	var path_mat = _mat("Phase21 redo route yellow", Color(1.0, 0.92, 0.18), 0.5, Color(0.9, 0.72, 0.08, 1.0))
+	var dark_mat = _mat("Phase21 redo boundary dark", Color(0.035, 0.04, 0.045), 0.82)
+	var white_mat = _mat("Phase21 redo sign white", Color(0.98, 0.96, 0.86), 0.68)
+	var green_glow = _mat("Phase21 redo success green", Color(0.15, 1.0, 0.35), 0.45, Color(0.08, 0.95, 0.25, 1.0))
+
+	_add_zone_band(dressing, "Phase21RedoLobbyZone", Vector3(1.4, 0.31, -4.85), Vector3(11.4, 0.045, 1.55), lobby_mat, "LOBBY / FRONT COUNTER", Vector3(1.5, 0.42, -5.55), Color(0.78, 0.9, 1.0))
+	_add_zone_band(dressing, "Phase21RedoServiceZone", Vector3(-5.35, 0.32, -2.2), Vector3(2.05, 0.05, 2.45), service_mat, "DRIVE-THRU WINDOW", Vector3(-5.45, 0.46, -3.45), Color(1.0, 0.86, 0.45))
+	_add_zone_band(dressing, "Phase21RedoPrepZone", Vector3(-0.6, 0.33, 0.25), Vector3(3.1, 0.05, 2.15), prep_mat, "PREP / BAGGING", Vector3(-0.6, 0.48, -0.9), Color(0.72, 1.0, 0.76))
+	_add_zone_band(dressing, "Phase21RedoKitchenZone", Vector3(2.65, 0.34, 3.4), Vector3(4.25, 0.05, 2.35), kitchen_mat, "HOT LINE", Vector3(2.65, 0.48, 4.7), Color(1.0, 0.82, 0.45))
+	_add_zone_band(dressing, "Phase21RedoRestockZone", Vector3(-2.7, 0.35, 2.2), Vector3(3.9, 0.05, 2.05), restock_mat, "SAUCE / RESTOCK / CLEAN", Vector3(-2.7, 0.5, 3.45), Color(0.92, 0.75, 1.0))
+	_add_zone_band(dressing, "Phase21RedoClockZone", Vector3(6.0, 0.36, 3.6), Vector3(1.9, 0.05, 1.9), clock_mat, "CLOCK OUT", Vector3(6.0, 0.5, 4.75), Color(0.75, 1.0, 0.95))
+
+	_add_box(dressing, "Phase21RedoCustomerCounter", Vector3(1.0, 0.95, -3.7), Vector3(8.8, 1.35, 0.28), dark_mat, true)
+	_add_box(dressing, "Phase21RedoKitchenRail", Vector3(0.4, 0.72, 2.0), Vector3(6.5, 0.72, 0.18), dark_mat, true)
+	_add_box(dressing, "Phase21RedoDriveThruDivider", Vector3(-6.18, 0.62, -2.2), Vector3(0.16, 0.72, 3.1), dark_mat, true)
+	_add_box(dressing, "Phase21RedoExitStripe", Vector3(6.9, 0.28, 3.6), Vector3(0.12, 0.05, 2.4), clock_mat, false)
+
+	_add_route_marker(dressing, "Phase21RedoStep1Ticket", "1\nTICKET", Vector3(0.0, 0.62, -1.0), path_mat, Color(0.08, 0.06, 0.02))
+	_add_route_marker(dressing, "Phase21RedoStep2Burger", "2\nBURGER", Vector3(0.0, 0.63, 1.18), path_mat, Color(0.08, 0.06, 0.02))
+	_add_route_marker(dressing, "Phase21RedoStep3Window", "3\nWINDOW", Vector3(-4.95, 0.64, -2.2), green_glow, Color(0.02, 0.08, 0.03))
+	_add_route_marker(dressing, "Phase21RedoStep4ClockOut", "4\nCLOCK", Vector3(6.05, 0.65, 3.25), clock_mat, Color(0.02, 0.07, 0.07))
+	_add_flow_arrow(dressing, "Phase21RedoPathArrowTicketToBurger", Vector3(0.0, 0.58, 0.1), Vector3(0.18, 0.05, 1.2), path_mat)
+	_add_flow_arrow(dressing, "Phase21RedoPathArrowBurgerToWindowA", Vector3(-1.55, 0.59, -0.1), Vector3(1.25, 0.05, 0.18), path_mat)
+	_add_flow_arrow(dressing, "Phase21RedoPathArrowBurgerToWindowB", Vector3(-3.25, 0.6, -1.25), Vector3(1.25, 0.05, 0.18), path_mat)
+	_add_flow_arrow(dressing, "Phase21RedoPathArrowWindowToClock", Vector3(1.1, 0.61, 3.2), Vector3(4.4, 0.05, 0.16), path_mat)
+
+	_add_box(dressing, "Phase21RedoRegisterHalo", Vector3(3.8, 0.44, -2.2), Vector3(1.75, 0.06, 1.4), lobby_mat, false)
+	_add_box(dressing, "Phase21RedoGrillHalo", Vector3(1.8, 0.45, 3.6), Vector3(1.95, 0.06, 1.35), kitchen_mat, false)
+	_add_box(dressing, "Phase21RedoFryerHalo", Vector3(3.8, 0.46, 2.8), Vector3(1.55, 0.06, 1.35), kitchen_mat, false)
+	_add_box(dressing, "Phase21RedoSauceHalo", Vector3(-1.8, 0.47, 2.8), Vector3(1.45, 0.06, 1.25), restock_mat, false)
+	_add_box(dressing, "Phase21RedoHandoffSpot", Vector3(-5.85, 0.5, -2.2), Vector3(1.15, 0.08, 1.0), green_glow, false)
+
+	_add_label(dressing, "Phase21RedoPlayerStartSign", "START HERE\nLook around, then follow 1-4.", Vector3(0.0, 2.2, -5.45), Color(0.95, 1.0, 1.0), 22)
+	_add_label(dressing, "Phase21RedoKitchenOverheadSign", "KITCHEN: GRILL + FRYER", Vector3(2.7, 2.72, 4.95), Color(1.0, 0.84, 0.5), 22)
+	_add_label(dressing, "Phase21RedoDriveThruOverheadSign", "DRIVE-THRU\nSERVE ON GREEN", Vector3(-5.9, 2.95, -3.55), Color(0.75, 1.0, 0.7), 22)
+	_add_label(dressing, "Phase21RedoPrepOverheadSign", "PREP TABLE\nBURGER + BAG", Vector3(-0.6, 2.32, -0.85), Color(0.76, 1.0, 0.78), 21)
+	_add_label(dressing, "Phase21RedoHotLineIcon", "HOT", Vector3(2.6, 1.98, 3.55), Color(1.0, 0.38, 0.18), 20)
+	_add_label(dressing, "Phase21RedoTicketIcon", "ORDER\nTICKET", Vector3(-0.12, 2.28, 0.28), Color(0.05, 0.05, 0.05), 18)
+	_add_box(dressing, "Phase21RedoReadableBurgerBun", Vector3(0.45, 1.78, 1.18), Vector3(0.58, 0.14, 0.58), _mat("Phase21 redo extra burger bun", Color(0.94, 0.66, 0.28), 0.7), false)
+	_add_box(dressing, "Phase21RedoDrinkLid", Vector3(-1.8, 2.05, 2.45), Vector3(0.5, 0.08, 0.5), white_mat, false)
+
+func _add_zone_band(dressing: Node, node_name: String, pos: Vector3, size: Vector3, mat: Material, label_text: String, label_pos: Vector3, label_color: Color):
+	_add_box(dressing, node_name, pos, size, mat, false)
+	_add_label(dressing, node_name + "Label", label_text, label_pos, label_color, 18)
+
+func _add_route_marker(dressing: Node, node_name: String, text: String, pos: Vector3, mat: Material, text_color: Color):
+	_add_box(dressing, node_name, pos, Vector3(0.8, 0.08, 0.8), mat, false)
+	_add_label(dressing, node_name + "Label", text, pos + Vector3(0.0, 0.36, 0.0), text_color, 18)
+
+func _add_flow_arrow(dressing: Node, node_name: String, pos: Vector3, size: Vector3, mat: Material):
+	_add_box(dressing, node_name, pos, size, mat, false)
+
 func _mat(resource_name: String, color: Color, roughness: float = 0.75, emission: Color = Color(0, 0, 0, 0)) -> StandardMaterial3D:
 	var mat = StandardMaterial3D.new()
 	mat.resource_name = resource_name
@@ -558,9 +619,10 @@ func _add_station_label(node_name: String, text: String, color: Color):
 	label.name = "Phase17Sign"
 	label.text = text
 	label.position = Vector3(0.0, 0.78, 0.0)
-	label.font_size = 28
-	label.pixel_size = 0.006
+	label.font_size = 22
+	label.pixel_size = 0.0045
 	label.modulate = color
+	label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 	label.outline_size = 3
 	label.outline_modulate = Color(0.04, 0.04, 0.04)
 	node.add_child(label)
@@ -573,8 +635,9 @@ func _add_label(parent: Node, node_name: String, text: String, pos: Vector3, col
 	label.text = text
 	label.position = pos
 	label.font_size = font_size
-	label.pixel_size = 0.01
+	label.pixel_size = 0.006
 	label.modulate = color
+	label.billboard = BaseMaterial3D.BILLBOARD_ENABLED
 	label.outline_size = 5
 	label.outline_modulate = Color(0.02, 0.02, 0.02)
 	parent.add_child(label)

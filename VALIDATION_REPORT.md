@@ -1,4 +1,40 @@
-# Validation Report - Phase 21 Art Texture Prop Pass
+# Validation Report - Phase 21 Layout Camera HUD Visual Overhaul
+
+## Phase 21 Redo Current Validation
+
+Baseline validation before redo edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 21 art direction/prop contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 21 redo runtime check:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase21_layout_camera_hud_overhaul_check.gd
+[PASS] Phase 21 layout/camera/HUD overhaul check passed
+```
+
+Phase 21 redo rendered screenshot:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --path . --script res://tools/phase21_layout_camera_hud_screenshot.gd
+[PASS] Phase 21 redo rendered screenshot saved: res://artifacts/phase21_layout_camera_hud_overhaul.png
+```
+
+Full-shift regression:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+```
+
+Manual player-controlled visible playtest and physical controller validation remain pending.
+
+# Historical Validation Report - Phase 21 Art Texture Prop Pass
 
 ## Phase 21 Current Validation
 

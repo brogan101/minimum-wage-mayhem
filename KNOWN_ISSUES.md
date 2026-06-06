@@ -12,6 +12,7 @@ This is an early playable build, not a final Steam demo.
 ## Phase 21 Notes
 
 - Restaurant visuals are improved with procedural primitive art, but this is still placeholder art and not final asset production.
+- Phase 21 redo improves layout readability, camera FOV/look defaults, route guidance, and HUD hierarchy, but it is still not a full manual playtest pass.
 - Phase 21 does not add functional drink/fry/bagging prep loops; those remain visual affordances.
 - The normal-renderer Phase 21 art check passes cleanly. The headless dummy renderer may emit a non-blocking mesh cleanup error in the visual smoke, so Phase 21 visual proof uses the normal renderer and full-shift proof uses the clean Phase 14 headless smoke.
 

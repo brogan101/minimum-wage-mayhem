@@ -130,6 +130,9 @@ Update this after every Codex phase.
 | Phase 21 art pass exists | Working | scripts/Main.gd / tools/phase21_art_direction_check.gd / PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md | Runtime check verifies cartoon restaurant props, station details, CustomerCar details, HUD styling, and preserved Phase 19 affordances |
 | Restaurant identity improved | Working | scripts/Main.gd / artifacts/phase21_art_direction_demo.png | Real-renderer screenshot shows tile lines, wall stripes, branded sign, lane paint, station props, food/order props, and brighter cartoon colors |
 | HUD art styling improved | Working | scripts/ui/GameHUD.gd / tools/phase21_art_direction_check.gd | Runtime check verifies game-style panel headers and prompt accent |
+| Phase 21 redo layout pass exists | Working | scripts/Main.gd / tools/phase21_layout_camera_hud_overhaul_check.gd / PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md | Runtime check verifies lobby, drive-thru, prep, kitchen, restock, and clock-out zones plus route markers |
+| Camera readability improved | Working | scripts/player/PlayerController.gd / scripts/player/PerspectiveManager.gd / tools/phase21_layout_camera_hud_overhaul_check.gd | Runtime check verifies widened FOV, more responsive look values, readable spawn, and third-person camera setup |
+| HUD debug clutter reduced | Working | scripts/ui/GameHUD.gd / tools/phase21_layout_camera_hud_overhaul_check.gd | Runtime check verifies debug-like boot/bars are hidden and key HUD elements fit common viewports |
 | Bagging works | Partial | scripts/items/FoodBag.gd | Guard added; scene test needed |
 | Drive-thru delivery works | Partial | scripts/stations/DriveThruWindow.gd | Guard added; scene test needed |
 | Order validation works | Partial | scripts/managers/OrderManager.gd | Simple validation exists |

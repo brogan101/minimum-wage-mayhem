@@ -1,5 +1,23 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-05 - Phase 21 Redo Layout Camera HUD Visual Overhaul
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read the requested source-of-truth, status, validation, phase log, solo-shift acceptance, known-issues, and Phase 21 art report docs.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Moved player start to a front-aisle position and faced the player into the restaurant.
+- Widened camera FOV and increased mouse/controller look responsiveness.
+- Oriented the third-person camera rig for a usable alternate view.
+- Added clearer restaurant zones, boundaries, counters, rails, station halos, overhead signs, and numbered route markers in `scripts/Main.gd`.
+- Cleaned `GameHUD.gd` so the normal HUD focuses on order, objective, timer, money/rank, held item, task list, and short event feed while hiding debug-like boot/bars.
+- Added `tools/phase21_layout_camera_hud_overhaul_check.gd`.
+- Added `tools/phase21_layout_camera_hud_screenshot.gd`.
+- Extended `tools/validate_all.py` with a Phase 21 redo contract.
+- Added `PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md`.
+- Did not add external assets and did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: manual visible player-camera playtest with physical controller hardware if available, then finish functional drink/fry/bagging prep loops.
+
 ## 2026-06-04 - Phase 21 Art Texture Prop Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

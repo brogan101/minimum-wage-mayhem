@@ -15,6 +15,10 @@ func _ready():
 		return
 	fp_camera = player.get_node_or_null("Head/Camera3D")
 	tp_camera = player.get_node_or_null("ThirdPersonRig/ThirdPersonCamera")
+	var third_person_rig = player.get_node_or_null("ThirdPersonRig") as Node3D
+	if third_person_rig:
+		third_person_rig.position = Vector3(0.0, 2.25, 4.2)
+		third_person_rig.look_at(player.global_position + Vector3(0.0, 1.25, 0.0), Vector3.UP)
 	_apply_view_mode()
 
 func _input(event):

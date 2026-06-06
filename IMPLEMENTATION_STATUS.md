@@ -1,6 +1,28 @@
-# Implementation Status - Phase 21 Art Texture Prop Pass
+# Implementation Status - Phase 21 Layout Camera HUD Visual Overhaul
 
-## Phase 21 Current Status
+## Phase 21 Redo Current Status
+
+Phase 21 has been redone as a player-facing layout, camera, HUD, and visual-readability pass on top of the existing playable shift. The goal was to make the current restaurant read like a simple game slice instead of a decorated graybox/prototype.
+
+Latest Phase 21 redo work:
+
+- Moved the player start to a front-aisle position facing into the restaurant.
+- Widened first-person/third-person FOV and made mouse/controller look more responsive.
+- Added a more readable restaurant flow in `scripts/Main.gd`: lobby/front counter, drive-thru, prep/bagging, kitchen hot line, sauce/restock/clean, and clock-out zones.
+- Added stronger boundaries and landmarks: customer counter, kitchen rail, drive-thru divider, overhead signs, station halos, and numbered floor route markers.
+- Added a first-shift path: `1 TICKET`, `2 BURGER`, `3 WINDOW`, `4 CLOCK`.
+- Cleaned `scripts/ui/GameHUD.gd` so the normal HUD focuses on order, objective, timer, money/rank, held item, task list, and short event feed while hiding debug-like boot/bars.
+- Added `tools/phase21_layout_camera_hud_overhaul_check.gd`.
+- Added `tools/phase21_layout_camera_hud_screenshot.gd`.
+- Extended `tools/validate_all.py` with the Phase 21 redo contract.
+- Added `PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md`.
+- No external assets were added; restaurant story-event count remains 180.
+
+Manual player-controlled playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 21 Art Texture Prop Pass
+
+## Phase 21 Art Pass Status
 
 Phase 21 is implemented as a primitive/procedural cartoon art-direction pass on top of the existing playable shift.
 

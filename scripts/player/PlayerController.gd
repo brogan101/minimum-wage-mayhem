@@ -6,8 +6,10 @@ class_name PlayerController
 @export var walk_speed: float = 4.2
 @export var sprint_speed: float = 6.5
 @export var jump_velocity: float = 4.5
-@export var mouse_sensitivity: float = 0.0018
-@export var controller_look_sensitivity: float = 2.1
+@export var mouse_sensitivity: float = 0.0023
+@export var controller_look_sensitivity: float = 2.8
+@export var first_person_fov: float = 78.0
+@export var third_person_fov: float = 72.0
 @export var fall_reset_y: float = -8.0
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -19,6 +21,11 @@ var spawn_position := Vector3.ZERO
 
 func _ready():
 	spawn_position = global_position
+	camera.fov = first_person_fov
+	var third_person_camera = get_node_or_null("ThirdPersonRig/ThirdPersonCamera") as Camera3D
+	if third_person_camera:
+		third_person_camera.fov = third_person_fov
+	head.rotation.x = deg_to_rad(-5.0)
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _unhandled_input(event):

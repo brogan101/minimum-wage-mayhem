@@ -1241,8 +1241,8 @@ def validate_phase_18_softlock_feel_contract():
     for fragment in [
         "walk_speed: float = 4.2",
         "sprint_speed: float = 6.5",
-        "mouse_sensitivity: float = 0.0018",
-        "controller_look_sensitivity: float = 2.1",
+        "mouse_sensitivity: float = 0.0023",
+        "controller_look_sensitivity: float = 2.8",
         "fall_reset_y",
         "_reset_to_spawn",
     ]:
@@ -1264,7 +1264,7 @@ def validate_phase_18_softlock_feel_contract():
         "ORDER TICKET",
         "CLOCK OUT",
         "DRIVE-THRU",
-        "clear one duty",
+        "Green DRIVE-THRU Mat",
     ]:
         if fragment not in main + hud:
             raise AssertionError(f"Phase 18 first-shift guidance missing: {fragment}")
@@ -1440,10 +1440,15 @@ def validate_phase_21_art_direction_contract():
     smoke = ROOT / "tools/phase21_art_direction_check.gd"
     screenshot = ROOT / "tools/phase21_rendered_screenshot.gd"
     report = ROOT / "PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md"
+    redo_report = ROOT / "PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md"
+    redo_smoke = ROOT / "tools/phase21_layout_camera_hud_overhaul_check.gd"
+    redo_screenshot = ROOT / "tools/phase21_layout_camera_hud_screenshot.gd"
     attribution = (ROOT / "ASSET_ATTRIBUTION.md").read_text(encoding="utf-8")
 
     if not report.exists():
         raise AssertionError("Missing Phase 21 report: PHASE_21_ART_TEXTURE_PROP_PASS_REPORT.md")
+    if not redo_report.exists():
+        raise AssertionError("Missing Phase 21 redo report: PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md")
 
     for fragment in [
         "_apply_phase21_cartoon_identity",
@@ -1462,6 +1467,18 @@ def validate_phase_21_art_direction_contract():
         "Phase21ClockFace",
         "Phase21BrandWallSign",
         "Phase21BurgerBunTop",
+        "_apply_phase21_redo_layout",
+        "Phase21RedoLobbyZone",
+        "Phase21RedoServiceZone",
+        "Phase21RedoPrepZone",
+        "Phase21RedoKitchenZone",
+        "Phase21RedoStep1Ticket",
+        "Phase21RedoStep2Burger",
+        "Phase21RedoStep3Window",
+        "Phase21RedoStep4ClockOut",
+        "Phase21RedoPathArrowTicketToBurger",
+        "Phase21RedoHandoffSpot",
+        "Phase21RedoPlayerStartSign",
     ]:
         if fragment not in main:
             raise AssertionError(f"Phase 21 Main art contract missing: {fragment}")
@@ -1472,9 +1489,23 @@ def validate_phase_21_art_direction_contract():
         "TaskPanelHeader",
         "PromptPanelAccent",
         "font_shadow_color",
+        "Recent",
     ]:
         if fragment not in hud:
             raise AssertionError(f"Phase 21 HUD art contract missing: {fragment}")
+
+    player = (ROOT / "scripts/player/PlayerController.gd").read_text(encoding="utf-8")
+    perspective = (ROOT / "scripts/player/PerspectiveManager.gd").read_text(encoding="utf-8")
+    for fragment in [
+        "first_person_fov: float = 78.0",
+        "third_person_fov: float = 72.0",
+        "mouse_sensitivity: float = 0.0023",
+        "controller_look_sensitivity: float = 2.8",
+    ]:
+        if fragment not in player:
+            raise AssertionError(f"Phase 21 camera feel contract missing: {fragment}")
+    if "third_person_rig.look_at" not in perspective:
+        raise AssertionError("Phase 21 third-person camera orientation contract missing")
 
     for fragment in [
         "_apply_phase21_cartoon_details",
@@ -1508,6 +1539,31 @@ def validate_phase_21_art_direction_contract():
     for fragment in ["phase21_art_direction_demo.png", "Phase21OverviewCamera", "Phase 21 rendered screenshot saved"]:
         if fragment not in screenshot_text:
             raise AssertionError(f"Phase 21 screenshot helper missing: {fragment}")
+
+    if not redo_smoke.exists():
+        raise AssertionError("Missing Phase 21 redo smoke: tools/phase21_layout_camera_hud_overhaul_check.gd")
+    redo_smoke_text = redo_smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Redo layout node exists:",
+        "Player starts in readable front aisle",
+        "First-person FOV widened for room readability",
+        "Debug-like HUD elements are hidden",
+        "One order still completes after redo",
+        "Phase 21 layout/camera/HUD overhaul check passed",
+    ]:
+        if fragment not in redo_smoke_text:
+            raise AssertionError(f"Phase 21 redo smoke contract missing: {fragment}")
+
+    if not redo_screenshot.exists():
+        raise AssertionError("Missing Phase 21 redo screenshot helper: tools/phase21_layout_camera_hud_screenshot.gd")
+    redo_screenshot_text = redo_screenshot.read_text(encoding="utf-8")
+    for fragment in [
+        "phase21_layout_camera_hud_overhaul.png",
+        "Phase21RedoOverviewCamera",
+        "Phase 21 redo rendered screenshot saved",
+    ]:
+        if fragment not in redo_screenshot_text:
+            raise AssertionError(f"Phase 21 redo screenshot helper missing: {fragment}")
 
     if "Phase 21" not in attribution or "No external art/audio assets were added during Phase 21" not in attribution:
         raise AssertionError("Phase 21 asset attribution note missing")
