@@ -135,7 +135,7 @@ func show_results(report: String):
 	visible = true
 	get_tree().paused = false
 	title_label.text = "Shift Recap"
-	body_label.text = report.left(1400)
+	body_label.text = report.left(2600)
 	_clear_buttons()
 	_add_button("Next Shift", func(): new_game_requested.emit())
 	_add_button("Return To Menu", func(): return_to_menu_requested.emit())

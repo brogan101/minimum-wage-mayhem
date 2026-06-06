@@ -203,7 +203,10 @@ func set_career_status(status: Dictionary):
 		var xp = int(status.get("current_xp", 0))
 		var needed = int(status.get("xp_to_next_rank", 0))
 		var progress = int(status.get("promotion_progress", 0))
-		rank_label.text = "Rank: " + rank + " | XP " + str(xp) + "/" + str(needed) + " | Promo " + str(progress) + "%"
+		var requirements: Dictionary = status.get("promotion_requirements", {})
+		var next_rank = str(requirements.get("rank", "Top Rank")) if not bool(requirements.get("complete", false)) else "Complete"
+		var trust = int(status.get("manager_trust", 0))
+		rank_label.text = "Rank: " + rank + " -> " + next_rank + "\nXP " + str(xp) + "/" + str(needed) + " | Promo " + str(progress) + "% | Trust " + str(trust)
 
 func _on_order_fulfilled(success: bool, reward: int):
 	if success:

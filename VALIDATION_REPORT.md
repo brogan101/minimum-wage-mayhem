@@ -1,4 +1,70 @@
-# Validation Report - Phase 23 Core Gameplay Depth Pass
+# Validation Report - Phase 24 Career Store Manager Loop Pass
+
+## Phase 24 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 23 core gameplay depth contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 24 multi-shift career smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase24_career_multi_shift_loop_check.gd
+[PASS] Phase 24 rank ladder matches requested path
+[PASS] Station Specialist replaces old split specialist ranks
+[PASS] Store Manager remains the campaign goal
+[PASS] Career path board is visible in the restaurant
+[PASS] Life-like cartoon bag crease detail exists
+[PASS] Life-like cartoon food texture detail exists
+[PASS] Shift 1 recap shows career path
+[PASS] Shift 1 recap explains career changes
+[PASS] Shift 1 career reasons are visible
+[PASS] Next shift setup carries career focus
+[PASS] Next shift setup carries pre-shift modifier
+[PASS] Career reasons persist after shift 1 reload
+[PASS] Pre-shift modifier history persists after shift 1 reload
+[PASS] Shift 2 recap shows money, tips, XP, and promotion gains
+[PASS] Two-shift career history persists in save
+[PASS] Multi-shift pre-shift setup persists
+[PASS] Two-shift career history persists after reload
+[PASS] Recovery plan persists after reload
+[PASS] Wallet persists after second reload
+[PASS] Phase 24 career multi-shift loop check passed
+```
+
+Static validation after edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 24 career/store-manager loop contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Godot headless dummy renderer note: the Phase 24 smoke may emit non-blocking `mesh_get_surface_count` cleanup messages after passing assertions. The command exits successfully.
+
+Regression smokes after Phase 24:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase8_runtime_check.gd
+[PASS] Phase 8 runtime career campaign progression check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase23_core_gameplay_depth_check.gd
+[PASS] Phase 23 core gameplay depth check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Phase 20 two-shift save/load progression stress check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+```
+
+# Historical Validation Report - Phase 23 Core Gameplay Depth Pass
 
 ## Phase 23 Current Validation
 

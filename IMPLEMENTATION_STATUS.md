@@ -1,4 +1,27 @@
-# Implementation Status - Phase 23 Core Gameplay Depth Pass
+# Implementation Status - Phase 24 Career Store Manager Loop Pass
+
+## Phase 24 Current Status
+
+Phase 24 is implemented as a scoped career, multi-shift, save/load, and light material-polish pass. It does not add DLC/business expansion content, online services, multiplayer, or a new event pack. The restaurant story-event catalog remains locked at 180.
+
+Latest Phase 24 work:
+
+- `scripts/managers/CareerManager.gd` now uses the requested nine-rank path: Trainee, Crew Member, Station Specialist, Shift Lead Candidate, Shift Lead, Assistant Manager Candidate, Assistant Manager, Acting Store Manager, Store Manager.
+- Career progression now records explicit per-shift deltas for XP, cash, tips, promotion progress, manager trust, staff morale, corporate approval, warnings, write-ups, demotion risk, and fired risk.
+- Career state now stores visible reasons for progression changes, a recoverable next-shift plan, and pre-shift modifier history from the existing shift flavor/home-life/commute scaffold.
+- `scripts/managers/ShiftResultManager.gd` now adds a `Career Path` recap section showing score, gains, trust/morale/corporate deltas, next promotion needs, explanation bullets, and recovery focus.
+- Next-shift setup now carries current rank, promotion requirements, career recovery focus, pre-shift modifier, warning count, unlock hooks, and recoverable state.
+- `scripts/managers/SaveSystem.gd` now writes schema version 4 and persists the expanded career state through `get_career_save_data()`.
+- `scripts/ui/GameHUD.gd` now shows current rank, next rank, XP, promotion progress, and manager trust in the HUD career line.
+- `scripts/ui/MainMenuUI.gd` allows longer shift recap text so the career explanation is visible after clock-out.
+- `scripts/Main.gd` now applies procedural toon/noise material treatment to runtime materials and adds Phase 24 visual polish nodes: bag folds, tile scuffs, sesame seeds, fry salt flecks, soda straw, ketchup bottle, and a career path board.
+- Added `tools/phase24_career_multi_shift_loop_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 24 career/store-manager loop contract.
+- Added `PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md`.
+
+Automated Godot proof validates two shifts, two save/load cycles, visible career reasons, next-shift career focus, pre-shift modifier persistence, wallet/cash/tips/XP continuity, promotion from Trainee to Crew Member to Station Specialist, and Phase 24 material/career-board dressing. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 23 Core Gameplay Depth Pass
 
 ## Phase 23 Current Status
 

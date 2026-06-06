@@ -17,7 +17,7 @@ func save_game(extra_data: Dictionary = {}) -> bool:
 	var object_memory = _runtime("StoreObjectMemoryManager")
 	var dynamic_reputation = _runtime("DynamicReputationLabelManager")
 	var save_data = {
-		"schema_version": 3,
+		"schema_version": 4,
 		"wallet": wallet.balance if wallet else 0.0,
 		"career": career.get_career_save_data() if career and career.has_method("get_career_save_data") else {
 			"rank": career.current_rank if career else 0,

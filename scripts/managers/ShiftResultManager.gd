@@ -167,6 +167,7 @@ func format_shift_report(result: Dictionary) -> String:
 	report += "Staff Morale Change: " + _signed(result.get("staff_morale_change", 0)) + "\n"
 	report += "Manager Trust Change: " + _signed(result.get("manager_trust_change", 0)) + "\n"
 	report += "Corporate Approval Change: " + _signed(result.get("corporate_approval_change", 0)) + "\n"
+	report += _format_career_section(result)
 	report += "Daily Tasks: " + str(result.get("daily_tasks_completed", 0)) + " completed / " + str(result.get("daily_tasks_failed", 0)) + " missed\n"
 	report += "Reviews: " + "; ".join(result.get("reviews", [])) + "\n"
 	if not result.get("writeups", []).is_empty():
@@ -223,14 +224,24 @@ func format_shift_report(result: Dictionary) -> String:
 	return report
 
 func prepare_next_shift(result: Dictionary) -> Dictionary:
+	var career_status: Dictionary = result.get("career_status", {})
+	var recovery_plan: Dictionary = career_status.get("recovery_plan", {})
+	var pre_shift_modifier = _build_pre_shift_modifier(result)
 	var setup = {
 		"shift_number": shift_number + 1,
 		"suggested_focus": result.get("recommendation", "Keep orders moving"),
 		"starting_patience_modifier": max(0.75, float(result.get("average_patience", 1.0))),
 		"carryover_warning_count": result.get("warnings", []).size(),
 		"available_unlock_hooks": result.get("unlock_hooks", []),
+		"career_rank": career_status.get("rank_name", "Trainee"),
+		"promotion_requirements": career_status.get("promotion_requirements", {}),
+		"career_recovery_focus": recovery_plan.get("focus", result.get("recommendation", "Keep orders moving")),
+		"pre_shift_modifier": pre_shift_modifier,
 		"recoverable": str(result.get("fail_state", "none")) != "hard_fail"
 	}
+	var career = _autoload("CareerManager")
+	if career and career.has_method("record_pre_shift_modifier") and not pre_shift_modifier.is_empty():
+		career.record_pre_shift_modifier(pre_shift_modifier)
 	_log("next_shift_prepared", 1.0, str(setup.get("suggested_focus", "")))
 	return setup
 
@@ -309,6 +320,52 @@ func _next_shift_recommendation(completed_tasks: int, failed_tasks: int, beef_in
 		return "Pick two easy daily tasks before the rush"
 	return "Ride the momentum into another shift"
 
+func _format_career_section(result: Dictionary) -> String:
+	var career_status: Dictionary = result.get("career_status", {})
+	if career_status.is_empty():
+		return ""
+	var delta: Dictionary = career_status.get("last_career_delta", {})
+	var requirements: Dictionary = career_status.get("promotion_requirements", {})
+	var recovery: Dictionary = career_status.get("recovery_plan", {})
+	var section = "Career Path: " + str(career_status.get("rank_name", "Trainee"))
+	if not requirements.get("complete", false):
+		section += " -> " + str(requirements.get("rank", "next rank"))
+	section += "\n"
+	section += "Career Score: " + str(career_status.get("last_shift_score", 0)) + "\n"
+	section += "Career Gains: XP " + _signed(delta.get("xp", 0)) + " / Cash $" + str(delta.get("cash", 0.0)) + " / Tips $" + str(delta.get("tips", 0.0)) + " / Promo " + _signed(delta.get("promotion_progress", 0)) + "\n"
+	section += "Career Trust: Manager " + _signed(delta.get("manager_trust", 0)) + " / Staff " + _signed(delta.get("staff_morale", 0)) + " / Corporate " + _signed(delta.get("corporate_approval", 0)) + "\n"
+	if not requirements.get("complete", false):
+		section += "Next Promotion Needs: XP " + str(int(requirements.get("current_xp", 0))) + "/" + str(int(requirements.get("xp_required", 0))) + ", Promo " + str(requirements.get("promotion_progress", 0)) + "/" + str(requirements.get("promotion_required", 0)) + ", Trust " + str(requirements.get("manager_trust", 0)) + "/" + str(requirements.get("trust_required", 0)) + ", Corp " + str(requirements.get("corporate_approval", 0)) + "/" + str(requirements.get("approval_required", 0)) + "\n"
+	var reasons: Array = career_status.get("last_career_reasons", [])
+	if not reasons.is_empty():
+		section += "Why It Changed:"
+		for reason in reasons.slice(0, min(4, reasons.size())):
+			section += "\n- " + str(reason)
+		section += "\n"
+	if not recovery.is_empty():
+		section += "Recovery Focus: " + str(recovery.get("focus", "Keep orders clean.")) + "\n"
+	return section
+
+func _build_pre_shift_modifier(result: Dictionary) -> Dictionary:
+	var depth_summary: Dictionary = result.get("depth_summary", {})
+	var shift_flavor: Dictionary = depth_summary.get("shift_flavor", {})
+	var history: Array = shift_flavor.get("flavor_history", [])
+	var flavor: Dictionary = history[-1] if not history.is_empty() else {}
+	var home_event: Dictionary = flavor.get("home_event", {})
+	var commute_event: Dictionary = flavor.get("commute_event", {})
+	var label = "Standard Clock-In"
+	if not home_event.is_empty():
+		label = str(home_event.get("title", home_event.get("id", "Home-life carryover")))
+	elif not commute_event.is_empty():
+		label = str(commute_event.get("title", commute_event.get("id", "Commute carryover")))
+	return {
+		"label": label,
+		"home_event": home_event,
+		"commute_event": commute_event,
+		"career_focus": result.get("recommendation", "Keep orders moving"),
+		"starting_patience_modifier": max(0.75, float(result.get("average_patience", 1.0)))
+	}
+
 func _pick_notable_moment(event_log: Node, daily_entries: Array, store_entries: Array) -> String:
 	if event_log and event_log.has_method("get_events_by_type"):
 		var funny = event_log.get_events_by_type("coworker_dialogue")
@@ -331,6 +388,9 @@ func _count_tasks(tasks: Array, key: String) -> int:
 	return count
 
 func _signed(value) -> String:
+	if typeof(value) == TYPE_FLOAT:
+		var snapped_value = snapped(float(value), 0.01)
+		return "+" + str(snapped_value) if snapped_value >= 0.0 else str(snapped_value)
 	var number = int(value)
 	return "+" + str(number) if number >= 0 else str(number)
 

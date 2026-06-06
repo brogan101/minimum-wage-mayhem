@@ -379,6 +379,7 @@ func _apply_phase17_demo_visuals():
 	_ensure_demo_light("DriveThruGlow", Vector3(-5.8, 3.4, -2.2), Color(1.0, 0.58, 0.18), 2.5)
 	_apply_phase21_cartoon_identity(dressing)
 	_apply_phase21_redo_layout(dressing)
+	_apply_phase24_career_and_material_polish(dressing)
 
 func _set_world_environment():
 	var env_node = get_node_or_null("WorldEnvironment")
@@ -539,6 +540,32 @@ func _apply_phase21_redo_layout(dressing: Node):
 	_add_box(dressing, "Phase21RedoReadableBurgerBun", Vector3(0.45, 1.78, 1.18), Vector3(0.58, 0.14, 0.58), _mat("Phase21 redo extra burger bun", Color(0.94, 0.66, 0.28), 0.7), false)
 	_add_box(dressing, "Phase21RedoDrinkLid", Vector3(-1.8, 2.05, 2.45), Vector3(0.5, 0.08, 0.5), white_mat, false)
 
+func _apply_phase24_career_and_material_polish(dressing: Node):
+	var paper = _mat("Phase24 textured paper bag", Color(0.73, 0.55, 0.34), 0.86)
+	var crease = _mat("Phase24 darker bag creases", Color(0.42, 0.29, 0.16), 0.9)
+	var sesame = _mat("Phase24 sesame seed", Color(1.0, 0.92, 0.68), 0.72)
+	var scuff = _mat("Phase24 tile scuff", Color(0.34, 0.31, 0.28), 0.92)
+	var board = _mat("Phase24 career board dark enamel", Color(0.04, 0.09, 0.11), 0.62)
+	var board_trim = _mat("Phase24 career board brass trim", Color(0.95, 0.68, 0.18), 0.48)
+	var red = _mat("Phase24 condiment red", Color(0.82, 0.07, 0.05), 0.64)
+	var straw = _mat("Phase24 soda straw red", Color(0.95, 0.08, 0.07), 0.55)
+	var salt = _mat("Phase24 salt flecks", Color(1.0, 0.97, 0.86), 0.7)
+
+	_add_box(dressing, "Phase24BagFoldFront", Vector3(-0.8, 1.55, -0.13), Vector3(0.48, 0.055, 0.035), crease, false)
+	_add_box(dressing, "Phase24BagFoldSide", Vector3(-0.52, 1.55, -0.4), Vector3(0.035, 0.32, 0.22), crease, false)
+	_add_box(dressing, "Phase24BagStackHighlight", Vector3(-0.8, 1.76, -0.4), Vector3(0.5, 0.04, 0.22), paper, false)
+	for i in range(5):
+		_add_cylinder(dressing, "Phase24BurgerSesame" + str(i), Vector3(-0.2 + float(i) * 0.1, 1.73, 1.02 + float(i % 2) * 0.12), 0.025, 0.018, sesame, false)
+	for i in range(4):
+		_add_box(dressing, "Phase24TileScuff" + str(i), Vector3(-3.0 + float(i) * 1.6, 0.62, -3.6 + float(i % 2) * 2.2), Vector3(0.42, 0.018, 0.05), scuff, false)
+	for i in range(6):
+		_add_box(dressing, "Phase24FrySaltFleck" + str(i), Vector3(3.55 + float(i) * 0.08, 1.94, 2.32 + float(i % 3) * 0.08), Vector3(0.035, 0.018, 0.035), salt, false)
+	_add_cylinder(dressing, "Phase24SodaStraw", Vector3(-1.78, 2.35, 2.38), 0.025, 0.58, straw, false)
+	_add_box(dressing, "Phase24KetchupBottle", Vector3(0.62, 1.58, 1.0), Vector3(0.16, 0.45, 0.16), red, false)
+	_add_box(dressing, "Phase24CareerPathBoard", Vector3(5.9, 2.15, 7.66), Vector3(2.9, 1.25, 0.1), board, false)
+	_add_box(dressing, "Phase24CareerPathBoardTrim", Vector3(5.9, 2.82, 7.6), Vector3(2.95, 0.08, 0.12), board_trim, false)
+	_add_label(dressing, "Phase24CareerPathText", "CAREER PATH\nTrainee -> Crew -> Station\nLead -> Assistant -> STORE MANAGER", Vector3(5.9, 2.14, 7.52), Color(1.0, 0.92, 0.58), 18)
+
 func _add_zone_band(dressing: Node, node_name: String, pos: Vector3, size: Vector3, mat: Material, label_text: String, label_pos: Vector3, label_color: Color):
 	_add_box(dressing, node_name, pos, size, mat, false)
 	_add_label(dressing, node_name + "Label", label_text, label_pos, label_color, 18)
@@ -555,11 +582,30 @@ func _mat(resource_name: String, color: Color, roughness: float = 0.75, emission
 	mat.resource_name = resource_name
 	mat.albedo_color = color
 	mat.roughness = roughness
+	mat.metallic = 0.0
+	mat.diffuse_mode = BaseMaterial3D.DIFFUSE_TOON
+	mat.specular_mode = BaseMaterial3D.SPECULAR_TOON
+	mat.rim_enabled = true
+	mat.rim = 0.18
+	mat.rim_tint = 0.35
+	mat.albedo_texture = _cartoon_noise_texture(resource_name)
 	if emission.a > 0.0:
 		mat.emission_enabled = true
 		mat.emission = emission
 		mat.emission_energy_multiplier = 0.25
 	return mat
+
+func _cartoon_noise_texture(resource_name: String) -> Texture2D:
+	var noise = FastNoiseLite.new()
+	noise.seed = abs(hash(resource_name)) % 100000
+	noise.frequency = 0.08
+	noise.fractal_octaves = 2
+	var texture = NoiseTexture2D.new()
+	texture.width = 32
+	texture.height = 32
+	texture.seamless = true
+	texture.noise = noise
+	return texture
 
 func _set_mesh_material(node_name: String, mat: Material):
 	var node = find_child(node_name, true, false)

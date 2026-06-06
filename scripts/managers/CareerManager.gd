@@ -9,14 +9,12 @@ signal manager_trial_ready(trial: Dictionary)
 const RANKS := [
 	{"id": "trainee", "name": "Trainee", "xp_required": 0, "promotion_required": 0, "trust_required": 0, "approval_required": 0, "milestone": "Clock in without becoming a cautionary tale"},
 	{"id": "crew_member", "name": "Crew Member", "xp_required": 60, "promotion_required": 2, "trust_required": 35, "approval_required": 30, "milestone": "Prove basic shift survival"},
-	{"id": "register_specialist", "name": "Register Specialist", "xp_required": 140, "promotion_required": 5, "trust_required": 40, "approval_required": 35, "milestone": "Handle cash and complaints"},
-	{"id": "fryer_specialist", "name": "Fryer Specialist", "xp_required": 240, "promotion_required": 9, "trust_required": 45, "approval_required": 40, "milestone": "Keep hot food boring in the best way"},
-	{"id": "window_specialist", "name": "Window Specialist", "xp_required": 360, "promotion_required": 14, "trust_required": 50, "approval_required": 45, "milestone": "Keep the drive-thru moving"},
-	{"id": "shift_lead_candidate", "name": "Shift Lead Candidate", "xp_required": 520, "promotion_required": 20, "trust_required": 55, "approval_required": 50, "milestone": "Show leadership under rush pressure"},
-	{"id": "shift_lead", "name": "Shift Lead", "xp_required": 700, "promotion_required": 28, "trust_required": 60, "approval_required": 52, "milestone": "Run the floor without losing the room"},
-	{"id": "assistant_manager_candidate", "name": "Assistant Manager Candidate", "xp_required": 920, "promotion_required": 38, "trust_required": 65, "approval_required": 55, "milestone": "Own results and coach staff"},
-	{"id": "assistant_manager", "name": "Assistant Manager", "xp_required": 1180, "promotion_required": 50, "trust_required": 70, "approval_required": 60, "milestone": "Manage shifts with corporate watching"},
-	{"id": "acting_store_manager", "name": "Acting Store Manager", "xp_required": 1500, "promotion_required": 66, "trust_required": 76, "approval_required": 66, "milestone": "Prepare for manager trial"},
+	{"id": "station_specialist", "name": "Station Specialist", "xp_required": 180, "promotion_required": 8, "trust_required": 42, "approval_required": 36, "milestone": "Handle a full station loop without wandering into legend"},
+	{"id": "shift_lead_candidate", "name": "Shift Lead Candidate", "xp_required": 360, "promotion_required": 16, "trust_required": 50, "approval_required": 45, "milestone": "Show leadership under rush pressure"},
+	{"id": "shift_lead", "name": "Shift Lead", "xp_required": 560, "promotion_required": 26, "trust_required": 58, "approval_required": 50, "milestone": "Run the floor without losing the room"},
+	{"id": "assistant_manager_candidate", "name": "Assistant Manager Candidate", "xp_required": 820, "promotion_required": 38, "trust_required": 65, "approval_required": 55, "milestone": "Own results and coach staff"},
+	{"id": "assistant_manager", "name": "Assistant Manager", "xp_required": 1120, "promotion_required": 52, "trust_required": 70, "approval_required": 60, "milestone": "Manage shifts with corporate watching"},
+	{"id": "acting_store_manager", "name": "Acting Store Manager", "xp_required": 1500, "promotion_required": 70, "trust_required": 76, "approval_required": 66, "milestone": "Prepare for manager trial"},
 	{"id": "store_manager", "name": "Store Manager", "xp_required": 1900, "promotion_required": 85, "trust_required": 82, "approval_required": 72, "milestone": "Pass the manager trial"}
 ]
 
@@ -36,6 +34,11 @@ var fired_risk: int = 0
 var shift_performance_history: Array = []
 var campaign_milestones: Array[String] = []
 var career_recap_history: Array[String] = []
+var last_shift_score: int = 0
+var last_career_delta: Dictionary = {}
+var last_career_reasons: Array[String] = []
+var recovery_plan: Dictionary = {}
+var pre_shift_modifier_history: Array = []
 var manager_trial_unlocked: bool = false
 var manager_trial_passed: bool = false
 var manager_trial_setup: Dictionary = {}
@@ -60,20 +63,48 @@ func apply_shift_result(result: Dictionary) -> Dictionary:
 	var xp_gain = max(0, int(result.get("xp_earned", 0)) + int(score * 0.35))
 	var cash_gain = float(result.get("money_earned", 0.0))
 	var tips_gain = float(result.get("tips", 0))
+	var before := {
+		"current_xp": current_xp,
+		"cash_earned_total": cash_earned_total,
+		"tips_earned_total": tips_earned_total,
+		"promotion_progress": promotion_progress,
+		"manager_trust": manager_trust,
+		"staff_morale": staff_morale,
+		"corporate_approval": corporate_approval,
+		"warnings": warnings,
+		"writeups": writeups,
+		"demotion_risk": demotion_risk,
+		"fired_risk": fired_risk
+	}
+	var promotion_gain = _promotion_delta(result, score)
+	var trust_gain = int(result.get("manager_trust_change", 0)) + _trust_bonus(result)
+	var morale_gain = int(result.get("staff_morale_change", 0))
+	var approval_gain = int(result.get("corporate_approval_change", 0))
+	var warning_gain = int(result.get("warnings", []).size())
+	var writeup_gain = _writeup_delta(result)
+	var demotion_gain = _demotion_delta(result, score)
+	var fired_gain = _fired_delta(result)
 	current_xp += xp_gain
 	cash_earned_total += max(0.0, cash_gain)
 	tips_earned_total += max(0.0, tips_gain)
-	promotion_progress = clamp(promotion_progress + _promotion_delta(result, score), 0, 100)
-	manager_trust = clamp(manager_trust + int(result.get("manager_trust_change", 0)) + _trust_bonus(result), 0, 100)
-	staff_morale = clamp(staff_morale + int(result.get("staff_morale_change", 0)), 0, 100)
-	corporate_approval = clamp(corporate_approval + int(result.get("corporate_approval_change", 0)), 0, 100)
-	warnings += int(result.get("warnings", []).size())
-	writeups += _writeup_delta(result)
-	demotion_risk = clamp(demotion_risk + _demotion_delta(result, score), 0, 100)
-	fired_risk = clamp(fired_risk + _fired_delta(result), 0, 100)
+	promotion_progress = clamp(promotion_progress + promotion_gain, 0, 100)
+	manager_trust = clamp(manager_trust + trust_gain, 0, 100)
+	staff_morale = clamp(staff_morale + morale_gain, 0, 100)
+	corporate_approval = clamp(corporate_approval + approval_gain, 0, 100)
+	warnings += warning_gain
+	writeups += writeup_gain
+	demotion_risk = clamp(demotion_risk + demotion_gain, 0, 100)
+	fired_risk = clamp(fired_risk + fired_gain, 0, 100)
+	last_shift_score = score
+	last_career_delta = _build_delta_summary(before)
+	last_career_reasons = _build_progression_reasons(result, score, last_career_delta)
+	recovery_plan = _build_recovery_plan(result, score)
 	var record = _build_shift_record(result, score, xp_gain)
+	record["career_delta"] = last_career_delta.duplicate(true)
+	record["career_reasons"] = last_career_reasons.duplicate()
+	record["recovery_plan"] = recovery_plan.duplicate(true)
 	shift_performance_history.append(record)
-	career_recap_history.append(record.get("summary", "Shift recorded"))
+	career_recap_history.append(_format_record_summary(record))
 	_record_milestones(result, score)
 	_try_promote()
 	_update_manager_trial_setup()
@@ -162,6 +193,11 @@ func get_career_status() -> Dictionary:
 		"shift_performance_history": shift_performance_history.duplicate(true),
 		"promotion_requirements": get_next_rank_requirements(),
 		"campaign_milestones": campaign_milestones.duplicate(),
+		"last_shift_score": last_shift_score,
+		"last_career_delta": last_career_delta.duplicate(true),
+		"last_career_reasons": last_career_reasons.duplicate(),
+		"recovery_plan": recovery_plan.duplicate(true),
+		"pre_shift_modifier_history": pre_shift_modifier_history.duplicate(true),
 		"manager_trial_unlocked": manager_trial_unlocked,
 		"manager_trial_passed": manager_trial_passed,
 		"manager_trial_setup": manager_trial_setup.duplicate(true),
@@ -189,6 +225,11 @@ func load_career_save_data(data: Dictionary):
 	shift_performance_history = data.get("shift_performance_history", [])
 	campaign_milestones.assign(data.get("campaign_milestones", []))
 	career_recap_history.assign(data.get("career_recap_history", []))
+	last_shift_score = int(data.get("last_shift_score", 0))
+	last_career_delta = data.get("last_career_delta", {})
+	last_career_reasons.assign(data.get("last_career_reasons", []))
+	recovery_plan = data.get("recovery_plan", {})
+	pre_shift_modifier_history = data.get("pre_shift_modifier_history", [])
 	manager_trial_unlocked = bool(data.get("manager_trial_unlocked", false))
 	manager_trial_passed = bool(data.get("manager_trial_passed", false))
 	manager_trial_setup = data.get("manager_trial_setup", {})
@@ -299,6 +340,15 @@ func _incident_weight(severity: String) -> int:
 		_:
 			return 2
 
+func record_pre_shift_modifier(modifier: Dictionary) -> void:
+	if modifier.is_empty():
+		return
+	pre_shift_modifier_history.append(modifier.duplicate(true))
+	if pre_shift_modifier_history.size() > 12:
+		pre_shift_modifier_history = pre_shift_modifier_history.slice(pre_shift_modifier_history.size() - 12, pre_shift_modifier_history.size())
+	_log("career_pre_shift_modifier_recorded", 1.0, str(modifier.get("label", "next shift modifier")))
+	_emit_progress()
+
 func _build_shift_record(result: Dictionary, score: int, xp_gain: int) -> Dictionary:
 	return {
 		"shift_number": result.get("shift_number", shift_performance_history.size() + 1),
@@ -315,6 +365,66 @@ func _build_shift_record(result: Dictionary, score: int, xp_gain: int) -> Dictio
 		"summary": "Shift " + str(result.get("shift_number", shift_performance_history.size() + 1)) + ": score " + str(score) + ", " + get_current_rank_name()
 	}
 
+func _build_delta_summary(before: Dictionary) -> Dictionary:
+	return {
+		"xp": snapped(current_xp - float(before.get("current_xp", 0.0)), 0.01),
+		"cash": snapped(cash_earned_total - float(before.get("cash_earned_total", 0.0)), 0.01),
+		"tips": snapped(tips_earned_total - float(before.get("tips_earned_total", 0.0)), 0.01),
+		"promotion_progress": promotion_progress - int(before.get("promotion_progress", 0)),
+		"manager_trust": manager_trust - int(before.get("manager_trust", 0)),
+		"staff_morale": staff_morale - int(before.get("staff_morale", 0)),
+		"corporate_approval": corporate_approval - int(before.get("corporate_approval", 0)),
+		"warnings": warnings - int(before.get("warnings", 0)),
+		"writeups": writeups - int(before.get("writeups", 0)),
+		"demotion_risk": demotion_risk - int(before.get("demotion_risk", 0)),
+		"fired_risk": fired_risk - int(before.get("fired_risk", 0))
+	}
+
+func _build_progression_reasons(result: Dictionary, score: int, delta: Dictionary) -> Array[String]:
+	var reasons: Array[String] = []
+	reasons.append("Shift score " + str(score) + " from accuracy " + str(int(float(result.get("order_accuracy", 1.0)) * 100.0)) + "%, patience " + str(int(float(result.get("average_patience", 1.0)) * 100.0)) + "%, tasks, Beef, and reviews.")
+	if float(delta.get("cash", 0.0)) > 0.0:
+		reasons.append("Money rose by $" + str(delta.get("cash", 0.0)) + " from order payouts, tips, and task rewards.")
+	if int(delta.get("promotion_progress", 0)) > 0:
+		reasons.append("Promotion progress gained from clean service, completed tasks, unlock hooks, and low Beef.")
+	elif int(delta.get("promotion_progress", 0)) == 0:
+		reasons.append("Promotion progress held steady because the shift was survivable but not standout.")
+	if int(delta.get("manager_trust", 0)) != 0:
+		reasons.append("Manager trust changed by " + _signed(int(delta.get("manager_trust", 0))) + " from store duties, handoff quality, and task completion.")
+	if int(delta.get("staff_morale", 0)) != 0:
+		reasons.append("Staff morale changed by " + _signed(int(delta.get("staff_morale", 0))) + " from coworker/store conditions and task rewards.")
+	if int(delta.get("corporate_approval", 0)) != 0:
+		reasons.append("Corporate approval changed by " + _signed(int(delta.get("corporate_approval", 0))) + " from mandate pressure, store ops, and shift results.")
+	if int(result.get("order_mistakes", 0)) > 0:
+		reasons.append("Order mistakes held back the score; fix missing-item handoffs for better tips and promotion progress.")
+	if int(result.get("beef_incidents", 0)) > 0:
+		reasons.append("Customer Beef increased risk, but it remains recoverable through cleaner service next shift.")
+	if int(delta.get("writeups", 0)) > 0:
+		reasons.append("Write-ups increased because the shift crossed HR or probation thresholds.")
+	if reasons.size() > 7:
+		return reasons.slice(0, 7)
+	return reasons
+
+func _build_recovery_plan(result: Dictionary, score: int) -> Dictionary:
+	var focus = "Keep orders accurate and finish two easy daily tasks."
+	var severity = "steady"
+	if int(result.get("beef_incidents", 0)) > 0 or int(result.get("order_mistakes", 0)) > 0:
+		focus = "Recover trust with correct bag checks and patient drive-thru handoffs."
+		severity = "coaching"
+	if int(result.get("writeups", []).size()) > 0 or score < 45:
+		focus = "Avoid risky choices, complete recovery duties, and protect corporate approval."
+		severity = "probation_watch"
+	return {
+		"severity": severity,
+		"focus": focus,
+		"bonus_goal": "Complete a normal work task before the next rush.",
+		"recoverable": fired_risk < 85 and demotion_risk < 90
+	}
+
+func _format_record_summary(record: Dictionary) -> String:
+	var delta: Dictionary = record.get("career_delta", {})
+	return str(record.get("summary", "Shift recorded")) + " | XP " + _signed(int(delta.get("xp", 0))) + " | Promo " + _signed(int(delta.get("promotion_progress", 0))) + " | Trust " + _signed(int(delta.get("manager_trust", 0)))
+
 func _record_milestones(result: Dictionary, score: int):
 	if score >= 85:
 		_add_milestone("Excellent shift performance")
@@ -330,7 +440,7 @@ func _add_milestone(text: String):
 		campaign_milestones.append(text)
 
 func _update_manager_trial_setup():
-	manager_trial_unlocked = current_rank >= 9 and promotion_progress >= 75 and manager_trust >= 75 and corporate_approval >= 65
+	manager_trial_unlocked = current_rank >= 7 and promotion_progress >= 75 and manager_trust >= 75 and corporate_approval >= 65
 	if manager_trial_unlocked:
 		manager_trial_setup = {
 			"trial_id": "manager_trial_shift",
@@ -347,3 +457,6 @@ func _log(event_name: String, value: float, detail: String):
 	var event_log = get_tree().root.get_node_or_null("EventLog")
 	if event_log and event_log.has_method("log_event"):
 		event_log.log_event(event_name, value, detail)
+
+func _signed(value: int) -> String:
+	return "+" + str(value) if value >= 0 else str(value)

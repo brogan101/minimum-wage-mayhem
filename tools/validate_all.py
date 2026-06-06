@@ -420,9 +420,7 @@ def validate_phase_8_campaign_progression_contract():
     for rank in [
         "Trainee",
         "Crew Member",
-        "Register Specialist",
-        "Fryer Specialist",
-        "Window Specialist",
+        "Station Specialist",
         "Shift Lead Candidate",
         "Shift Lead",
         "Assistant Manager Candidate",
@@ -1391,7 +1389,7 @@ def validate_phase_20_save_load_stress_contract():
             raise AssertionError(f"Missing Phase 20 repo/status file: {rel}")
 
     for fragment in [
-        '"schema_version": 3',
+        '"schema_version": 4',
         '"corporate_approval"',
         '"event_log"',
         '"restaurant_memory"',
@@ -1679,6 +1677,85 @@ def validate_phase_23_core_gameplay_depth_contract():
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 23 smoke contract missing: {fragment}")
 
+def validate_phase_24_career_store_manager_loop_contract():
+    report = ROOT / "PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md"
+    smoke = ROOT / "tools/phase24_career_multi_shift_loop_check.gd"
+    career = (ROOT / "scripts/managers/CareerManager.gd").read_text(encoding="utf-8")
+    shift_results = (ROOT / "scripts/managers/ShiftResultManager.gd").read_text(encoding="utf-8")
+    save_system = (ROOT / "scripts/managers/SaveSystem.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    menu = (ROOT / "scripts/ui/MainMenuUI.gd").read_text(encoding="utf-8")
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 24 report: PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 24 smoke: tools/phase24_career_multi_shift_loop_check.gd")
+
+    for rank in [
+        "Trainee",
+        "Crew Member",
+        "Station Specialist",
+        "Shift Lead Candidate",
+        "Shift Lead",
+        "Assistant Manager Candidate",
+        "Assistant Manager",
+        "Acting Store Manager",
+        "Store Manager",
+    ]:
+        if rank not in career:
+            raise AssertionError(f"Phase 24 career rank missing: {rank}")
+
+    for fragment in [
+        "last_career_reasons",
+        "last_career_delta",
+        "recovery_plan",
+        "pre_shift_modifier_history",
+        "record_pre_shift_modifier",
+        "_build_progression_reasons",
+        "_build_recovery_plan",
+    ]:
+        if fragment not in career:
+            raise AssertionError(f"Phase 24 career explanation contract missing: {fragment}")
+
+    for fragment in [
+        "Career Path:",
+        "Career Gains:",
+        "Why It Changed:",
+        "Recovery Focus:",
+        "pre_shift_modifier",
+        "career_recovery_focus",
+    ]:
+        if fragment not in shift_results:
+            raise AssertionError(f"Phase 24 recap/next-shift contract missing: {fragment}")
+
+    for fragment in ["schema_version\": 4", "get_career_save_data", "load_career_save_data"]:
+        if fragment not in save_system:
+            raise AssertionError(f"Phase 24 save contract missing: {fragment}")
+
+    for fragment in ["->", "Promo", "Trust"]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 24 HUD career contract missing: {fragment}")
+
+    for fragment in ["report.left(2600)", "Shift Recap"]:
+        if fragment not in menu:
+            raise AssertionError(f"Phase 24 recap menu contract missing: {fragment}")
+
+    for fragment in ["Phase24CareerPathBoard", "Phase24CareerPathText", "_cartoon_noise_texture", "DIFFUSE_TOON", "SPECULAR_TOON"]:
+        if fragment not in main:
+            raise AssertionError(f"Phase 24 material/career board contract missing: {fragment}")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Phase 24 rank ladder matches requested path",
+        "Shift 1 career reasons are visible",
+        "Next shift setup carries career focus",
+        "Two-shift career history persists after reload",
+        "Phase 24 career multi-shift loop check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 24 smoke contract missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1760,6 +1837,7 @@ def main() -> int:
         validate_phase_21_art_direction_contract()
         validate_phase_22_manual_playtest_feel_contract()
         validate_phase_23_core_gameplay_depth_contract()
+        validate_phase_24_career_store_manager_loop_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1846,6 +1924,7 @@ def main() -> int:
     print("[PASS] Phase 21 art direction/prop contract valid")
     print("[PASS] Phase 22 manual playtest/feel contract valid")
     print("[PASS] Phase 23 core gameplay depth contract valid")
+    print("[PASS] Phase 24 career/store-manager loop contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

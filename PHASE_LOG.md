@@ -1,5 +1,25 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-06 - Phase 24 Career Store Manager Loop Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 23 report, project source of truth, implementation status, validation report, phase log, solo-shift acceptance test, and known issues.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Replaced the older 11-rank specialist split with the requested nine-rank Store Manager path: Trainee, Crew Member, Station Specialist, Shift Lead Candidate, Shift Lead, Assistant Manager Candidate, Assistant Manager, Acting Store Manager, Store Manager.
+- Added explicit per-shift career deltas for XP, cash, tips, promotion progress, manager trust, staff morale, corporate approval, warnings, write-ups, demotion risk, and fired risk.
+- Added career explanation reasons, recovery plan/focus, and pre-shift modifier history to `CareerManager.gd`.
+- Updated `ShiftResultManager.gd` so end-shift recap explains the career path, gains, trust/morale/corporate changes, next promotion needs, why the numbers changed, and recovery focus.
+- Updated next-shift setup with career rank, promotion requirements, recovery focus, pre-shift modifier, warning carryover, unlock hooks, and recoverable state.
+- Updated `SaveSystem.gd` to schema version 4 for the expanded career save payload.
+- Updated HUD and results presentation so rank/next-rank/progress and career recap reasons are more visible.
+- Added procedural life-like cartoon material polish in `Main.gd`: toon/noise materials, bag folds, tile scuffs, sesame seeds, fry salt, soda straw, ketchup bottle, and a career path board.
+- Added `tools/phase24_career_multi_shift_loop_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 24 career/store-manager loop contract.
+- Added `PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md`.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: human visible playtest, physical controller validation, and deeper art/material production without adding DLC/business expansions.
+
 ## 2026-06-06 - Phase 23 Core Gameplay Depth Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

@@ -47,10 +47,13 @@ The current build is an early playable local-only Godot 4.x/GDScript slice. It s
 - physical and menu end-shift flows
 - end-of-shift recap
 - local save/load
-- career progression toward Store Manager
+- career progression toward Store Manager with Phase 24's nine-rank path, visible recap reasons, recovery focus, next-shift setup, and multi-shift save/load proof
+- first-pass life-like cartoon material polish using procedural toon/noise runtime materials and small restaurant/food surface details
 - runtime-wired chaos, mischief, consequences, restaurant memory, object memory, dynamic reputation, and depth/balance systems
 
 Phase 20 specifically proves two-shift local continuity in automation: complete shift 1, save, reload, complete shift 2, save, reload again, and verify wallet, XP/rank/promotion progress, shift history, manager/staff/corporate career fields, reviews/writeups, daily task recap, EventLog history, restaurant memory, object memory, dynamic reputation, and corrupt-save fallback.
+
+Phase 24 specifically proves the visible career loop in automation: complete shift 1, save/load, complete shift 2, save/load again, verify career reasons, rank movement from Trainee to Crew Member to Station Specialist, cash/tips/XP continuity, promotion progress, manager trust, staff morale, corporate approval, recovery focus, pre-shift modifier history, and expanded save persistence.
 
 This is not a finished game and not a Steam demo. Manual visible playtest and physical controller proof are still pending.
 
@@ -83,6 +86,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - CustomerCar/order/handoff path.
 - Shift timer, recap, next-shift setup.
 - Wallet, CareerManager progression, CorporateManager approval.
+- Phase 24 career recap reasons, next-shift career focus, recovery plan, pre-shift modifier history, and nine-rank Store Manager ladder.
 - EventLog.
 - Phase 9 chaos runtime, Phase 10 mischief runtime, Phase 11 consequence runtime, Phase 12 emergent memory runtime, Phase 13 global depth runtime.
 - Phase 20 save/load persistence for wallet, career, stats, corporate approval, EventLog, restaurant memory, store object memory, dynamic reputation, last shift, next shift, and progression hooks.
@@ -95,6 +99,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Settings UI exists, but persistent settings storage is not final.
 - Export presets and Steam demo packaging are not final.
 - Final audio assets are missing; audio hooks fall back safely.
+- Phase 24 material polish is procedural and runtime-generated; final life-like cartoon texture production remains a future asset pass.
 
 ## Data/Docs Only
 
@@ -109,12 +114,13 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Food prep needs manual feel, animation, timing, and presentation polish beyond the Phase 23 functional pass.
 - HUD/menu/result presentation is functional but visually basic.
 - Final audio/assets/export presets are not ready.
+- Full production-quality life-like cartoon textures/materials are not done; Phase 24 only starts this direction with procedural material polish and small surface details.
 - GitHub repo visibility is public; if the desired state is private, change visibility in GitHub settings or via `gh repo edit brogan101/minimum-wage-mayhem --visibility private`.
 
 ## Next Recommended Phase
 
 Next phase should be:
 
-`Phase 24 - Career, Store Manager Path, Multi-Shift Loop, and Life-Like Cartoon Material Polish`
+`Phase 25 - Visible Manual Playtest, Controller Hardware, Manager Trial Prep, and Art Polish`
 
-Do not add another large content/depth pack before this. The next work should make the multi-shift career path visible and continue improving the procedural placeholder materials toward a more life-like cartoon style.
+Do not add DLC, multi-store/business expansion, online systems, or another large event pack before this. The next work should run a real visible playtest, verify physical controller hardware if available, polish the manager-trial setup into a clearer playable goal, and continue improving the procedural placeholder materials toward production-ready life-like cartoon art.

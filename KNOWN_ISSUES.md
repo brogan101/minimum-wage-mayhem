@@ -29,6 +29,14 @@ This is an early playable build, not a final Steam demo.
 - Customer order variety is intentionally normal and small: Regular, Lunch Driver, and Thirsty Commuter.
 - Phase 23 is automated/script validated, not a claimed human manual playtest.
 
+## Phase 24 Notes
+
+- Phase 24 replaces the older 11-rank specialist split with the requested nine-rank path from Trainee to Store Manager.
+- Career recap now explains why XP, cash, tips, promotion progress, manager trust, staff morale, and corporate approval changed.
+- Multi-shift career progression, recovery focus, pre-shift modifier history, and save/load continuity are automated-validated through two shifts.
+- Phase 24 adds procedural toon/noise material treatment and small life-like cartoon details, but this is still runtime primitive art rather than final production texture work.
+- Manager trial readiness exists, but the full playable manager trial is still a future pass.
+
 ## Gameplay
 
 - CustomerCar visual arrival scene now exists, has color variants, and is runtime-validated. Phase 18 verifies it does not stay waiting forever after fulfillment, but movement/readability still needs player-controlled visual playtest proof.
@@ -48,7 +56,7 @@ This is an early playable build, not a final Steam demo.
 ## Audio/Assets
 
 - Some audio hooks fall back because final audio files are missing.
-- Current visuals use procedural Godot primitives, runtime materials, Label3D signs, and simple UI panels. They need a more life-like cartoon material/texture pass.
+- Current visuals use procedural Godot primitives, runtime materials, Label3D signs, and simple UI panels. Phase 24 starts a more life-like cartoon material/texture pass, but final production art and licensed/attributed textures are still pending.
 - Final licensed asset attribution is pending.
 
 ## Build/Export

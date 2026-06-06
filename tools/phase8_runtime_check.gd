@@ -36,8 +36,9 @@ func _run_check():
 
 	var start_rank = career.get_current_rank_name()
 	_assert(start_rank == "Trainee", "Player starts as low-level Trainee")
-	_assert(career.RANKS.size() == 11, "Store Manager rank ladder has 11 ranks")
-	_assert(career.RANKS[10].get("name") == "Store Manager", "Campaign goal rank is Store Manager")
+	_assert(career.RANKS.size() == 9, "Store Manager rank ladder has Phase 24's 9 ranks")
+	_assert(career.RANKS[2].get("name") == "Station Specialist", "Station Specialist rank exists")
+	_assert(career.RANKS[8].get("name") == "Store Manager", "Campaign goal rank is Store Manager")
 
 	shift_results.begin_shift_snapshot()
 	sauce.interact(player)
@@ -66,7 +67,7 @@ func _run_check():
 	_assert(status.has("demotion_risk") and status.has("fired_risk"), "Demotion and fired risk tracked")
 	_assert(save_data.get("career", {}).has("shift_performance_history"), "Save includes career progress history")
 
-	career.current_rank = 8
+	career.current_rank = 7
 	career.current_xp = 1900.0
 	career.promotion_progress = 82
 	career.manager_trust = 82
@@ -94,6 +95,7 @@ func _run_check():
 	var trial_status = career.get_career_status()
 	_assert(bool(trial_status.get("manager_trial_unlocked", false)), "Store manager trial setup unlocks near top of ladder")
 	_assert(str(trial_status.get("rank_name", "")) == "Acting Store Manager", "Store Manager rank waits for trial pass")
+	_assert(trial_status.get("last_career_reasons", []).size() >= 1, "Career progression reasons are visible")
 	_assert(not trial_status.get("manager_trial_setup", {}).is_empty(), "Manager trial setup data exists")
 	_assert(trial_status.get("future_expansion_hooks", {}).has("district_manager_path"), "Future district hook exists without implementation")
 	_assert(event_log.get_events_by_type("career_shift_applied").size() >= 2, "Career shift applications logged")
