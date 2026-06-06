@@ -16,10 +16,15 @@ This is an early playable build, not a final Steam demo.
 - Phase 21 does not add functional drink/fry/bagging prep loops; those remain visual affordances.
 - The normal-renderer Phase 21 art check passes cleanly. The headless dummy renderer may emit a non-blocking mesh cleanup error in the visual smoke, so Phase 21 visual proof uses the normal renderer and full-shift proof uses the clean Phase 14 headless smoke.
 
+## Phase 22 Notes
+
+- Phase 22 fixes the first-shift held-item handoff feel: `E / A` uses held food on the aimed station and `Q / X` drops it.
+- DriveThruWindow now creates a runtime `HandOffArea` fallback, so the previous missing-target warning is resolved.
+- Phase 22 is automated/script validated, not a claimed human manual playtest.
+
 ## Gameplay
 
 - CustomerCar visual arrival scene now exists, has color variants, and is runtime-validated. Phase 18 verifies it does not stay waiting forever after fulfillment, but movement/readability still needs player-controlled visual playtest proof.
-- DriveThruWindow reports that `HandOffArea` is missing and uses the interact fallback. The fallback works.
 - Manual visible movement/camera/HUD layout verification is still pending. Phase 18 tuned defaults and checked them through automation, but did not claim a human manual session.
 - Physical clock-out is runtime-validated, but final placement should still be checked during a player-controlled playtest.
 - Some deeper systems are structurally connected and runtime-tested through managers, but still need visible in-game presentation polish.

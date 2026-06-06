@@ -117,7 +117,7 @@ func show_settings():
 func show_controls():
 	mode = "controls"
 	title_label.text = "Controls"
-	body_label.text = "Keyboard: WASD move, mouse look, E interact/drop, right mouse throw, Space jump, Shift sprint, V camera, Esc pause.\nController: left stick move, right stick look, A interact, X drop, shoulders use/throw, Y camera, Start pause."
+	body_label.text = "Keyboard: WASD move, mouse look, E interact/use, Q drop, right mouse throw, Space jump, Shift sprint, V camera, Esc pause.\nController: left stick move, right stick look, A interact/use, X drop, shoulders use/throw, Y camera, Start pause."
 	_clear_buttons()
 	_add_button("Back", _back_from_submenu)
 	status_label.text = "Controller mappings are present through Godot InputMap; physical controller validation is pending."

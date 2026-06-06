@@ -133,8 +133,9 @@ Update this after every Codex phase.
 | Phase 21 redo layout pass exists | Working | scripts/Main.gd / tools/phase21_layout_camera_hud_overhaul_check.gd / PHASE_21_LAYOUT_CAMERA_HUD_VISUAL_OVERHAUL_REPORT.md | Runtime check verifies lobby, drive-thru, prep, kitchen, restock, and clock-out zones plus route markers |
 | Camera readability improved | Working | scripts/player/PlayerController.gd / scripts/player/PerspectiveManager.gd / tools/phase21_layout_camera_hud_overhaul_check.gd | Runtime check verifies widened FOV, more responsive look values, readable spawn, and third-person camera setup |
 | HUD debug clutter reduced | Working | scripts/ui/GameHUD.gd / tools/phase21_layout_camera_hud_overhaul_check.gd | Runtime check verifies debug-like boot/bars are hidden and key HUD elements fit common viewports |
+| Phase 22 feel bugfix pass exists | Working | scripts/player/PlayerInteraction.gd / scripts/stations/DriveThruWindow.gd / tools/phase22_manual_playtest_feel_check.gd / PHASE_22_MANUAL_PLAYTEST_FEEL_BUGFIX_REPORT.md | Runtime check verifies E/A uses held food on drive-thru, Q/X drops, handoff feedback, and real handoff area |
 | Bagging works | Partial | scripts/items/FoodBag.gd | Guard added; scene test needed |
-| Drive-thru delivery works | Partial | scripts/stations/DriveThruWindow.gd | Guard added; scene test needed |
+| Drive-thru delivery works | Working | scripts/stations/DriveThruWindow.gd / scripts/player/PlayerInteraction.gd / tools/phase22_manual_playtest_feel_check.gd | Runtime check verifies held Training Burger completes via the player interaction path |
 | Order validation works | Partial | scripts/managers/OrderManager.gd | Simple validation exists |
 | Customer reaction works | Partial | BeefManager/DriveThruWindow | Needs in-scene test |
 | Cash/XP updates | Working | WalletManager / CareerManager / tools/phase8_runtime_check.gd | Runtime check verifies cash, tips, XP, and career progression from gameplay |

@@ -14,7 +14,7 @@ func ensure_default_actions():
 	_add_key_action("move_right", [KEY_D, KEY_RIGHT])
 	_add_key_action("sprint", [KEY_SHIFT])
 	_add_key_action("interact", [KEY_E])
-	_add_key_action("pickup_drop", [KEY_E, KEY_Q])
+	_add_key_action("pickup_drop", [KEY_Q])
 	_add_key_action("use_item", [MOUSE_BUTTON_LEFT])
 	_add_key_action("throw_item", [MOUSE_BUTTON_RIGHT])
 	_add_key_action("throw", [MOUSE_BUTTON_RIGHT])

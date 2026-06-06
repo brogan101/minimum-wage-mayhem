@@ -1568,6 +1568,53 @@ def validate_phase_21_art_direction_contract():
     if "Phase 21" not in attribution or "No external art/audio assets were added during Phase 21" not in attribution:
         raise AssertionError("Phase 21 asset attribution note missing")
 
+def validate_phase_22_manual_playtest_feel_contract():
+    report = ROOT / "PHASE_22_MANUAL_PLAYTEST_FEEL_BUGFIX_REPORT.md"
+    smoke = ROOT / "tools/phase22_manual_playtest_feel_check.gd"
+    interaction = (ROOT / "scripts/player/PlayerInteraction.gd").read_text(encoding="utf-8")
+    drive_thru = (ROOT / "scripts/stations/DriveThruWindow.gd").read_text(encoding="utf-8")
+    input_bootstrap = (ROOT / "scripts/managers/InputBootstrap.gd").read_text(encoding="utf-8")
+    menu = (ROOT / "scripts/ui/MainMenuUI.gd").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 22 report: PHASE_22_MANUAL_PLAYTEST_FEEL_BUGFIX_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 22 smoke: tools/phase22_manual_playtest_feel_check.gd")
+
+    for fragment in [
+        "use_carried_item_on",
+        "Aim at a station to use",
+        "Q / X: Drop",
+        "carried_item_used_on_station",
+    ]:
+        if fragment not in interaction:
+            raise AssertionError(f"Phase 22 interaction feel contract missing: {fragment}")
+
+    for fragment in [
+        "_create_handoff_area",
+        "HandOffAreaCollision",
+        "_clear_carried_item_if_needed",
+    ]:
+        if fragment not in drive_thru:
+            raise AssertionError(f"Phase 22 drive-thru target contract missing: {fragment}")
+
+    if '_add_key_action("pickup_drop", [KEY_Q])' not in input_bootstrap:
+        raise AssertionError("Phase 22 drop key mapping contract missing")
+    if "E interact/use, Q drop" not in menu:
+        raise AssertionError("Phase 22 controls copy contract missing")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "E no longer doubles as drop while holding food",
+        "Drive-thru has real handoff area",
+        "Held food can be used on the drive-thru station",
+        "Successful handoff clears held item",
+        "Empty handoff gives recovery feedback",
+        "Phase 22 manual playtest feel smoke check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 22 smoke contract missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1647,6 +1694,7 @@ def main() -> int:
         validate_phase_19_github_playtest_prep_contract()
         validate_phase_20_save_load_stress_contract()
         validate_phase_21_art_direction_contract()
+        validate_phase_22_manual_playtest_feel_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1731,6 +1779,7 @@ def main() -> int:
     print("[PASS] Phase 19 GitHub/playtest prep contract valid")
     print("[PASS] Phase 20 save/load progression stress contract valid")
     print("[PASS] Phase 21 art direction/prop contract valid")
+    print("[PASS] Phase 22 manual playtest/feel contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

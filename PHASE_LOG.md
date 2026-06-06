@@ -1,5 +1,23 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-05 - Phase 22 Manual Playtest Feel Bugfix Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 21 redo report, source of truth, implementation status, validation report, phase log, solo-shift acceptance, and known issues.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Ran current full-shift and Phase 21 redo smokes before edits.
+- Fixed held-item interaction: `E / A` now uses held food on the aimed station, while `Q / X` drops.
+- Updated keyboard drop mapping from shared `E/Q` to `Q`.
+- Updated controls copy in `MainMenuUI.gd`.
+- Added runtime `HandOffArea` fallback to `DriveThruWindow.gd`; the missing-target warning no longer appears.
+- Added `tools/phase22_manual_playtest_feel_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 22 contract.
+- Added `PHASE_22_MANUAL_PLAYTEST_FEEL_BUGFIX_REPORT.md`.
+- No major systems or content were added.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: true human-controlled visible playtest with physical controller hardware if available, then functional drink/fry/bagging prep loops.
+
 ## 2026-06-05 - Phase 21 Redo Layout Camera HUD Visual Overhaul
 
 - Ran `git pull --ff-only`; repo was already up to date.

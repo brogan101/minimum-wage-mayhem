@@ -1,4 +1,53 @@
-# Validation Report - Phase 21 Layout Camera HUD Visual Overhaul
+# Validation Report - Phase 22 Manual Playtest Feel Bugfix Pass
+
+## Phase 22 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 21 art direction/prop contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 22 feel smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase22_manual_playtest_feel_check.gd
+[PASS] Drive-thru has real handoff area
+[PASS] E no longer doubles as drop while holding food
+[PASS] Held food can be used on the drive-thru station
+[PASS] Drive-thru order completes through player interaction path
+[PASS] Empty handoff gives recovery feedback
+[PASS] Phase 22 manual playtest feel smoke check passed
+```
+
+Full-shift regression:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+```
+
+Pause/save/menu regression:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase18_softlock_feel_check.gd
+[PASS] Phase 18 softlock/feel smoke check passed
+```
+
+Menu/playability regression after Phase 22 HUD wording:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase15_menu_playability_check.gd
+[PASS] HUD objective tracker is populated
+[PASS] Phase 15 menu playability smoke check passed
+```
+
+Manual human-controlled visible playtest and physical controller validation remain pending. Phase 22 smoke reported no connected physical controller and validated InputMap only.
+
+# Historical Validation Report - Phase 21 Layout Camera HUD Visual Overhaul
 
 ## Phase 21 Redo Current Validation
 

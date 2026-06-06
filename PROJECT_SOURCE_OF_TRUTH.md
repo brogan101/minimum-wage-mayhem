@@ -41,7 +41,7 @@ The current build is an early playable local-only Godot 4.x/GDScript slice. It s
 - store duty stations
 - coworker/staff systems
 - visible `CustomerCar` drive-thru arrival/order flow with fallback order generation if the car scene is missing
-- drive-thru handoff through `DriveThruWindow`
+- drive-thru handoff through `DriveThruWindow`, including a runtime `HandOffArea` fallback
 - active shift timer/HUD
 - physical and menu end-shift flows
 - end-of-shift recap
@@ -105,7 +105,6 @@ The console Godot binary may need filesystem access outside the workspace to wri
 
 - Manual visible playtest is still pending.
 - Physical controller validation is still pending.
-- `DriveThruWindow` still reports missing `HandOffArea` and uses the working interact fallback.
 - Functional bagging/drink/fry prep needs a later gameplay pass.
 - HUD/menu/result presentation is functional but visually basic.
 - Final audio/assets/export presets are not ready.

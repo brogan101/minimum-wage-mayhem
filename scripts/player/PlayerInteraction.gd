@@ -20,13 +20,18 @@ func _ready():
 
 func _physics_process(_delta):
 	_update_prompt()
-	if Input.is_action_just_pressed("interact") or Input.is_action_just_pressed("pickup_drop"):
+	var interact_pressed = Input.is_action_just_pressed("interact")
+	var drop_pressed = Input.is_action_just_pressed("pickup_drop")
+	if interact_pressed or drop_pressed:
 		if carried_item:
-			if raycast and raycast.is_colliding():
+			if interact_pressed and raycast and raycast.is_colliding():
 				var target = raycast.get_collider()
-				if _is_pickup_item(target) and target != carried_item:
-					print("Item combination is deferred to Phase 2/3 station work.")
-			drop_item()
+				if use_carried_item_on(target):
+					return
+			if drop_pressed:
+				drop_item()
+			else:
+				_set_hud_feedback("Aim at a station to use " + _item_label(carried_item) + ", or press Q / X to drop.")
 		else:
 			attempt_interaction()
 	if Input.is_action_just_pressed("throw_item") and carried_item:
@@ -93,6 +98,21 @@ func throw_item():
 	print("Threw item!")
 	_log_event("item_thrown", 1.0, _item_label(item_to_throw))
 
+func use_carried_item_on(target: Object) -> bool:
+	if not carried_item:
+		return false
+	if target and target.has_method("interact"):
+		var item_label = _item_label(carried_item)
+		target.interact(get_parent())
+		if not carried_item:
+			_update_held_hud("")
+		_log_event("carried_item_used_on_station", 1.0, item_label + " -> " + str(target.name))
+		_play_audio_hook("interact")
+		return true
+	if _is_pickup_item(target) and target != carried_item:
+		_set_hud_feedback("Use a labeled station first. Bag-combining is not part of this shift yet.")
+	return false
+
 func _autoload(name: String) -> Node:
 	return get_tree().root.get_node_or_null(name)
 
@@ -106,7 +126,16 @@ func _enable_raycast():
 func _update_prompt():
 	var next_prompt := ""
 	if carried_item:
-		next_prompt = "E / X: Drop " + _item_label(carried_item) + "    Mouse2 / LB: Throw"
+		var item_label = _item_label(carried_item)
+		if raycast and raycast.is_colliding():
+			var target = raycast.get_collider()
+			if target and target.has_method("interact"):
+				var text = target.get("interact_text")
+				next_prompt = "E / A: Use " + item_label + " at " + str(text if text != null else target.name) + "    Q / X: Drop"
+			else:
+				next_prompt = "Q / X: Drop " + item_label + "    Mouse2 / LB: Throw"
+		else:
+			next_prompt = "Q / X: Drop " + item_label + "    Mouse2 / LB: Throw"
 	elif raycast and raycast.is_colliding():
 		var target = raycast.get_collider()
 		if _is_pickup_item(target):

@@ -33,7 +33,7 @@ func _run_check():
 	_assert(player != null, "New game keeps player in 3D scene")
 	_assert(hud.visible, "HUD appears during shift")
 	_assert(shift_manager != null and bool(shift_manager.get("is_active")), "New game starts active shift")
-	_assert(hud.objective_label.text.contains("Objective:"), "HUD objective tracker is populated")
+	_assert(hud.objective_label.text.contains("DRIVE-THRU") and hud.objective_label.text.contains("Clock Out"), "HUD objective tracker is populated")
 	_assert(hud.shift_timer_label.text.contains("Shift:"), "HUD shift timer is populated")
 
 	main.pause_game()

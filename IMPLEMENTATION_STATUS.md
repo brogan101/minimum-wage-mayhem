@@ -1,4 +1,23 @@
-# Implementation Status - Phase 21 Layout Camera HUD Visual Overhaul
+# Implementation Status - Phase 22 Manual Playtest Feel Bugfix Pass
+
+## Phase 22 Current Status
+
+Phase 22 is implemented as a scoped first-shift feel and bugfix pass. It does not add major systems.
+
+Latest Phase 22 work:
+
+- Fixed held-item interaction feel in `scripts/player/PlayerInteraction.gd`: `E / A` now uses the held item on the aimed station, while `Q / X` drops it.
+- Updated `scripts/managers/InputBootstrap.gd` so keyboard drop is `Q` instead of sharing `E`.
+- Updated `scripts/ui/MainMenuUI.gd` controls copy to match interact/use/drop behavior.
+- Added a runtime `HandOffArea` fallback in `scripts/stations/DriveThruWindow.gd`; the missing handoff-area warning no longer appears.
+- Added `tools/phase22_manual_playtest_feel_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 22 manual-playtest/feel contract.
+- Added `PHASE_22_MANUAL_PLAYTEST_FEEL_BUGFIX_REPORT.md`.
+- Restaurant story-event count remains 180.
+
+Manual human-controlled visible playtest and physical controller hardware testing remain pending. Automated Godot smokes validate the first-shift flow, handoff recovery, full-shift completion, save/load, pause/resume, and return-to-menu behavior.
+
+# Historical Implementation Status - Phase 21 Layout Camera HUD Visual Overhaul
 
 ## Phase 21 Redo Current Status
 

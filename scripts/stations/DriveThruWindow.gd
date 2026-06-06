@@ -9,10 +9,10 @@ class_name DriveThruWindow
 func _ready():
 	interact_text = success_text
 	var area = get_node_or_null("HandOffArea")
-	if area:
+	if not area:
+		area = _create_handoff_area()
+	if area and not area.body_entered.is_connected(_on_body_entered):
 		area.body_entered.connect(_on_body_entered)
-	else:
-		print("DriveThruWindow missing HandOffArea; use interact fallback in MVP.")
 
 func _on_body_entered(body):
 	var contents = _contents_from_body(body)
@@ -87,7 +87,29 @@ func _deliver_contents(contents: Array[String], body: Node):
 			audio.play_sfx("customer_yell")
 		_log("drive_thru_order_failed", 0.0, ",".join(contents))
 	if body and body.is_inside_tree():
+		_clear_carried_item_if_needed(body)
 		body.queue_free()
+
+func _create_handoff_area() -> Area3D:
+	var area = Area3D.new()
+	area.name = "HandOffArea"
+	area.monitoring = true
+	area.monitorable = true
+	add_child(area)
+	var collision = CollisionShape3D.new()
+	collision.name = "HandOffAreaCollision"
+	var shape = BoxShape3D.new()
+	shape.size = Vector3(2.0, 1.5, 1.8)
+	collision.shape = shape
+	area.add_child(collision)
+	return area
+
+func _clear_carried_item_if_needed(body: Node):
+	var interaction = get_tree().root.find_child("InteractionHandler", true, false)
+	if interaction and interaction.get("carried_item") == body:
+		interaction.set("carried_item", null)
+		if interaction.has_method("_update_held_hud"):
+			interaction._update_held_hud("")
 
 func _autoload(name: String) -> Node:
 	return get_tree().root.get_node_or_null(name)
