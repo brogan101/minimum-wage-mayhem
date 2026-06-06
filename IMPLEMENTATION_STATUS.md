@@ -1,4 +1,22 @@
-# Implementation Status - Phase 24 Career Store Manager Loop Pass
+# Implementation Status - Phase 25 Full Build Audit And Fix Pass
+
+## Phase 25 Current Status
+
+Phase 25 is implemented as a full playable-build audit, cleanup, and regression-fix pass. It does not add major content, online services, multiplayer, DLC/business expansion, or a new event pack. The restaurant story-event catalog remains locked at 180.
+
+Latest Phase 25 work:
+
+- Pulled `origin/master`; repo was already up to date.
+- Re-ran static validation and Godot smokes for full shift, menu flow, Phase 20 two-shift save/load stress, Phase 23 gameplay depth, and Phase 24 career multi-shift progression.
+- Fixed `scripts/managers/SaveSystem.gd` so plain pause/menu saves preserve existing `last_shift`, `next_shift`, and progression payloads instead of replacing them with empty dictionaries.
+- Fixed `scripts/ui/MainMenuUI.gd` so shift recap text is full length inside a scrollable `BodyScroll` panel instead of being truncated.
+- Added `tools/phase25_full_build_audit_check.gd` to validate scrollable recaps and menu-save preservation.
+- Extended `tools/validate_all.py` with a Phase 25 audit/fix contract.
+- Added `PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md`.
+
+Automated Godot proof validates one full shift, menu/pause/save/load/continue, deeper order gameplay, two-shift save/load/progression/memory continuity, Phase 24 career progression, and Phase 25 save/recap cleanup. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 24 Career Store Manager Loop Pass
 
 ## Phase 24 Current Status
 

@@ -1,5 +1,21 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-06 - Phase 25 Full Build Audit And Fix Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read the current source-of-truth, implementation status, validation report, phase log, solo-shift acceptance test, known issues, and Phase 21-24 reports.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Ran Godot headless smokes for full shift, menu playability, Phase 20 two-shift save/load stress, Phase 23 core gameplay depth, and Phase 24 career multi-shift progression.
+- Audited tracked files for `.godot/`, `.import/`, local Godot downloads/binaries, artifacts, prompt packs, zips, caches, and disabled/out-of-scope clutter; no real tracked clutter was found.
+- Fixed `SaveSystem.gd` so pause/menu saves preserve existing completed-shift, next-shift, and progression payloads when no fresh shift payload is provided.
+- Fixed `MainMenuUI.gd` so long shift recaps are scrollable and no longer truncated.
+- Added `tools/phase25_full_build_audit_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 25 full-build audit/fix contract.
+- Added `PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md`.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: visible manual playtest with physical controller hardware if available, then manager-trial clarity and production art/audio polish.
+
 ## 2026-06-06 - Phase 24 Career Store Manager Loop Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

@@ -21,6 +21,7 @@ var settings := {
 }
 var root_panel: PanelContainer
 var title_label: Label
+var body_scroll: ScrollContainer
 var body_label: Label
 var buttons_box: VBoxContainer
 var status_label: Label
@@ -34,10 +35,10 @@ func _build_ui():
 	root_panel = PanelContainer.new()
 	root_panel.name = "MenuPanel"
 	root_panel.set_anchors_preset(Control.PRESET_CENTER)
-	root_panel.offset_left = -260
-	root_panel.offset_top = -220
-	root_panel.offset_right = 260
-	root_panel.offset_bottom = 220
+	root_panel.offset_left = -320
+	root_panel.offset_top = -260
+	root_panel.offset_right = 320
+	root_panel.offset_bottom = 260
 	add_child(root_panel)
 
 	var margin = MarginContainer.new()
@@ -56,10 +57,20 @@ func _build_ui():
 	title_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	layout.add_child(title_label)
 
+	body_scroll = ScrollContainer.new()
+	body_scroll.name = "BodyScroll"
+	body_scroll.custom_minimum_size = Vector2(0, 150)
+	body_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	body_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	layout.add_child(body_scroll)
+
 	body_label = Label.new()
+	body_label.name = "BodyLabel"
 	body_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	body_label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	body_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	body_label.text = ""
-	layout.add_child(body_label)
+	body_scroll.add_child(body_label)
 
 	buttons_box = VBoxContainer.new()
 	buttons_box.add_theme_constant_override("separation", 6)
@@ -135,11 +146,13 @@ func show_results(report: String):
 	visible = true
 	get_tree().paused = false
 	title_label.text = "Shift Recap"
-	body_label.text = report.left(2600)
+	body_label.text = report
 	_clear_buttons()
 	_add_button("Next Shift", func(): new_game_requested.emit())
 	_add_button("Return To Menu", func(): return_to_menu_requested.emit())
 	status_label.text = "Progress saved locally when the shift completed."
+	if body_scroll:
+		body_scroll.scroll_vertical = 0
 
 func show_status(message: String):
 	status_label.text = message

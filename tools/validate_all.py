@@ -1737,7 +1737,7 @@ def validate_phase_24_career_store_manager_loop_contract():
         if fragment not in hud:
             raise AssertionError(f"Phase 24 HUD career contract missing: {fragment}")
 
-    for fragment in ["report.left(2600)", "Shift Recap"]:
+    for fragment in ["BodyScroll", "body_label.text = report", "Shift Recap"]:
         if fragment not in menu:
             raise AssertionError(f"Phase 24 recap menu contract missing: {fragment}")
 
@@ -1755,6 +1755,57 @@ def validate_phase_24_career_store_manager_loop_contract():
     ]:
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 24 smoke contract missing: {fragment}")
+
+def validate_phase_25_full_build_audit_contract():
+    report = ROOT / "PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md"
+    smoke = ROOT / "tools/phase25_full_build_audit_check.gd"
+    save_system = (ROOT / "scripts/managers/SaveSystem.gd").read_text(encoding="utf-8")
+    menu = (ROOT / "scripts/ui/MainMenuUI.gd").read_text(encoding="utf-8")
+    source_truth = (ROOT / "PROJECT_SOURCE_OF_TRUTH.md").read_text(encoding="utf-8")
+    known_issues = (ROOT / "KNOWN_ISSUES.md").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 25 report: PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 25 smoke: tools/phase25_full_build_audit_check.gd")
+    report_text = report.read_text(encoding="utf-8")
+
+    for fragment in [
+        "_get_previous_save_data",
+        "_read_save_data_without_applying",
+        'extra_data.get("last_shift", previous_save.get("last_shift", {}))',
+        'extra_data.get("next_shift", previous_save.get("next_shift", {}))',
+    ]:
+        if fragment not in save_system:
+            raise AssertionError(f"Phase 25 save preservation contract missing: {fragment}")
+
+    for fragment in ["ScrollContainer", "BodyScroll", "body_label.text = report", "scroll_vertical = 0"]:
+        if fragment not in menu:
+            raise AssertionError(f"Phase 25 scrollable recap contract missing: {fragment}")
+
+    for fragment in [
+        "Phase 25 Full Build Audit",
+        "Systems Actually Wired Into Gameplay",
+        "Partially Working",
+        "Scaffolded Only",
+        "Data/Docs Only",
+        "Should Be Deferred",
+    ]:
+        if fragment not in source_truth + report_text:
+            raise AssertionError(f"Phase 25 audit classification missing: {fragment}")
+
+    if "GitHub push depends on GitHub CLI authentication" in known_issues:
+        raise AssertionError("Known issues still contains stale Phase 19 GitHub auth blocker wording")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Shift recap no longer truncates long reports",
+        "Menu save preserves completed last shift",
+        "Menu save preserves next-shift setup",
+        "Phase 25 full build audit smoke check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 25 smoke contract missing: {fragment}")
 
 def validate_all_json() -> int:
     count = 0
@@ -1838,6 +1889,7 @@ def main() -> int:
         validate_phase_22_manual_playtest_feel_contract()
         validate_phase_23_core_gameplay_depth_contract()
         validate_phase_24_career_store_manager_loop_contract()
+        validate_phase_25_full_build_audit_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1925,6 +1977,7 @@ def main() -> int:
     print("[PASS] Phase 22 manual playtest/feel contract valid")
     print("[PASS] Phase 23 core gameplay depth contract valid")
     print("[PASS] Phase 24 career/store-manager loop contract valid")
+    print("[PASS] Phase 25 full build audit/fix contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

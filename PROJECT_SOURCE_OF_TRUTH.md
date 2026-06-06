@@ -1,6 +1,6 @@
 # Project Source Of Truth
 
-Date: 2026-06-04
+Date: 2026-06-06
 
 ## Read First
 
@@ -12,10 +12,13 @@ For future Codex runs, read in this order:
 4. `VALIDATION_REPORT.md`
 5. `PHASE_LOG.md`
 6. `SOLO_SHIFT_ACCEPTANCE_TEST.md`
-7. `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md`
-8. `PHASE_19_GITHUB_PLAYTEST_PREP_REPORT.md`
-9. `PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md`
-10. Earlier `PHASE_*.md` files as phase briefs/history, not as proof.
+7. `PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md`
+8. `PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md`
+9. `PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md`
+10. `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md`
+11. `PHASE_19_GITHUB_PLAYTEST_PREP_REPORT.md`
+12. `PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md`
+13. Earlier `PHASE_*.md` files as phase briefs/history, not as proof.
 
 Use actual files, validator output, GitHub state, and Godot runtime smoke checks as the source of truth. Do not infer implementation from markdown design docs or JSON catalogs alone.
 
@@ -55,6 +58,8 @@ Phase 20 specifically proves two-shift local continuity in automation: complete 
 
 Phase 24 specifically proves the visible career loop in automation: complete shift 1, save/load, complete shift 2, save/load again, verify career reasons, rank movement from Trainee to Crew Member to Station Specialist, cash/tips/XP continuity, promotion progress, manager trust, staff morale, corporate approval, recovery focus, pre-shift modifier history, and expanded save persistence.
 
+Phase 25 proves the full audited demo loop after cleanup: full shift smoke, Phase 20 two-shift save/load stress, Phase 23 gameplay-depth smoke, Phase 24 career loop smoke, menu playability smoke, and the new Phase 25 audit smoke pass. Phase 25 also fixes menu-save preservation of completed shift/next-shift data and makes the shift recap body scroll instead of truncating long reports.
+
 This is not a finished game and not a Steam demo. Manual visible playtest and physical controller proof are still pending.
 
 ## Validation Commands
@@ -70,6 +75,7 @@ Main Godot runtime smokes:
 ```text
 tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
 tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase25_full_build_audit_check.gd
 ```
 
 The console Godot binary may need filesystem access outside the workspace to write `user://logs` and local save data.
@@ -90,6 +96,16 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - EventLog.
 - Phase 9 chaos runtime, Phase 10 mischief runtime, Phase 11 consequence runtime, Phase 12 emergent memory runtime, Phase 13 global depth runtime.
 - Phase 20 save/load persistence for wallet, career, stats, corporate approval, EventLog, restaurant memory, store object memory, dynamic reputation, last shift, next shift, and progression hooks.
+- Phase 25 menu-save preservation for completed-shift and next-shift data when the player saves from the pause/menu path.
+- Phase 25 scrollable shift recap presentation for long career/depth reports.
+
+## Partially Working
+
+- Manual movement/camera feel is automated-validated but not human-verified in a visible playtest.
+- HUD and menu readability are improved and automated-checked, but final multi-resolution/manual QA is still pending.
+- Food prep is functionally playable with bag/Burger/Fries/Soda and retry logic, but needs animation, timing, and tactile polish.
+- Controller-compatible InputMap actions exist; physical controller hardware validation remains pending.
+- Life-like cartoon visuals are improved with procedural materials and props; final production textures/assets are not done.
 
 ## Scaffolded Only
 
@@ -100,6 +116,21 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Export presets and Steam demo packaging are not final.
 - Final audio assets are missing; audio hooks fall back safely.
 - Phase 24 material polish is procedural and runtime-generated; final life-like cartoon texture production remains a future asset pass.
+
+## Broken
+
+- No known first-shift or multi-shift blocker is currently reproduced by automated smokes.
+- Non-blocking Godot dummy-renderer cleanup messages can appear after some headless visual/runtime smokes pass.
+
+## Duplicate/Overlapping
+
+- Historical phase docs still contain old snapshots, including the pre-Phase-24 11-rank career wording in historical validation output. Current truth is the Phase 24 nine-rank path.
+- Several large design docs and JSON catalogs describe future breadth beyond the current playable demo; use runtime smokes and current status docs for proof.
+
+## Should Be Deferred
+
+- DLC, multi-store/business expansion, online services, multiplayer/co-op, Steam integrations, and giant event-pack expansion.
+- Full Store Manager trial content should wait until the current first-store demo has a visible manual playtest and art/audio pass.
 
 ## Data/Docs Only
 
@@ -112,7 +143,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Manual visible playtest is still pending.
 - Physical controller validation is still pending.
 - Food prep needs manual feel, animation, timing, and presentation polish beyond the Phase 23 functional pass.
-- HUD/menu/result presentation is functional but visually basic.
+- HUD/menu/result presentation is functional and the Phase 25 recap no longer truncates long reports, but visual polish is still basic.
 - Final audio/assets/export presets are not ready.
 - Full production-quality life-like cartoon textures/materials are not done; Phase 24 only starts this direction with procedural material polish and small surface details.
 - GitHub repo visibility is public; if the desired state is private, change visibility in GitHub settings or via `gh repo edit brogan101/minimum-wage-mayhem --visibility private`.
@@ -121,6 +152,6 @@ The console Godot binary may need filesystem access outside the workspace to wri
 
 Next phase should be:
 
-`Phase 25 - Visible Manual Playtest, Controller Hardware, Manager Trial Prep, and Art Polish`
+`Phase 26 - Visible Manual Playtest, Controller Hardware, Manager Trial Prep, and Art Polish`
 
 Do not add DLC, multi-store/business expansion, online systems, or another large event pack before this. The next work should run a real visible playtest, verify physical controller hardware if available, polish the manager-trial setup into a clearer playable goal, and continue improving the procedural placeholder materials toward production-ready life-like cartoon art.

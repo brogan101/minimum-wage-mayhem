@@ -2,6 +2,12 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 25 Notes
+
+- Phase 25 fixes pause/menu save preservation for completed-shift and next-shift data.
+- Phase 25 fixes shift recap truncation by moving recap text into a scrollable menu body.
+- Phase 25 is automated/script validated, not a claimed human manual playtest.
+
 ## Phase 20 Notes
 
 - GitHub repo visibility currently reports as public, despite older Phase 19 text saying private.
@@ -64,7 +70,7 @@ This is an early playable build, not a final Steam demo.
 - Export presets are not final.
 - Steamworks integration is not included.
 - Cloud saves, achievements, and Steam overlay are not implemented.
-- Phase 19 initializes git and documents clean inclusion/exclusion rules, but GitHub push depends on GitHub CLI authentication.
+- GitHub push works in this workspace as of the latest pushed phase. Repo visibility still reports as public.
 
 ## Repo Organization
 

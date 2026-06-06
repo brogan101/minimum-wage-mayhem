@@ -1,4 +1,52 @@
-# Validation Report - Phase 24 Career Store Manager Loop Pass
+# Validation Report - Phase 25 Full Build Audit And Fix Pass
+
+## Phase 25 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 24 career/store-manager loop contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Godot regression smokes before/after cleanup:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Phase 20 two-shift save/load progression stress check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase23_core_gameplay_depth_check.gd
+[PASS] Phase 23 core gameplay depth check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase24_career_multi_shift_loop_check.gd
+[PASS] Phase 24 career multi-shift loop check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase15_menu_playability_check.gd
+[PASS] Phase 15 menu playability smoke check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase25_full_build_audit_check.gd
+[PASS] Phase 25 full build audit smoke check passed
+```
+
+Static validation after Phase 25 edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 25 full build audit/fix contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Godot headless dummy renderer note: some smokes may emit non-blocking cleanup messages such as `mesh_get_surface_count` or tween warnings after passing assertions. These did not fail the commands.
+
+Manual human-controlled visible playtest and physical controller validation remain pending.
+
+# Historical Validation Report - Phase 24 Career Store Manager Loop Pass
 
 ## Phase 24 Current Validation
 

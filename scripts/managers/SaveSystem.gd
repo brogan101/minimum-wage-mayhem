@@ -16,6 +16,7 @@ func save_game(extra_data: Dictionary = {}) -> bool:
 	var restaurant_memory = _runtime("RestaurantMemoryManager")
 	var object_memory = _runtime("StoreObjectMemoryManager")
 	var dynamic_reputation = _runtime("DynamicReputationLabelManager")
+	var previous_save = _get_previous_save_data()
 	var save_data = {
 		"schema_version": 4,
 		"wallet": wallet.balance if wallet else 0.0,
@@ -30,9 +31,9 @@ func save_game(extra_data: Dictionary = {}) -> bool:
 		"restaurant_memory": restaurant_memory.get_save_data() if restaurant_memory and restaurant_memory.has_method("get_save_data") else {},
 		"store_object_memory": object_memory.get_save_data() if object_memory and object_memory.has_method("get_save_data") else {},
 		"dynamic_reputation": dynamic_reputation.get_save_data() if dynamic_reputation and dynamic_reputation.has_method("get_save_data") else {},
-		"progression": extra_data.get("progression", {}),
-		"last_shift": extra_data.get("last_shift", {}),
-		"next_shift": extra_data.get("next_shift", {}),
+		"progression": extra_data.get("progression", previous_save.get("progression", {})),
+		"last_shift": extra_data.get("last_shift", previous_save.get("last_shift", {})),
+		"next_shift": extra_data.get("next_shift", previous_save.get("next_shift", {})),
 		"saved_at_ticks": Time.get_ticks_msec(),
 		"apartment": {
 			"furniture": []
@@ -121,6 +122,27 @@ func get_last_save_data() -> Dictionary:
 	if last_save_data.is_empty():
 		return load_game()
 	return last_save_data.duplicate(true)
+
+func _get_previous_save_data() -> Dictionary:
+	if not last_save_data.is_empty():
+		return last_save_data.duplicate(true)
+	return _read_save_data_without_applying()
+
+func _read_save_data_without_applying() -> Dictionary:
+	if not FileAccess.file_exists(SAVE_PATH):
+		return {}
+	var file = FileAccess.open(SAVE_PATH, FileAccess.READ)
+	if not file:
+		return {}
+	var json_text = file.get_as_text()
+	file.close()
+	if json_text.strip_edges().is_empty():
+		return {}
+	var parser = JSON.new()
+	if parser.parse(json_text) != OK:
+		return {}
+	var save_data = parser.data
+	return save_data.duplicate(true) if typeof(save_data) == TYPE_DICTIONARY else {}
 
 func _autoload(name: String) -> Node:
 	return get_tree().root.get_node_or_null(name)
