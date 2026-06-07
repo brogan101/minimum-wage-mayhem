@@ -21,6 +21,10 @@ No external art/audio asset is currently approved for final release attribution 
 
 No external art/audio assets were added during Phase 21. The art pass uses Godot primitive meshes, runtime-generated materials, Label3D signs, and project-local GDScript only.
 
+## Phase 27
+
+No external art/audio assets were added during Phase 27. The visual asset, prop, texture, and restaurant identity pass uses only Godot primitives, Label3D text, procedural materials, runtime-generated cartoon/noise textures, lighting nodes, and project-local GDScript.
+
 ## Required Entry Format
 
 ```text

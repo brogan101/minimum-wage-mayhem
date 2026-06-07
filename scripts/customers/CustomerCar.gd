@@ -15,6 +15,7 @@ func _ready():
 	global_position = start_position
 	_apply_customer_variant()
 	_apply_phase21_cartoon_details()
+	_apply_phase27_customer_car_identity()
 	var order_manager = _autoload("OrderManager")
 	if order_manager and order_manager.has_signal("order_fulfilled"):
 		order_manager.order_fulfilled.connect(_on_order_fulfilled)
@@ -110,6 +111,31 @@ func _apply_phase21_cartoon_details():
 		label.modulate = Color(0.06, 0.05, 0.04)
 		label.outline_size = 2
 		label.outline_modulate = Color(1.0, 0.94, 0.76)
+		add_child(label)
+
+func _apply_phase27_customer_car_identity():
+	var trim = _mat("Phase27 car cream stripe", Color(1.0, 0.9, 0.58), 0.56)
+	var black = _mat("Phase27 car ink trim", Color(0.02, 0.018, 0.018), 0.78)
+	var glass = _mat("Phase27 car glossy window", Color(0.48, 0.78, 1.0), 0.32)
+	var sign = _mat("Phase27 car roof sign", Color(1.0, 0.78, 0.16), 0.5, Color(0.9, 0.55, 0.05, 1.0))
+	var bumper = _mat("Phase27 car bumper shine", Color(0.72, 0.76, 0.78), 0.36)
+	_add_detail_box("Phase27SideStripeL", Vector3(-0.86, 0.25, 0.0), Vector3(0.04, 0.12, 1.35), trim)
+	_add_detail_box("Phase27SideStripeR", Vector3(0.86, 0.25, 0.0), Vector3(0.04, 0.12, 1.35), trim)
+	_add_detail_box("Phase27RoofOrderSign", Vector3(0.0, 0.98, -0.05), Vector3(0.62, 0.2, 0.42), sign)
+	_add_detail_box("Phase27WindshieldShine", Vector3(-0.22, 0.8, -0.515), Vector3(0.18, 0.035, 0.035), glass)
+	_add_detail_box("Phase27FrontPlate", Vector3(0.0, 0.08, -1.285), Vector3(0.46, 0.16, 0.035), bumper)
+	_add_detail_box("Phase27DoorHandleL", Vector3(-0.9, 0.42, -0.18), Vector3(0.04, 0.08, 0.18), black)
+	_add_detail_box("Phase27DoorHandleR", Vector3(0.9, 0.42, -0.18), Vector3(0.04, 0.08, 0.18), black)
+	if not get_node_or_null("Phase27RoofSignText"):
+		var label = Label3D.new()
+		label.name = "Phase27RoofSignText"
+		label.text = "ORDER"
+		label.position = Vector3(0.0, 1.12, -0.05)
+		label.font_size = 14
+		label.pixel_size = 0.007
+		label.modulate = Color(0.08, 0.04, 0.01)
+		label.outline_size = 2
+		label.outline_modulate = Color(1.0, 0.82, 0.22)
 		add_child(label)
 
 func _set_order_bubble(text: String):

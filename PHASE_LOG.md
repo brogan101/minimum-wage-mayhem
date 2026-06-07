@@ -1,5 +1,24 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-06 - Phase 27 Visual Asset Prop Texture Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 26 report, Phase 25 audit report, source of truth, implementation status, validation report, phase log, solo-shift acceptance test, known issues, asset attribution, and file inclusion manifest.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Added a stronger fake fast-food restaurant identity using Godot primitives, procedural materials, labels, and lights.
+- Added branded front/menu signage, wall panels, drive-thru speaker, pickup shelf, station props, and clock-out poster.
+- Improved station silhouettes for register, grill, fryer, prep/bagging, drink, sauce/restock, trash, cleaning, and drive-thru.
+- Added Phase 27 CustomerCar visual details without changing the order flow.
+- Added Phase 27 HUD trim and ticket/clipboard/prompt styling without removing existing readable HUD content.
+- Added `tools/phase27_visual_asset_prop_texture_check.gd`.
+- Added `tools/phase27_visual_screenshot.gd` and generated excluded screenshot proof at `artifacts/phase27_visual_asset_prop_texture.png`.
+- Extended `tools/validate_all.py` with a Phase 27 visual contract.
+- Added `PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md`.
+- Updated asset attribution and file inclusion manifest; no external assets were added.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: visible manual playtest with physical controller hardware if available, HUD scaling check, manager-trial clarity, and production art/audio polish.
+
 ## 2026-06-06 - Phase 26 Fun Content Shift Variety Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

@@ -1,4 +1,24 @@
-# Implementation Status - Phase 26 Fun Content Shift Variety Pass
+# Implementation Status - Phase 27 Visual Asset Prop Texture Pass
+
+## Phase 27 Current Status
+
+Phase 27 is implemented as a scoped visual asset, prop, texture, lighting, restaurant identity, and HUD polish pass on top of the stable Phase 26 build. It does not add major gameplay systems, DLC/business expansion, online services, multiplayer, paid assets, third-party assets, or a new restaurant story-event pack. The restaurant story-event catalog remains locked at 180.
+
+Latest Phase 27 work:
+
+- Added a stronger project-local restaurant identity in `Main.gd`: brand sign, menu-board panels, item labels, warm lobby wall panels, cool kitchen wall panels, drive-thru speaker landmark, pickup shelf, clock-out poster, and readability lighting.
+- Added more recognizable primitive station silhouettes: register drawer/receipt, grill guard/spatula, fryer basket mesh, prep wrapper stack, drink dispenser/nozzles, sauce packet rack, trash lid, and mop bucket.
+- Added Phase 27 CustomerCar details in `CustomerCar.gd`: side stripes, roof order sign, windshield shine, front plate, and door handles.
+- Added HUD visual polish in `GameHUD.gd`: ticket paper treatment, objective/timer badges, manager clipboard styling, career ribbon, and prompt key badge.
+- Added `tools/phase27_visual_asset_prop_texture_check.gd` for runtime proof that the visual layer exists and does not break one order handoff.
+- Added `tools/phase27_visual_screenshot.gd` for normal-renderer screenshot proof at `artifacts/phase27_visual_asset_prop_texture.png`.
+- Extended `tools/validate_all.py` with a Phase 27 visual asset/prop/texture contract.
+- Added `PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md`.
+- Updated asset attribution and file inclusion docs to record that no external assets were added.
+
+Automated Godot proof validates the new visual nodes, CustomerCar details, HUD polish nodes, preserved Phase 21 route guidance, preserved Phase 24 career board, one order handoff after visual changes, and the 180 story-event lock. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 26 Fun Content Shift Variety Pass
 
 ## Phase 26 Current Status
 

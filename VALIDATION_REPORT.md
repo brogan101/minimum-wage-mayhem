@@ -1,4 +1,62 @@
-# Validation Report - Phase 26 Fun Content Shift Variety Pass
+# Validation Report - Phase 27 Visual Asset Prop Texture Pass
+
+## Phase 27 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 26 fun content/shift variety contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Phase 27 visual smoke during implementation:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase27_visual_asset_prop_texture_check.gd
+[PASS] Phase 27 visual node exists: Phase27ExteriorBrandSign
+[PASS] Phase 27 visual node exists: Phase27DriveThruOrderSpeaker
+[PASS] Phase 27 visual node exists: Phase27RegisterDrawer
+[PASS] Phase 27 visual node exists: Phase27GrillGreaseGuard
+[PASS] Phase 27 visual node exists: Phase27FryerBasketMeshA
+[PASS] Phase 27 visual node exists: Phase27DrinkDispenserBody
+[PASS] Phase 27 customer car detail exists: Phase27RoofOrderSign
+[PASS] Phase 27 HUD polish node exists: Phase27OrderTicketPaper
+[PASS] One order still completes after visual upgrade
+[PASS] Restaurant story event count remains 180
+[PASS] Phase 27 visual asset prop texture check passed
+```
+
+Screenshot proof:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --path . --script res://tools/phase27_visual_screenshot.gd
+[PASS] Phase 27 rendered screenshot saved: res://artifacts/phase27_visual_asset_prop_texture.png
+```
+
+Final static validation:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 27 visual asset/prop/texture contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Final regression smokes:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Phase 20 two-shift save/load progression stress check passed
+```
+
+Manual human-controlled visible playtest and physical controller validation remain pending. Godot headless dummy renderer may emit non-blocking cleanup messages after passing assertions.
+
+# Historical Validation Report - Phase 26 Fun Content Shift Variety Pass
 
 ## Phase 26 Current Validation
 

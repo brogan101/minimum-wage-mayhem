@@ -2,6 +2,13 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 27 Notes
+
+- Phase 27 improves restaurant identity, zone readability, station prop silhouettes, CustomerCar details, lighting, and HUD trim using only Godot primitives/procedural materials.
+- No external assets were added; final production art/audio assets are still pending.
+- Screenshot proof exists at `artifacts/phase27_visual_asset_prop_texture.png`, but generated artifacts remain excluded from git.
+- Phase 27 is automated/script validated, not a claimed human manual playtest.
+
 ## Phase 26 Notes
 
 - Phase 26 adds more normal/mild customer order templates, customer moments, task rotation, and recap/save proof without increasing the restaurant story-event catalog.

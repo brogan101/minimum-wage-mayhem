@@ -1873,6 +1873,101 @@ def validate_phase_26_fun_content_shift_variety_contract():
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 26 smoke contract missing: {fragment}")
 
+def validate_phase_27_visual_asset_prop_texture_contract():
+    report = ROOT / "PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md"
+    smoke = ROOT / "tools/phase27_visual_asset_prop_texture_check.gd"
+    screenshot = ROOT / "tools/phase27_visual_screenshot.gd"
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    car = (ROOT / "scripts/customers/CustomerCar.gd").read_text(encoding="utf-8")
+    attribution = (ROOT / "ASSET_ATTRIBUTION.md").read_text(encoding="utf-8")
+    manifest = (ROOT / "FILE_INCLUSION_MANIFEST.md").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 27 report: PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 27 smoke: tools/phase27_visual_asset_prop_texture_check.gd")
+    if not screenshot.exists():
+        raise AssertionError("Missing Phase 27 screenshot helper: tools/phase27_visual_screenshot.gd")
+
+    for fragment in [
+        "_apply_phase27_restaurant_identity_upgrade",
+        "Phase27ExteriorBrandSign",
+        "Phase27BrandNameSign",
+        "Phase27MenuBoardLeftPanel",
+        "Phase27DriveThruOrderSpeaker",
+        "Phase27RegisterDrawer",
+        "Phase27GrillGreaseGuard",
+        "Phase27FryerBasketMeshA",
+        "Phase27DrinkDispenserBody",
+        "Phase27SaucePacketRack",
+        "Phase27ClockOutWallPoster",
+        "Phase27KitchenReadabilityLight",
+    ]:
+        if fragment not in main:
+            raise AssertionError(f"Phase 27 restaurant visual contract missing: {fragment}")
+
+    for fragment in [
+        "_apply_phase27_hud_polish",
+        "Phase27OrderTicketPaper",
+        "Phase27HudBrandLabel",
+        "Phase27ObjectiveBadge",
+        "Phase27TaskBoardClip",
+        "Phase27PromptKeyBadge",
+    ]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 27 HUD visual contract missing: {fragment}")
+
+    for fragment in [
+        "_apply_phase27_customer_car_identity",
+        "Phase27RoofOrderSign",
+        "Phase27SideStripeL",
+        "Phase27WindshieldShine",
+        "Phase27FrontPlate",
+    ]:
+        if fragment not in car:
+            raise AssertionError(f"Phase 27 customer car visual contract missing: {fragment}")
+
+    for fragment in [
+        "No external art/audio assets were added during Phase 27",
+        "Godot primitives",
+        "procedural materials",
+    ]:
+        if fragment not in attribution:
+            raise AssertionError(f"Phase 27 asset attribution note missing: {fragment}")
+
+    for fragment in [
+        "PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md",
+        "tools/phase27_visual_asset_prop_texture_check.gd",
+        "tools/phase27_visual_screenshot.gd",
+    ]:
+        if fragment not in manifest:
+            raise AssertionError(f"Phase 27 file inclusion manifest missing: {fragment}")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Phase 27 visual node exists: ",
+        "Phase27ExteriorBrandSign",
+        "Phase 27 customer car detail exists: ",
+        "Phase27RoofOrderSign",
+        "Phase 27 HUD polish node exists: ",
+        "Phase27OrderTicketPaper",
+        "One order still completes after visual upgrade",
+        "Restaurant story event count remains 180",
+        "Phase 27 visual asset prop texture check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 27 smoke contract missing: {fragment}")
+
+    screenshot_text = screenshot.read_text(encoding="utf-8")
+    for fragment in [
+        "phase27_visual_asset_prop_texture.png",
+        "Phase27VisualOverviewCamera",
+        "Phase 27 rendered screenshot saved",
+    ]:
+        if fragment not in screenshot_text:
+            raise AssertionError(f"Phase 27 screenshot helper missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1957,6 +2052,7 @@ def main() -> int:
         validate_phase_24_career_store_manager_loop_contract()
         validate_phase_25_full_build_audit_contract()
         validate_phase_26_fun_content_shift_variety_contract()
+        validate_phase_27_visual_asset_prop_texture_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -2046,6 +2142,7 @@ def main() -> int:
     print("[PASS] Phase 24 career/store-manager loop contract valid")
     print("[PASS] Phase 25 full build audit/fix contract valid")
     print("[PASS] Phase 26 fun content/shift variety contract valid")
+    print("[PASS] Phase 27 visual asset/prop/texture contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

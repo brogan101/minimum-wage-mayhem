@@ -304,6 +304,23 @@ func _apply_demo_layout():
 			label.add_theme_color_override("font_shadow_color", Color(0.02, 0.02, 0.02, 1.0))
 			label.add_theme_constant_override("shadow_offset_x", 1)
 			label.add_theme_constant_override("shadow_offset_y", 1)
+	_apply_phase27_hud_polish(control)
+
+func _apply_phase27_hud_polish(control: Control):
+	_add_panel(control, "Phase27OrderTicketPaper", Vector2(23, 54), Vector2(296, 158), Color(1.0, 0.91, 0.68, 0.12))
+	_add_panel(control, "Phase27OrderTicketTearEdge", Vector2(28, 206), Vector2(286, 4), Color(1.0, 0.82, 0.34, 0.72))
+	_add_panel(control, "Phase27ObjectiveBadge", Vector2(374, 24), Vector2(118, 28), Color(0.86, 0.08, 0.05, 0.95))
+	_add_panel(control, "Phase27TimerBadge", Vector2(500, 24), Vector2(124, 28), Color(0.98, 0.7, 0.12, 0.95))
+	_add_panel(control, "Phase27TaskBoardClip", Vector2(948, 22), Vector2(304, 24), Color(0.95, 0.72, 0.18, 0.92))
+	_add_panel(control, "Phase27TaskBoardPaper", Vector2(952, 54), Vector2(298, 284), Color(1.0, 0.92, 0.68, 0.08))
+	_add_panel(control, "Phase27CareerRibbon", Vector2(948, 354), Vector2(304, 20), Color(0.86, 0.08, 0.05, 0.92))
+	_add_panel(control, "Phase27PromptKeyBadge", Vector2(366, 608), Vector2(58, 36), Color(0.95, 0.72, 0.18, 0.96))
+	_add_panel(control, "Phase27PromptTextBacking", Vector2(432, 608), Vector2(488, 48), Color(0.08, 0.06, 0.045, 0.82))
+	_ensure_label(control, "Phase27HudBrandLabel", Vector2(214, 204), Vector2(92, 14), "MAYHEM", 10, Color(1.0, 0.96, 0.74))
+	_ensure_label(control, "Phase27ObjectiveBadgeText", Vector2(388, 31), Vector2(96, 18), "SHIFT", 12, Color(1.0, 0.96, 0.76))
+	_ensure_label(control, "Phase27TimerBadgeText", Vector2(514, 31), Vector2(94, 18), "CLOCK", 12, Color(0.08, 0.04, 0.02))
+	_ensure_label(control, "Phase27PromptKeyText", Vector2(379, 615), Vector2(34, 20), "E/A", 15, Color(0.08, 0.05, 0.01))
+	_ensure_label(control, "Phase27TaskBoardTitle", Vector2(972, 26), Vector2(250, 18), "MANAGER CLIPBOARD", 12, Color(0.06, 0.04, 0.02))
 
 func _add_panel(parent: Control, panel_name: String, pos: Vector2, size: Vector2, color: Color):
 	if parent.get_node_or_null(panel_name):
