@@ -18,6 +18,7 @@ var rewards_earned := {
 	"promotion_progress": 0
 }
 var data_task_catalog := {}
+var last_rotation_offset: int = 0
 
 var fallback_tasks := [
 	{
@@ -28,6 +29,13 @@ var fallback_tasks := [
 		"reward": {"cash": 3, "xp": 8, "tips": 1}
 	},
 	{
+		"id": "take_out_trash_before_lobby_smells",
+		"title": "Take out trash before the lobby develops a personality",
+		"category": "normal_work",
+		"trigger": "store_duty:take_out_trash",
+		"reward": {"cash": 3, "xp": 7, "reputation": 1}
+	},
+	{
 		"id": "clear_bagging_table",
 		"title": "Clear the bagging table",
 		"category": "station",
@@ -35,11 +43,25 @@ var fallback_tasks := [
 		"reward": {"xp": 10, "cash": 2, "promotion_progress": 1}
 	},
 	{
+		"id": "check_fryer_before_lore",
+		"title": "Check fryer before it becomes lore",
+		"category": "station",
+		"trigger": "store_duty:check_fryer",
+		"reward": {"xp": 9, "cash": 2, "promotion_progress": 1}
+	},
+	{
 		"id": "count_register",
 		"title": "Count the register without sighing at it",
 		"category": "manager_request",
 		"trigger": "store_duty:open_register",
 		"reward": {"xp": 8, "reputation": 1, "promotion_progress": 1}
+	},
+	{
+		"id": "upsell_soda_calmly",
+		"title": "Serve one soda combo without sounding haunted",
+		"category": "manager_request",
+		"trigger": "order_type:soda",
+		"reward": {"tips": 2, "xp": 8, "promotion_progress": 1}
 	},
 	{
 		"id": "clean_station",
@@ -63,11 +85,25 @@ var fallback_tasks := [
 		"reward": {"cash": 5, "tips": 2, "xp": 10}
 	},
 	{
+		"id": "serve_combo_order",
+		"title": "Serve one combo order with all requested items",
+		"category": "customer_service",
+		"trigger": "order_type:combo",
+		"reward": {"cash": 4, "tips": 2, "xp": 11}
+	},
+	{
 		"id": "make_coworker_laugh",
 		"title": "Make a coworker laugh during the rush",
 		"category": "small_funny",
 		"trigger": "coworker_dialogue",
 		"reward": {"morale": 2, "xp": 6}
+	},
+	{
+		"id": "answer_morgan_headset_omen",
+		"title": "Answer one coworker comment without losing the lane",
+		"category": "small_funny",
+		"trigger": "coworker_dialogue:rush",
+		"reward": {"morale": 2, "xp": 7}
 	}
 ]
 
@@ -75,7 +111,8 @@ func _ready() -> void:
 	data_task_catalog = _load_json_dictionary("res://data/mischief/daily_tasks.json")
 	generate_daily_tasks()
 
-func generate_daily_tasks(count: int = 6, categories: Array = []) -> Array:
+func generate_daily_tasks(count: int = 6, categories: Array = [], rotation_offset: int = 0) -> Array:
+	last_rotation_offset = rotation_offset
 	active_tasks.clear()
 	completed_tasks.clear()
 	failed_tasks.clear()
@@ -90,7 +127,7 @@ func generate_daily_tasks(count: int = 6, categories: Array = []) -> Array:
 		"small_funny"
 	]
 	for category in selected_categories:
-		var task = _first_task_for_category(str(category))
+		var task = _task_for_category(str(category), rotation_offset)
 		if not task.is_empty():
 			active_tasks.append(_with_runtime_state(task))
 		if active_tasks.size() >= count:
@@ -101,6 +138,10 @@ func generate_daily_tasks(count: int = 6, categories: Array = []) -> Array:
 	daily_task_updated.emit(get_task_status())
 	_log("daily_tasks_generated", float(active_tasks.size()), "Optional shift tasks generated")
 	return get_task_status()
+
+func refresh_for_shift(shift_number: int) -> Array:
+	var rotation = max(0, shift_number - 1)
+	return generate_daily_tasks(6, [], rotation)
 
 func record_progress(event_name: String, detail: String = ""):
 	for i in range(active_tasks.size()):
@@ -180,10 +221,13 @@ func _matches_task(task: Dictionary, event_name: String, detail: String) -> bool
 		return event_name == parts[0] and detail == parts[1]
 	return event_name == trigger
 
-func _first_task_for_category(category: String) -> Dictionary:
+func _task_for_category(category: String, offset: int = 0) -> Dictionary:
+	var matches: Array = []
 	for task in fallback_tasks:
 		if str(task.get("category", "")) == category:
-			return task
+			matches.append(task)
+	if not matches.is_empty():
+		return matches[abs(offset) % matches.size()]
 	return {}
 
 func _with_runtime_state(task: Dictionary) -> Dictionary:

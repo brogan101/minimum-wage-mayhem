@@ -69,7 +69,10 @@ func _apply_customer_variant():
 		{"label": "Regular", "node": "BodyRed", "color": "red"},
 		{"label": "Lunch Driver", "node": "BodyBlue", "color": "blue"},
 		{"label": "Thirsty Commuter", "node": "BodyYellow", "color": "yellow"},
-		{"label": "Regular", "node": "BodyGreen", "color": "green"}
+		{"label": "Coupon Skeptic", "node": "BodyGreen", "color": "green"},
+		{"label": "Night Nurse", "node": "BodyBlue", "color": "blue"},
+		{"label": "Parent Van", "node": "BodyYellow", "color": "yellow"},
+		{"label": "Off-Duty Cook", "node": "BodyRed", "color": "red"}
 	]
 	var selected = variants.pick_random()
 	customer_type = str(selected["label"])

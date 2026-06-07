@@ -1,4 +1,69 @@
-# Validation Report - Phase 25 Full Build Audit And Fix Pass
+# Validation Report - Phase 26 Fun Content Shift Variety Pass
+
+## Phase 26 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 25 full build audit/fix contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Focused Godot smokes during implementation:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase6_runtime_check.gd
+[PASS] Phase 6 runtime daily tasks check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase23_core_gameplay_depth_check.gd
+[PASS] Phase 23 core gameplay depth check passed
+```
+
+Phase 26 Godot smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase26_fun_content_shift_variety_check.gd
+[PASS] Order template variety expanded
+[PASS] Daily task board rotates after first shift
+[PASS] Coupon Skeptic order can be requested
+[PASS] Night Nurse order can be requested
+[PASS] Varied order pays reward and moment tip
+[PASS] Varied orders and coworker moment complete real tasks
+[PASS] Customer moments are logged
+[PASS] Recap includes order variety
+[PASS] Recap includes customer moments
+[PASS] Restaurant story event count remains 180
+[PASS] Save/load preserves order variety
+[PASS] Phase 26 fun content shift variety check passed
+```
+
+Static validation after Phase 26 edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 26 fun content/shift variety contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Final Phase 26 regression smokes:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Phase 20 two-shift save/load progression stress check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase24_career_multi_shift_loop_check.gd
+[PASS] Phase 24 career multi-shift loop check passed
+```
+
+Manual human-controlled visible playtest and physical controller validation remain pending. Godot headless dummy renderer may emit non-blocking cleanup messages after passing assertions.
+
+# Historical Validation Report - Phase 25 Full Build Audit And Fix Pass
 
 ## Phase 25 Current Validation
 

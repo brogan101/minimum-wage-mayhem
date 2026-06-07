@@ -2,6 +2,13 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 26 Notes
+
+- Phase 26 adds more normal/mild customer order templates, customer moments, task rotation, and recap/save proof without increasing the restaurant story-event catalog.
+- The first shift intentionally remains manageable; the expanded variety appears through normal combos, mild customer personalities, and later-shift task rotation rather than constant chaos.
+- Customer moments are text/HUD/recap/log driven. They are not animated character performances yet.
+- Phase 26 is automated/script validated, not a claimed human manual playtest.
+
 ## Phase 25 Notes
 
 - Phase 25 fixes pause/menu save preservation for completed-shift and next-shift data.
@@ -33,6 +40,7 @@ This is an early playable build, not a final Steam demo.
 - Phase 23 adds functional first-pass bagging, Burger, Fries, and Soda prep through carried order bags.
 - Wrong/incomplete drive-thru handoffs now teach the missing/extra item, raise Beef modestly, keep the ticket active, and allow retry.
 - Customer order variety is intentionally normal and small: Regular, Lunch Driver, and Thirsty Commuter.
+- Phase 26 expands this to more normal/mild customers while preserving the first-ticket Burger onboarding.
 - Phase 23 is automated/script validated, not a claimed human manual playtest.
 
 ## Phase 24 Notes

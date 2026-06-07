@@ -1807,6 +1807,72 @@ def validate_phase_25_full_build_audit_contract():
         if fragment not in smoke_text:
             raise AssertionError(f"Phase 25 smoke contract missing: {fragment}")
 
+def validate_phase_26_fun_content_shift_variety_contract():
+    report = ROOT / "PHASE_26_FUN_CONTENT_SHIFT_VARIETY_REPORT.md"
+    smoke = ROOT / "tools/phase26_fun_content_shift_variety_check.gd"
+    order_manager = (ROOT / "scripts/managers/OrderManager.gd").read_text(encoding="utf-8")
+    daily = (ROOT / "scripts/mischief/DailyTaskManager.gd").read_text(encoding="utf-8")
+    customer_car = (ROOT / "scripts/customers/CustomerCar.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    shift_results = (ROOT / "scripts/managers/ShiftResultManager.gd").read_text(encoding="utf-8")
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 26 report: PHASE_26_FUN_CONTENT_SHIFT_VARIETY_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 26 smoke: tools/phase26_fun_content_shift_variety_check.gd")
+
+    for fragment in [
+        "Coupon Skeptic",
+        "Night Nurse",
+        "Parent Van",
+        "Off-Duty Cook",
+        "get_order_variety_summary",
+        "customer_moment_entries",
+        "customer_moment",
+        "order_type",
+    ]:
+        if fragment not in order_manager:
+            raise AssertionError(f"Phase 26 order variety contract missing: {fragment}")
+
+    for fragment in [
+        "refresh_for_shift",
+        "serve_combo_order",
+        "upsell_soda_calmly",
+        "answer_morgan_headset_omen",
+        "take_out_trash_before_lobby_smells",
+    ]:
+        if fragment not in daily:
+            raise AssertionError(f"Phase 26 daily task variety contract missing: {fragment}")
+
+    for fragment in ["Coupon Skeptic", "Night Nurse", "Parent Van", "Off-Duty Cook"]:
+        if fragment not in customer_car:
+            raise AssertionError(f"Phase 26 customer car variety contract missing: {fragment}")
+
+    for fragment in ["Mood:", "Target:", "customer_moment"]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 26 HUD ticket variety contract missing: {fragment}")
+
+    for fragment in ["Order Variety:", "Customer Moments:", "order_variety_summary", "customer_moment_entries"]:
+        if fragment not in shift_results:
+            raise AssertionError(f"Phase 26 recap variety contract missing: {fragment}")
+
+    if "refresh_for_shift" not in main:
+        raise AssertionError("Phase 26 Main.gd does not refresh daily tasks per shift")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Daily task board rotates after first shift",
+        "Coupon Skeptic order can be requested",
+        "Night Nurse order can be requested",
+        "Customer moments are logged",
+        "Recap includes order variety",
+        "Restaurant story event count remains 180",
+        "Phase 26 fun content shift variety check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 26 smoke contract missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -1890,6 +1956,7 @@ def main() -> int:
         validate_phase_23_core_gameplay_depth_contract()
         validate_phase_24_career_store_manager_loop_contract()
         validate_phase_25_full_build_audit_contract()
+        validate_phase_26_fun_content_shift_variety_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -1978,6 +2045,7 @@ def main() -> int:
     print("[PASS] Phase 23 core gameplay depth contract valid")
     print("[PASS] Phase 24 career/store-manager loop contract valid")
     print("[PASS] Phase 25 full build audit/fix contract valid")
+    print("[PASS] Phase 26 fun content/shift variety contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

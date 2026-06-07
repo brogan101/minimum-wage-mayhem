@@ -92,6 +92,9 @@ func build_shift_result_data(player_stats: Dictionary = {}) -> Dictionary:
 	var failed_tasks = _count_tasks(daily_tasks, "failed")
 	var order_tips = order_manager.get_tips_earned() if order_manager and order_manager.has_method("get_tips_earned") else 0
 	var order_mistakes = order_manager.get_mistake_count() if order_manager and order_manager.has_method("get_mistake_count") else 0
+	var order_variety = order_manager.get_order_variety_summary() if order_manager and order_manager.has_method("get_order_variety_summary") else {}
+	for review in order_variety.get("review_lines", []):
+		reviews.append(str(review))
 	var result = {
 		"shift_number": shift_number,
 		"money_earned": current_wallet - float(shift_start_snapshot.get("wallet", 0.0)),
@@ -103,6 +106,8 @@ func build_shift_result_data(player_stats: Dictionary = {}) -> Dictionary:
 		"average_patience": order_manager.get_average_patience() if order_manager and order_manager.has_method("get_average_patience") else float(store_effects.get("customer_patience", 1.0)),
 		"order_mistakes": order_mistakes,
 		"last_order_feedback": order_manager.get_last_validation_summary() if order_manager and order_manager.has_method("get_last_validation_summary") else "No order mistakes",
+		"order_variety_summary": order_variety,
+		"customer_moment_entries": order_variety.get("customer_moments", []),
 		"beef_incidents": beef_incidents.size(),
 		"current_beef": beef.current_beef if beef else 0.0,
 		"staff_morale_change": int(staff_effects.get("staff_morale", 0)) - int(shift_start_snapshot.get("staff_morale", 0)),
@@ -161,6 +166,14 @@ func format_shift_report(result: Dictionary) -> String:
 	report += "Order Accuracy: " + str(int(float(result.get("order_accuracy", 1.0)) * 100.0)) + "%\n"
 	report += "Mistakes: " + str(result.get("order_mistakes", 0)) + "\n"
 	report += "Last Order Feedback: " + str(result.get("last_order_feedback", "No order feedback")) + "\n"
+	var order_variety: Dictionary = result.get("order_variety_summary", {})
+	if not order_variety.is_empty():
+		report += "Order Variety: " + str(order_variety.get("customer_types", []).size()) + " customer types / " + str(order_variety.get("combo_count", 0)) + " combo orders\n"
+	if not result.get("customer_moment_entries", []).is_empty():
+		report += "Customer Moments:"
+		for entry in result.get("customer_moment_entries", []).slice(0, min(4, result.get("customer_moment_entries", []).size())):
+			report += "\n- " + str(entry)
+		report += "\n"
 	report += "Average Wait: " + str(snapped(float(result.get("average_wait", 0.0)), 0.1)) + "s\n"
 	report += "Average Patience: " + str(int(float(result.get("average_patience", 1.0)) * 100.0)) + "%\n"
 	report += "Beef Incidents: " + str(result.get("beef_incidents", 0)) + "\n"
@@ -368,6 +381,9 @@ func _build_pre_shift_modifier(result: Dictionary) -> Dictionary:
 
 func _pick_notable_moment(event_log: Node, daily_entries: Array, store_entries: Array) -> String:
 	if event_log and event_log.has_method("get_events_by_type"):
+		var customer_moments = event_log.get_events_by_type("customer_moment")
+		if customer_moments.size() > 0:
+			return str(customer_moments[-1].get("detail", "A customer reacted to the shift."))
 		var funny = event_log.get_events_by_type("coworker_dialogue")
 		if funny.size() > 0:
 			return str(funny[-1].get("detail", "Coworker said something shift-shaped"))

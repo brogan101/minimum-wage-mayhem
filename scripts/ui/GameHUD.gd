@@ -66,6 +66,7 @@ func _update_order_display(order_data):
 	var customer_type = str(order_data.get("customer_type", "Customer"))
 	var ticket_id = str(order_data.get("ticket_id", "?"))
 	var patience = int(float(order_data.get("patience", 0.85)) * 100.0)
+	var target_time = int(float(order_data.get("target_time", 35.0)))
 	if order_title_label:
 		order_title_label.text = "TICKET #" + ticket_id + " - " + customer_type.to_upper()
 	for item in order_data["items"]:
@@ -76,9 +77,15 @@ func _update_order_display(order_data):
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		order_list.add_child(label)
 	var prep_label = Label.new()
-	prep_label.text = "Prep: Bag -> Grill/Fryer/Soda -> Window\nPatience: " + str(patience) + "%"
+	prep_label.text = "Prep: Bag -> Grill/Fryer/Soda -> Window\nPatience: " + str(patience) + "% | Target: " + str(target_time) + "s"
 	prep_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	order_list.add_child(prep_label)
+	var moment: Dictionary = order_data.get("customer_moment", {})
+	if not moment.is_empty():
+		var moment_label = Label.new()
+		moment_label.text = "Mood: " + str(moment.get("label", "normal customer"))
+		moment_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		order_list.add_child(moment_label)
 	var note = str(order_data.get("customer_note", ""))
 	if note.length() > 0:
 		var note_label = Label.new()

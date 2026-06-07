@@ -133,6 +133,11 @@ func start_new_shift():
 	current_shift_manager = sm
 	add_child(sm)
 	sm.start_shift()
+	var daily = find_child("DailyTaskManager", true, false)
+	var shift_results_for_tasks = _autoload("ShiftResultManager")
+	if daily and daily.has_method("refresh_for_shift") and shift_results_for_tasks:
+		var current_shift_number = int(shift_results_for_tasks.get("shift_number"))
+		daily.refresh_for_shift(current_shift_number)
 	if hud and hud.has_method("set_objective_status"):
 		hud.set_objective_status("Serve the ticket: Bag -> Burger/Fries/Soda as requested -> Green DRIVE-THRU Mat -> Clock Out.")
 	if hud and hud.has_method("set_first_shift_guidance"):
