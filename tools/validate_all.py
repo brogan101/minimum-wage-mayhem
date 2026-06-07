@@ -1968,6 +1968,104 @@ def validate_phase_27_visual_asset_prop_texture_contract():
         if fragment not in screenshot_text:
             raise AssertionError(f"Phase 27 screenshot helper missing: {fragment}")
 
+def validate_phase_28_major_graphics_upgrade_contract():
+    report = ROOT / "PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md"
+    smoke = ROOT / "tools/phase28_major_graphics_upgrade_check.gd"
+    screenshot = ROOT / "tools/phase28_graphics_screenshot.gd"
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    car = (ROOT / "scripts/customers/CustomerCar.gd").read_text(encoding="utf-8")
+    attribution = (ROOT / "ASSET_ATTRIBUTION.md").read_text(encoding="utf-8")
+    manifest = (ROOT / "FILE_INCLUSION_MANIFEST.md").read_text(encoding="utf-8")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 28 report: PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md")
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 28 smoke: tools/phase28_major_graphics_upgrade_check.gd")
+    if not screenshot.exists():
+        raise AssertionError("Missing Phase 28 screenshot helper: tools/phase28_graphics_screenshot.gd")
+
+    for fragment in [
+        "_apply_phase28_major_graphics_upgrade",
+        "_set_phase28_environment",
+        "_add_sphere",
+        "Phase28CeilingPlane",
+        "Phase28PendantLightShade",
+        "Phase28LobbyCounterRoundedFace",
+        "Phase28LobbyBoothSeat",
+        "Phase28DriveThruCurbedLane",
+        "Phase28OrderSpeakerRoundedTop",
+        "Phase28RegisterCurvedScreenBack",
+        "Phase28GrillRoundedHood",
+        "Phase28FryerEnamelFace",
+        "Phase28DrinkCupStackRoundA",
+        "Phase28BurgerRoundedTopBun",
+    ]:
+        if fragment not in main:
+            raise AssertionError(f"Phase 28 major graphics contract missing: {fragment}")
+
+    for fragment in [
+        "_apply_phase28_graphics_hud_support",
+        "Phase28HudReadabilityScrimLeft",
+        "Phase28HudReadabilityScrimTop",
+        "Phase28HudReadabilityScrimRight",
+        "Phase28PromptGlowLine",
+        "opacity_updates",
+    ]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 28 HUD readability contract missing: {fragment}")
+
+    for fragment in [
+        "_apply_phase28_cartoon_realistic_car",
+        "Phase28RoundedHoodPanel",
+        "Phase28CabinSideGlassL",
+        "Phase28FrontSmileGrille",
+        "Phase28WheelArch",
+        "Phase28Hubcap",
+    ]:
+        if fragment not in car:
+            raise AssertionError(f"Phase 28 customer car graphics contract missing: {fragment}")
+
+    for fragment in [
+        "No external art/audio assets were added during Phase 28",
+        "Godot primitives",
+        "procedural materials",
+    ]:
+        if fragment not in attribution:
+            raise AssertionError(f"Phase 28 asset attribution note missing: {fragment}")
+
+    for fragment in [
+        "PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md",
+        "tools/phase28_major_graphics_upgrade_check.gd",
+        "tools/phase28_graphics_screenshot.gd",
+    ]:
+        if fragment not in manifest:
+            raise AssertionError(f"Phase 28 file inclusion manifest missing: {fragment}")
+
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "Phase 28 graphics node exists: ",
+        "Phase28CeilingPlane",
+        "Phase 28 customer car upgrade exists: ",
+        "Phase28RoundedHoodPanel",
+        "Phase 28 HUD support node exists: ",
+        "Phase28HudReadabilityScrimLeft",
+        "One order still completes after major graphics upgrade",
+        "Restaurant story event count remains 180",
+        "Phase 28 major graphics upgrade check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 28 smoke contract missing: {fragment}")
+
+    screenshot_text = screenshot.read_text(encoding="utf-8")
+    for fragment in [
+        "phase28_major_graphics_upgrade.png",
+        "Phase28GraphicsOverviewCamera",
+        "Phase 28 rendered screenshot saved",
+    ]:
+        if fragment not in screenshot_text:
+            raise AssertionError(f"Phase 28 screenshot helper missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -2053,6 +2151,7 @@ def main() -> int:
         validate_phase_25_full_build_audit_contract()
         validate_phase_26_fun_content_shift_variety_contract()
         validate_phase_27_visual_asset_prop_texture_contract()
+        validate_phase_28_major_graphics_upgrade_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -2143,6 +2242,7 @@ def main() -> int:
     print("[PASS] Phase 25 full build audit/fix contract valid")
     print("[PASS] Phase 26 fun content/shift variety contract valid")
     print("[PASS] Phase 27 visual asset/prop/texture contract valid")
+    print("[PASS] Phase 28 major graphics upgrade contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

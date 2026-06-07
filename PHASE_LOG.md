@@ -1,5 +1,25 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-06 - Phase 28 Major Graphics Upgrade Pass
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 27 report, Phase 26 report, source of truth, implementation status, validation report, phase log, solo-shift acceptance test, known issues, asset attribution, and file inclusion manifest.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Added a larger procedural stylized cartoon-realistic restaurant graphics layer without external assets.
+- Added ceiling plane/grid, pendant lights, lobby wall, teal kitchen backsplash, booths/tables, curbed drive-thru lane, and floor/material variation.
+- Improved station silhouettes for register, grill, fryer, prep, drink, sauce, trash, and clock-out.
+- Improved burger/fries/order ticket props with rounder and more readable low-poly shapes.
+- Improved CustomerCar with hood/trunk panels, side glass, grille, roof glow, wheel arches, and hubcaps.
+- Improved HUD readability over richer scene visuals with stronger panel opacity and scrims.
+- Added `tools/phase28_major_graphics_upgrade_check.gd`.
+- Added `tools/phase28_graphics_screenshot.gd` and generated excluded screenshot proof at `artifacts/phase28_major_graphics_upgrade.png`.
+- Extended `tools/validate_all.py` with a Phase 28 major graphics contract.
+- Added `PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md`.
+- Updated asset attribution and file inclusion manifest; no external assets were added.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: visible manual playtest with physical controller hardware if available, HUD/signage overlap pass, manager-trial clarity, and production audio/art sourcing.
+
 ## 2026-06-06 - Phase 27 Visual Asset Prop Texture Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

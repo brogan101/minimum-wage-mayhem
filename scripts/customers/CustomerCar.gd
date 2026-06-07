@@ -16,6 +16,7 @@ func _ready():
 	_apply_customer_variant()
 	_apply_phase21_cartoon_details()
 	_apply_phase27_customer_car_identity()
+	_apply_phase28_cartoon_realistic_car()
 	var order_manager = _autoload("OrderManager")
 	if order_manager and order_manager.has_signal("order_fulfilled"):
 		order_manager.order_fulfilled.connect(_on_order_fulfilled)
@@ -137,6 +138,27 @@ func _apply_phase27_customer_car_identity():
 		label.outline_size = 2
 		label.outline_modulate = Color(1.0, 0.82, 0.22)
 		add_child(label)
+
+func _apply_phase28_cartoon_realistic_car():
+	var body_trim = _mat("Phase28 car soft enamel trim", Color(1.0, 0.86, 0.42), 0.48, Color(0.35, 0.18, 0.02, 1.0))
+	var rubber = _mat("Phase28 tire rubber", Color(0.012, 0.012, 0.014), 0.88)
+	var hub = _mat("Phase28 hubcap shine", Color(0.74, 0.78, 0.78), 0.34)
+	var glass = _mat("Phase28 curved car glass", Color(0.42, 0.74, 1.0), 0.26)
+	var light = _mat("Phase28 headlight warm glass", Color(1.0, 0.9, 0.55), 0.35, Color(1.0, 0.75, 0.28, 1.0))
+	_add_detail_box("Phase28RoundedHoodPanel", Vector3(0.0, 0.45, -0.92), Vector3(1.28, 0.12, 0.48), body_trim)
+	_add_detail_box("Phase28RoundedTrunkPanel", Vector3(0.0, 0.42, 0.82), Vector3(1.16, 0.1, 0.42), body_trim)
+	_add_detail_box("Phase28CabinSideGlassL", Vector3(-0.72, 0.68, -0.12), Vector3(0.04, 0.28, 0.54), glass)
+	_add_detail_box("Phase28CabinSideGlassR", Vector3(0.72, 0.68, -0.12), Vector3(0.04, 0.28, 0.54), glass)
+	_add_detail_box("Phase28FrontSmileGrille", Vector3(0.0, 0.16, -1.31), Vector3(0.92, 0.09, 0.04), rubber)
+	_add_detail_box("Phase28RoofLightGlow", Vector3(0.0, 1.12, -0.38), Vector3(0.38, 0.11, 0.22), light)
+	for wheel in [
+		{"name": "FL", "x": -0.78, "z": -0.72},
+		{"name": "FR", "x": 0.78, "z": -0.72},
+		{"name": "BL", "x": -0.78, "z": 0.72},
+		{"name": "BR", "x": 0.78, "z": 0.72},
+	]:
+		_add_detail_box("Phase28WheelArch" + str(wheel["name"]), Vector3(float(wheel["x"]), 0.19, float(wheel["z"])), Vector3(0.18, 0.35, 0.48), rubber)
+		_add_detail_box("Phase28Hubcap" + str(wheel["name"]), Vector3(float(wheel["x"]), 0.2, float(wheel["z"])), Vector3(0.2, 0.2, 0.06), hub)
 
 func _set_order_bubble(text: String):
 	var label = get_node_or_null("Phase21OrderBubbleText")

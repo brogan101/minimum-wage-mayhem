@@ -1,4 +1,26 @@
-# Implementation Status - Phase 27 Visual Asset Prop Texture Pass
+# Implementation Status - Phase 28 Major Graphics Upgrade Pass
+
+## Phase 28 Current Status
+
+Phase 28 is implemented as a major stylized cartoon-realistic graphics upgrade on top of the stable Phase 27 build. It does not add major gameplay systems, DLC/business expansion, online services, multiplayer, paid assets, third-party assets, or a new restaurant story-event pack. The restaurant story-event catalog remains locked at 180.
+
+Latest Phase 28 work:
+
+- Added a procedural interior shell in `Main.gd`: ceiling plane, ceiling grid, pendant lights, warm lobby wall, teal kitchen backsplash, and floor/material variation.
+- Added more believable restaurant structure: rounded front counter treatment, cream counter top, lobby booths/tables, curbed drive-thru lane, and rounded order speaker.
+- Upgraded station silhouettes: register screen/scanner, grill hood/vent, fryer face/handle, prep face/tray, round cup stacks, sauce bottles, round trash can, and clock-out button.
+- Upgraded food props: rounded burger bun, round patty, cheese melt, lettuce frill, fries carton, taller fries, and order-ticket pin.
+- Upgraded `CustomerCar.gd` with Phase 28 hood/trunk panels, side glass, smile grille, roof glow, wheel arches, and hubcaps.
+- Upgraded `GameHUD.gd` readability over the richer scene with stronger panel opacity, readability scrims, prompt glow line, and small style trims.
+- Added `tools/phase28_major_graphics_upgrade_check.gd`.
+- Added `tools/phase28_graphics_screenshot.gd`; generated proof remains excluded at `artifacts/phase28_major_graphics_upgrade.png`.
+- Extended `tools/validate_all.py` with a Phase 28 major graphics contract.
+- Added `PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md`.
+- Updated asset attribution and file inclusion docs to record that no external assets were added.
+
+Automated Godot proof validates Phase 28 world graphics nodes, CustomerCar upgrades, HUD support nodes, preserved prior route/brand guidance, one order handoff after the graphics upgrade, and the 180 story-event lock. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 27 Visual Asset Prop Texture Pass
 
 ## Phase 27 Current Status
 

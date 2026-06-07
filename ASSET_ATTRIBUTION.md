@@ -25,6 +25,10 @@ No external art/audio assets were added during Phase 21. The art pass uses Godot
 
 No external art/audio assets were added during Phase 27. The visual asset, prop, texture, and restaurant identity pass uses only Godot primitives, Label3D text, procedural materials, runtime-generated cartoon/noise textures, lighting nodes, and project-local GDScript.
 
+## Phase 28
+
+No external art/audio assets were added during Phase 28. The major graphics upgrade uses only Godot primitives, simple low-poly procedural shapes, Label3D text, procedural materials, runtime-generated cartoon/noise textures, lighting nodes, and project-local GDScript.
+
 ## Required Entry Format
 
 ```text

@@ -305,6 +305,7 @@ func _apply_demo_layout():
 			label.add_theme_constant_override("shadow_offset_x", 1)
 			label.add_theme_constant_override("shadow_offset_y", 1)
 	_apply_phase27_hud_polish(control)
+	_apply_phase28_graphics_hud_support(control)
 
 func _apply_phase27_hud_polish(control: Control):
 	_add_panel(control, "Phase27OrderTicketPaper", Vector2(23, 54), Vector2(296, 158), Color(1.0, 0.91, 0.68, 0.12))
@@ -321,6 +322,32 @@ func _apply_phase27_hud_polish(control: Control):
 	_ensure_label(control, "Phase27TimerBadgeText", Vector2(514, 31), Vector2(94, 18), "CLOCK", 12, Color(0.08, 0.04, 0.02))
 	_ensure_label(control, "Phase27PromptKeyText", Vector2(379, 615), Vector2(34, 20), "E/A", 15, Color(0.08, 0.05, 0.01))
 	_ensure_label(control, "Phase27TaskBoardTitle", Vector2(972, 26), Vector2(250, 18), "MANAGER CLIPBOARD", 12, Color(0.06, 0.04, 0.02))
+
+func _apply_phase28_graphics_hud_support(control: Control):
+	var opacity_updates = {
+		"OrderPanel": Color(0.08, 0.045, 0.032, 0.96),
+		"ObjectivePanel": Color(0.025, 0.065, 0.105, 0.96),
+		"EventPanel": Color(0.025, 0.035, 0.045, 0.92),
+		"StatusPanel": Color(0.07, 0.05, 0.035, 0.94),
+		"TaskPanel": Color(0.035, 0.07, 0.05, 0.95),
+		"CareerPanel": Color(0.045, 0.05, 0.08, 0.94),
+		"PromptPanel": Color(0.015, 0.018, 0.02, 0.97),
+	}
+	for panel_name in opacity_updates.keys():
+		var panel = control.get_node_or_null(panel_name) as ColorRect
+		if panel:
+			panel.color = opacity_updates[panel_name]
+	_add_panel(control, "Phase28HudReadabilityScrimLeft", Vector2(12, 12), Vector2(323, 396), Color(0.02, 0.014, 0.01, 0.18))
+	_add_panel(control, "Phase28HudReadabilityScrimTop", Vector2(356, 12), Vector2(556, 198), Color(0.02, 0.02, 0.026, 0.16))
+	_add_panel(control, "Phase28HudReadabilityScrimRight", Vector2(936, 12), Vector2(328, 468), Color(0.01, 0.02, 0.014, 0.18))
+	_add_panel(control, "Phase28OrderPin", Vector2(300, 28), Vector2(16, 16), Color(1.0, 0.72, 0.12, 0.96))
+	_add_panel(control, "Phase28TaskClipShadow", Vector2(952, 44), Vector2(298, 6), Color(0.03, 0.02, 0.01, 0.6))
+	_add_panel(control, "Phase28PromptGlowLine", Vector2(432, 654), Vector2(488, 4), Color(0.22, 1.0, 0.44, 0.88))
+	_ensure_label(control, "Phase28HudStyleLockLabel", Vector2(956, 460), Vector2(284, 16), "LOCAL SHIFT", 10, Color(1.0, 0.82, 0.36))
+	if order_title_label:
+		order_title_label.add_theme_font_size_override("font_size", 17)
+	if interaction_prompt_label:
+		interaction_prompt_label.add_theme_color_override("font_color", Color(1.0, 0.96, 0.74))
 
 func _add_panel(parent: Control, panel_name: String, pos: Vector2, size: Vector2, color: Color):
 	if parent.get_node_or_null(panel_name):

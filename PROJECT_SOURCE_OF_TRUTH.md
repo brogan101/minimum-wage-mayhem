@@ -15,12 +15,13 @@ For future Codex runs, read in this order:
 7. `PHASE_25_FULL_BUILD_AUDIT_AND_FIX_REPORT.md`
 8. `PHASE_26_FUN_CONTENT_SHIFT_VARIETY_REPORT.md`
 9. `PHASE_27_VISUAL_ASSET_PROP_TEXTURE_REPORT.md`
-10. `PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md`
-11. `PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md`
-12. `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md`
-13. `PHASE_19_GITHUB_PLAYTEST_PREP_REPORT.md`
-14. `PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md`
-15. Earlier `PHASE_*.md` files as phase briefs/history, not as proof.
+10. `PHASE_28_MAJOR_GRAPHICS_UPGRADE_REPORT.md`
+11. `PHASE_24_CAREER_STORE_MANAGER_LOOP_REPORT.md`
+12. `PHASE_23_CORE_GAMEPLAY_DEPTH_REPORT.md`
+13. `PHASE_20_SAVE_LOAD_PROGRESSION_STRESS_REPORT.md`
+14. `PHASE_19_GITHUB_PLAYTEST_PREP_REPORT.md`
+15. `PHASE_18_PLAYTEST_SOFTLOCK_FEEL_REPORT.md`
+16. Earlier `PHASE_*.md` files as phase briefs/history, not as proof.
 
 Use actual files, validator output, GitHub state, and Godot runtime smoke checks as the source of truth. Do not infer implementation from markdown design docs or JSON catalogs alone.
 
@@ -45,6 +46,7 @@ The current build is an early playable local-only Godot 4.x/GDScript slice. It s
 - first-pass order bagging with Burger, Fries, and Soda station components
 - expanded normal/mild order variety with customer moments, combo/soda tasks, and order-variety recap proof
 - Phase 27 branded restaurant identity, menu boards, zone landmarks, station prop silhouettes, customer-car detail props, lighting improvements, and HUD trim
+- Phase 28 major stylized cartoon-realistic graphics upgrade with ceiling/lighting, lobby booths, rounded counter forms, curbed drive-thru, richer station silhouettes, rounded food props, improved customer car details, and HUD readability support
 - grill food state changes and carried-bag Burger prep
 - store duty stations
 - coworker/staff systems
@@ -68,6 +70,8 @@ Phase 26 proves safe fun-content expansion through existing gameplay paths: more
 
 Phase 27 proves a scoped visual asset/prop/texture upgrade through project-local primitives and procedural materials: restaurant branding, menu boards, zone wall panels, drive-thru speaker/pickup shelf, register/grill/fryer/drink/sauce/trash/cleaning silhouettes, customer-car identity details, game-like HUD trim, and screenshot proof without external assets.
 
+Phase 28 proves a larger procedural graphics upgrade: ceiling structure, pendant lighting, booth/table shapes, rounded counter/cup/food/trash silhouettes, richer drive-thru lane structure, stronger station forms, improved customer car panels/wheels, HUD readability support, and screenshot proof without external assets.
+
 This is not a finished game and not a Steam demo. Manual visible playtest and physical controller proof are still pending.
 
 ## Validation Commands
@@ -86,6 +90,7 @@ tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless 
 tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase25_full_build_audit_check.gd
 tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase26_fun_content_shift_variety_check.gd
 tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase27_visual_asset_prop_texture_check.gd
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase28_major_graphics_upgrade_check.gd
 ```
 
 The console Godot binary may need filesystem access outside the workspace to write `user://logs` and local save data.
@@ -110,6 +115,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Phase 25 scrollable shift recap presentation for long career/depth reports.
 - Phase 26 order/customer variety, customer moments, rotating daily tasks, order-variety recap, and save/load persistence for customer moments.
 - Phase 27 visual identity/dressing layer, station-prop silhouettes, customer-car detail props, screenshot helper, and HUD game-style trim.
+- Phase 28 stylized cartoon-realistic procedural graphics layer, improved lighting/ceiling/booths/props/food/car silhouettes, screenshot helper, and HUD readability support.
 
 ## Partially Working
 
@@ -118,7 +124,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Food prep is functionally playable with bag/Burger/Fries/Soda and retry logic, but needs animation, timing, and tactile polish.
 - Customer/coworker/manager moments are surfaced through text, tasks, logs, rewards, and recap, but not animated performances.
 - Controller-compatible InputMap actions exist; physical controller hardware validation remains pending.
-- Life-like cartoon visuals are improved with procedural materials and props through Phase 27; final production textures/assets are not done.
+- Life-like cartoon visuals are improved with procedural materials and props through Phase 28; final production textures/assets are not done.
 
 ## Scaffolded Only
 
@@ -128,7 +134,7 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Settings UI exists, but persistent settings storage is not final.
 - Export presets and Steam demo packaging are not final.
 - Final audio assets are missing; audio hooks fall back safely.
-- Phase 24/27 material polish is procedural and runtime-generated; final hand-authored production texture work remains a future asset pass.
+- Phase 24/27/28 material polish is procedural and runtime-generated; final hand-authored production texture work remains a future asset pass.
 
 ## Broken
 
@@ -159,13 +165,13 @@ The console Godot binary may need filesystem access outside the workspace to wri
 - Food prep needs manual feel, animation, timing, and presentation polish beyond the Phase 23 functional pass.
 - HUD/menu/result presentation is functional and the Phase 25 recap no longer truncates long reports, but visual polish is still basic.
 - Final audio/assets/export presets are not ready.
-- Full production-quality life-like cartoon textures/materials are not done; Phase 27 improves this direction with procedural material polish, branded props, and screenshot proof.
+- Full production-quality life-like cartoon textures/materials are not done; Phase 28 significantly improves this direction with procedural material polish, more believable structure, rounded props, and screenshot proof.
 - GitHub repo visibility is public; if the desired state is private, change visibility in GitHub settings or via `gh repo edit brogan101/minimum-wage-mayhem --visibility private`.
 
 ## Next Recommended Phase
 
 Next phase should be:
 
-`Phase 28 - Visible Manual Playtest, Controller Hardware, Manager Trial Prep, and Art/Audio Polish`
+`Phase 29 - Visible Manual Playtest, Controller Hardware, Manager Trial Prep, and Art/Audio Polish`
 
 Do not add DLC, multi-store/business expansion, online systems, or another large event pack before this. The next work should run a real visible playtest, verify physical controller hardware if available, polish the manager-trial setup into a clearer playable goal, and continue improving the procedural placeholder materials toward production-ready life-like cartoon art.

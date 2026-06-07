@@ -2,6 +2,14 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 28 Notes
+
+- Phase 28 significantly improves the restaurant graphics with procedural low-poly/cartoon-realistic shapes, lighting, booths, ceiling detail, rounded station/food props, customer car upgrades, and HUD readability support.
+- No external assets were added; final hand-authored production models, textures, animations, and audio assets are still pending.
+- Screenshot proof exists at `artifacts/phase28_major_graphics_upgrade.png`, but generated artifacts remain excluded from git.
+- Phase 28 is automated/script validated, not a claimed human manual playtest.
+- Some in-world signage and HUD overlap should still be reviewed in a true player-controlled visible pass.
+
 ## Phase 27 Notes
 
 - Phase 27 improves restaurant identity, zone readability, station prop silhouettes, CustomerCar details, lighting, and HUD trim using only Godot primitives/procedural materials.
