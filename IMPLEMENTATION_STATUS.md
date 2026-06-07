@@ -1,4 +1,24 @@
-# Implementation Status - Phase 28 Major Graphics Upgrade Pass
+# Implementation Status - Phase 29 Restaurant Layout And Flow Overhaul
+
+## Phase 29 Current Status
+
+Phase 29 is implemented as a restaurant layout, station-flow, interaction-feedback, and HUD-route cleanup pass on top of the stable Phase 28 graphics build. It does not add major content systems, online services, multiplayer, DLC/business expansion, external assets, paid assets, or new restaurant story-event content. The restaurant story-event catalog remains locked at 180.
+
+Latest Phase 29 work:
+
+- Added `_apply_phase29_restaurant_layout_flow_overhaul()` in `scripts/Main.gd`.
+- Repositioned the real gameplay stations into a coherent first-shift path: front counter/register -> bagging -> grill/fryer/drink -> green drive-thru window -> clock-out.
+- Added Phase 29 zones, walkable aisle strips, low rails, lane boundaries, overhead workflow signage, numbered route markers, route arrows, green handoff glow, and readability lights.
+- Updated core station prompts so required stations explain their gameplay role: get bag, add Burger, add Fries, add Soda, deliver at green mat, clock out.
+- Tightened `PlayerInteraction.gd` feedback for no-target, scenery, carried-item, and wrong-target cases.
+- Updated `GameHUD.gd` with a compact step objective, route-aligned ticket prep text, Phase 29 flow ribbon, prompt hint, and a shorter event feed.
+- Added `tools/phase29_layout_flow_overhaul_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 29 layout/flow contract.
+- Added `PHASE_29_RESTAURANT_LAYOUT_AND_FLOW_OVERHAUL_REPORT.md`.
+
+Automated Godot proof validates that stations are visible, labeled, reachable, and interactable; the first-shift path is coherent; wrong/incomplete handoff keeps the customer active and explains the missing item; the corrected bag completes at the green window; and the restaurant story-event count remains 180. Full-shift and multi-shift regression proof is recorded in `VALIDATION_REPORT.md`. Manual human-controlled visible playtest and physical controller hardware testing remain pending.
+
+# Historical Implementation Status - Phase 28 Major Graphics Upgrade Pass
 
 ## Phase 28 Current Status
 

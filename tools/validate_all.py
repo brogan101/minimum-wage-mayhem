@@ -1249,8 +1249,8 @@ def validate_phase_18_softlock_feel_contract():
 
     for fragment in [
         "interaction_range: float = 3.2",
-        "Look at a labeled station or item",
-        "That is not usable yet",
+        "No target. Stand in the marked lane",
+        "That is scenery. Use the numbered stations",
     ]:
         if fragment not in interaction:
             raise AssertionError(f"Phase 18 interaction clarity contract missing: {fragment}")
@@ -1262,7 +1262,7 @@ def validate_phase_18_softlock_feel_contract():
         "ORDER TICKET",
         "CLOCK OUT",
         "DRIVE-THRU",
-        "Bag -> Burger/Fries/Soda",
+        "grill/fries/drink",
     ]:
         if fragment not in main + hud:
             raise AssertionError(f"Phase 18 first-shift guidance missing: {fragment}")
@@ -1581,7 +1581,7 @@ def validate_phase_22_manual_playtest_feel_contract():
 
     for fragment in [
         "use_carried_item_on",
-        "Aim at a station to use",
+        "Aim \" + _item_label(carried_item) + \" at a labeled station",
         "Q / X: Drop",
         "carried_item_used_on_station",
     ]:
@@ -1656,7 +1656,7 @@ def validate_phase_23_core_gameplay_depth_contract():
         if fragment not in customer_car:
             raise AssertionError(f"Phase 23 customer flow contract missing: {fragment}")
 
-    for fragment in ["TICKET #", "Patience:", "Prep: Bag", "get_last_validation_summary"]:
+    for fragment in ["TICKET #", "Patience:", "Route: 1 Ticket", "get_last_validation_summary"]:
         if fragment not in hud:
             raise AssertionError(f"Phase 23 HUD ticket contract missing: {fragment}")
 
@@ -2066,6 +2066,78 @@ def validate_phase_28_major_graphics_upgrade_contract():
         if fragment not in screenshot_text:
             raise AssertionError(f"Phase 28 screenshot helper missing: {fragment}")
 
+def validate_phase_29_layout_flow_overhaul_contract():
+    main = (ROOT / "scripts/Main.gd").read_text(encoding="utf-8")
+    hud = (ROOT / "scripts/ui/GameHUD.gd").read_text(encoding="utf-8")
+    interaction = (ROOT / "scripts/player/PlayerInteraction.gd").read_text(encoding="utf-8")
+    smoke = ROOT / "tools/phase29_layout_flow_overhaul_check.gd"
+    report = ROOT / "PHASE_29_RESTAURANT_LAYOUT_AND_FLOW_OVERHAUL_REPORT.md"
+
+    for fragment in [
+        "_apply_phase29_restaurant_layout_flow_overhaul",
+        "_reposition_phase29_core_nodes",
+        "_relabel_phase29_core_stations",
+        "Phase29FrontCounterZone",
+        "Phase29PrepBaggingZone",
+        "Phase29HotLineZone",
+        "Phase29DrinkSauceZone",
+        "Phase29DriveThruWindowZone",
+        "Phase29ClockOutZone",
+        "Phase29Step1TakeOrder",
+        "Phase29Step6ClockOut",
+        "Phase29WindowGlowRing",
+        "counter -> bagging -> grill/fries/drink -> green drive-thru mat -> clock-out",
+    ]:
+        if fragment not in main:
+            raise AssertionError(f"Phase 29 Main layout contract missing: {fragment}")
+
+    for fragment in [
+        "Phase29FlowRibbon",
+        "Phase29PromptHintLabel",
+        "1 TICKET  >  2 BAG",
+        "yellow numbers",
+        "Main path:",
+    ]:
+        if fragment not in hud:
+            raise AssertionError(f"Phase 29 HUD flow contract missing: {fragment}")
+
+    for fragment in [
+        "No target. Stand in the marked lane",
+        "That is scenery. Use the numbered stations",
+        "Green window delivers",
+        "Wrong target. Add food at grill/fries/drink",
+    ]:
+        if fragment not in interaction:
+            raise AssertionError(f"Phase 29 interaction feedback contract missing: {fragment}")
+
+    if not smoke.exists():
+        raise AssertionError("Missing Phase 29 layout flow smoke: tools/phase29_layout_flow_overhaul_check.gd")
+    smoke_text = smoke.read_text(encoding="utf-8")
+    for fragment in [
+        "All required first-shift stations exist",
+        "Phase 29 layout node exists: ",
+        "Bagging and hot line are close enough",
+        "Wrong/incomplete handoff keeps the active customer",
+        "HUD objective shows step-by-step route",
+        "Restaurant story event count remains 180",
+        "Phase 29 restaurant layout flow overhaul check passed",
+    ]:
+        if fragment not in smoke_text:
+            raise AssertionError(f"Phase 29 smoke contract missing: {fragment}")
+
+    if not report.exists():
+        raise AssertionError("Missing Phase 29 report: PHASE_29_RESTAURANT_LAYOUT_AND_FLOW_OVERHAUL_REPORT.md")
+    report_text = report.read_text(encoding="utf-8")
+    for fragment in [
+        "Restaurant layout is clearly organized",
+        "stations are visible, labeled, reachable, and interactable",
+        "first-shift path",
+        "one full shift starts, runs, ends, and saves",
+        "restaurant story-event count remains 180",
+    ]:
+        if fragment not in report_text:
+            raise AssertionError(f"Phase 29 report missing: {fragment}")
+
 def validate_all_json() -> int:
     count = 0
     for path in ROOT.rglob("*.json"):
@@ -2152,6 +2224,7 @@ def main() -> int:
         validate_phase_26_fun_content_shift_variety_contract()
         validate_phase_27_visual_asset_prop_texture_contract()
         validate_phase_28_major_graphics_upgrade_contract()
+        validate_phase_29_layout_flow_overhaul_contract()
         json_count = validate_all_json()
         python_count = validate_python_tools()
         validate_active_scripts()
@@ -2243,6 +2316,7 @@ def main() -> int:
     print("[PASS] Phase 26 fun content/shift variety contract valid")
     print("[PASS] Phase 27 visual asset/prop/texture contract valid")
     print("[PASS] Phase 28 major graphics upgrade contract valid")
+    print("[PASS] Phase 29 restaurant layout/flow overhaul contract valid")
     print(f"[PASS] JSON files valid: {json_count}")
     print(f"[PASS] Python tools compile: {python_count}")
     print(f"[PASS] Restaurant story event count preserved at {len(story)}")

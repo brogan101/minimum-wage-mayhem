@@ -31,7 +31,7 @@ func _physics_process(_delta):
 			if drop_pressed:
 				drop_item()
 			else:
-				_set_hud_feedback("Aim at a station to use " + _item_label(carried_item) + ", or press Q / X to drop.")
+				_set_hud_feedback("Aim " + _item_label(carried_item) + " at a labeled station. Green window delivers; Q / X drops.")
 		else:
 			attempt_interaction()
 	if Input.is_action_just_pressed("throw_item") and carried_item:
@@ -44,7 +44,7 @@ func _physics_process(_delta):
 
 func attempt_interaction():
 	if not raycast or not raycast.is_colliding():
-		_set_hud_feedback("Look at a labeled station or item until the prompt appears.")
+		_set_hud_feedback("No target. Stand in the marked lane, look at a labeled station, then press E / A.")
 		return
 	var collider = raycast.get_collider()
 	if _is_pickup_item(collider):
@@ -54,7 +54,7 @@ func attempt_interaction():
 		_log_event("player_interacted", 1.0, collider.name)
 		_play_audio_hook("interact")
 	else:
-		_set_hud_feedback("That is not usable yet. Try a labeled station.")
+		_set_hud_feedback("That is scenery. Use the numbered stations: ticket, bag, food, green window, clock.")
 
 func grab_item(item: RigidBody3D):
 	carried_item = item
@@ -110,7 +110,7 @@ func use_carried_item_on(target: Object) -> bool:
 		_play_audio_hook("interact")
 		return true
 	if _is_pickup_item(target) and target != carried_item:
-		_set_hud_feedback("Use a labeled station first. Bag-combining is not part of this shift yet.")
+		_set_hud_feedback("Wrong target. Add food at grill/fries/drink or use the green drive-thru mat.")
 	return false
 
 func _autoload(name: String) -> Node:

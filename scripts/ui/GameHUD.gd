@@ -77,7 +77,7 @@ func _update_order_display(order_data):
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		order_list.add_child(label)
 	var prep_label = Label.new()
-	prep_label.text = "Prep: Bag -> Grill/Fryer/Soda -> Window\nPatience: " + str(patience) + "% | Target: " + str(target_time) + "s"
+	prep_label.text = "Route: 1 Ticket 2 Bag 3 Food 4 Check 5 Window\nPatience: " + str(patience) + "% | Target: " + str(target_time) + "s"
 	prep_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	order_list.add_child(prep_label)
 	var moment: Dictionary = order_data.get("customer_moment", {})
@@ -159,13 +159,13 @@ func set_held_item(text: String):
 
 func set_first_shift_guidance(text: String):
 	if guidance_label:
-		guidance_label.text = text + "\nMarked zones: bags, soda, fries, sauce, clock-out."
+		guidance_label.text = text + "\nMain path: yellow numbers. bags, soda, fries stay marked; side tasks stay purple/teal."
 
 func add_event_feed_line(text: String):
 	if text.is_empty() or not event_feed_label:
 		return
 	event_feed.append(text)
-	while event_feed.size() > 4:
+	while event_feed.size() > 3:
 		event_feed.pop_front()
 	event_feed_label.text = "Recent\n" + "\n".join(event_feed)
 
@@ -306,6 +306,7 @@ func _apply_demo_layout():
 			label.add_theme_constant_override("shadow_offset_y", 1)
 	_apply_phase27_hud_polish(control)
 	_apply_phase28_graphics_hud_support(control)
+	_apply_phase29_flow_hud_cleanup(control)
 
 func _apply_phase27_hud_polish(control: Control):
 	_add_panel(control, "Phase27OrderTicketPaper", Vector2(23, 54), Vector2(296, 158), Color(1.0, 0.91, 0.68, 0.12))
@@ -348,6 +349,20 @@ func _apply_phase28_graphics_hud_support(control: Control):
 		order_title_label.add_theme_font_size_override("font_size", 17)
 	if interaction_prompt_label:
 		interaction_prompt_label.add_theme_color_override("font_color", Color(1.0, 0.96, 0.74))
+
+func _apply_phase29_flow_hud_cleanup(control: Control):
+	_add_panel(control, "Phase29FlowRibbon", Vector2(360, 204), Vector2(548, 28), Color(0.95, 0.72, 0.12, 0.94))
+	_add_panel(control, "Phase29PromptConfidenceBar", Vector2(350, 584), Vector2(580, 8), Color(0.08, 1.0, 0.34, 0.92))
+	_ensure_label(control, "Phase29FlowRibbonText", Vector2(376, 209), Vector2(516, 18), "1 TICKET  >  2 BAG  >  3 FOOD  >  4 CHECK  >  5 WINDOW  >  6 CLOCK", 12, Color(0.06, 0.035, 0.0))
+	_ensure_label(control, "Phase29PromptHintLabel", Vector2(376, 582), Vector2(532, 18), "Look at labels for E/A. Use Q/X only to drop.", 11, Color(0.8, 1.0, 0.82))
+	if objective_label:
+		objective_label.add_theme_font_size_override("font_size", 15)
+	if station_feedback_label:
+		station_feedback_label.add_theme_font_size_override("font_size", 14)
+	if event_feed_label:
+		event_feed_label.add_theme_font_size_override("font_size", 12)
+	if guidance_label:
+		guidance_label.add_theme_font_size_override("font_size", 12)
 
 func _add_panel(parent: Control, panel_name: String, pos: Vector2, size: Vector2, color: Color):
 	if parent.get_node_or_null(panel_name):

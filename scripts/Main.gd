@@ -139,9 +139,9 @@ func start_new_shift():
 		var current_shift_number = int(shift_results_for_tasks.get("shift_number"))
 		daily.refresh_for_shift(current_shift_number)
 	if hud and hud.has_method("set_objective_status"):
-		hud.set_objective_status("Serve the ticket: Bag -> Burger/Fries/Soda as requested -> Green DRIVE-THRU Mat -> Clock Out.")
+		hud.set_objective_status("1 Ticket  2 Bag  3 Add food  4 Green window  5 Result  6 Clock out.")
 	if hud and hud.has_method("set_first_shift_guidance"):
-		hud.set_first_shift_guidance("Follow the floor arrows and ticket. Get a paper bag, add requested food at stations, hand it off on the green mat, then clock-out.")
+		hud.set_first_shift_guidance("Follow the big numbered floor path. The real route is counter -> bagging -> grill/fries/drink -> green drive-thru mat -> clock-out.")
 	var stat_manager = _autoload("StatManager")
 	var current_stats = {
 		"Energy": stat_manager.stats.get("Energy", 100.0) if stat_manager else 100.0,
@@ -387,6 +387,7 @@ func _apply_phase17_demo_visuals():
 	_apply_phase24_career_and_material_polish(dressing)
 	_apply_phase27_restaurant_identity_upgrade(dressing)
 	_apply_phase28_major_graphics_upgrade(dressing)
+	_apply_phase29_restaurant_layout_flow_overhaul(dressing)
 
 func _set_world_environment():
 	var env_node = get_node_or_null("WorldEnvironment")
@@ -754,6 +755,114 @@ func _set_phase28_environment():
 		light.light_energy = 1.85
 		light.shadow_enabled = true
 		light.rotation_degrees = Vector3(-55.0, -38.0, 0.0)
+
+func _apply_phase29_restaurant_layout_flow_overhaul(dressing: Node):
+	var service_blue = _mat("Phase29 clear service blue", Color(0.12, 0.42, 0.88), 0.62)
+	var prep_green = _mat("Phase29 prep path green", Color(0.14, 0.78, 0.34), 0.58, Color(0.05, 0.35, 0.12, 1.0))
+	var hot_orange = _mat("Phase29 hot line orange", Color(1.0, 0.46, 0.08), 0.58, Color(0.45, 0.12, 0.02, 1.0))
+	var window_green = _mat("Phase29 handoff green", Color(0.08, 1.0, 0.34), 0.45, Color(0.06, 0.85, 0.18, 1.0))
+	var support_purple = _mat("Phase29 support purple", Color(0.52, 0.28, 0.86), 0.64)
+	var clock_teal = _mat("Phase29 clock teal", Color(0.02, 0.78, 0.76), 0.54, Color(0.0, 0.28, 0.26, 1.0))
+	var boundary = _mat("Phase29 low wall ink", Color(0.025, 0.03, 0.035), 0.84)
+	var tile = _mat("Phase29 walkable cream", Color(0.96, 0.84, 0.58), 0.78)
+	var arrow = _mat("Phase29 route arrow yellow", Color(1.0, 0.9, 0.12), 0.5, Color(0.8, 0.58, 0.03, 1.0))
+	var paper = _mat("Phase29 ticket paper", Color(1.0, 0.94, 0.72), 0.72)
+
+	_reposition_phase29_core_nodes()
+	_relabel_phase29_core_stations()
+
+	_add_zone_band(dressing, "Phase29FrontCounterZone", Vector3(2.35, 0.69, -3.15), Vector3(5.8, 0.055, 1.35), service_blue, "1 FRONT COUNTER / ORDER TICKET", Vector3(2.35, 0.9, -4.2), Color(0.78, 0.9, 1.0))
+	_add_zone_band(dressing, "Phase29PrepBaggingZone", Vector3(0.0, 0.7, -0.65), Vector3(3.2, 0.055, 1.55), prep_green, "2 BAGGING / ASSEMBLE", Vector3(0.0, 0.94, -1.62), Color(0.72, 1.0, 0.76))
+	_add_zone_band(dressing, "Phase29HotLineZone", Vector3(2.55, 0.71, 2.45), Vector3(4.15, 0.055, 1.7), hot_orange, "3 HOT LINE: BURGER + FRIES", Vector3(2.55, 0.96, 3.55), Color(1.0, 0.82, 0.45))
+	_add_zone_band(dressing, "Phase29DrinkSauceZone", Vector3(-1.75, 0.72, 1.95), Vector3(2.25, 0.055, 2.1), support_purple, "4 DRINKS / SAUCE", Vector3(-1.75, 0.98, 3.08), Color(0.92, 0.76, 1.0))
+	_add_zone_band(dressing, "Phase29DriveThruWindowZone", Vector3(-4.75, 0.73, -2.15), Vector3(2.05, 0.06, 2.0), window_green, "5 GREEN MAT HANDOFF", Vector3(-4.75, 1.0, -3.35), Color(0.72, 1.0, 0.72))
+	_add_zone_band(dressing, "Phase29ClockOutZone", Vector3(5.75, 0.74, 3.65), Vector3(1.9, 0.06, 1.7), clock_teal, "6 CLOCK OUT / RECAP", Vector3(5.75, 1.0, 4.75), Color(0.75, 1.0, 0.95))
+
+	_add_box(dressing, "Phase29FrontCounterLowWall", Vector3(2.35, 0.92, -3.9), Vector3(6.0, 0.65, 0.18), boundary, true)
+	_add_box(dressing, "Phase29KitchenBackRail", Vector3(2.1, 0.88, 3.68), Vector3(5.4, 0.58, 0.16), boundary, true)
+	_add_box(dressing, "Phase29PrepRailShortA", Vector3(-2.0, 0.78, -0.45), Vector3(0.16, 0.5, 1.4), boundary, true)
+	_add_box(dressing, "Phase29PrepRailShortB", Vector3(1.95, 0.78, -0.45), Vector3(0.16, 0.5, 1.4), boundary, true)
+	_add_box(dressing, "Phase29DriveThruLaneWall", Vector3(-5.95, 0.82, -2.15), Vector3(0.14, 0.55, 2.3), boundary, true)
+	_add_box(dressing, "Phase29ClockOutDoorFrame", Vector3(6.72, 1.38, 3.65), Vector3(0.16, 1.65, 1.95), boundary, false)
+
+	_add_box(dressing, "Phase29MainAisleWalkable", Vector3(0.55, 0.775, -2.1), Vector3(5.2, 0.035, 0.48), tile, false)
+	_add_box(dressing, "Phase29PrepToHotLineWalkable", Vector3(1.35, 0.785, 0.9), Vector3(0.55, 0.035, 3.5), tile, false)
+	_add_box(dressing, "Phase29PrepToWindowWalkable", Vector3(-2.65, 0.795, -1.45), Vector3(2.55, 0.035, 0.5), tile, false)
+	_add_box(dressing, "Phase29WindowToClockWalkable", Vector3(2.3, 0.805, 2.85), Vector3(6.9, 0.035, 0.44), tile, false)
+
+	_add_route_marker(dressing, "Phase29Step1TakeOrder", "1\nTICKET", Vector3(2.35, 0.98, -2.28), arrow, Color(0.08, 0.06, 0.02))
+	_add_route_marker(dressing, "Phase29Step2GetBag", "2\nBAG", Vector3(-0.45, 0.99, -0.55), prep_green, Color(0.02, 0.08, 0.03))
+	_add_route_marker(dressing, "Phase29Step3AddFood", "3\nFOOD", Vector3(2.55, 1.0, 2.48), hot_orange, Color(0.09, 0.035, 0.0))
+	_add_route_marker(dressing, "Phase29Step4FixTicket", "4\nCHECK", Vector3(-1.75, 1.01, 1.75), support_purple, Color(0.05, 0.02, 0.08))
+	_add_route_marker(dressing, "Phase29Step5Handoff", "5\nWINDOW", Vector3(-4.75, 1.02, -2.15), window_green, Color(0.02, 0.08, 0.03))
+	_add_route_marker(dressing, "Phase29Step6ClockOut", "6\nCLOCK", Vector3(5.75, 1.03, 3.65), clock_teal, Color(0.02, 0.07, 0.07))
+	_add_flow_arrow(dressing, "Phase29ArrowTicketToBag", Vector3(1.0, 0.94, -1.8), Vector3(2.4, 0.055, 0.16), arrow)
+	_add_flow_arrow(dressing, "Phase29ArrowBagToFood", Vector3(0.95, 0.95, 0.92), Vector3(0.16, 0.055, 2.45), arrow)
+	_add_flow_arrow(dressing, "Phase29ArrowFoodToCheck", Vector3(0.15, 0.96, 1.8), Vector3(3.2, 0.055, 0.16), arrow)
+	_add_flow_arrow(dressing, "Phase29ArrowCheckToWindow", Vector3(-3.2, 0.97, -0.1), Vector3(0.16, 0.055, 2.95), arrow)
+	_add_flow_arrow(dressing, "Phase29ArrowWindowToClock", Vector3(1.0, 0.98, 2.85), Vector3(5.9, 0.055, 0.16), arrow)
+
+	_add_label(dressing, "Phase29OverheadWorkflowSign", "SHIFT FLOW: TICKET -> BAG -> FOOD -> GREEN WINDOW -> CLOCK OUT", Vector3(0.55, 3.05, -1.1), Color(1.0, 0.95, 0.58), 24)
+	_add_label(dressing, "Phase29TicketBoard", "ACTIVE ORDER\nREAD HUD TICKET", Vector3(2.35, 2.18, -2.15), Color(0.05, 0.04, 0.02), 18)
+	_add_box(dressing, "Phase29TicketBoardPaper", Vector3(2.35, 1.92, -2.18), Vector3(1.05, 0.72, 0.04), paper, false)
+	_add_label(dressing, "Phase29WrongItemReminder", "Wrong item?\nTicket stays active.\nFix bag, retry.", Vector3(-3.6, 2.15, -2.1), Color(1.0, 0.9, 0.58), 16)
+	_add_label(dressing, "Phase29NoDeadPromptSign", "Look at a label until E/A appears.", Vector3(0.0, 2.25, -5.35), Color(0.9, 1.0, 1.0), 17)
+	_add_box(dressing, "Phase29WindowGlowRing", Vector3(-4.72, 0.9, -2.15), Vector3(1.35, 0.1, 1.18), window_green, false)
+	_ensure_demo_light("Phase29RouteReadabilityLight", Vector3(0.0, 3.6, -0.8), Color(1.0, 0.9, 0.55), 2.5)
+	_ensure_demo_light("Phase29WindowTargetLight", Vector3(-4.75, 2.9, -2.15), Color(0.58, 1.0, 0.58), 2.0)
+
+func _reposition_phase29_core_nodes():
+	_move_world_node("Player", Vector3(0.0, 2.0, -5.45), Vector3(0.0, 180.0, 0.0))
+	_move_world_node("RegisterStation", Vector3(2.35, 0.9, -2.3))
+	_move_world_node("RegisterCheckStation", Vector3(3.6, 0.9, -2.3))
+	_move_world_node("BaggingTableStation", Vector3(-0.45, 0.9, -0.55))
+	_move_world_node("TrainingCounter", Vector3(0.25, 0.6, 0.25))
+	_move_world_node("TrainingBurger", Vector3(0.25, 1.2, 0.25))
+	_move_world_node("GrillStation", Vector3(1.65, 0.9, 2.55))
+	_move_world_node("RawPatty", Vector3(2.15, 1.2, 2.55))
+	_move_world_node("FryerCheckStation", Vector3(3.35, 0.9, 2.55))
+	_move_world_node("DrinkFillStation", Vector3(-1.75, 0.9, 1.45))
+	_move_world_node("SauceStockStation", Vector3(-1.75, 0.9, 2.65))
+	_move_world_node("CleaningStation", Vector3(-3.2, 0.9, 1.45))
+	_move_world_node("TrashRunStation", Vector3(-4.65, 0.9, 1.45))
+	_move_world_node("RecoveryStation", Vector3(4.85, 0.9, 2.55))
+	_move_world_node("DriveThruStation", Vector3(-4.75, 0.9, -2.15))
+	_move_world_node("ClockOutStation", Vector3(5.75, 0.85, 3.65))
+	_move_world_node("CoworkerRiley", Vector3(2.7, 0.8, 1.7))
+	_move_world_node("CoworkerCasey", Vector3(4.35, 0.8, -1.55))
+	_move_world_node("CoworkerMorgan", Vector3(-2.95, 0.8, 2.55))
+
+func _relabel_phase29_core_stations():
+	_set_station_text("RegisterStation", "Read ticket / receive order")
+	_set_station_text("RegisterCheckStation", "Count register side task")
+	_set_station_text("BaggingTableStation", "Get bag / seal bag")
+	_set_station_text("GrillStation", "Add Burger to bag")
+	_set_station_text("FryerCheckStation", "Add Fries to bag")
+	_set_station_text("DrinkFillStation", "Add Soda to bag")
+	_set_station_text("SauceStockStation", "Restock sauce side task")
+	_set_station_text("CleaningStation", "Clean spill side task")
+	_set_station_text("TrashRunStation", "Take trash side task")
+	_set_station_text("RecoveryStation", "Fix fryer issue")
+	_set_station_text("DriveThruStation", "Deliver at green drive-thru mat")
+	_set_station_text("ClockOutStation", "Clock out / end shift")
+
+func _move_world_node(node_name: String, pos: Vector3, rotation: Vector3 = Vector3.ZERO):
+	var node = find_child(node_name, true, false)
+	if not node:
+		return
+	var spatial = node as Node3D
+	if spatial:
+		spatial.global_position = pos
+		if rotation != Vector3.ZERO:
+			spatial.rotation_degrees = rotation
+
+func _set_station_text(node_name: String, text: String):
+	var node = find_child(node_name, true, false)
+	if not node:
+		return
+	node.set("interact_text", text)
+	if node.get("station_label") != null:
+		node.set("station_label", text)
 
 func _add_zone_band(dressing: Node, node_name: String, pos: Vector3, size: Vector3, mat: Material, label_text: String, label_pos: Vector3, label_color: Color):
 	_add_box(dressing, node_name, pos, size, mat, false)

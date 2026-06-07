@@ -1,5 +1,23 @@
 # Phase Log - V23 Phase Work
 
+## 2026-06-07 - Phase 29 Restaurant Layout And Flow Overhaul
+
+- Ran `git pull --ff-only`; repo was already up to date.
+- Read Phase 28 report, Phase 27 report, source of truth, implementation status, validation report, phase log, solo-shift acceptance test, and known issues.
+- Ran `python tools/validate_all.py` before edits; validation passed and restaurant story-event count remained 180.
+- Added Phase 29 layout/flow overhaul in `scripts/Main.gd`.
+- Repositioned real gameplay stations into a connected route: front counter/register, bagging/assembly, grill/fryer hot line, drink/sauce support, green drive-thru handoff, and clock-out endpoint.
+- Added zone bands, walkable aisle strips, low rails, drive-thru lane boundary, clock-out frame, numbered route markers, route arrows, workflow signage, wrong-item reminder, prompt reminder, handoff glow, and readability lights.
+- Updated station prompts so the required stations are visible, labeled, reachable, interactable, and connected to the first-shift flow.
+- Improved `PlayerInteraction.gd` feedback for no-target, scenery, wrong-target, and carried-item use states.
+- Updated `GameHUD.gd` with step-by-step objective text, route-aligned ticket guidance, Phase 29 flow ribbon, prompt hint, and shorter event feed.
+- Added `tools/phase29_layout_flow_overhaul_check.gd`.
+- Extended `tools/validate_all.py` with a Phase 29 layout/flow contract.
+- Added `PHASE_29_RESTAURANT_LAYOUT_AND_FLOW_OVERHAUL_REPORT.md`.
+- Did not edit `data/mischief/restaurant_story_events.json`.
+
+Next: run a true visible/manual playtest through this reorganized route, verify physical controller hardware if available, then polish prep timing/animation and production audio/assets.
+
 ## 2026-06-06 - Phase 28 Major Graphics Upgrade Pass
 
 - Ran `git pull --ff-only`; repo was already up to date.

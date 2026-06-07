@@ -1,4 +1,63 @@
-# Validation Report - Phase 28 Major Graphics Upgrade Pass
+# Validation Report - Phase 29 Restaurant Layout And Flow Overhaul
+
+## Phase 29 Current Validation
+
+Baseline validation before edits:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 28 major graphics upgrade contract valid
+[PASS] Restaurant story event count preserved at 180
+```
+
+Focused Phase 29 Godot smoke:
+
+```text
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase29_layout_flow_overhaul_check.gd
+[PASS] All required first-shift stations exist
+[PASS] Phase 29 layout node exists: Phase29FrontCounterZone
+[PASS] Phase 29 layout node exists: Phase29Step6ClockOut
+[PASS] Player starts facing the organized route
+[PASS] Bagging station is on step 2
+[PASS] Grill station is on hot line
+[PASS] Fryer station is on hot line
+[PASS] Drink station is next to bagging route
+[PASS] Drive-thru handoff is on green mat
+[PASS] Clock-out is a distinct endpoint
+[PASS] Bagging and hot line are close enough to read as one workflow
+[PASS] Bagging and drive-thru are reachable without a maze
+[PASS] Window-to-clock route remains reachable
+[PASS] HUD objective shows step-by-step route
+[PASS] Wrong/incomplete handoff keeps the active customer
+[PASS] Wrong handoff explains missing item
+[PASS] Corrected bag completes at green handoff
+[PASS] Successful handoff clears carried item
+[PASS] Restaurant story event count remains 180
+[PASS] Phase 29 restaurant layout flow overhaul check passed
+```
+
+Final validation and regression smokes:
+
+```text
+python tools/validate_all.py
+[PASS] Validation suite passed
+[PASS] Phase 29 restaurant layout/flow overhaul contract valid
+[PASS] Restaurant story event count preserved at 180
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase14_full_shift_smoke.gd
+[PASS] Phase 14 full shift stabilization smoke check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase20_multi_shift_save_load_stress.gd
+[PASS] Phase 20 two-shift save/load progression stress check passed
+
+tools/downloads/godot-4.3-stable/Godot_v4.3-stable_win64_console.exe --headless --path . --script res://tools/phase23_core_gameplay_depth_check.gd
+[PASS] Phase 23 core gameplay depth check passed
+```
+
+Manual human-controlled visible playtest and physical controller validation remain pending. Godot headless dummy renderer may emit non-blocking cleanup messages after passing assertions.
+
+# Historical Validation Report - Phase 28 Major Graphics Upgrade Pass
 
 ## Phase 28 Current Validation
 

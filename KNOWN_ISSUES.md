@@ -2,6 +2,15 @@
 
 This is an early playable build, not a final Steam demo.
 
+## Phase 29 Notes
+
+- Phase 29 reorganizes the restaurant into a clearer first-shift route with visible zones, walkable aisle strips, numbered markers, route arrows, low boundaries, station labels, and HUD guidance.
+- Required first-shift stations are now arranged as front counter/register -> bagging -> grill/fries/drink -> green drive-thru handoff -> clock-out.
+- Phase 29 is automated/script validated, not a claimed human manual playtest.
+- The layout is much easier to read, but player-controlled sightlines, collision feel, and prop spacing still need a visible manual pass.
+- Physical controller hardware validation remains pending.
+- Final production models, textures, animation timing, and audio are still future work.
+
 ## Phase 28 Notes
 
 - Phase 28 significantly improves the restaurant graphics with procedural low-poly/cartoon-realistic shapes, lighting, booths, ceiling detail, rounded station/food props, customer car upgrades, and HUD readability support.
